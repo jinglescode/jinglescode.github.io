@@ -1,0 +1,14 @@
+<div class="top-bar" data-sticky-container data-sticky data-options="marginTop:0;" style="width:100%">
+  <!-- <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"></li>
+    </ul>
+  </div> -->
+  <div class="top-bar-right">
+    <ul class="menu">
+      {% for item in site.data.navigation %}
+      <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

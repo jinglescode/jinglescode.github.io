@@ -1,0 +1,12 @@
+- name: How to setup...
+  link: setup
+  description: For sharing and to remember something technical
+  image: https://us.123rf.com/450wm/darkovujic/darkovujic1501/darkovujic150100040/36157921-stock-vector-flat-design-modern-concept-of-process-web-page-coding-and-programming-on-laptop-with-workflow-object.jpg?ver=6
+- name: Use data science to...
+  link: datascience
+  description: Exploring some projects related to data science
+  image: https://www.udemycouponpro.com/wp-content/uploads/2018/08/Data-Science-in-Python-Pandas-Scikit-learnNumpy-Matplotlib-udemy-coupon-pro-ucp.jpg
+- name: Some notes on...
+  link: info
+  description: Some things I've read or courses I've learnt from
+  image: https://s.yimg.com/ny/api/res/1.2/L_Z_exlix2uFDHpGKydFDg--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/digital_trends_973/33db1eca570192661e2c57cf9315b233
