@@ -1,0 +1,5 @@
+.git
+.DS_Store
+pull_git.sh
+push_git.sh
+local
