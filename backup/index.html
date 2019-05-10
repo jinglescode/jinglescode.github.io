@@ -1,0 +1,147 @@
+---
+layout: default
+title: About
+excerpt: Hong Jing (Jingles) curious, desire to learn, and sharing
+---
+
+<div class="grid-container full" style="background-color:#f0604c">
+  <div class="grid-container grid-x">
+
+    <div class="cell small-12 medium-6">
+
+    </div>
+
+    <div class="cell small-12 medium-6" style="margin-bottom:40px;">
+      <h1 class="h1--home-title" style="color:#efefef">Data Scientist. Developer.</h1>
+      <p style="color:#efefef">Hi, I'm Jingles, my full name is Khok Hong Jing. A data scientist with four years of machine learning industry experience in the area of natural language processing and recommendation systems. I also enjoy developing products on the Web.</p>
+      <center><a class="hollow button" href="about" style="color:#fff;border-color:#fff;">More About Jingles</a></center>
+    </div>
+
+  </div>
+</div>
+
+<div class="grid-container">
+
+  <h1 class="h1--home-title">Recently exploring...</h1>
+
+  <div class="grid-x grid-padding-x">
+    {% for collection in site.data.collections %}
+    <div class="cell large-4 medium-6 small-12">
+      <div class="card card--article">
+
+        <img class="card-user-profile-img" src="{{collection.image}}" alt="{{collection.name}}" />
+
+        <div class="card-user-profile-content card-section">
+
+          <div class="card-user-profile-avatar">
+            <p class="card-user-profile-name">{{collection.name}}</p>
+          </div>
+
+          <!-- <p class="card-user-profile-status">Yeti Web Designer</p> -->
+          <p class="card-user-profile-info">
+
+            {% assign this_collection = "" | split:"," %}
+
+            {% assign sorted_pages = site.posts | sort: 'date' | reverse %}
+
+            {% for page in sorted_pages %}
+              {% if page.category == collection.link and this_collection.size < 5 %}
+                {% assign this_collection = this_collection | push: page %}
+              {% endif %}
+            {% endfor %}
+
+            {% for page in this_collection %}
+            <a href="{{ page.url | prepend: site.baseurl }}">
+              {{ page.title }}
+            </a><br/>
+            {% endfor %}
+
+          </p>
+
+        </div>
+
+        <div class="card-footer">
+      		<div class="card-footer-wrapper" layout="row bottom-left">
+        		<div class="card-type"><a href="notes">see more</a></div>
+      		</div>
+      	</div>
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+
+
+  <!-- <h1 class="h1--home-title">What I've been up to?</h1>
+
+  <div class="grid-x grid-padding-x">
+
+    {% for collection in site.data.collections %}
+    <div class="large-4 medium-6 small-12 cell">
+      <div class="card card--article not-visible">
+        <div class="card-hero">
+    			<div class="card-image" alt="{{collection.name}}" style="background-image: url({{collection.image}})">
+    			</div>
+    		</div>
+    		<div class="card-body">
+    			<div class="card-title">{{collection.name}}</div>
+
+          <div class="card-description card-description--clamp-3">
+            {% assign sorted_pages = site[collection.link] | sort: 'date' | reverse %}
+            {% for page in sorted_pages limit:2 %}
+            <a href="{{ page.url | prepend: site.baseurl }}">
+              {{ page.title }}
+            </a><br/>
+            {% endfor %}
+          </div>
+
+    		</div>
+      	<div class="card-footer">
+      		<div class="card-footer-wrapper" layout="row bottom-left">
+        		<div class="card-type"><a href="{{collection.link | relative_url}}">see more</a></div>
+      		</div>
+      	</div>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div> -->
+
+</div>
+
+<div class="grid-container full" style="background-color:#3283bc">
+  <div class="grid-container">
+
+    <h1 class="h1--home-title" style="color:#efefef">What I've been up to?</h1>
+
+    <div class="timeline">
+      {% for item in site.data.timeline %}
+      <div class="timeline-item">
+        <div class="timeline-icon" style="padding-top:12px;padding-left:6px;">
+          {{item.year}}
+        </div>
+        <div class="timeline-content {% cycle 'left', 'right' %}">
+          <img class="timeline-content-image" src="{{'/assets/img/' | append: item.image | relative_url}}"/>
+          <p class="timeline-content-date">
+            <span class="timeline-content-month">{{item.name}}</span><br/>
+            {{item.position}}
+          </p>
+          <p>{{item.description}}</p>
+          <ul>
+            {% for point in item.pointers %}
+            <li>{{point}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+<div class="rounded-social-buttons">
+  <a class="social-button linkedin fi-social-linkedin" target="_blank" href="https://www.linkedin.com/in/jingles/"></a>
+  <a class="social-button github fi-social-github" target="_blank" href="https://github.com/lonedune"></a>
+</div>
