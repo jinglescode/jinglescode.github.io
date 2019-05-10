@@ -1,0 +1,51 @@
+---
+layout: default
+title: Recently exploring...
+description: For sharing and to remember something technical. Exploring some projects related to data science. Some things I've read or courses I've learnt from.
+---
+
+<!--  /{/% for page in sorted_pages limit:3 offset:2 %} -->
+
+<div class="grid-container" style="margin-top:30px;">
+
+  <h1 class="h1--home-title">Recently exploring...</h1>
+
+  <div class="grid-x grid-padding-x">
+
+    {% assign sorted_pages = site.posts | sort: 'date' | reverse %}
+
+    {% for page in sorted_pages %}
+    <div class="large-4 medium-6 small-12 cell">
+      <a href="{{ page.url | prepend: site.baseurl }}">
+        <div class="card card--article not-visible">
+          <div class="card-hero">
+            <div class="card-image" alt="{{page.title}}" style="background-image: url({{page.image}})">
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">{{page.title}} {{page.type}}</div>
+            <div class="card-description">{{ page.description | truncate: 160 }}</div>
+          </div>
+          <div class="card-footer">
+
+            <div class="card-footer-wrapper grid-x grid-padding-x" layout="row bottom-left">
+              <div class="small-8 cell">
+                {{page.tag}}
+                {% for tag in page.tags %}
+                  <div class="card-tag">{{tag}}</div>
+                {% endfor %}
+              </div>
+              <div class="small-4 cell text-right">
+                <div class="card-tag">{{ page.date | date_to_string }}</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+
+  </div>
+
+</div>

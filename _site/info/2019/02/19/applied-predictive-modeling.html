@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Predictive Modeling - Jingles</title>
+    <link rel="stylesheet" href="/pages/assets/css/foundation.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="/pages/assets/css/foundation-icons/foundation-icons.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="/pages/assets/css/app.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" media="screen" type="text/css">
+
+    
+    <meta name="keywords" content="tag, tag"/>
+    
+
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Applied Predictive Modeling" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="to be completed" />
+<meta property="og:description" content="to be completed" />
+<link rel="canonical" href="http://localhost:4000/pages/info/2019/02/19/applied-predictive-modeling.html" />
+<meta property="og:url" content="http://localhost:4000/pages/info/2019/02/19/applied-predictive-modeling.html" />
+<meta property="og:site_name" content="pages" />
+<meta property="og:image" content="https://www.udemycouponpro.com/wp-content/uploads/2018/08/Data-Science-in-Python-Pandas-Scikit-learnNumpy-Matplotlib-udemy-coupon-pro-ucp.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-19T10:17:52+08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/pages/info/2019/02/19/applied-predictive-modeling.html","description":"to be completed","headline":"Applied Predictive Modeling","dateModified":"2019-02-19T10:17:52+08:00","datePublished":"2019-02-19T10:17:52+08:00","image":"https://www.udemycouponpro.com/wp-content/uploads/2018/08/Data-Science-in-Python-Pandas-Scikit-learnNumpy-Matplotlib-udemy-coupon-pro-ucp.jpg","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/info/2019/02/19/applied-predictive-modeling.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    
+  </head>
+  <body>
+
+    <div class="top-bar" data-sticky-container data-sticky data-options="marginTop:0;" style="width:100%">
+  <!-- <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"></li>
+    </ul>
+  </div> -->
+  <div class="top-bar-right">
+    <ul class="menu">
+      
+      <li><a href="/pages/about">About</a></li>
+      
+      <li><a href="/pages/notes">Notes</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div class="grid-container" style="margin-top:30px;">
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 medium-12 small-12 cell">
+
+        <div class="card card--article not-visible">
+          <div class="card-hero">
+            <h1>Applied Predictive Modeling</h1>
+            <div class="card-description card-description--clamp-3">to be completed</div>
+            <!-- <div class="card-image" alt="Applied Predictive Modeling" style="background-image: url(https://www.udemycouponpro.com/wp-content/uploads/2018/08/Data-Science-in-Python-Pandas-Scikit-learnNumpy-Matplotlib-udemy-coupon-pro-ucp.jpg)"></div> -->
+          </div>
+          <div class="card-body markdown-content">
+            <h1 id="introduction">Introduction</h1>
+
+<p>Predictive modeling is the process of developing a mathematical tool that uses historical data to generate an accurate prediction for future/unseen cases. So what is accuracy? For example, we don’t really care why an e-mail filter thinks a message is spam. Rather, we only care that the filter accurately trashes spam and allows messages we care about to pass through to our mailbox. As another example, if I am selling a house, my primary interest is not how a web site (such as zillow.com) estimated its value. Instead, I am keenly interested that zillow.com has correctly priced the home. An undervaluation will yield lower bids and a lower sale price; alternatively, an overvaluation may drive away potential buyers.</p>
+
+<p>There are a number of common reasons why predictive models fail, and the common culprits include</p>
+<ul>
+  <li>(1) inadequate pre-processing of the data,</li>
+  <li>(2) inadequate model validation,</li>
+  <li>(3) unjustified extrapolation (e.g., application of the model to data that reside in a space which the model has never seen),</li>
+  <li>(4) over-fitting the model to the existing data</li>
+</ul>
+
+<h2 id="inadequate-pre-processing-of-the-data">inadequate pre-processing of the data</h2>
+<p>Most predictive models are fundamentally influenced by a modeler with expert knowledge and context of the problem. This expert knowledge should first be applied in obtaining relevant data for the desired research objectives. While vast databases of information can be used as substrate for constructing predictions, irrelevant information can drive down predictive performance of many models. Subject-specific knowledge can help separate potentially meaningful information from irrelevant information, eliminating detrimental noise and strengthening the underlying signal.</p>
+
+<h3 id="transformations-to-resolve-skewness">Transformations to Resolve Skewness</h3>
+<p>A right-skewed distribution has a large number of points on the left side of the distribution (smaller values) than on the right side (larger values). As the distribution becomes more right skewed, the skewness statistic becomes larger. Similarly, as the distribution becomes more left skewed, the value becomes negative.</p>
+
+<p>Replacing the data with the log, square, square root, or inverse may help to remove the skew.</p>
+
+<h3 id="transformations-to-resolve-outliers">Transformations to Resolve Outliers</h3>
+<p>Outliers are data points that are exceptionally far from the mainstream of the data.  When one or more samples are suspected
+to be outliers, the first step is to make sure that the values are scientifically valid and that no data recording errors have occurred. Great care should be taken not to hastily remove or change values, especially if the sample size is small.</p>
+
+<p>There are several predictive models that are resistant to outliers. Tree based classification models create splits of the training data so the outlier does not usually have an exceptional influence on the model. Support vector machines for
+classification generally disregard a portion of the training set samples which may be outliers.</p>
+
+<h3 id="data-reduction">Data Reduction</h3>
+<p>Principal component analysis (PCA) find linear combinations of the predictors, known as principal components (PCs), which capture the most possible variance. PCA preprocessing creates new predictors with desirable characteristics for these kinds of models. Hence, without proper guidance, PCA can generate components that summarize characteristics of the data that are irrelevant to the underlying data.</p>
+
+          </div>
+          <div class="card-footer">
+            <div class="card-footer-wrapper grid-x grid-padding-x" layout="row bottom-left">
+              <div class="small-10 cell">
+                
+                
+                  <div class="card-tag">tag</div>
+                
+                  <div class="card-tag">tag</div>
+                
+              </div>
+              <div class="small-2 cell text-right">
+                <div class="card-tag">19 Feb 2019</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <div style="height:50px" class="text-center">
+
+</div>
+
+
+    <script src="/pages/assets/js/vendor/jquery.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/vendor/what-input.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/vendor/foundation.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/app.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+  </body>
+</html>

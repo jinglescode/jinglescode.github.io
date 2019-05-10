@@ -1,0 +1,7 @@
+https://business.tutsplus.com/articles/what-to-include-on-your-personal-resume-website--cms-28052
+http://www.monolinea.com/
+https://colin.io/
+http://www.pascalvangemert.nl/#/profile
+
+
+bundle exec jekyll serve --drafts
