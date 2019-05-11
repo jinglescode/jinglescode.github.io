@@ -607,7 +607,6 @@ p.card-type{
 }
 
 .timeline {
-  margin: 30px auto;
   padding: 0 10px;
   position: relative;
   transition: all 0.25s ease-in;
