@@ -1,0 +1,59 @@
+- year: 2017
+  name: LAZADA - ALIBABA GROUP
+  position: DATA SCIENTIST
+  image: timeline-alibaba.jpg
+  city: Singapore
+  description:
+  pointers:
+    - Developed and productionised highly scalable recommender systems on Alibaba platform to create personalised results
+    - Collaborate with Alibaba Product and Engineering teams in Hangzhou, to design and deploy solutions
+    - Designed A/B test to track and validate various campaign strategies for the most effective conversion rates
+    - Built models for click-through rate prediction, ranking recommendation, and to distill quality products
+
+- year: 2014
+  name: DEFENCE SCIENCE AND TECHNOLOGY AGENCY
+  position: SENIOR ENGINEER
+  image: timeline-dsta.svg
+  city: Singapore
+  description:
+  pointers:
+    - Developed an intuitive natural language processing software, and providing interactive reports on Angular web app
+    - Built and pitched to Chief of Navy, maintenance advisory system that identifies and predicts possible failures
+    - Developed RESTful natural language processing APIs and make it accessible for development teams and reporting tools
+    - Delivered effective feedback and enquiry classification system for the Singapore Army with SAS Analytics suite
+    - Lead and conduct yearly technical and hands-on training on machine learning and text analytics to engineers
+
+- year: 2013
+  name: INSTITUT SUPÉRIEUR D'ÉLECTRONIQUE DE PARIS
+  position: RESEARCH SCIENTIST
+  image: timeline-isep.png
+  city: Paris
+  description:
+  pointers:
+    - Developed new approach to effectively distribute data centre loads to improve utilisation of computation power
+    - Researched on consistency trade offs through simulation of infrastructures and application protocols.
+
+- year: 2011
+  name: NANYANG TECHNOLOGICAL UNIVERSITY
+  position: Bachelor of Engineering in Computer Science
+  image: timeline-ntu.jpg
+  city: Singapore
+  description:
+  pointers:
+    - Second Class Upper Honours
+    - Information System
+    - Artificial Intelligence
+    - Data Analytics and Mining
+    - Robotics
+
+- year: 2006
+  name: Singapore
+  position: FREELANCE DEVELOPER
+  image: timeline-freelancer.png
+  city: Singapore
+  description:
+  pointers:
+    - Understand business needs. Transform concepts into practical solutions for enterprise by meeting business needs
+    - Developed integrated solution that combines point-of-sales, payroll and invoice systems on MEAN stack
+    - Integrate Google API into systems to improve business operations such as Gmail and Google Drive
+    - Cloud infrastructure. Setup business infrastructure on Google Compute Engine, Amazon EC2 and DigitalOcean.

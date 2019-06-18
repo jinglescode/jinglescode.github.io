@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Engineering Dates - Jingles</title>
+    <link rel="stylesheet" href="/pages/assets/css/foundation.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="/pages/assets/css/foundation-icons/foundation-icons.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="/pages/assets/css/app.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" media="screen" type="text/css">
+
+    
+    <meta name="keywords" content="tag, tag"/>
+    
+
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Feature Engineering Dates" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="to be completed" />
+<meta property="og:description" content="to be completed" />
+<link rel="canonical" href="http://localhost:4000/pages/info/2019/02/02/feature-engineering-date.html" />
+<meta property="og:url" content="http://localhost:4000/pages/info/2019/02/02/feature-engineering-date.html" />
+<meta property="og:site_name" content="pages" />
+<meta property="og:image" content="https://www.udemycouponpro.com/wp-content/uploads/2018/08/Data-Science-in-Python-Pandas-Scikit-learnNumpy-Matplotlib-udemy-coupon-pro-ucp.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-02T15:37:30+08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/pages/info/2019/02/02/feature-engineering-date.html","description":"to be completed","headline":"Feature Engineering Dates","dateModified":"2019-02-02T15:37:30+08:00","datePublished":"2019-02-02T15:37:30+08:00","image":"https://www.udemycouponpro.com/wp-content/uploads/2018/08/Data-Science-in-Python-Pandas-Scikit-learnNumpy-Matplotlib-udemy-coupon-pro-ucp.jpg","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/info/2019/02/02/feature-engineering-date.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    
+  </head>
+  <body>
+
+    <div class="top-bar" data-sticky-container data-sticky data-options="marginTop:0;" style="width:100%">
+  <!-- <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"></li>
+    </ul>
+  </div> -->
+  <div class="top-bar-right">
+    <ul class="menu">
+      
+      <li><a href="/pages/about">About</a></li>
+      
+      <li><a href="/pages/notes">Notes</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div class="grid-container" style="margin-top:30px;">
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 medium-12 small-12 cell">
+
+        <div class="card card--article not-visible">
+          <div class="card-hero">
+            <h1>Feature Engineering Dates</h1>
+            <div class="card-description card-description--clamp-3">to be completed</div>
+            <!-- <div class="card-image" alt="Feature Engineering Dates" style="background-image: url(https://www.udemycouponpro.com/wp-content/uploads/2018/08/Data-Science-in-Python-Pandas-Scikit-learnNumpy-Matplotlib-udemy-coupon-pro-ucp.jpg)"></div> -->
+          </div>
+          <div class="card-body markdown-content">
+            <h1 id="introduction">Introduction</h1>
+
+<p>Ways to encode datetime for your model:</p>
+<ul>
+  <li>The number of days since a reference date</li>
+  <li>Isolating the month, year, and day of the week as separate predictors</li>
+  <li>The numeric day of the year (ignoring the calendar year)</li>
+  <li>Week of the year</li>
+  <li>Is weekend? Is holiday?</li>
+</ul>
+
+<p>There is no “correct” way to feature engineer your date variable, one may be optimal for some models and poor for others. Understanding your domain will help decide the best date feature format.</p>
+
+<p>Firstly, I would start by looking for trend. If the data appears to have certain seasonality, such that certain event occur at regular interval (it could be weekly, monthly, quarterly, every February and November) within a year, then the numeric day of the year would work best. Example of data that are seasonal could be weather, flights, product sales due to Christmas, Mother’s day and Valentines day.</p>
+
+<p>For category recommendations on e-commerce, if user clicked on an Electronic category product 60 days ago, and another Beauty product 7 days ago. And if recommending other Beauty products over Electronic makes sense, then number of days since a reference date would be a better fit for category recommendations.</p>
+
+<p>The “correct” feature engineering depends on several factors. First, some encodings may be optimal for some models and poor for others. For example,
+tree-based models will partition the data into two or more bins. Theoretically,
+if the month were important, the tree would split the numeric day of the year
+accordingly. Also, in some models, multiple encodings of the same data may
+cause problems. As will be illustrated several times in later chapters, some
+models contain built-in feature selection, meaning that the model will only
+include predictors that help maximize accuracy. In these cases, the model can
+pick and choose which representation of the data is best.
+The relationship between the predictor and the outcome is a second factor.
+For example, if there were a seasonal component to these data, and it appears
+that there is, then the numeric day of the year would be best. Also, if some
+months showed higher success rates than others, then the encoding based on
+the month is preferable.</p>
+
+          </div>
+          <div class="card-footer">
+            <div class="card-footer-wrapper grid-x grid-padding-x" layout="row bottom-left">
+              <div class="small-10 cell">
+                
+                
+                  <div class="card-tag">tag</div>
+                
+                  <div class="card-tag">tag</div>
+                
+              </div>
+              <div class="small-2 cell text-right">
+                <div class="card-tag">02 Feb 2019</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <div style="height:50px" class="text-center">
+
+</div>
+
+
+    <script src="/pages/assets/js/vendor/jquery.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/vendor/what-input.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/vendor/foundation.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/app.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+  </body>
+</html>
