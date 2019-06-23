@@ -1,4 +1,4 @@
-https://lonedune.github.io
-https://lonedune.github.io/demos
-https://lonedune.github.io/demos/tfjs-timeseries-stocks
-https://lonedune.github.io/demos/phrases-extraction-d3-wordcloud
+https://lonedune.github.io/
+https://lonedune.github.io/demos/
+https://lonedune.github.io/demos/tfjs-timeseries-stocks/
+https://lonedune.github.io/demos/phrases-extraction-d3-wordcloud/
