@@ -1,1 +1,1 @@
-git pull https://github.com/lonedune/lonedune.github.io.git master
+git pull https://github.com/jinglescode/jinglescode.github.io.git master
