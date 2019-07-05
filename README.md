@@ -4,4 +4,5 @@ Hi, I'm Hong Jing, you can call me Jingles. A data scientist with four years of 
 
 [Connect via LinkedIn](https://www.linkedin.com/in/jingles/) |
 [Articles on Medium](https://towardsdatascience.com/@jinglesnote) |
+[Demos on Github](https://jinglescode.github.io/demos/)
 [Repos on Github](https://github.com/jinglescode)
