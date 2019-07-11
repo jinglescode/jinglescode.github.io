@@ -1,0 +1,17 @@
+collections:
+  datascience:
+    output: true
+    permalink: /datascience/:path/
+  setup:
+    output: true
+    permalink: /setup/:path/
+  info:
+    output: true
+    permalink: /info/:path/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+url: "https://jinglescode.github.io"
