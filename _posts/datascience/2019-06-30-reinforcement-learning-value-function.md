@@ -15,7 +15,7 @@ tags:
 
 [![cover](https://i.ibb.co/LQNbsMn/Reinforcement-Learning-The-Value-Function.png)](https://towardsdatascience.com/reinforcement-learning-value-function-57b04e911152)
 
-This article was originally published on Medium [https://towardsdatascience.com/reinforcement-learning-value-function-57b04e911152](https://towardsdatascience.com/reinforcement-learning-value-function-57b04e911152)
+This article was originally published on [Medium:Towards Data Science](https://towardsdatascience.com/reinforcement-learning-value-function-57b04e911152)
 
 [Explore Demo](https://jinglescode.github.io/demos/rl-value-function-tic-tac-toe)
 
