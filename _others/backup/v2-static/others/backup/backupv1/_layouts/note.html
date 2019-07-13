@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="grid-container" style="margin-top:30px;">
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 medium-12 small-12 cell">
+
+        <div class="card card--article not-visible">
+          <div class="card-hero">
+            <h1>{{page.title}}</h1>
+            <div class="card-description card-description--clamp-3">{{page.description}}</div>
+            <!-- <div class="card-image" alt="{{page.title}}" style="background-image: url({{page.image}})"></div> -->
+          </div>
+          <div class="card-body markdown-content">
+            {{ content }}
+          </div>
+          <div class="card-footer">
+            <div class="card-footer-wrapper grid-x grid-padding-x" layout="row bottom-left">
+              <div class="small-10 cell">
+                {{page.tag}}
+                {% for tag in page.tags %}
+                  <div class="card-tag">{{tag}}</div>
+                {% endfor %}
+              </div>
+              <div class="small-2 cell text-right">
+                <div class="card-tag">{{ page.date | date_to_string }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>

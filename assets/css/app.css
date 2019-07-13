@@ -28,16 +28,16 @@ h2 {
   font-size: 22px;
 }
 h3 {
-  font-size: 20px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
   font-size: 16px;
 }
-h6 {
+h4 {
   font-size: 14px;
+}
+h5 {
+  font-size: 12px;
+}
+h6 {
+  font-size: 10px;
 }
 
 .highlighter-rouge{
@@ -74,7 +74,7 @@ code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .top-bar, .top-bar ul {
-    background-color: rgba(255,255,255,.98);
+  background-color: rgba(255,255,255,.98);
 }
 
 .top-bar {
@@ -84,7 +84,6 @@ code {
   -webkit-backdrop-filter: blur(20px);
   z-index: 9999;
   padding: 0px 0px 0px 24px;
-  position: absolute;
   top: 0;
   width: 100%;
   height: 66px;
@@ -607,6 +606,7 @@ p.card-type{
 }
 
 .timeline {
+  margin: 30px auto;
   padding: 0 10px;
   position: relative;
   transition: all 0.25s ease-in;
@@ -786,7 +786,7 @@ p.card-type{
           transform: rotate(360deg);
 }
 
-/* .rounded-social-buttons .social-button.linkedin {
+.rounded-social-buttons .social-button.linkedin {
   background: #007bb5;
 }
 
@@ -801,16 +801,6 @@ p.card-type{
 }
 
 .rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
-  color: #000000;
-  background: #fefefe;
-  border-color: #000000;
-} */
-
-.rounded-social-buttons .social-button {
-  background: #000000;
-}
-
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
   color: #000000;
   background: #fefefe;
   border-color: #000000;

@@ -46,3 +46,6 @@ testem.log
 Thumbs.db
 
 package-lock.json
+Gemfile.lock
+
+_site/
