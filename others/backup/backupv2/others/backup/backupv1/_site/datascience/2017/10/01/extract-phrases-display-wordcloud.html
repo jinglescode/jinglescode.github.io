@@ -1,0 +1,376 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phrases extraction and D3 Wordcloud - Jingles</title>
+    <link rel="stylesheet" href="/pages/assets/css/foundation.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="/pages/assets/css/foundation-icons/foundation-icons.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="/pages/assets/css/app.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" media="screen" type="text/css">
+
+    
+    <meta name="keywords" content="extract, phrases, d2, wordcloud, animate"/>
+    
+
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Phrases extraction and D3 Wordcloud" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="JavaScript solution to extracting ngrams from reviews and visualise topics on wordcloud" />
+<meta property="og:description" content="JavaScript solution to extracting ngrams from reviews and visualise topics on wordcloud" />
+<link rel="canonical" href="http://localhost:4000/pages/datascience/2017/10/01/extract-phrases-display-wordcloud.html" />
+<meta property="og:url" content="http://localhost:4000/pages/datascience/2017/10/01/extract-phrases-display-wordcloud.html" />
+<meta property="og:site_name" content="pages" />
+<meta property="og:image" content="https://image.ibb.co/kD20aq/wordcloud.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-10-01T00:00:00+08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/pages/datascience/2017/10/01/extract-phrases-display-wordcloud.html","description":"JavaScript solution to extracting ngrams from reviews and visualise topics on wordcloud","headline":"Phrases extraction and D3 Wordcloud","dateModified":"2017-10-01T00:00:00+08:00","datePublished":"2017-10-01T00:00:00+08:00","image":"https://image.ibb.co/kD20aq/wordcloud.jpg","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/datascience/2017/10/01/extract-phrases-display-wordcloud.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    
+  </head>
+  <body>
+
+    <div class="top-bar" data-sticky-container data-sticky data-options="marginTop:0;" style="width:100%">
+  <!-- <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"></li>
+    </ul>
+  </div> -->
+  <div class="top-bar-right">
+    <ul class="menu">
+      
+      <li><a href="/pages/about">About</a></li>
+      
+      <li><a href="/pages/notes">Notes</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div class="grid-container" style="margin-top:30px;">
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 medium-12 small-12 cell">
+
+        <div class="card card--article not-visible">
+          <div class="card-hero">
+            <h1>Phrases extraction and D3 Wordcloud</h1>
+            <div class="card-description card-description--clamp-3">JavaScript solution to extracting ngrams from reviews and visualise topics on wordcloud</div>
+            <!-- <div class="card-image" alt="Phrases extraction and D3 Wordcloud" style="background-image: url(https://image.ibb.co/kD20aq/wordcloud.jpg)"></div> -->
+          </div>
+          <div class="card-body markdown-content">
+            <p>100% JavaScript solution to extracting phrases from text (here i use hotel reviews) and display key points in a beautiful D3 wordcloud. Phrases (or ngrams) extraction are done in <em>get_top_phrases.js</em>, adjustments to the wordcloud can be done in <em>make_wordcloud.js</em>. get the code from <a href="https://github.com/lonedune/d3-wordcloud">Github</a></p>
+
+<h1 id="demo">Demo</h1>
+<iframe src="https://cdn.rawgit.com/lonedune/d3-wordcloud/master/main.html" width=100% height=500 border=0></iframe>
+
+<h1 id="data">Data</h1>
+<p>Data belongs to <a href="https://data.world/datafiniti/hotel-reviews">datafiniti/Hotel Reviews</a>.</p>
+
+<h1 id="extract-phrases">Extract phrases</h1>
+
+<h2 id="parameters">Parameters</h2>
+<p>Tweak extraction logic with the following parameters:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var atLeast = 2;       // Show results with at least .. occurrences
+var numWords = 5;      // Show statistics for one to .. words
+var ignoreCase = true; // Case-sensitivity
+var REallowedChars = /[^a-zA-Z']+/g; // RE pattern to select valid characters. Invalid characters are replaced with a whitespace
+var common = "poop,i,me,my,myself,we,us,our,ours,ourselves,you,your,yours,yourself,yourselves,he,him,his,himself,she,her,hers,herself,it,its,itself,they,them,their,theirs,themselves,what,which,who,whom,whose,this,that,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,will,would,should,can,could,ought,i'm,you're,he's,she's,it's,we're,they're,i've,you've,we've,they've,i'd,you'd,he'd,she'd,we'd,they'd,i'll,you'll,he'll,she'll,we'll,they'll,isn't,aren't,wasn't,weren't,hasn't,haven't,hadn't,doesn't,don't,didn't,won't,wouldn't,shan't,shouldn't,can't,cannot,couldn't,mustn't,let's,that's,who's,what's,here's,there's,when's,where's,why's,how's,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,upon,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,say,says,said,shall";
+</code></pre></div></div>
+
+<h2 id="logic">Logic</h2>
+<ul>
+  <li>load text</li>
+  <li>initalise empty hash to store all possible phrases</li>
+  <li>clean text with only valid characters</li>
+  <li>create phrases hash</li>
+  <li>count phrases set</li>
+  <li>sort phrases set</li>
+</ul>
+
+<h1 id="code">Code</h1>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function get_top_phrases(_list_text, top_n, remove_these){
+
+  var common = "poop,i,me,my,myself,we,us,our,ours,ourselves,you,your,yours,yourself,yourselves,he,him,his,himself,she,her,hers,herself,it,its,itself,they,them,their,theirs,themselves,what,which,who,whom,whose,this,that,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,will,would,should,can,could,ought,i'm,you're,he's,she's,it's,we're,they're,i've,you've,we've,they've,i'd,you'd,he'd,she'd,we'd,they'd,i'll,you'll,he'll,she'll,we'll,they'll,isn't,aren't,wasn't,weren't,hasn't,haven't,hadn't,doesn't,don't,didn't,won't,wouldn't,shan't,shouldn't,can't,cannot,couldn't,mustn't,let's,that's,who's,what's,here's,there's,when's,where's,why's,how's,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,upon,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,say,says,said,shall";
+
+  var text = "";
+  for(var i in _list_text){
+    text+= _list_text[i]+" ";
+  }
+
+  var atLeast = 2;       // Show results with at least .. occurrences
+  var numWords = 5;      // Show statistics for one to .. words
+  var ignoreCase = true; // Case-sensitivity
+  var REallowedChars = /[^a-zA-Z']+/g;
+   // RE pattern to select valid characters. Invalid characters are replaced with a whitespace
+
+  var i, j, k, textlen, len, s;
+  // Prepare key hash
+  var keys = [null]; //"keys[0] = null", a word boundary with length zero is empty
+  var results = [];
+  var phrase_count = [];
+  numWords++; //for human logic, we start counting at 1 instead of 0
+  for (i=1; i&lt;=numWords; i++) {
+      keys.push({});
+  }
+
+  // Remove all irrelevant characters
+  text = text.replace(REallowedChars, " ").replace(/^\s+/,"").replace(/\s+$/,"");
+
+  // Create a hash
+  if (ignoreCase) text = text.toLowerCase();
+  text = text.split(/\s+/);
+  for (i=0, textlen=text.length; i&lt;textlen; i++) {
+      s = text[i];
+      keys[1][s] = (keys[1][s] || 0) + 1;
+      for (j=2; j&lt;=numWords; j++) {
+          if(i+j &lt;= textlen) {
+              s += " " + text[i+j-1];
+              keys[j][s] = (keys[j][s] || 0) + 1;
+          } else break;
+      }
+  }
+
+  // Prepares results
+  for (var k=1; k&lt;=numWords; k++) {
+      results[k] = [];
+      var key = keys[k];
+      for (var i in key) {
+
+        var is_ok = true;
+
+        var words = i.split(/[ '\-\(\)\*":;\[\]|{},.!?]+/);
+
+        words.forEach(function(word){
+          var word = word.toLowerCase();
+          if (word != "" &amp;&amp; common.indexOf(word)==-1 &amp;&amp; word.length&gt;1){
+
+          }else{
+            is_ok = false;
+          }
+        })
+
+        if(is_ok){
+          if(key[i] &gt;= atLeast &amp;&amp; words.length &gt; 1){
+            results[k].push({"word":words.join(" "), "count":key[i]});
+            phrase_count.push({"word":words.join(" "), "count":key[i]});
+          }
+        }
+
+      }
+  }
+
+  var f_sortAscending = function(x,y) {return y.count - x.count;};
+  for (k=2; k&lt;numWords; k++) {
+    results[k].sort(f_sortAscending);
+
+    var words = results[k];
+    if (words.length){
+      for (i=0,len=words.length; i&lt;len; i++) {
+        phrase_count[words[i].word] = words[i].count;
+      }
+    }
+
+  }
+
+  var list_phrases = [];
+  var vocab = []
+  var phrases_count = {};
+  var phrase_count_sorted = phrase_count.sort(f_sortAscending)
+  for(var i=0;i&lt;top_n;i++){
+    var phrase = phrase_count_sorted[i].word;
+    phrases_count[phrase_count_sorted[i].word] = phrase_count_sorted[i].count;
+    list_phrases.push(phrase);
+  }
+
+
+  var phrases_onehot = phrases_to_onehot(list_phrases)
+  var phrases_remove_subset = remove_subset(list_phrases, phrases_onehot)
+
+  var output = {};
+  for(var p in phrases_remove_subset){
+    if(phrases_remove_subset[p] &amp;&amp; remove_these.indexOf(p))
+      output[p] = phrases_count[p];
+  }
+
+  return output;
+}
+
+
+
+//////////////////
+
+function fillArray(value, len) {
+  if (len == 0) return [];
+  var a = [value];
+  while (a.length * 2 &lt;= len) a = a.concat(a);
+  if (a.length &lt; len) a = a.concat(a.slice(0, len - a.length));
+  return a;
+}
+
+function a_is_subset_of_b (a, b) {
+  var a_b_same = true;
+  for(var i in a){
+    var t = a[i] - b[i];
+    if(t == 1){
+      a_b_same = false;
+    }
+  }
+  return a_b_same;
+};
+
+function phrases_to_onehot(list_phrases){
+  var row = [];
+  var vocab = [];
+
+  for(var i=0;i&lt;list_phrases.length;i++){
+    var words = list_phrases[i].split(/[ '\-\(\)\*":;\[\]|{},.!?]+/);
+    words.forEach(function(word){
+      if(vocab.indexOf(word)==-1){
+        vocab.push(word);
+      }
+    })
+  }
+  for(var i=0;i&lt;list_phrases.length;i++){
+    var this_row = fillArray(0, vocab.length);
+    var words = list_phrases[i].split(/[ '\-\(\)\*":;\[\]|{},.!?]+/);
+    words.forEach(function(word){
+      this_row[vocab.indexOf(word)] = 1;
+    });
+    row.push(this_row);
+  }
+  return row;
+}
+
+function remove_subset(list_phrases, row){
+  var results = {};
+
+  for(var i=0;i&lt;row.length;i++){
+    var this_is_unique = true;
+    for(var j=0;j&lt;row.length;j++){
+      if(i!=j &amp;&amp; a_is_subset_of_b(row[i], row[j])){
+        // console.log(row[i], row[j], a_is_subset_of_b(row[i], row[j]));
+        this_is_unique = false;
+      }
+    }
+    results[list_phrases[i]] = this_is_unique
+    // console.log(list_phrases[i], row[i], this_is_unique)
+  }
+  return results;
+}
+</code></pre></div></div>
+
+<h1 id="generate-wordcloud">Generate wordcloud</h1>
+
+<h2 id="parameters-1">Parameters</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var fill_colors = ["#29e8c4", "#29e8d8", "#29e4e8", "#29cbe8"]; // color determine by frequency of phrases
+</code></pre></div></div>
+
+<h2 id="code-1">Code</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function make_wordcloud(word_count){
+
+  var fill_colors = ["#29e8c4", "#29e8d8", "#29e4e8", "#29cbe8"];
+
+  drawWordCloud(word_count, "#chart");
+
+  function drawWordCloud(word_count, div_id){
+
+    var width = $(document).width();
+    var height = $(document).height();
+    var word_entries = d3.entries(word_count);
+
+    var xScale = d3.scale.linear()
+     .domain([0, d3.max(word_entries, function(d) {
+        return d.value;
+      })
+     ])
+     .range([10,70]);
+
+    d3.layout.cloud().size([width, height])
+      .timeInterval(200)
+      .words(word_entries)
+      .fontSize(function(d) { return xScale(+d.value); })
+      .text(function(d) { return d.key; })
+      .rotate(function() {
+        // return ~~(Math.random() * 2) * 90;
+        return 0; // comment this and un-comment above to have 90 degree rotations
+      })
+      .font("'helvetica neue', helvetica, arial, sans-serif")
+      .on("end", draw)
+      .start();
+
+    function draw(words) {
+
+      var svg = d3.select(div_id).append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + [width &gt;&gt; 1, height &gt;&gt; 1] + ")")
+        ;
+
+      var words = svg.selectAll("text")
+        .data(words)
+        .enter().append("text")
+        .style("font-size", function(d) { return xScale(d.value) + "px"; })
+        .style("font-family", "'helvetica neue', helvetica, arial, sans-serif")
+        .style("font-weight", 100)
+        .style("fill", function(d, i) { return fill_colors[i%4]; })
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.key; })
+        ;
+
+    }
+
+    d3.layout.cloud().stop();
+  }
+}
+</code></pre></div></div>
+
+          </div>
+          <div class="card-footer">
+            <div class="card-footer-wrapper grid-x grid-padding-x" layout="row bottom-left">
+              <div class="small-10 cell">
+                
+                
+                  <div class="card-tag">extract</div>
+                
+                  <div class="card-tag">phrases</div>
+                
+                  <div class="card-tag">d2</div>
+                
+                  <div class="card-tag">wordcloud</div>
+                
+                  <div class="card-tag">animate</div>
+                
+              </div>
+              <div class="small-2 cell text-right">
+                <div class="card-tag">01 Oct 2017</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <div style="height:50px" class="text-center">
+
+</div>
+
+
+    <script src="/pages/assets/js/vendor/jquery.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/vendor/what-input.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/vendor/foundation.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/app.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+  </body>
+</html>

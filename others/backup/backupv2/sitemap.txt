@@ -1,0 +1,5 @@
+https://jinglescode.github.io/
+https://jinglescode.github.io/demos/
+https://jinglescode.github.io/demos/tfjs-timeseries-stocks/
+https://jinglescode.github.io/demos/phrases-extraction-d3-wordcloud/
+https://jinglescode.github.io/demos/rl-value-function-tic-tac-toe
