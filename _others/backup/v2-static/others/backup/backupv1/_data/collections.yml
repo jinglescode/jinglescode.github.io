@@ -1,0 +1,12 @@
+- name: How to setup...
+  link: setup
+  description: For sharing and to remember something technical
+  image: https://image.ibb.co/gkiLrV/collect-setup.jpg
+- name: Use data science to...
+  link: datascience
+  description: Exploring some projects related to data science
+  image: https://image.ibb.co/bW4qQq/collect-ds.jpg
+- name: Some notes on...
+  link: info
+  description: Some things I've read or courses I've learnt from
+  image: https://image.ibb.co/nt6ekq/collect-info.jpg

@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}} - Jingles</title>
+    <link rel="stylesheet" href="{{'/assets/css/foundation.css?v=' | append: site.github.build_revision | relative_url}}" media="screen" type="text/css">
+    <link rel="stylesheet" href="{{'/assets/css/foundation-icons/foundation-icons.css?v=' | append: site.github.build_revision | relative_url}}" media="screen" type="text/css">
+    <link rel="stylesheet" href="{{'/assets/css/app.css?v=' | append: site.github.build_revision | relative_url}}" media="screen" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" media="screen" type="text/css">
+
+    {%if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
+    {%endif %}
+
+    {% seo title=false %}
+
+    {% if jekyll.environment == 'production' %}
+    {% include google_analytics.html %}
+    {% endif %}
+  </head>
+  <body>
+
+    {% include navigation.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script src="{{'/assets/js/vendor/jquery.js?v=' | append: site.github.build_revision | relative_url}}"></script>
+    <script src="{{'/assets/js/vendor/what-input.js?v=' | append: site.github.build_revision | relative_url}}"></script>
+    <script src="{{'/assets/js/vendor/foundation.js?v=' | append: site.github.build_revision | relative_url}}"></script>
+    <script src="{{'/assets/js/app.js?v=' | append: site.github.build_revision | relative_url}}"></script>
+  </body>
+</html>

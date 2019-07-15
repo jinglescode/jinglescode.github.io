@@ -14,4 +14,4 @@ tags:
 
 [![cover](https://i.ibb.co/cvnssKZ/Why-Linear-Regression-is-not-suitable-for-Classification.png)](https://towardsdatascience.com/why-linear-regression-is-not-suitable-for-binary-classification-c64457be8e28)
 
-This article was originally published on Medium [https://towardsdatascience.com/why-linear-regression-is-not-suitable-for-binary-classification-c64457be8e28](https://towardsdatascience.com/why-linear-regression-is-not-suitable-for-binary-classification-c64457be8e28)
+This article was originally published on [Medium:Towards Data Science](https://towardsdatascience.com/why-linear-regression-is-not-suitable-for-binary-classification-c64457be8e28)

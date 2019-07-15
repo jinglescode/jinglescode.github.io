@@ -1,0 +1,223 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Systems Algorithms - Jingles</title>
+    <link rel="stylesheet" href="/pages/assets/css/foundation.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="/pages/assets/css/foundation-icons/foundation-icons.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="/pages/assets/css/app.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" media="screen" type="text/css">
+
+    
+    <meta name="keywords" content="recommendation, systems, algorithms"/>
+    
+
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Recommendation Systems Algorithms" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Summarise a few recommendation systems machine learning algorithms" />
+<meta property="og:description" content="Summarise a few recommendation systems machine learning algorithms" />
+<link rel="canonical" href="http://localhost:4000/pages/datascience/2018/12/12/recommendation-algorithms.html" />
+<meta property="og:url" content="http://localhost:4000/pages/datascience/2018/12/12/recommendation-algorithms.html" />
+<meta property="og:site_name" content="pages" />
+<meta property="og:image" content="https://i.ibb.co/stBFTKP/recommendation.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-12-12T00:00:00+08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/pages/datascience/2018/12/12/recommendation-algorithms.html","description":"Summarise a few recommendation systems machine learning algorithms","headline":"Recommendation Systems Algorithms","dateModified":"2018-12-12T00:00:00+08:00","datePublished":"2018-12-12T00:00:00+08:00","image":"https://i.ibb.co/stBFTKP/recommendation.jpg","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/datascience/2018/12/12/recommendation-algorithms.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    
+  </head>
+  <body>
+
+    <div class="top-bar" data-sticky-container data-sticky data-options="marginTop:0;" style="width:100%">
+  <!-- <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"></li>
+    </ul>
+  </div> -->
+  <div class="top-bar-right">
+    <ul class="menu">
+      
+      <li><a href="/pages/about">About</a></li>
+      
+      <li><a href="/pages/notes">Notes</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div class="grid-container" style="margin-top:30px;">
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 medium-12 small-12 cell">
+
+        <div class="card card--article not-visible">
+          <div class="card-hero">
+            <h1>Recommendation Systems Algorithms</h1>
+            <div class="card-description card-description--clamp-3">Summarise a few recommendation systems machine learning algorithms</div>
+            <!-- <div class="card-image" alt="Recommendation Systems Algorithms" style="background-image: url(https://i.ibb.co/stBFTKP/recommendation.jpg)"></div> -->
+          </div>
+          <div class="card-body markdown-content">
+            <h1 id="introduction">Introduction</h1>
+<p>The purpose of writing this article is to share and summarise some recommendation systems algorithms. These algorithms are ‘traditional’ machine learning methods rather than deep learning. The purpose of a recommendation systems is to predict and rank a list of items (or documents), generally based on user’s preferences from user generated data. Here are some recommendation systems algorithms:</p>
+<ul>
+  <li>Collaborative Filtering</li>
+  <li>Bayesian</li>
+  <li>K Nearest Neighbour</li>
+  <li>Logistic Regression</li>
+  <li>Decision Tree &amp; Random Forest</li>
+</ul>
+
+<h1 id="collaborative-filtering">Collaborative Filtering</h1>
+<p>Collaborative filtering algorithm focuses on common interest, it could be user centric or item (it could also be documents, or products or movies) centric. The assumption of collaborative filtering is that if user <em>u</em> has similar interest of that of user <em>v</em>, and if user <em>v</em> has interest on item <em>j</em>, we can also recommend item <em>j</em> to user <em>u</em>. Thus, we can make prediction on which items a user may like or dislike by referencing a group of similar users likes and dislikes.</p>
+
+<h2 id="build-item-to-item-similarity-matrix">Build item to item similarity matrix</h2>
+<p>This is a item centric approach, where we calculate the correlation coefficient between items. <em>sim(i,j)</em> calculates the similarity between item <em>i</em> and item <em>j</em>, where <em>V<sub>i</sub></em> is a vector with scores of different users to the item <em>i</em>. Vector <em>V</em> contains either 1 or 0 whether the user in the vector’s index has purchased (or clicked, or add to cart) the item. Formula below is using cosine similarity to calculate correlation coefficient, but correlation score can also be calculated with Pearson and many other methods as well. Read more and example at <a href="https://en.wikipedia.org/wiki/Slope_One">Wikipedia:Slope One</a>.</p>
+
+<p><img src="https://latex.codecogs.com/gif.download?sim%28i%2Cj%29%20%3D%20cos%28%20%5Coverrightarrow%7B%20V_%7Bi%7D%20%7D%20%2C%20%5Coverrightarrow%7B%20V_%7Bj%7D%20%7D%20%29%20%3D%20%5Cfrac%7B%20%5Coverrightarrow%7B%20V_%7Bi%7D%20%7D%20.%20%5Coverrightarrow%7B%20V_%7Bj%7D%20%7D%20%7D%7B%20%7C%20%5Coverrightarrow%7B%20V_%7Bi%7D%20%7D%20%7C%20%7C%20%5Coverrightarrow%7B%20V_%7Bj%7D%20%7D%20%7C%20%7D" alt="latex" /></p>
+
+<h2 id="search-for-item-j-for-user-u">Search for item <em>j</em> for user <em>u</em></h2>
+<p><em>score(u,i)</em> is the preference score of the item <em>i</em> to user <em>u</em>, and <em>rec(u,j)</em> is to find the collaborative score of item <em>j</em> to user <em>u</em>. What we want to do is to score the entire set of items <em>j</em> that user <em>u</em> has not purchased, and rank a list of top highest collaborative scored items <em>j</em> to user.</p>
+
+<p><img src="https://latex.codecogs.com/gif.download?rec%28u%2Cj%29%20%3D%20%5Csum_%7Bn%3D1%7D%5E%7Bn%7D%20score%28u%2Ci%29%20.%20sim%28i%2Cj%29" alt="latex" /></p>
+
+<h1 id="bayesian">Bayesian</h1>
+<p>Bayes theorem is about finding the conditional probabilities of event <em>A</em> occurs when event <em>B</em> occurs denoted as <em>P(A|B)</em>. For example, when a user enters (or clicked) on a particular category or shop, we reference from a list of items that the user has purchased from that category or shop. Our problem here is <em>P(j|u)</em>, which is to calculate the probability of user <em>u</em> purchasing item <em>j</em>:</p>
+
+<p><img src="https://latex.codecogs.com/gif.download?P%28j%2Cu%29%20%3D%20%20%5Cfrac%7BP%28j%29P%28u%7Cj%29%7D%7BP%28u%29%7D%20" alt="latex" /></p>
+
+<p>Since user has purchased <em>n</em> items <em>I</em>, we represent the list of items as <em>{ i<sub>1</sub>, i<sub>2</sub>, …, i<sub>n</sub> }</em> from shop or category, and we calculate the probability of all items <em>i</em> with item <em>j</em> by all users:</p>
+
+<p><img src="https://latex.codecogs.com/gif.download?P%28u%7Cj%29%20%3D%20P%28i_%7B1%7D%7Cj%29P%28i_%7B2%7D%7Cj%29...P%28i_%7Bn%7D%7Cj%29%20%3D%20%20%5Cprod_%7Bi%3D1%7D%5En%20P%28i_%7Bn%7D%7Cj%29" alt="latex" /></p>
+
+<p><em>P(j)</em> is the probability of item <em>j</em> is being purchased to the number of times it was exposed by all users:</p>
+
+<p><img src="https://latex.codecogs.com/gif.download?P%28j%29%20%3D%20%20%5Cfrac%7Bpurchased%28j%29%7D%7Bexposed%28j%29%7D%20" alt="latex" /></p>
+
+<p>Likewise, we need to find the relationship of purchased items by finding the item-to-item’s probability:</p>
+
+<p><img src="https://latex.codecogs.com/gif.download?P%28i_%7Bi%7D%2Cj%29%20%3D%20%20%5Cfrac%7Bpurchased%28i_%7Bi%7D%7Cj%29%7D%7Bexposed%28i_%7Bi%7D%7Cj%29%7D" alt="latex" /></p>
+
+<p>Due the rare occurrence of items purchased together, we can add a minimum number of purchases to 10. If it is less than 10, will use the percentage of users who have purchase the item <em>i</em> instead.</p>
+
+<p><img src="https://latex.codecogs.com/gif.download?P%28i_%7Bi%7D%7Cj%29%20%3D%5Cbegin%7Bcases%7DP%28i_%7Bi%7D%29%20%26%20purchased%28i_%7Bi%7D%7Cj%29%3C10%5C%5C%20%5Cfrac%7Bpurchased%28i_%7Bi%7D%7Cj%29%7D%7Bexposed%28i_%7Bi%7D%7Cj%29%7D%20%26%20purchased%28i_%7Bi%7D%7Cj%29%20%5Cgeq%2010%20%5Cend%7Bcases%7D%20" alt="latex" /></p>
+
+<p>With bayesian, we are able to calculate the probability of user buying a particular item. We pre-calculate for every users to every items, and recommends list of items in descending probability order.</p>
+
+<h1 id="k-nearest-neighbour">K Nearest Neighbour</h1>
+<p>K nearest neighbour (KNN) is about looking for a <em>k</em> number of objects that are closest to the object of interest. Again, this could be user centric or item centric.</p>
+
+<p>If we want to group similar items together, we want to look for <em>k</em> number of items that are most similar to that item <em>i</em>. Items can be group by its similarity based on their attributes.</p>
+
+<p>Alternatively, it could be user centric where we use user behaviors to find similar items. Items can be group by based on frequently clicked within a session, or items frequently bought together, and we can create item’s embeddings by using <a href="https://arxiv.org/abs/1403.6652">DeepWalk</a> to train items embeddings. So if a user clicked on item <em>i</em>, we could also recommend <em>k</em> items that are related. Use Jaccard to calculate correlation coefficient between users’ clicks, add to cart, or purchases. A vector of all items for the user, when user <em>u</em> clicked on item <em>i</em>, <em>i</em> item index is value 1, otherwise it is 0. Then we can find out the similarity between 2 list of items <em>I</em> between user <em>u</em> and <em>v</em>.</p>
+
+<p><img src="https://latex.codecogs.com/gif.download?Sim%28u%2Cv%29%20%3D%20%20%5Cfrac%7B%20%7C%20I_%7Bu%7D%20%5Cbigcap%20I_%7Bv%7D%20%7C%20%7D%7B%20%7C%20I_%7Bu%7D%20%20%5Cbigcup%20I_%7Bv%7D%20%7C%20%7D%20" alt="latex" /></p>
+
+<p>Given a user <em>u</em>, find <em>k</em> number of users that have similar purchase (or clicks) history as user <em>u</em>. Remove items that user <em>u</em> has purchased and then select top <em>k</em> most popular (highest frequency) purchased items to user <em>u</em>.</p>
+
+<p>There are several methods to calculate distance between vectors:</p>
+<ul>
+  <li>Euclidean distance</li>
+  <li>Manhattan distance</li>
+  <li>Chebyshev distance</li>
+  <li>Jaccard coefficient</li>
+  <li>Cosine similarity</li>
+  <li>Pearson coefficient</li>
+</ul>
+
+<h1 id="logistic-regression">Logistic Regression</h1>
+<p>This method is popular for building recommender system with a click through rate model. The objective of the model is to optimise <em>w</em> and <em>b</em> for each feature and predict value <em>Y</em> (between 0 to 1), which is the probability of a user clicking on a particular item.</p>
+
+<p><img src="https://latex.codecogs.com/gif.download?Y%20%3D%20sigmod%28wx%20%2B%20b%29%20%3D%20%20%5Cfrac%7B1%7D%7B1%2Be%5E%7B-wx-b%7D%7D%20" alt="latex" /></p>
+
+<p>Where <em>x</em> is the input vector features of the model, <em>w</em> is the weight vector of features. <em>w<sub>i</sub></em> represents the weight of the feature <em>x<sub>i</sub></em>.</p>
+
+<h2 id="construct-user-and-item-features">Construct user and item features</h2>
+<p>Features could be categorical or discrete. User features could be age (or age group), gender, purchase power level (based on past purchases), and item features could be category, price (or price group), sales past 30 days. Embeddings such as user’s categories preference or item embeddings can be useful too, and these embeddings can be built with DeepWalk.</p>
+
+<h2 id="collect-historical-user-exposure-and-click-data">Collect historical user exposure and click data</h2>
+<p>This is the training data for the model, where each sample represents a user exposed to an item. The dimensions should include <em>user ID</em>, <em>item ID</em>, <em>label</em> whether item is clicked (0 or 1), a set of <em>user features</em>, and a set of <em>item features</em>.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>trainingSampleID</td>
+      <td>label (click or not)</td>
+      <td>userId</td>
+      <td>itemId</td>
+      <td>ageGroup</td>
+      <td>userPurchaseLevel</td>
+      <td>itemPrice</td>
+      <td>itemSoldCount</td>
+      <td>…</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="one-hot-encoding-and-normalisation">One hot encoding and normalisation.</h2>
+<p>All categorical features such as <em>age group</em> or <em>category</em> are one hot encoded. Continuous values such as <em>price</em>, <em>order count</em> or <em>sales</em> are normalised as LR is sensitive to outlier features.</p>
+
+<h2 id="train">Train</h2>
+<p>Train the model. Optimise <em>w</em> and <em>b</em> for each feature with gradient descent, with the following cross entropy loss function:</p>
+
+<p><img src="https://latex.codecogs.com/gif.download?loss%28w%2Cb%29%20%3D%20-%20%5Csum_i%20%20y_%7Bi%7Dlog%28Y_%7Bi%7D%29%2B%281-y_%7Bi%7D%29log%281-Y_%7Bi%7D%29" alt="latex" /></p>
+
+<h2 id="score">Score</h2>
+<p>To recommend from a set of candidate items <em>I</em> to user <em>u</em>, use the trained model to score every items in <em>I</em> with user <em>u</em>. Rank the scores from the model in descending order and recommend top 20 items to user <em>u</em>.</p>
+
+<h1 id="decision-tree--random-forest">Decision Tree &amp; Random Forest</h1>
+<p>A tree structure where each node of the tree represent a decision, and the outcome of the tree is on the leaf node. For recommendation systems, we can use decision tree to recommend categorical values such as categories. A successful decision tree algorithm has a set of rules that are able to predict leaf nodes with high accuracy.</p>
+
+<h2 id="create-features-for-modelling">Create features for modelling</h2>
+<ul>
+  <li>Get users data: prepare user features data such as age group, gender, city, purchase power level (based on past transactions)</li>
+  <li>Get categories data: prepare categories features such as main category group, type, popularity (click through rate)</li>
+  <li>Get purchase (or clicks) data: merge users to categories features if user purchased item in that category</li>
+  <li>Construct cross features: define cross rule generation model features between user features with category features, example <em>gender</em> with <em>category’s main category</em> and <em>purchase power</em> with <em>category id</em></li>
+</ul>
+
+<h2 id="random-forest">Random Forest</h2>
+<p>Random Forest is essentially a collection of decision trees, it can be used to replace decision tree. Each tree predicts an outcome on its leaf node, then the outcome with the most occurrences will be the predicted value. Every tree in a random forest are usually different, with different set of features, and with different set of outcome. Each tree are trained with random sample of training data, and each step in the training process it selects the features with the most optimal split. The number of decision trees need to be tuned to balance classification accuracy, overfitting, and model complexity.</p>
+
+          </div>
+          <div class="card-footer">
+            <div class="card-footer-wrapper grid-x grid-padding-x" layout="row bottom-left">
+              <div class="small-10 cell">
+                
+                
+                  <div class="card-tag">recommendation</div>
+                
+                  <div class="card-tag">systems</div>
+                
+                  <div class="card-tag">algorithms</div>
+                
+              </div>
+              <div class="small-2 cell text-right">
+                <div class="card-tag">12 Dec 2018</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <div style="height:50px" class="text-center">
+
+</div>
+
+
+    <script src="/pages/assets/js/vendor/jquery.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/vendor/what-input.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/vendor/foundation.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/app.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+  </body>
+</html>

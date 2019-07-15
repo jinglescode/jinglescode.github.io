@@ -1,0 +1,201 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TensorFlow JS - Jingles</title>
+    <link rel="stylesheet" href="/pages/assets/css/foundation.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="/pages/assets/css/foundation-icons/foundation-icons.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="/pages/assets/css/app.css?v=d347322d5301fc93d9c03733ea0b9edb8a981486" media="screen" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" media="screen" type="text/css">
+
+    
+    <meta name="keywords" content="tensorflow, javascript"/>
+    
+
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="TensorFlow JS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Neural network implementation on a web browser" />
+<meta property="og:description" content="Neural network implementation on a web browser" />
+<link rel="canonical" href="http://localhost:4000/pages/datascience/2018/09/05/tfjs.html" />
+<meta property="og:url" content="http://localhost:4000/pages/datascience/2018/09/05/tfjs.html" />
+<meta property="og:site_name" content="pages" />
+<meta property="og:image" content="https://image.ibb.co/eWDj1V/tensorflowjs.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-05T00:00:00+08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/pages/datascience/2018/09/05/tfjs.html","description":"Neural network implementation on a web browser","headline":"TensorFlow JS","dateModified":"2018-09-05T00:00:00+08:00","datePublished":"2018-09-05T00:00:00+08:00","image":"https://image.ibb.co/eWDj1V/tensorflowjs.jpg","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/datascience/2018/09/05/tfjs.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    
+  </head>
+  <body>
+
+    <div class="top-bar" data-sticky-container data-sticky data-options="marginTop:0;" style="width:100%">
+  <!-- <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"></li>
+    </ul>
+  </div> -->
+  <div class="top-bar-right">
+    <ul class="menu">
+      
+      <li><a href="/pages/about">About</a></li>
+      
+      <li><a href="/pages/notes">Notes</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div class="grid-container" style="margin-top:30px;">
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 medium-12 small-12 cell">
+
+        <div class="card card--article not-visible">
+          <div class="card-hero">
+            <h1>TensorFlow JS</h1>
+            <div class="card-description card-description--clamp-3">Neural network implementation on a web browser</div>
+            <!-- <div class="card-image" alt="TensorFlow JS" style="background-image: url(https://image.ibb.co/eWDj1V/tensorflowjs.jpg)"></div> -->
+          </div>
+          <div class="card-body markdown-content">
+            <p>As a Javascript lover, and doing data science as my full time job, TensorFlow JS is like a dream come through, now you can run lightweight ML models directly in the web browser and share them!</p>
+
+<h1 id="why-tensorflow-js">Why TensorFlow JS</h1>
+<ul>
+  <li>there is no installation, users can access your model via web browser, you can share your machine learning capability by hosting it on the web</li>
+  <li>allowing users to train a model with their data without first handling to you</li>
+</ul>
+
+<h1 id="lets-begin">Let’s begin</h1>
+<p>Open your favourite editor, create a new .html file (for example <em>tfjs.html</em>), and add the following code to your HTML file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="c">&lt;!-- Load TensorFlow.js --&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.0"</span><span class="nt">&gt;</span> <span class="nt">&lt;/script&gt;</span>
+
+    <span class="c">&lt;!-- Place your code in the script tag below. You can also use an external .js file --&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'hi, this works'</span><span class="p">);</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>Here we are importing version 0.13, you can get the latest version at <a href="https://js.tensorflow.org/#getting-started">TensorFlow JS</a>.
+Save the HTML file, and open the file in a web browser (i’m using Google Chrome). Press <em>f12</em> for the developer’s console and click on <em>Console</em> tab. You should see <em>hi, this works</em>, if you don’t, refresh the page. In the <em>Console</em>, this is our <em>interactive session</em> just like Jupyter Notebook.</p>
+
+<p>Lets declare a new model, a feed forward back propagation neural network call sequential.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const model = tf.sequential();
+</code></pre></div></div>
+<p>You will see <em>undefined</em> and its fine, you can use the variable <em>model</em>.</p>
+
+<p>Lets add (feed forward) fully connected layers to our model:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>model.add(tf.layers.dense({units: 8, inputShape: [1]}));
+model.add(tf.layers.dense({units: 1, inputShape: [8]}));
+</code></pre></div></div>
+<p>Layers are building blocks for ML Model. Each layer performs a certain computation to transform its input to its output.</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z2u-s3NzHhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lKWUSkwOR5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>Next, lets specify the loss and the optimiser for the model to get some learning:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
+</code></pre></div></div>
+
+<p>Now we need some training data:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const xs = tf.tensor2d([1, 2, 3, 4, 5], [5, 1]);
+const ys = tf.tensor2d([1, 4, 9, 16, 25], [5, 1]);
+</code></pre></div></div>
+<p><a href="https://js.tensorflow.org/api/0.13.0/#tensor">Tensor</a> is the n-dimensional array that holds our data.</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sZrwxnIfHCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>And time to fit our model:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>model.fit(xs, ys, {epochs: 100, shuffle:true})
+</code></pre></div></div>
+
+<p>This time you will get a <em>promise</em>. as training takes time, <em>promise</em> allows you to have an inner function to run codes after the current function is completed. you can read more about <a href="https://developers.google.com/web/fundamentals/primers/promises"><em>promise</em></a>.</p>
+
+<p>After the model has finish training, predict some values with:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>model.predict(tf.tensor2d([2], [1, 1])).print();
+console.log(model.predict(tf.tensor2d([6], [1, 1])).dataSync());
+</code></pre></div></div>
+<p><em>.predict</em> will return a Tensor, <em>print()</em> is a TFJS function that prints the value in a Tensor, and <em>dataSync()</em> returns the Float32Array.</p>
+
+<p>So, this is the ‘<em>hello world</em>’ of TFJS, check out <a href="https://js.tensorflow.org">TFJS documentation</a>.</p>
+
+<h1 id="full-code">full code</h1>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"</span><span class="nt">&gt;</span> <span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+      <span class="c1">// Define a model for linear regression. model fit and predict</span>
+      <span class="kd">const</span> <span class="nx">model</span> <span class="o">=</span> <span class="nx">tf</span><span class="p">.</span><span class="nx">sequential</span><span class="p">();</span>
+      <span class="nx">model</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">tf</span><span class="p">.</span><span class="nx">layers</span><span class="p">.</span><span class="nx">dense</span><span class="p">({</span><span class="na">units</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="na">inputShape</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]}));</span>
+      <span class="nx">model</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">tf</span><span class="p">.</span><span class="nx">layers</span><span class="p">.</span><span class="nx">dense</span><span class="p">({</span><span class="na">units</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">inputShape</span><span class="p">:</span> <span class="p">[</span><span class="mi">8</span><span class="p">]}));</span>
+
+      <span class="c1">// Prepare the model for training: Specify the loss and the optimizer.</span>
+      <span class="nx">model</span><span class="p">.</span><span class="nx">compile</span><span class="p">({</span><span class="na">loss</span><span class="p">:</span> <span class="s1">'meanSquaredError'</span><span class="p">,</span> <span class="na">optimizer</span><span class="p">:</span> <span class="s1">'sgd'</span><span class="p">});</span>
+
+      <span class="c1">// Generate some synthetic data for training.</span>
+      <span class="kd">const</span> <span class="nx">xs</span> <span class="o">=</span> <span class="nx">tf</span><span class="p">.</span><span class="nx">tensor2d</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">]);</span>
+      <span class="kd">const</span> <span class="nx">ys</span> <span class="o">=</span> <span class="nx">tf</span><span class="p">.</span><span class="nx">tensor2d</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">]);</span>
+
+      <span class="c1">// Train the model using the data.</span>
+      <span class="nx">model</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">xs</span><span class="p">,</span> <span class="nx">ys</span><span class="p">,</span> <span class="p">{</span><span class="na">epochs</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span> <span class="na">shuffle</span><span class="p">:</span><span class="kc">true</span><span class="p">}).</span><span class="nx">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// Open the browser devtools to see the output</span>
+        <span class="nx">model</span><span class="p">.</span><span class="nx">predict</span><span class="p">(</span><span class="nx">tf</span><span class="p">.</span><span class="nx">tensor2d</span><span class="p">([</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])).</span><span class="nx">print</span><span class="p">();</span>
+        <span class="nx">model</span><span class="p">.</span><span class="nx">predict</span><span class="p">(</span><span class="nx">tf</span><span class="p">.</span><span class="nx">tensor2d</span><span class="p">([</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])).</span><span class="nx">print</span><span class="p">();</span>
+        <span class="nx">model</span><span class="p">.</span><span class="nx">predict</span><span class="p">(</span><span class="nx">tf</span><span class="p">.</span><span class="nx">tensor2d</span><span class="p">([</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])).</span><span class="nx">print</span><span class="p">();</span>
+        <span class="nx">model</span><span class="p">.</span><span class="nx">predict</span><span class="p">(</span><span class="nx">tf</span><span class="p">.</span><span class="nx">tensor2d</span><span class="p">([</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])).</span><span class="nx">print</span><span class="p">();</span>
+        <span class="nx">model</span><span class="p">.</span><span class="nx">predict</span><span class="p">(</span><span class="nx">tf</span><span class="p">.</span><span class="nx">tensor2d</span><span class="p">([</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])).</span><span class="nx">print</span><span class="p">();</span>
+        <span class="nx">model</span><span class="p">.</span><span class="nx">predict</span><span class="p">(</span><span class="nx">tf</span><span class="p">.</span><span class="nx">tensor2d</span><span class="p">([</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])).</span><span class="nx">print</span><span class="p">();</span>
+        <span class="nx">model</span><span class="p">.</span><span class="nx">predict</span><span class="p">(</span><span class="nx">tf</span><span class="p">.</span><span class="nx">tensor2d</span><span class="p">([</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])).</span><span class="nx">print</span><span class="p">();</span>
+      <span class="p">});</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+          </div>
+          <div class="card-footer">
+            <div class="card-footer-wrapper grid-x grid-padding-x" layout="row bottom-left">
+              <div class="small-10 cell">
+                
+                
+                  <div class="card-tag">tensorflow</div>
+                
+                  <div class="card-tag">javascript</div>
+                
+              </div>
+              <div class="small-2 cell text-right">
+                <div class="card-tag">05 Sep 2018</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <div style="height:50px" class="text-center">
+
+</div>
+
+
+    <script src="/pages/assets/js/vendor/jquery.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/vendor/what-input.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/vendor/foundation.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+    <script src="/pages/assets/js/app.js?v=d347322d5301fc93d9c03733ea0b9edb8a981486"></script>
+  </body>
+</html>
