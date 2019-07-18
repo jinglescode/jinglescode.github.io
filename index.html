@@ -4,6 +4,7 @@ title: Jingles | Personal Site
 excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
 ---
 
+<!-- an about me section -->
 <!-- <div class="grid-container full" style="background-color:#f0604c">
   <div class="grid-container grid-x">
 
@@ -20,9 +21,51 @@ excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
   </div>
 </div> -->
 
+
 <div class="grid-container">
 
-  <!-- <h1 class="h1--home-title">Recently exploring...</h1> -->
+  <div class="grid-x grid-padding-x">
+
+    {% assign sorted_pages = site.posts | sort: 'date' | reverse %}
+
+    {% for page in sorted_pages limit: 6 %}
+    <div class="large-4 medium-6 small-12 cell">
+      <a href="{{ page.url | prepend: site.baseurl }}">
+        <div class="card card--article not-visible">
+          <div class="card-hero">
+            <div class="card-image" alt="{{page.title}}" style="background-image: url({{page.image}})">
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">{{page.title}} {{page.type}}</div>
+            <div class="card-description">{{ page.description | truncate: 160 }}</div>
+          </div>
+          <div class="card-footer">
+
+            <div class="card-footer-wrapper grid-x grid-padding-x" layout="row bottom-left">
+              <div class="small-8 cell">
+                {{page.tag}}
+                {% for tag in page.tags %}
+                  <div class="card-tag">{{tag}}</div>
+                {% endfor %}
+              </div>
+              <div class="small-4 cell text-right">
+                <div class="card-tag">{{ page.date | date_to_string }}</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+
+  </div>
+
+
+<!-- <div class="grid-container">
+
+  <h1 class="h1--home-title">Recently exploring...</h1>
 
   <div class="grid-x grid-padding-x">
     {% for collection in site.data.collections %}
@@ -37,7 +80,6 @@ excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
             <p class="card-user-profile-name">{{collection.name}}</p>
           </div>
 
-          <!-- <p class="card-user-profile-status">Yeti Web Designer</p> -->
           <p class="card-user-profile-info">
 
             {% assign this_collection = "" | split:"," %}
@@ -71,9 +113,9 @@ excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
     {% endfor %}
   </div>
 
-</div>
+</div> -->
 
-
+<!-- timeline section -->
 <!-- <div class="grid-container full" style="background-color:#3283bc">
   <div class="grid-container">
 
