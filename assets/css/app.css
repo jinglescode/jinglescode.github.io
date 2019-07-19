@@ -142,7 +142,7 @@ code {
 
 .card-image{
 	width: 100%;
-	min-height: 240px;
+	min-height: 180px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
