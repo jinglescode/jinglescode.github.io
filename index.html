@@ -21,8 +21,66 @@ excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
   </div>
 </div> -->
 
-
 <div class="grid-container">
+  <div class="grid-x grid-padding-x">
+
+<!-- This loops through the paginated posts -->
+{% for page in paginator.posts %}
+<div class="large-4 medium-6 small-12 cell">
+  <a href="{{ page.url | prepend: site.baseurl }}">
+    <div class="card card--article not-visible">
+      <div class="card-hero">
+        <div class="card-image" alt="{{page.title}}" style="background-image: url({{page.image}})">
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">{{page.title}} {{page.type}}</div>
+        <div class="card-description">{{ page.description | truncate: 160 }}</div>
+      </div>
+      <div class="card-footer">
+
+        <div class="card-footer-wrapper grid-x grid-padding-x" layout="row bottom-left">
+          <div class="small-8 cell">
+            {{page.tag}}
+            {% for tag in page.tags %}
+              <div class="card-tag">{{tag}}</div>
+            {% endfor %}
+          </div>
+          <div class="small-4 cell text-right">
+            <div class="card-tag">{{ page.date | date_to_string }}</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </a>
+</div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
+
+</div>
+</div>
+
+<!-- this works -->
+<!-- <div class="grid-container">
 
   <div class="grid-x grid-padding-x">
 
@@ -60,7 +118,9 @@ excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
     </div>
     {% endfor %}
 
-  </div>
+  </div> -->
+
+
 
 
 <!-- <div class="grid-container">
