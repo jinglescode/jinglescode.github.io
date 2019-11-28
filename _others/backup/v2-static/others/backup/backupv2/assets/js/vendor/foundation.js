@@ -1064,9 +1064,8 @@ var Box = {
  */
 function ImNotTouchingYou(element, parent, lrOnly, tbOnly, ignoreBottom) {
   return OverlapArea(element, parent, lrOnly, tbOnly, ignoreBottom) === 0;
-};
-
-function OverlapArea(element, parent, lrOnly, tbOnly, ignoreBottom) {
+}
+        function OverlapArea(element, parent, lrOnly, tbOnly, ignoreBottom) {
   var eleDims = GetDimensions(element),
       topOver,
       bottomOver,
@@ -1377,7 +1376,7 @@ var Nest = {
       }
     });
 
-    return;
+
   },
   Burn: function (menu, type) {
     var //items = menu.find('li'),
@@ -1505,9 +1504,8 @@ var Accordion = function (_Plugin) {
             if (!$link.parent('[data-accordion-item]').hasClass('is-active')) {
               _this3.down($anchor, _this3.firstTimeInit);
               _this3.firstTimeInit = false;
-            };
-
-            //roll up a little to show the titles
+            }
+              //roll up a little to show the titles
             if (_this3.options.deepLinkSmudge) {
               var _this = _this3;
               __WEBPACK_IMPORTED_MODULE_0_jquery___default()(window).load(function () {
@@ -1951,7 +1949,7 @@ var AccordionMenu = function (_Plugin) {
               $nextElement = $element.parents('li').first().next('li').find('a').first();
             }
 
-            return;
+
           }
         });
 
@@ -2425,7 +2423,7 @@ var Drilldown = function (_Plugin) {
           if (__WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).is($element)) {
             $prevElement = $elements.eq(Math.max(0, i - 1));
             $nextElement = $elements.eq(Math.min(i + 1, $elements.length - 1));
-            return;
+
           }
         });
 
@@ -2657,7 +2655,7 @@ var Drilldown = function (_Plugin) {
         if ($link.data('savedHref')) {
           $link.attr('href', $link.data('savedHref')).removeData('savedHref');
         } else {
-          return;
+
         }
       });
     }
@@ -2911,7 +2909,7 @@ var DropdownMenu = function (_Plugin) {
         if (hasSub) {
           if (hasClicked) {
             if (!_this.options.closeOnClick || !_this.options.clickOpen && !hasTouch || _this.options.forceFollow && hasTouch) {
-              return;
+
             } else {
               e.stopImmediatePropagation();
               e.preventDefault();
@@ -2978,7 +2976,7 @@ var DropdownMenu = function (_Plugin) {
           if (__WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).is($element)) {
             $prevElement = $elements.eq(i - 1);
             $nextElement = $elements.eq(i + 1);
-            return;
+
           }
         });
 
@@ -2997,7 +2995,7 @@ var DropdownMenu = function (_Plugin) {
             $element.find('li > a:first').focus();
             e.preventDefault();
           } else {
-            return;
+
           }
         },
             closeSub = function () {
@@ -3523,7 +3521,7 @@ var Tabs = function (_Plugin) {
               $prevElement = $elements.eq(Math.max(0, i - 1));
               $nextElement = $elements.eq(Math.min(i + 1, $elements.length - 1));
             }
-            return;
+
           }
         });
 
@@ -4737,9 +4735,8 @@ var Abide = function (_Plugin) {
             valid = true;
           }
         });
-      };
-
-      return valid;
+      }
+        return valid;
     }
 
     /**
@@ -5002,7 +4999,7 @@ var Foundation = {
 
     this._uuids.push(plugin.uuid);
 
-    return;
+
   },
   /**
    * @function
@@ -5025,7 +5022,7 @@ var Foundation = {
     for (var prop in plugin) {
       plugin[prop] = null; //clean up script to prep for garbage collection.
     }
-    return;
+
   },
 
   /**
@@ -5117,7 +5114,7 @@ var Foundation = {
         } catch (er) {
           console.error(er);
         } finally {
-          return;
+
         }
       });
     });
@@ -5948,7 +5945,7 @@ var Equalizer = function (_Plugin) {
   }, {
     key: '_killswitch',
     value: function _killswitch() {
-      return;
+
     }
 
     /**
@@ -8045,9 +8042,8 @@ var ResponsiveAccordionTabs = function (_Plugin) {
       this.className = 'ResponsiveAccordionTabs'; // ie9 back compat
       if (!this.$element.attr('id')) {
         this.$element.attr('id', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__foundation_util_core__["a" /* GetYoDigits */])(6, 'responsiveaccordiontabs'));
-      };
-
-      this._init();
+      }
+        this._init();
       this._events();
     }
 
@@ -8180,9 +8176,8 @@ var ResponsiveAccordionTabs = function (_Plugin) {
       if ($panels.length) fromString = 'tabs';
       if (fromString === toSet) {
         return;
-      };
-
-      var tabsTitle = _this.allOptions.linkClass ? _this.allOptions.linkClass : 'tabs-title';
+      }
+        var tabsTitle = _this.allOptions.linkClass ? _this.allOptions.linkClass : 'tabs-title';
       var tabsPanel = _this.allOptions.panelClass ? _this.allOptions.panelClass : 'tabs-panel';
 
       this.$element.removeAttr('role');
@@ -8194,9 +8189,8 @@ var ResponsiveAccordionTabs = function (_Plugin) {
         $panels.children('a').removeAttr('role').removeAttr('aria-controls').removeAttr('aria-selected');
       } else {
         $panels = $liHeads.children('[data-tab-content]').removeClass('accordion-content');
-      };
-
-      $panels.css({ display: '', visibility: '' });
+      }
+        $panels.css({ display: '', visibility: '' });
       $liHeads.css({ display: '', visibility: '' });
       if (toSet === 'accordion') {
         $panels.each(function (key, value) {
@@ -8213,8 +8207,8 @@ var ResponsiveAccordionTabs = function (_Plugin) {
           $placeholder.remove();
         } else {
           $tabsContent = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('<div class="tabs-content"></div>').insertAfter(_this.$element).attr('data-tabs-content', _this.$element.attr('id'));
-        };
-        $panels.each(function (key, value) {
+        }
+          $panels.each(function (key, value) {
           var tempValue = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(value).appendTo($tabsContent).addClass(tabsPanel);
           var hash = $liHeadsA.get(key).hash.slice(1);
           var id = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(value).attr('id') || __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__foundation_util_core__["a" /* GetYoDigits */])(6, 'accordion');
@@ -8225,15 +8219,15 @@ var ResponsiveAccordionTabs = function (_Plugin) {
               hash = id;
               __WEBPACK_IMPORTED_MODULE_0_jquery___default()(value).attr('id', hash);
               __WEBPACK_IMPORTED_MODULE_0_jquery___default()($liHeadsA.get(key)).attr('href', __WEBPACK_IMPORTED_MODULE_0_jquery___default()($liHeadsA.get(key)).attr('href').replace('#', '') + '#' + hash);
-            };
-          };
-          var isActive = __WEBPACK_IMPORTED_MODULE_0_jquery___default()($liHeads.get(key)).hasClass('is-active');
+            }
+          }
+            var isActive = __WEBPACK_IMPORTED_MODULE_0_jquery___default()($liHeads.get(key)).hasClass('is-active');
           if (isActive) {
             tempValue.addClass('is-active');
-          };
+          }
         });
         $liHeads.addClass(tabsTitle);
-      };
+      }
     }
 
     /**
@@ -10265,7 +10259,7 @@ var Sticky = function (_Plugin) {
       }
 
       this.points = breaks;
-      return;
+
     }
 
     /**
