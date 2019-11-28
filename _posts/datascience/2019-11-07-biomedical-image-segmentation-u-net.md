@@ -1,5 +1,5 @@
 ---
-title: Biomedical Image Segmentation: U-Net
+title: Biomedical Image Segmentation - U-Net
 layout: note
 image: https://i.ibb.co/vsCm3tP/1-lm-KZh5-Iwv-ECVQu-Y36b-Nng-Q.jpg
 description: Works with very few training images and yields more precise segmentation
