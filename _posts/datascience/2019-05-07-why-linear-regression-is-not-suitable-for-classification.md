@@ -81,7 +81,7 @@ From the metrics, logistic regression performed much better than linear regressi
 
 > Neural networks may as well be called “yoga networks” — their special power is giving you a very flexible boundary.
 
-#Problem #2: Sensitive to imbalance data
+# Problem #2: Sensitive to imbalance data
 
 Let’s add 10 more customers age between 60 to 70, and train our linear regression model, finding the best fit line.
 
