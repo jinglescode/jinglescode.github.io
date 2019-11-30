@@ -808,7 +808,24 @@ p.card-type{
 
 
 
+
+
 blockquote {
     font-size: 24px;
     margin: 40px 0px 40px 20px;
 }
+
+
+blog_post .title {
+    font-size: 40px;
+}
+blog_post h1 {
+    font-size: 34px;
+}
+blog_post h2 {
+    font-size: 26px;
+}
+blog_post p {
+    font-size: 20px;
+}
+
