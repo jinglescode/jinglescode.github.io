@@ -66,7 +66,7 @@ The Value function V(s) for a tic-tac-toe game is the probability of winning for
 
 Updating the value function is how the agent learns from past experiences, by updating the value of those states that have been through in the training process.
 
-![Fig 5: Update the value of state s](/assets/img/posts/rl-value-func-05.png)
+![Fig 5: Update the value of state s](/assets/img/posts/rl-value-func-05.gif)
 
 State s’ is the next state of the current state s. We can update the value of the current state s by adding the differences in value between state s and s’. α is the learning rate.
 
