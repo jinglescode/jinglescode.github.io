@@ -153,7 +153,7 @@ async function trainModel(inputs, outputs, trainingsize, window_size, n_epochs, 
 ```
 
 These are the [hyper-parameters](https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)) (parameters used in the training process) available for tweaking in the [frontend](https://jinglescode.github.io/demos/tfjs-timeseries-stocks):
- Training Dataset Size (%): the amount of data used for training, and remaining data will be used for validation
+- Training Dataset Size (%): the amount of data used for training, and remaining data will be used for validation
 - Epochs: number of times the dataset is used to train the model ([learn more](https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/))
 - Learning Rate: the amount of change in the weights during training in each step ([learn more](https://machinelearningmastery.com/learning-rate-for-deep-learning-neural-networks/))
 - Hidden LSTM Layers: to increase the model complexity to learn in higher dimensional space ([learn more](https://machinelearningmastery.com/how-to-configure-the-number-of-layers-and-nodes-in-a-neural-network/))
