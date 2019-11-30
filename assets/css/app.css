@@ -805,3 +805,10 @@ p.card-type{
   background: #fefefe;
   border-color: #000000;
 }
+
+
+
+blockquote {
+    font-size: 24px;
+    margin: 40px 0px 40px 20px;
+}
