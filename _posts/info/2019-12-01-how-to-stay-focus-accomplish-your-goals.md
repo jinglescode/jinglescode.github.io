@@ -2,7 +2,7 @@
 title: How to Stay Focus and Accomplish Your Goals
 layout: note
 image: /assets/img/posts/stay-focus-accomplish-goals-01.jpeg
-description: tips to happiness, to create better well-being, to live a more fulfilling life
+description: We can't multitask, we allocate time blocks for productivity and enter the Flow state
 category: info
 tags:
   - focus
@@ -107,9 +107,7 @@ Another professional said:
 The clarity of purpose and dedication these professionals have can be harnessed when we are creating a piece of art, writing a piece of code, or a Medium article. After some analysis, Csikszentmihalyi found some criteria that must be met to attain this optimal experience in performing any task. The wonderful thing about the Flow concept is that any and every one of us can experience it.
 
 # Here is how you get to the Flow state
-
 1. **Involve activities with a clear set of goals and progress**. Goal setting and milestones ensure you are on the right track and not deviate from the task at hand
-
 2. **These activities must have clear and quick feedback**. Progress or feedback can help you maintain in a flow state by adjusting your performance level and changes demanded by the task
 3. **These activities must be a good balance between the perceived challenges of the task and one’ perceived skills**. Believe in your ability to challenge harder tasks but do not overstretch yourself least you look like a fool
 
