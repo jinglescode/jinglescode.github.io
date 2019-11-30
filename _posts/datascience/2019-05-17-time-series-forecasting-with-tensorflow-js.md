@@ -80,7 +80,9 @@ And this is what we get, weekly stock closing price in blue, and SMA in orange. 
 
 # Training Data
 
-We can prepare the training data with weekly stock prices and the computed SMA. Given the window size is 50, this means that we will use the closing price of every 50 consecutive weeks as our training features (X), and the SMA of those 50 weeks as our training label (Y). Which looks like [that](https://gist.github.com/jinglescode/60f8f9357b3960a1b3017d7483f8194c/raw/ce08e991378d7cc6624d33f278811ab1fce7244d/tfjs-stocks-data.csv).
+We can prepare the training data with weekly stock prices and the computed SMA. Given the window size is 50, this means that we will use the closing price of every 50 consecutive weeks as our training features (X), and the SMA of those 50 weeks as our training label (Y). Which looks like that...
+
+<script src="https://gist.github.com/jinglescode/60f8f9357b3960a1b3017d7483f8194c.js"></script>
 
 Next, we split our data into 2 sets, training and validation set. If 70% of the data is used for training, then 30% for validation. The API returns us approximate 1000 weeks of data, so 700 for training, and 300 for validation.
 
