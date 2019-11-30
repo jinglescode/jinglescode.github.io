@@ -383,7 +383,7 @@ p.card-type{
 .card-description {
 	display: block;
 	display: -webkit-box;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight:400;
 	text-align: left;
 	line-height: 20px;
