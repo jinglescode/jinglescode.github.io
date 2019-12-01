@@ -757,7 +757,7 @@ p.card-type{
 @charset "UTF-8";
 
 .rounded-social-buttons {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .rounded-social-buttons .social-button {
