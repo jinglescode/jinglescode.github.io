@@ -1,4 +1,14 @@
 <div class="top-bar">
+
+  <div class="top-bar-left">
+    <div class="rounded-social-buttons">
+      <a class="social-button github fi-page-edit" href="/"></a>
+      <a class="social-button github fi-lightbulb" href="/demos"></a>
+      <a class="social-button github fi-torso" href="/about"></a>
+    </div>
+  </div>
+
+
   <!-- <div class="top-bar-left">
     <ul class="dropdown menu" data-dropdown-menu>
       <li class="menu-text"></li>
@@ -14,11 +24,20 @@
 </div> -->
 
   <div class="top-bar-right">
-    <ul class="menu">
-      {% for item in site.data.navigation %}
-      <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
-      {% endfor %}
-    </ul>
+
+<!--    <ul class="menu">-->
+<!--      {% for item in site.data.navigation %}-->
+<!--      <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>-->
+<!--      {% endfor %}-->
+<!--    </ul>-->
+
+    <div class="rounded-social-buttons">
+      <a class="social-button github fi-social-medium" target="_blank" href="https://medium.com/@jinglesnote"></a>
+      <a class="social-button github fi-social-linkedin" target="_blank" href="https://www.linkedin.com/in/jingles/"></a>
+      <a class="social-button github fi-social-github" target="_blank" href="https://github.com/jinglescode"></a>
+      <a class="social-button github fi-wrench" target="_blank" href="https://jinglescode.github.io/demos/"></a>
+    </div>
+
   </div>
 
 </div>
