@@ -146,7 +146,3 @@ Whereas logistic regression is for classification problems, which predicts a pro
 Check out the codes used in this article in this [notebook](https://gist.github.com/jinglescode/c0a3065dfb0fdc03287938cc600489a3).
 
 <script src="https://gist.github.com/jinglescode/c0a3065dfb0fdc03287938cc600489a3.js"></script>
-
----
-
-This article was originally published on [Medium:Towards Data Science](https://towardsdatascience.com/why-linear-regression-is-not-suitable-for-binary-classification-c64457be8e28)

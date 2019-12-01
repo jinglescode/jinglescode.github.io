@@ -131,10 +131,3 @@ U-Net architecture is great for biomedical image segmentation, achieves very goo
 Here is the PyTorch code of U-Net:
 
 <script src="https://gist.github.com/jinglescode/4045ebaf9dd456919e08775fc3fb8cbb.js"></script>
-
-
-
-
----
-
-This article was originally published on [Medium:Towards Data Science](https://towardsdatascience.com/biomedical-image-segmentation-u-net-a787741837fa)

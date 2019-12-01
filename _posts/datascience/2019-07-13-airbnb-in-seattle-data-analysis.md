@@ -245,9 +245,3 @@ So, here is the summary of this article:
 Check out the [codes](https://gist.github.com/jinglescode/08d21b680bd11008c73083f9645d6b1d#file-seattle-airbnb-open-data-ipynb) used in this article!
 
 <script src="https://gist.github.com/jinglescode/08d21b680bd11008c73083f9645d6b1d.js"></script>
-
----
-
-This article was originally published on [Medium:Towards Data Science](https://towardsdatascience.com/airbnb-in-seattle-data-analysis-8222207579d7)
-
-[View Code](https://gist.github.com/jinglescode/08d21b680bd11008c73083f9645d6b1d#file-seattle-airbnb-open-data-ipynb)

@@ -100,6 +100,3 @@ There are many ways to define a value function, this is just one that is suitabl
 
 [View source code on Github](https://github.com/jinglescode/demos/tree/master/src/app/components/rl-value-function-tic-tac-toe)
 
----
-
-This article was originally published on [Medium:Towards Data Science](https://towardsdatascience.com/reinforcement-learning-value-function-57b04e911152)

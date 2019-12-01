@@ -141,8 +141,3 @@ With TensorFlow.js, machine learning on a web browser is possible, and it is act
 [Explore the demo on Github](https://jinglescode.github.io/demos/tfjs-timeseries-stocks), this experiment is 100% educational and by no means a trading prediction tool.
 
 [View source code on Github](https://github.com/jinglescode/demos/tree/master/src/app/components/tfjs-timeseries-stocks)
-
-
----
-
-This article was originally published on [Medium:Towards Data Science](https://towardsdatascience.com/time-series-forecasting-with-tensorflow-js-1efd48ff2201)

@@ -285,7 +285,3 @@ Given based off a movie poster alone, predicting earnings and popularity of a mo
 Upon further experimentation, to achieve a more accurate reading, delving into a deeper ResNet model might increase in performance. However, in our experiments, we applied Mish activation and various tweaks from research papers; as such results returned are promising and is a path worth exploring further.
 
 Training the AI model is half the battle; it is worth noting real-world data are “dirty” and “unrefined”; what these meant are not all data are accurate and present. For machine learning to work, we must first understand our data well and understand what is needed for our model to succeed.
-
----
-
-This article was originally published on [Medium:Towards Data Science](https://towardsdatascience.com/predict-movie-earnings-with-posters-786e9fd82bdc)
