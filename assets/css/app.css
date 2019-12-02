@@ -826,7 +826,7 @@ p.card-type{
     font-size: 24px;
     margin: 0px 0px 20px 20px;
 }
-.blog_post #skinny_image {
-    max-width: 500px;
+blog_post img[src~="skinny_image"] {
+   max-width: 500px;
     width: 100%;
 }
