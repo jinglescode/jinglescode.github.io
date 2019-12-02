@@ -36,7 +36,7 @@ UNet++ have 3 additions to the original U-Net:
 
 ## Redesigned skip pathways
 
-![architecture](/assets/img/posts/unet-nested-03.png?skinny_image)
+![architecture](/assets/img/posts/unet-nested-03.png#skinny_image)
 
 In UNet++, the redesigned skip pathways (shown in green) have been added to bridge the semantic gap between the encoder and decoder subpaths.
 
@@ -50,7 +50,7 @@ All convolutional layers on the skip pathway use kernels of size 3×3.
 
 ## Dense skip connections
 
-![architecture](/assets/img/posts/unet-nested-03.png?skinny_image)
+![architecture](/assets/img/posts/unet-nested-03.png#skinny_image)
 
 In UNet++, Dense skip connections (shown in blue) has implemented skip pathways between the encoder and decoder. These Dense blocks are inspired by [DenseNet](https://arxiv.org/abs/1608.06993) with the purpose to improve segmentation accuracy and improves gradient flow.
 
@@ -58,7 +58,7 @@ Dense skip connections ensure that all prior feature maps are accumulated and ar
 
 ## Deep supervision
 
-![deep supervise](/assets/img/posts/unet-nested-04.png?skinny_image)
+![deep supervise](/assets/img/posts/unet-nested-04.png#skinny_image)
 
 In UNet++, deep supervision (shown in red) are added to enable the model to operate in accurate mode or fast mode.
 
