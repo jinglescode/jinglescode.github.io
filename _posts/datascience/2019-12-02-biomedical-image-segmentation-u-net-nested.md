@@ -26,7 +26,7 @@ Algorithms designed for medical imaging must achieve high performance and accura
 
 Below is an illustration of UNet++ and U-Net architecture.
 
-![architectures](/assets/img/posts/unet-nested-02.png)
+![architectures](/assets/img/posts/unet-nested-02.jpeg)
 
 UNet++ have 3 additions to the original U-Net:
 
@@ -96,7 +96,7 @@ We are comparing the metrics of the best epoch between U-Net and UNet++.
 
 The test began with the model processing a few unseen samples, to predict optical disc (red) and optical cup (yellow). Here are the test results for UNet++ and U-Net for comparison.
 
-![result](/assets/img/posts/unet-nested-07.png)
+![result](/assets/img/posts/unet-nested-07.jpeg)
 
 From the metrics table, UNet++ has outperformed U-Net approximately 2% in *Intersection over Union*. From the qualitative test results, UNet++ has managed to correctly segment the first image, which U-Net did not do so well.
 
