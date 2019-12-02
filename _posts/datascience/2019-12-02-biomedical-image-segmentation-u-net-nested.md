@@ -62,17 +62,21 @@ Dense skip connections ensure that all prior feature maps are accumulated and ar
 
 In UNet++, deep supervision (shown in red) are added to enable the model to operate in accurate mode or fast mode.
 
-For *accurate* mode, the output from all segmentation branch is averaged, whereas, for *fast* mode, the final segmentation map is selected from one of the segmentation branches. UNet++ can be pruned to adjust the model complexity, to balance between speed (inference time) and performance.
+For *accurate* mode, the output from all segmentation branch is averaged.
 
-Zhou et al. conducted experiments to determine the best segmentation performance with different levels of pruning. The metrics used are *Intersection over Union* and inference time. They experimented on four segmentation tasks: a) cell nuclei, b) colon polyp, c) liver, and d) lung nodule.
+For *fast* mode, the final segmentation map is selected from one of the segmentation branches.
 
-The results are as follows:
+UNet++ can be pruned to adjust the model complexity, to balance between speed (inference time) and performance.
+
+Zhou et al. conducted experiments to determine the best segmentation performance with different levels of pruning. The metrics used are *Intersection over Union* and *inference time*.
+
+They experimented on four segmentation tasks: a) cell nuclei, b) colon polyp, c) liver, and d) lung nodule. The results are as follows:
 
 ![pruning](/assets/img/posts/unet-nested-05.png)
 
 L3 achieved, on average 32.2% reduction in inference time compared to L4 while degrading *Intersection over Union* marginally.
 
-More aggressive pruning methods such as L1 and L2 can further reduce the inference time but at the cost of significant segmentation performance.
+More aggressive pruning methods such as L1 and L2 can further reduce the *inference time* but at the cost of significant segmentation performance.
 
 We can tune the number of layers for our use-cases when utilising UNet++.
 
