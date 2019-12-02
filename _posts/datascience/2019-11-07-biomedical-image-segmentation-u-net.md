@@ -34,7 +34,7 @@ In this article, we explore [U-Net](https://lmb.informatik.uni-freiburg.de/peopl
 
 ## About U-Net
 
-U-Net is used in many image segmentation task for biomedical images, although it also w[orks for segmentation of natural images](https://www.tensorflow.org/tutorials/images/segmentation). U-Net has outperformed prior best method by [Ciresan et al.](http://papers.nips.cc/paper/4741-deep-neural-networks), which won the [ISBI 2012 EM (electron microscopy images) Segmentation Challenge](http://brainiac2.mit.edu/isbi_challenge/content/isbi-2012-workshop-results).
+U-Net is used in many image segmentation task for biomedical images, although it also [works for segmentation of natural images](https://www.tensorflow.org/tutorials/images/segmentation). U-Net has outperformed prior best method by [Ciresan et al.](http://papers.nips.cc/paper/4741-deep-neural-networks), which won the [ISBI 2012 EM (electron microscopy images) Segmentation Challenge](http://brainiac2.mit.edu/isbi_challenge/content/isbi-2012-workshop-results).
 
 **Requires fewer training samples**
 
@@ -89,7 +89,7 @@ We will be using [binary_cross_entropy_with_logits](https://pytorch.org/docs/sta
 
 **Dice coefficient**
 
-![Dice coefficient](/assets/img/posts/unet-03.jpeg)
+![Dice coefficient](/assets/img/posts/unet-03.jpeg#skinny_image)
 
 A common metric measure of overlap between the predicted and the ground truth. The calculation is 2 * the area of overlap (*between the predicted and the ground truth*) divided by the total area (*of both predict and ground truth combined*).
 
@@ -99,7 +99,7 @@ I will be using this metric together with the Binary cross-entropy as the loss f
 
 **Intersection over Union**
 
-![Intersection over Union](/assets/img/posts/unet-04.jpeg)
+![Intersection over Union](/assets/img/posts/unet-04.jpeg#skinny_image)
 
 A simple (yet effective!) metric to calculate how accurate the predicted mask is with the ground truth mask. The calculation to compute the area of overlap (*between the predicted and the ground truth*) and divide by the area of the union (*of predicted and ground truth*).
 

@@ -14,7 +14,7 @@ tags:
 
 ![cover](/assets/img/posts/unet-nested-01.png)
 
-In this article, we will be exploring [*UNet++: A Nested U-Net Architecture for Medical Image Segmentation*](https://arxiv.org/abs/1807.10165) written by Zhou et al. from the Arizona State University. This article is a continuation of the [U-Net article](https://towardsdatascience.com/biomedical-image-segmentation-u-net-a787741837fa), which we will be comparing UNet++ with the original [U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) by Ronneberger et al.
+In this article, we will be exploring [*UNet++: A Nested U-Net Architecture for Medical Image Segmentation*](https://arxiv.org/abs/1807.10165) written by Zhou et al. from the Arizona State University. This article is a continuation of the [U-Net article](https://jinglescode.github.io/datascience/2019/11/07/biomedical-image-segmentation-u-net.html), which we will be comparing UNet++ with the original [U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) by Ronneberger et al.
 
 UNet++ aims to improve segmentation accuracy by including Dense block and convolution layers between the encoder and decoder.
 
@@ -78,7 +78,7 @@ We can tune the number of layers for our use-cases when utilising UNet++.
 
 # My experiment on UNet++
 
-My experiment on UNet++ will be using [Drishti-GS dataset](https://cvit.iiit.ac.in/projects/mip/drishti-gs/mip-dataset2/Home.php). The experiment setup and the metrics used will be the same as the [U-Net](https://towardsdatascience.com/biomedical-image-segmentation-u-net-a787741837fa).
+My experiment on UNet++ will be using [Drishti-GS dataset](https://cvit.iiit.ac.in/projects/mip/drishti-gs/mip-dataset2/Home.php). The experiment setup and the metrics used will be the same as the [U-Net](https://jinglescode.github.io/datascience/2019/11/07/biomedical-image-segmentation-u-net.html).
 
 The model completed training 36.6M trainable parameters in 27 minutes; each epoch took approximately 32 seconds.
 
