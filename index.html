@@ -65,10 +65,10 @@ excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
 <div class="pagination">
   <div class="rounded-social-buttons" style="text-align: center;">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" class="social-button github fi-arrow-left"></a>
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="social-button github fi-arrow-left" rel="prev"></a>
   {% endif %}
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" class="social-button github fi-arrow-right"></a>
+    <a href="{{ paginator.next_page_path | relative_url }}" class="social-button github fi-arrow-right" rel="next"></a>
   {% endif %}
   </div>
 </div>
