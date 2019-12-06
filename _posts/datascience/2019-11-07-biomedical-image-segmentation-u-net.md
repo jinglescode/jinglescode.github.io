@@ -1,7 +1,7 @@
 ---
 title: Biomedical Image Segmentation - U-Net
 layout: note
-image: https://i.ibb.co/vsCm3tP/1-lm-KZh5-Iwv-ECVQu-Y36b-Nng-Q.jpg
+image: /assets/img/posts/unet-00.png
 description: Works with very few training images and yields more precise segmentation
 category: datascience
 tags:
@@ -12,7 +12,7 @@ tags:
 
 ---
 
-[![cover](https://i.ibb.co/vsCm3tP/1-lm-KZh5-Iwv-ECVQu-Y36b-Nng-Q.jpg)](https://towardsdatascience.com/biomedical-image-segmentation-u-net-a787741837fa)
+[![cover](/assets/img/posts/unet-00.png)](https://towardsdatascience.com/biomedical-image-segmentation-u-net-a787741837fa)
 
 # Image Segmentation
 
