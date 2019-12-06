@@ -10,7 +10,7 @@ description: Readings on Segmentation
 
 <tr>
   <td>2018</td>
-  <td>[Weakly Supervised Instance Segmentation using Class Peak Response](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Weakly_Supervised_Instance_CVPR_2018_paper.html)</td>
+  <td><a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Weakly_Supervised_Instance_CVPR_2018_paper.html">Weakly Supervised Instance Segmentation using Class Peak Response</a></td>
   <td>
     <ol>
       <li>enable classification networks to exploiting class peak responses for instance mask extraction</li>
