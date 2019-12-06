@@ -810,6 +810,10 @@ p.card-type{
 
 
 
+table td{
+    vertical-align: top;
+}
+
 .blog_post .title {
     font-size: 40px;
 }
