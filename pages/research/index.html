@@ -1,0 +1,20 @@
+---
+layout: default
+title: Research
+description:
+---
+
+
+pages
+
+{% for page in site.pages %}
+<h3><a title="{{ page.title }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
+<p>{{page.excerpt}}</p>
+{% endfor %}
+
+research
+
+{% for page in site.pages.research %}
+<h3><a title="{{ page.title }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
+<p>{{page.excerpt}}</p>
+{% endfor %}
