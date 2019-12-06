@@ -7,14 +7,14 @@ description:
 
 pages
 
-{% for page in site.pages %}
+{% for page in site.collections %}
 <h3><a title="{{ page.title }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
 <p>{{page.excerpt}}</p>
 {% endfor %}
 
 research
 
-{% for page in site.pages.research %}
+{% for page in site.collections.research %}
 <h3><a title="{{ page.title }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
 <p>{{page.excerpt}}</p>
 {% endfor %}
