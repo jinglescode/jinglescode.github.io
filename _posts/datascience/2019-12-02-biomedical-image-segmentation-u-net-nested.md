@@ -60,13 +60,11 @@ Dense skip connections ensure that all prior feature maps are accumulated and ar
 
 ![deep supervise](/assets/img/posts/unet-nested-04.png#skinny_image)
 
-In UNet++, deep supervision (shown in red) are added to enable the model to operate in accurate mode or fast mode.
+In UNet++, deep supervision (shown in red) are added, so that model can be pruned to adjust the model complexity, to balance between *speed* (inference time) and *performance*.
 
 For *accurate* mode, the output from all segmentation branch is averaged.
 
 For *fast* mode, the final segmentation map is selected from one of the segmentation branches.
-
-UNet++ can be pruned to adjust the model complexity, to balance between speed (inference time) and performance.
 
 Zhou et al. conducted experiments to determine the best segmentation performance with different levels of pruning. The metrics used are *Intersection over Union* and *inference time*.
 
