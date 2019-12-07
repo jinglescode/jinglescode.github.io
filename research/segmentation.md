@@ -5,12 +5,28 @@ description: Notes on my readings in research papers containing segmentation
 ---
 
 <table>
-<thead><td>Year</td><td>Paper</td><td>Key Ideas</td></thead>
+<thead><th>Paper</th><th>Key Ideas</th></thead>
 <tbody>
 
 <tr>
-  <td>2019</td>
-  <td><a href="https://arxiv.org/abs/1811.07073">
+  <td>[2019]
+  <a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Zhu_Learning_Instance_Activation_Maps_for_Weakly_Supervised_Instance_Segmentation_CVPR_2019_paper.html">
+    Learning Instance Activation Maps for Weakly Supervised Instance Segmentation
+  </a></td>
+  <td>
+    <ul>
+        <li>image and class labels only -> segmentation mask</li>
+        <li>use PRM to collect pseudo ground-truth masks, to learn to predict class-agnostic activation map for each instance on the image</li>
+        <li>instance extent filling module + Instance Activation Map, to extract spatial layout</li>
+        <li>convolutional CRF post-processing extract fine detailed boundaries</li>
+    </ul>
+  </td>
+</tr>
+
+
+<tr>
+  <td>[2019]
+  <a href="https://arxiv.org/abs/1811.07073">
     Weakly Supervised Semantic Image Segmentation with Self-correcting Networks
   </a></td>
   <td>
@@ -29,8 +45,8 @@ description: Notes on my readings in research papers containing segmentation
 </tr>
 
 <tr>
-  <td>2019</td>
-  <td><a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Cholakkal_Object_Counting_and_Instance_Segmentation_With_Image-Level_Supervision_CVPR_2019_paper.html">
+  <td>[2019]
+  <a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Cholakkal_Object_Counting_and_Instance_Segmentation_With_Image-Level_Supervision_CVPR_2019_paper.html">
     Object Counting and Instance Segmentation with Image-level Supervision
   </a></td>
   <td>
@@ -45,13 +61,13 @@ description: Notes on my readings in research papers containing segmentation
 </tr>
 
 <tr>
-  <td>2018</td>
-  <td><a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Weakly_Supervised_Instance_CVPR_2018_paper.html">
+  <td>[2018]
+  <a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Weakly_Supervised_Instance_CVPR_2018_paper.html">
     Weakly Supervised Instance Segmentation using Class Peak Response
   </a></td>
   <td>
     <ul>
-        <li>image class labels only -> segmentation mask</li>
+        <li>image and class labels only -> segmentation mask</li>
         <li>enable classification networks to exploiting class peak responses for instance mask extraction</li>
         <li>Peak Response Maps (PRMs), stimulate peaks to emerge from a class response map</li>
         <li>effectively mapped to highly informative regions of each object instance and boundaries</li>
@@ -60,8 +76,8 @@ description: Notes on my readings in research papers containing segmentation
 </tr>
 
 <tr>
-  <td>2017</td>
-  <td><a href="https://arxiv.org/abs/1706.05587">
+  <td>[2017]
+  <a href="https://arxiv.org/abs/1706.05587">
     Rethinking Atrous Convolution for Semantic Image Segmentation
   </a></td>
   <td>
@@ -76,8 +92,8 @@ description: Notes on my readings in research papers containing segmentation
 </tr>
 
 <tr>
-  <td>2017</td>
-  <td><a href="https://ieeexplore.ieee.org/abstract/document/7913730/">
+  <td>[2017]
+  <a href="https://ieeexplore.ieee.org/abstract/document/7913730/">
     DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs
   </a></td>
   <td>
@@ -89,8 +105,8 @@ description: Notes on my readings in research papers containing segmentation
 </tr>
 
 <tr>
-  <td>2014</td>
-  <td><a href="https://arxiv.org/abs/1412.7062">
+  <td>[2014]
+  <a href="https://arxiv.org/abs/1412.7062">
     Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs
   </a></td>
   <td>
