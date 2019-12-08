@@ -1,7 +1,7 @@
 ---
 title: How to Stay Focus and Accomplish Your Goals
 layout: note
-image: /assets/img/posts/stay-focus-accomplish-goals-01.jpeg
+image: /assets/img/posts/stay-focus-accomplish-goals-01.png
 description: We can't multitask, we allocate time blocks for productivity and enter the Flow state
 category: info
 tags:
@@ -10,7 +10,7 @@ tags:
   - flow
 ---
 
-![cover](/assets/img/posts/stay-focus-accomplish-goals-01.jpeg)
+![cover](/assets/img/posts/stay-focus-accomplish-goals-01.png)
 
 Just like using a magnifying glass to focus the power of the Sun into a single spot on a pile of hay, with enough perseverance and determination, you might just be able to ignite a fire. Conversely, if you keep shifting the magnifying glass around, you wouldn’t find much success in the endeavour and end up frustrated and wondering: “This is utter nonsense! It’s just not possible to start a fire this way!”
 
@@ -26,7 +26,7 @@ In this article, I will share a few things I have learnt and applied and unleash
 
 # We can’t multitask
 
-![Photo by Austin Distel on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-02.jpeg)
+![Photo by Austin Distel on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-02.png)
 
 In [Mihaly Csikszentmihalyi’s research](https://www.researchgate.net/publication/224927532_Flow_The_Psychology_of_Optimal_Experience) “Flow” he wrote
 >Concentration is so intense that there is no attention left over to think about anything irrelevant, or to worry about problems. Self-consciousness disappears, and the sense of time becomes distorted.
@@ -48,7 +48,7 @@ Being busy does not equate to being productive, so disconnect from distractions 
 
 # We can allocate time blocks for productivity
 
-![Photo by Wil Stewart on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-03.jpeg)
+![Photo by Wil Stewart on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-03.png)
 
 Time blocking is all about scheduling tasks by time periods, in order to get more things done intentionally and ensure you stick to the schedule and not procrastinate. It can come in many forms such as a physical planner, or given modern technology, multiple time blocking apps is readily available for use.
 
@@ -74,7 +74,7 @@ Focus on activities that produce the most results and eliminating (or outsourcin
 
 # We can stay focus and be highly productive
 
-![Photo by Avi Richards on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-04.jpeg)
+![Photo by Avi Richards on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-04.png)
 
 You may have read about someone being in a psychological state of mind where they are highly productive or mayhap even experienced it yourself. You being so focused on a project that you don’t realise that 12 hours had elapsed. You realised that for the past 12 hours you barely had any food, still energetic despite the lack of sleep and immersed in your work that you haven’t thought of anything else. You are so focused, so absorbed into what you love doing, what you are good at that your mind simply haven’t had the opportunity to wander and everything else seem so minute at the moment, it is undoubtedly one of the best experiences in the world.
 
@@ -86,7 +86,7 @@ So how did Musk and his team find the motivation to work on a project? What driv
 
 # We can be in the ‘Flow’ state
 
-![Photo by Malachi Brooks on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-05.jpeg)
+![Photo by Malachi Brooks on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-05.png)
 
 Most of us would agree that we would definitely feel a sense of accomplishment and satisfaction when a purpose is fulfilled yielding intrinsic rewards. This is the Flow state — where there is happiness and productivity are proportional and closely tied; an increase in both productivity and happiness.
 
@@ -166,4 +166,3 @@ A friend of mine once imposed a saying that stuck with me:
 > When you realise that you are doing something that scares you, that is when you are growing
 
 So go ahead and do something that is challenging and you can become better at it!
-

@@ -156,7 +156,7 @@ Host with 1000 minimum nights has caused a bais towards higher minimum nights re
 
 > Minimum nights and estimated revenue are not highly correlated
 
-![airbnb](/assets/img/posts/analyze-airbnb-04.jpeg)
+![airbnb](/assets/img/posts/analyze-airbnb-04.png)
 
 ## Supply and demand — bedroom configurations
 
@@ -186,7 +186,7 @@ A place which accommodates 14 ranked first (highest supply/demand ratio), but th
 
 > Renting a place for 2 or 3 people will give the host pretty good regular rentals.
 
-![airbnb](/assets/img/posts/analyze-airbnb-05.jpeg)
+![airbnb](/assets/img/posts/analyze-airbnb-05.png)
 
 ## Supply and demand — bedroom configurations for 2 to 3
 
@@ -204,7 +204,7 @@ Airbnb bedroom configurations for 3people:
 
 The majority prefers 1 bedroom, less than 1% prefers 2 bedrooms. So for groups of 2s or 3s, they prefer 1 bedroom. But this could be due to the current supply of 2 bedroom properties are low.
 
-![airbnb](/assets/img/posts/analyze-airbnb-06.jpeg)
+![airbnb](/assets/img/posts/analyze-airbnb-06.png)
 
 ## What factors matters?
 

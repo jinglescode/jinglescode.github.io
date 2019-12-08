@@ -1,5 +1,5 @@
 ---
-title: Biomedical Image Segmentation - UNet++
+title: Biomedical Image Segmentation - Attention U-Net
 layout: note
 image: /assets/img/posts/unet-attention-01.png
 description: Improve segmentation accuracy with a series of nested, dense skip pathways
@@ -56,9 +56,9 @@ Attention gates are implemented before concatenation operation to merge only rel
 
 ## Grid-based gating
 
-To further improve the attention mechanism, [Oktay et al.](https://arxiv.org/abs/1804.03999) proposed a grid-attention mechanism. By implementing grid-based gating, the gating signal is not a single global vector for all image pixels, but a grid signal conditioned to image spatial information. The gating signal for each skip connection aggregates image features from multiple imaging scales. 
+To further improve the attention mechanism, [Oktay et al.](https://arxiv.org/abs/1804.03999) proposed a grid-attention mechanism. By implementing grid-based gating, the gating signal is not a single global vector for all image pixels, but a grid signal conditioned to image spatial information. The gating signal for each skip connection aggregates image features from multiple imaging scales.
 
-By using grid-based gating, this allows attention coefficients to be more specific to local regions as it increases the grid-resolution of the query signal. This achieves better performance compared to gating based on a global feature vector. 
+By using grid-based gating, this allows attention coefficients to be more specific to local regions as it increases the grid-resolution of the query signal. This achieves better performance compared to gating based on a global feature vector.
 
 ## Soft-attention technique
 
@@ -90,7 +90,7 @@ The test began with the model processing a few unseen samples, to predict optica
 
 # Conclusion
 
-Attention U-Net aims to increase segmentation accuracy further and to work with fewer training samples, by attaching attention gates on top of the standard U-Net. 
+Attention U-Net aims to increase segmentation accuracy further and to work with fewer training samples, by attaching attention gates on top of the standard U-Net.
 
 Attention U-Net eliminates the necessity of an external object localisation model which some segmentation architecture needs, thus improving the model sensitivity and accuracy to foreground pixels without significant computation overhead.
 
