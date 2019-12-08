@@ -14,23 +14,27 @@ tags:
 
 ![cover](/assets/img/posts/unet-attention-01.png)
 
-Attention U-Net aims to automatically learn to focus on target structures of varying shapes and sizes; thus, the name of the paper "learning where to look" by [Oktay et al.](https://arxiv.org/abs/1804.03999).
+Medical image segmentation has been actively studied to automate clinical analysis. Deep learning models generally require a large amount of data, but acquiring medical images is tedious and error-prone.
 
-# Related works
+Attention U-Net aims to automatically learn to focus on target structures of varying shapes and sizes; thus, the name of the paper ["learning where to look for the Pancreas" by Oktay et al.](https://arxiv.org/abs/1804.03999).
+
+# Related works before Attention U-Net
 
 ## U-Net
 
-U-Nets are commonly used for image segmentation tasks because of its performance and efficient use of GPU memory. It aims to achieve high precision that is reliable for clinical usage with fewer training samples because acquiring annotated medical images can be resource-intensive. [Read more about U-Net](https://jinglescode.github.io/datascience/2019/11/07/biomedical-image-segmentation-u-net.html).
+U-Nets are commonly used for image segmentation tasks because of its performance and efficient use of GPU memory. It aims to achieve high precision that is reliable for clinical usage with fewer training samples because acquiring annotated medical images can be resource-intensive. Read more about U-Net.
 
 ![unet architectures](/assets/img/posts/unet-attention-02.png)
 
 Despite U-Net excellent representation capability, it relies on multi-stage cascaded convolutional neural networks to work. These cascaded frameworks extract the region of interests and make dense predictions. This approach leads to excessive and redundant use of computational resources as it repeatedly extracting low-level features.
 
-## Attention module
+## Attention gates
 
-[Jetley et al.](https://arxiv.org/abs/1804.02391) introduced end-to-end-trainable attention module. These attention maps can amplify the relevant regions, thus demonstrating superior generalisation over several benchmark datasets.
+["Need to pay attention" by Jetley et al.](https://arxiv.org/abs/1804.02391) introduced end-to-end-trainable attention module. Attention gates are commonly used in natural image analysis and natural language processing. 
 
 ![attention module](/assets/img/posts/unet-attention-03.png)
+
+Attention is used to perform class-specific pooling, which results in a more accurate and robust image classification performance. These attention maps can amplify the relevant regions, thus demonstrating superior generalisation over several benchmark datasets.
 
 ## Soft and hard attention
 
@@ -44,7 +48,7 @@ On the other hand, soft attention is probabilistic and utilises standard back-pr
 
 To improve segmentation performance, [Khened et al.](https://www.sciencedirect.com/science/article/abs/pii/S136184151830848X) and [Roth et al.](https://www.ncbi.nlm.nih.gov/pubmed/29427897) relied on additional preceding object localisation models to separate localisation and subsequent segmentation steps. This can be achieved by integrating attention gates on top of U-Net architecture, without training additional models.
 
-As a result, attention gates incorporated into U-Net, can improve model sensitivity and accuracy to foreground pixels without requiring significant computation overhead. Attention gates can progressively suppress features responses in irrelevant background regions.
+As a result, attention gates incorporated into U-Net can improve model sensitivity and accuracy to foreground pixels without requiring significant computation overhead. Attention gates can progressively suppress features responses in irrelevant background regions.
 
 ![attention gates](/assets/img/posts/unet-attention-04.png)
 
@@ -58,7 +62,7 @@ By using grid-based gating, this allows attention coefficients to be more specif
 
 ## Soft-attention technique
 
-Additive soft attention is used in the sentence to sentence translation ([Bahdanau et al.](https://arxiv.org/abs/1409.0473) and [Shen et al.](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16126/16099)) and in image classification ([Jetley et al.](https://arxiv.org/abs/1804.02391) and [Wang et al.](https://arxiv.org/abs/1704.06904)). Although this is computationally more expensive, [Luong et al.](https://arxiv.org/abs/1508.04025) have shown that soft-attention can achieve higher accuracy than multiplicative attention.
+Additive soft attention is used in the sentence to sentence translation ([Bahdanau et al.](https://arxiv.org/abs/1409.0473), [Shen et al.](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16126/16099)) and in image classification ([Jetley et al.](https://arxiv.org/abs/1804.02391), [Wang et al.](https://arxiv.org/abs/1704.06904)). Although this is computationally more expensive, [Luong et al.](https://arxiv.org/abs/1508.04025) have shown that soft-attention can achieve higher accuracy than multiplicative attention.
 
 ## Architecture
 
@@ -70,7 +74,7 @@ Below is an illustration of Attention U-Net.
 
 I will be using the Drishti-GS Dataset, which contains 101 retina images, and annotated mask of the optical disc and optical cup. 50 images will are for training and 51 for validation.
 
-The experiment setup and the metrics used will be the same as the U-Net.
+The experiment setup and the metrics used will be the same as the [U-Net](https://jinglescode.github.io/datascience/2019/11/07/biomedical-image-segmentation-u-net.html).
 
 The model completed training in 13 minutes; each epoch took approximately 15 seconds.
 
