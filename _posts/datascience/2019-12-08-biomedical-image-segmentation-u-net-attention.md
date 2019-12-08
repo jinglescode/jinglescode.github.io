@@ -2,7 +2,7 @@
 title: Biomedical Image Segmentation - Attention U-Net
 layout: note
 image: /assets/img/posts/unet-attention-01.png
-description: Improve segmentation accuracy with a series of nested, dense skip pathways
+description: Attention gate model applied to medical image segmentation
 category: datascience
 tags:
 - medical
