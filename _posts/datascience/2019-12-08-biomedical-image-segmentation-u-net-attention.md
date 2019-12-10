@@ -2,7 +2,7 @@
 title: Biomedical Image Segmentation - Attention U-Net
 layout: note
 image: /assets/img/posts/unet-attention-01.png
-description: Attention gate model applied to medical image segmentation
+description: Improving model sensitivity and accuracy by attaching attention gates on top of the standard U-Net
 category: datascience
 tags:
 - medical

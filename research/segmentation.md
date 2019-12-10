@@ -10,6 +10,20 @@ description: Notes on my readings in research papers containing segmentation
 
 <tr>
   <td>[2019]
+  <a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Learning_to_Segment_CVPR_2018_paper.html">
+    Learning to Segment Every Thing
+  </a></td>
+  <td>
+    <ul>
+        <li>partially supervised segmentation model to segment new categories (providing bounding box), and a small set of existing categories (providing bounding box+segmentations)</li>
+        <li>segmentation transfer learning with Mask R-CNN, to train segmentation for new categories</li>
+        <li>first train with existing category, bounding box to mask, then predict a category’s mask parameters from its bounding box parameters using a generic, category-agnostic weight transfer function</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td>[2019]
   <a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Zhu_Learning_Instance_Activation_Maps_for_Weakly_Supervised_Instance_Segmentation_CVPR_2019_paper.html">
     Learning Instance Activation Maps for Weakly Supervised Instance Segmentation
   </a></td>
