@@ -1,12 +1,43 @@
 ---
 title: Readings on Segmentation
 layout: note
-description: Notes on my readings in research papers containing segmentation
+description: Notes on my readings in research papers containing segmentation and mask generation
 ---
 
 <table>
 <thead><th>Paper</th><th>Key Ideas</th></thead>
 <tbody>
+
+<tr>
+  <td>[2019]
+  <a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Baumgartner_Visual_Feature_Attribution_CVPR_2018_paper.html">
+    Visual Feature Attribution using Wasserstein GANs
+  </a>
+  [<a href="https://github.com/baumgach/vagan-code">code</a>]
+  </td>
+  <td>
+    <ul>
+        <li>Wasserstein generative adversarial networks, a generative model in which the additive map is learned as a function of the images, predict subject-specific disease effect maps</li>
+        <li>if there are multiple locations in the images that are the caused of that classification, some locations may not influence the classification output, thus not highlighted</li>
+        <li>Wasserstein GAN to generate feature maps</li>
+        <li>U-Net to learn map generator's features</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td>[2019]
+  <a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Wagner_Interpretable_and_Fine-Grained_Visual_Explanations_for_Convolutional_Neural_Networks_CVPR_2019_paper.html">
+    Interpretable and Fine-Grained Visual Explanations for Convolutional Neural Networks
+  </a></td>
+  <td>
+    <ul>
+        <li>produce mask to focus on interpretability</li>
+        <li>smallest region of image must be retained to preserve (or deleted to change) model output</li>
+        <li>fine grain visual explanation, no smoothing and regularisations</li>
+    </ul>
+  </td>
+</tr>
 
 <tr>
   <td>[2019]
@@ -70,6 +101,24 @@ description: Notes on my readings in research papers containing segmentation
         <li>perform better than PRM, PRM unable to separate adjacent objects from the same class</li>
         <li>loss function to for predicting the global count and spatial distribution of objects</li>
         <li>ResNet feature extraction follower by image classification branch and density branch</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td>[2018]
+  <a href="https://link.springer.com/article/10.1007/s10278-018-0059-x">
+    An Unsupervised Approach for Extraction of Blood Vessels from Fundus Images
+  </a></td>
+  <td>
+    <ul>
+        <li>unsupervised iterative method is proposed for extraction of blood vessels</li>
+        <li>select green channel to reveal maximum contrast</li>
+        <li>perform gamma correction for brightness</li>
+        <li>some variant of adaptive histogram equalization to remove noise and reveal hidden features</li>
+        <li>local adaptive minmax threshold to separate foreground and background</li>
+        <li>pixel with at least 6 neighbors marked as vessel</li>
+        <li>unable to handle connectivity, lead to inaccurate segmentation</li>
     </ul>
   </td>
 </tr>
