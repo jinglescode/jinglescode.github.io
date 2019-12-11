@@ -181,6 +181,20 @@ description: Notes on my readings in research papers containing segmentation and
 </tr>
 
 <tr>
+  <td>[2017]
+  <a href="https://ieeexplore.ieee.org/abstract/document/8296646/">
+    Weakly-supervised localization of diabetic retinopathy lesions in retinal fundus images
+  </a></td>
+  <td>
+    <ul>
+        <li>fine tune class activation maps (CAM) to extract fine grain segments</li>
+        <li>heatmap from CAM are normalised between 0-1, and select binary segments using threshold value</li>
+        <li>unable to segment small pixels</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
   <td>[2014]
   <a href="https://arxiv.org/abs/1412.7062">
     Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs
