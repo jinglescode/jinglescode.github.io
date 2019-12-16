@@ -43,8 +43,29 @@ description: Machine Learning links I find useful
 # For Researcher and PhD
 - [A Survival Guide to a PhD by Andrej](http://karpathy.github.io/2016/09/07/phd/)
 - [Tips for Writing Technical Papers](https://cs.stanford.edu/people/widom/paper-writing.html)
+- [Reddit on MachineLearning](https://www.reddit.com/r/MachineLearning/)
+
+## Notes about reading papers
 - [Guide to Reading Academic Research Papers](https://towardsdatascience.com/guide-to-reading-academic-research-papers-c69c21619de6)
 - [How to (seriously) read a scientific paper](https://www.sciencemag.org/careers/2016/03/how-seriously-read-scientific-paper)
 - [How to read a scientific paper](https://www.sciencemag.org/careers/2016/01/how-read-scientific-paper)
 - [How to Read a Research Paper by Siraj](https://www.youtube.com/watch?v=SHTOI0KtZnU)
-- [Reddit on MachineLearning](https://www.reddit.com/r/MachineLearning/)
+- [Guide to Reading Academic Research Papers - TDS Kyle M Shannon](https://towardsdatascience.com/guide-to-reading-academic-research-papers-c69c21619de6)
+- [How to Read a Paper - S. Keshav](https://www.computing.dcu.ie/~ray/teaching/CA485/notes/01_how_to_read_a_paper.pdf)
+    1. first pass
+        - Carefully read the title, abstract, and introduction
+        - Read the section and sub-section headings, but ignore everything else
+        - Read the conclusions
+        - you may choose not to read further, because the paper doesn’t interest you, or you don’t know enough about the area to understand the paper, or that the authors make invalid assumptions
+        - expect most reviewers (and readers) to make only one pass over it, so choose coherent section and sub-section titles and to write concise and comprehensive abstracts. If a reviewer cannot understand the gist after one pass, the paper will likely be rejected
+    2. second pass
+        - read the paper with greater care, but ignore details such as proofs
+        - jot down the key points, or to make comments in the margins, as you read
+        - Pay special attention to graphs. Are the axes properly labeled? Are results shown with error bars, so that conclusions are statistically significant? Common mistakes like these will separate rushed, shoddy work from the truly excellent
+    3. third pass
+        - attempt to virtually re-implement the paper
+        - should identify and challenge every assumption in every statement
+        - jot down your ideas for future work
+
+## Music for reading
+- [Top 40 Acoustic Guitar Covers Of Popular Songs - Best Instrumental Music 2019](https://www.youtube.com/watch?v=_UucPr2M-qU)

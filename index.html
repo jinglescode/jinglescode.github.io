@@ -26,10 +26,25 @@ excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
   <div class="grid-x grid-padding-x">
 
     <div class="large-6 medium-6 small-12 cell">
-      <a href="https://jinglescode.github.io/research/segmentation">
+      <a href="/research">
         <div class="card card--article not-visible" style="min-height: 320px;">
           <div class="card-hero">
-            <div class="card-image" alt="{{page.title}}" style="background-image: url(/assets/img/pages/glasses-notebook-and-laptop.png)">
+            <div class="card-image" style="background-image: url(/assets/img/pages/dino-reichmuth-A5rCN8626Ck-unsplash.jpg)">
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Research Journey</div>
+            <div class="card-description">Collections of readings and writings along this long PhD journey.</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="large-6 medium-6 small-12 cell">
+      <a href="/research/segmentation">
+        <div class="card card--article not-visible" style="min-height: 320px;">
+          <div class="card-hero">
+            <div class="card-image" style="background-image: url(/assets/img/pages/glasses-notebook-and-laptop.png)">
             </div>
           </div>
           <div class="card-body">
@@ -52,7 +67,7 @@ excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
     {% for page in paginator.posts %}
     <div class="large-4 medium-6 small-12 cell">
       <a href="{{ page.url | prepend: site.baseurl }}">
-        <div class="card card--article not-visible">
+        <div class="card card--article not-visible" style="min-height: 480px;">
           <div class="card-hero">
             <div class="card-image" alt="{{page.title}}" style="background-image: url({{page.image}})">
             </div>
