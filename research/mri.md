@@ -25,8 +25,3 @@ description: Notes on my readings in research papers containing MRI
 
 </tbody>
 </table>
-
-
-
-
-
