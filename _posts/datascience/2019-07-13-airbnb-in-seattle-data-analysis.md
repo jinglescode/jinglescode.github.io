@@ -1,7 +1,7 @@
 ---
 title: Airbnb in Seattle — Data Analysis
 layout: note
-image: https://i.ibb.co/j8JjCnb/0-4-K2o-Lj-Zq-Vp-YPTc2-B.jpg
+image: /assets/img/posts/analyze-airbnb-00.jpg
 description: Understand Airbnb rental landscape in Seattle
 category: datascience
 tags:
@@ -10,7 +10,7 @@ tags:
 
 ---
 
-[![cover](https://i.ibb.co/j8JjCnb/0-4-K2o-Lj-Zq-Vp-YPTc2-B.jpg)](https://towardsdatascience.com/airbnb-in-seattle-data-analysis-8222207579d7)
+[![cover](/assets/img/posts/analyze-airbnb-00.jpg)](https://towardsdatascience.com/airbnb-in-seattle-data-analysis-8222207579d7)
 
 For all prospective Airbnb hosts in Seattle, I will answer these questions in this article:
 - when to rent to maximise revenue?

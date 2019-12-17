@@ -1,7 +1,7 @@
 ---
 title: Predict Movie Earnings with Posters
 layout: note
-image: https://i.ibb.co/xFMCHG7/1-r-Jzrl-W1-EA38ueu-Ae9-If-Q.jpg
+image: /assets/img/posts/predict-movie-00.jpg
 description: Identify the genre and earnings of the movie with movie posters
 category: datascience
 tags:
@@ -12,7 +12,7 @@ tags:
 
 ---
 
-[![cover](https://i.ibb.co/xFMCHG7/1-r-Jzrl-W1-EA38ueu-Ae9-If-Q.jpg)](https://towardsdatascience.com/predict-movie-earnings-with-posters-786e9fd82bdc)
+[![cover](/assets/img/posts/predict-movie-00.jpg)](https://towardsdatascience.com/predict-movie-earnings-with-posters-786e9fd82bdc)
 
 If you have a summer blockbuster or a short film, what would be the best way to capture your audience’s attention and interest? The 2 most prominent methods are apparent: posters and trailers.
 
