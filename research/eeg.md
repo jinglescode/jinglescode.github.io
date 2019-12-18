@@ -50,5 +50,23 @@ findings
 - shallower architectures preferred when limited amount of data available
 - data augmentation is useful when limited data
 - overlapping is useful, but no consensus on best overlapping percentage
-- no clear preference to use fourier filter extracted features or using raw EEG, but using raw EEG is upward trend
+- no clear preference to use fourier filter extracted features or using raw EEG, but using raw EEG is upward trend, as CNN is effective for processing time series
+- many different tasks, many different dataset were used, often private or limited, lack of reproducibility, low accountability
 
+recommendation for future EEG studies to include
+- describe architecture of model
+- describe data used, number of subjects, number of samples, data augmentations
+- compare performance against public dataset
+- state and improve from existing state of the art baselines
+- share internal recordings
+- share experiment code, include hyperparameters, models file for re-run 
+
+
+
+[EEG based eye state classification using deep belief network and stacked autoencoder](https://pdfs.semanticscholar.org/252d/90a65387b37ab5aba3a158c7bb400b6d4bac.pdf)
+
+- implement Deep Belief Network and Stacked AutoEncoder to predict eye state using EEG
+- internal and external interference can affect EEG signals, external such as power equipments and environment, internal such as eye movements, muscle and respiratory
+- use Deep Belief Network for classification
+- use Stacked AutoEncoder to reconstruct input to extract features
+- used Discrete Wavelet Transform to extract features from EEG signals
