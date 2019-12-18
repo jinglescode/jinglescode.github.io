@@ -110,7 +110,7 @@ This table shows the average revenue of listings in each neighbourhood:
 
 Airbnb properties in Downtown, Capitol Hill and Beacon Hill can fetch the highest revenue. It’s shopping and CBD district.
 
-![airbnb](/assets/img/posts/analyze-airbnb-02.jpeg)
+![airbnb](/assets/img/posts/analyze-airbnb-02.jpg)
 
 > Downtown, Capitol Hill and Beacon Hill can fetch the highest revenue
 
@@ -238,7 +238,7 @@ Smoke detector? I just learnt that the Washington State Building Code has requir
 
 So, here is the summary of this article:
 
-![airbnb](/assets/img/posts/analyze-airbnb-09.png)
+![airbnb](/assets/img/posts/analyze-airbnb-09.jpg)
 
 # Notebook
 

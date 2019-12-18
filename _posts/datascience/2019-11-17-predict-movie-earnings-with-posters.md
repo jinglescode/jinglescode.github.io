@@ -71,7 +71,7 @@ In order to make use of pretrained models, we would first need to transform our 
 - padding
 - random crop and resize
 
-![poster](/assets/img/posts/predict-movie-04.jpeg)
+![poster](/assets/img/posts/predict-movie-04.jpg)
 
 ## Method #1: PIL library resize
 
@@ -166,7 +166,7 @@ Model accuracy with different image processing methods are as follows:
 - Padding is approximately 85%
 - Random crop and resize is approximately 85%
 
-![poster compare](/assets/img/posts/predict-movie-09.jpeg)
+![poster compare](/assets/img/posts/predict-movie-09.jpg)
 
 *Random Crop and Resize* method performs the best in model accuracy and processing speed. Position of the object in an image does not matter in convolution neural networks.
 

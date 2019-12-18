@@ -24,13 +24,13 @@ Attention U-Net aims to automatically learn to focus on target structures of var
 
 U-Nets are commonly used for image segmentation tasks because of its performance and efficient use of GPU memory. It aims to achieve high precision that is reliable for clinical usage with fewer training samples because acquiring annotated medical images can be resource-intensive. Read more about U-Net.
 
-![unet architectures](/assets/img/posts/unet-attention-02.png)
+![unet architectures](/assets/img/posts/unet-attention-02.jpg)
 
 Despite U-Net excellent representation capability, it relies on multi-stage cascaded convolutional neural networks to work. These cascaded frameworks extract the region of interests and make dense predictions. This approach leads to excessive and redundant use of computational resources as it repeatedly extracting low-level features.
 
 ## Attention gates
 
-["Need to pay attention" by Jetley et al.](https://arxiv.org/abs/1804.02391) introduced end-to-end-trainable attention module. Attention gates are commonly used in natural image analysis and natural language processing. 
+["Need to pay attention" by Jetley et al.](https://arxiv.org/abs/1804.02391) introduced end-to-end-trainable attention module. Attention gates are commonly used in natural image analysis and natural language processing.
 
 ![attention module](/assets/img/posts/unet-attention-03.png)
 
@@ -68,7 +68,7 @@ Additive soft attention is used in the sentence to sentence translation ([Bahdan
 
 Below is an illustration of Attention U-Net.
 
-![unet attention architectures](/assets/img/posts/unet-attention-05.png)
+![unet attention architectures](/assets/img/posts/unet-attention-05.jpg)
 
 # My experiment on  Attention U-Net
 

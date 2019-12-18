@@ -57,7 +57,7 @@ Limitation of related work:
 
 U-Net has elegant architecture, the expansive path is more or less symmetric to the contracting path, and yields a u-shaped architecture.
 
-![unet arcitecture](/assets/img/posts/unet-02.png)
+![unet arcitecture](/assets/img/posts/unet-02.jpg)
 
 **Contraction path (downsampling)**
 
