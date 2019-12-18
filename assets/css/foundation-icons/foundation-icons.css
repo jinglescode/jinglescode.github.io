@@ -1,4 +1,4 @@
-/* 
+/*
  * Foundation Icons v 3.0
  * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
  * MIT License
@@ -13,6 +13,7 @@
        url("foundation-icons.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .fi-address-book:before,
