@@ -41,7 +41,7 @@ h6 {
 }
 
 .highlighter-rouge{
-  background-color: rgba(30,30,30,.05);
+  background-color: rgba(0,0,0,.04); / *rgba(30,30,30,.05); */
   margin-bottom: 1rem;
 }
 .highlight{

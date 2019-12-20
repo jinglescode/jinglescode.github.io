@@ -210,8 +210,3 @@ description: Notes on my readings in research papers containing segmentation and
 
 </tbody>
 </table>
-
-
-
-
-
