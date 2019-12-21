@@ -82,6 +82,29 @@ description: Notes on my readings in research papers containing Electroencephalo
   </td>
 </tr>
 
+<tr>
+  <td>[2015]
+  <a href="https://arxiv.org/abs/1511.06448">
+    Learning representations from EEG with deep recurrent-convolutional neural networks
+  </a></td>
+  <td>
+    <ul>
+        <li>issues:
+            <ul>
+                <li>invariant inter- and intra- subject differences</li>
+                <li>noise in EEG data collection</li>
+                <li>existing work does not preserve EEG data within space, time and frequency</li>
+            </ul>
+        </li>
+        <li>rather than representing EEG features as vectors, transform into multi-dimensional tensor, like a movie</li>
+        <li>CNN to extract each frame, to extract spatial and spectral invariant representation</li>
+        <li>LSTM to extract temporal patterns in frame sequence</li>
+        <li>a single image has 3 channels for each of the 3 prominent frequency bands</li>
+        <li>image generated from EEG using Fast Fourier Transform</li>
+    </ul>
+  </td>
+</tr>
+
 
 </tbody>
 </table>
