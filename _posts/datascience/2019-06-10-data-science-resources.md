@@ -1,8 +1,19 @@
 ---
 title: Machine Learning Resources
 layout: note
+image: /assets/img/posts/machine-learning-resources-01.jpg
 description: Machine Learning links I find useful
+category: datascience
+tags:
+- data science
+- machine learning
+- tutorials
+- courses
+- resources
+
 ---
+
+![cover](/assets/img/posts/machine-learning-resources-01.jpg)
 
 # Resources on Deep Learning
 
@@ -69,3 +80,4 @@ description: Machine Learning links I find useful
 
 ## Music for reading
 - [Top 40 Acoustic Guitar Covers Of Popular Songs - Best Instrumental Music 2019](https://www.youtube.com/watch?v=_UucPr2M-qU)
+

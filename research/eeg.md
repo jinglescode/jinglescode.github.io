@@ -78,6 +78,30 @@ description: Notes on my readings in research papers containing Electroencephalo
   </td>
 </tr>
 
+
+<tr>
+  <td>[2017]
+  <a href="https://www.researchgate.net/publication/315096373_Deep_learning_with_convolutional_neural_networks_for_brain_mapping_and_decoding_of_movement-related_information_from_the_human_EEG">
+    Deep learning with convolutional neural networks for brain mapping and decoding of movement-related information from the human EEG
+  </a>
+  </td>
+  <td>
+- questions to answer:
+    - how convolution architecture affects
+    - how to train a CNN for EEG
+- 3 convolution architecture
+    - shallow: 2 layers
+    - deeper: 5 to 31 layers
+    - hybrid: shallow and deep
+- effects of design choices such as:
+    - dropout
+    - batch norm
+    - regularisation
+    - exp linear units
+  </td>
+</tr>
+
+
 <tr>
   <td>[2016]
   <a href="https://iopscience.iop.org/article/10.1088/1741-2552/aace8c/meta">
