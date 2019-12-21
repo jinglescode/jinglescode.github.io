@@ -18,3 +18,5 @@ url: "https://jinglescode.github.io"
 
 paginate: 6
 paginate_path: "/page:num/"
+
+permalink: pretty

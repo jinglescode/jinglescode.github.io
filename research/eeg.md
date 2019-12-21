@@ -8,6 +8,12 @@ description: Notes on my readings in research papers containing Electroencephalo
 <thead><th>Paper</th><th>Key Ideas</th></thead>
 <tbody>
 
+- develop 3 architecture for BCI classification, LSTM, CNN, RCNN
+
+
+
+
+
 <tr>
   <td>[2019]
   <a href="https://iopscience.iop.org/article/10.1088/1741-2552/ab405f/meta">
