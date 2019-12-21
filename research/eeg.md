@@ -8,11 +8,32 @@ description: Notes on my readings in research papers containing Electroencephalo
 <thead><th>Paper</th><th>Key Ideas</th></thead>
 <tbody>
 
-- develop 3 architecture for BCI classification, LSTM, CNN, RCNN
-
-
-
-
+<tr>
+  <td>[2019]
+  <a href="https://www.ncbi.nlm.nih.gov/pubmed/30626132">
+    Validating deep neural networks for online decoding of motor imagery movements from EEG signals
+  </a>
+  [<a href="https://github.com/gumpy-bci/gumpy">Code</a>]
+  </td>
+  <td>
+    <ul>
+        <li>develop 3 architecture for BCI classification, LSTM, CNN, RCNN</li>
+        <li>LSTM network with one hidden layer containing 128 cell units followed by fully-connected layer</li>
+        <li>pragmatic CNN (pCNN), complexity the pCNN is in between of sCNN and dCNN
+            <ul>
+                <li>convert EEG to image with short-time Fourier transform</li>
+                <li>3 convolution blocks: convo + batch norm + max-pool + ReLU</li>
+                <li>dropout (0.2)</li>
+                <li>FC</li>
+            </ul>
+        </li>
+        <li>RCNN, convolu + (recurrent convolutional + maxpool stack) + FC</li>
+        <li>dCNN and pCNN has best performance</li>
+        <li>dCNN higher performance but need more parameters, pCNN has lower standard dev</li>
+        <li>LSTM and sCNN, around the same performance</li>
+    </ul>
+  </td>
+</tr>
 
 <tr>
   <td>[2019]
