@@ -145,6 +145,9 @@ From the standpoint as a programmer and data scientist, professionals in our fie
 
 ![Mental state in terms of challenge level and skill level, according to Csikszentmihalyi’s flow model (Taken from Wikipedia)](/assets/img/posts/stay-focus-accomplish-goals-07.png)
 
+![aa](http://i.imgur.com/PhY2HUP.jpg)
+![bb](https://i.imgur.com/PhY2HUP.jpg)
+
 Csikszentmihalyi developed a model for his Flow theory, essentially a psychological state plotted against both skills and difficulty. On the X-axis is the range of your skill level as compared to the difficulty of the task at hand which is represented by the Y-axis.
 
 Consider the game of basketball from the above. Say you are really good basketballer but pale in comparison to big-name players such as Jordan or Bryant. In a game against a 10-year-olds, the challenge would be low compared to your skill level (high), thus you will be at a relaxation state, feeling no pressure whatsoever because you know — and will dominate the game.
