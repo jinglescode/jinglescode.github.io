@@ -94,7 +94,6 @@ description: Notes on my readings in research papers containing Electroencephalo
   </td>
 </tr>
 
-
 <tr>
   <td>[2017]
   <a href="https://www.researchgate.net/publication/315096373_Deep_learning_with_convolutional_neural_networks_for_brain_mapping_and_decoding_of_movement-related_information_from_the_human_EEG">
@@ -102,23 +101,30 @@ description: Notes on my readings in research papers containing Electroencephalo
   </a>
   </td>
   <td>
-
-- end to end convolution architecture (2 parts: feature extraction + classifier):
-    - shallow: 2 layers. not as good as FBCSP
-    - deeper: 5 to 31 layers. better than FBCSP
-    - hybrid: shallow and deep. similar or slight worse than deep ConvNet
-    - ResNet. worst than deep ConvNet
-- effects of design choices are crucial for high decoding accuracies such as:
-    - dropout, 0.5 probability, increased accuracy
-    - batch norm, standardise outputs to zero mean and unit variance of training examples, increased accuracy
-    - regularisation, new objective function which penalise discrepancies between predictions of neighboring crops
-    - exp linear units (ELU), ReLU worsened performance, use ELU instead
-- input and target:
-    - input: whole trials, target: trial labels
-    - input: crop 2s sliding time windows, target: trial labels. increased accuracies for deep ConvNet.
-- has pre-processing to avoid decoding eye related signals, filtered removed below 4Hz with 3rd order Butterworth filter (2.7.1)
-
-
+    <ul>
+        <li>end to end convolution architecture (2 parts: feature extraction + classifier):
+        <ul>
+            <li>shallow: 2 layers. not as good as FBCSP</li>
+            <li>deeper: 5 to 31 layers. better than FBCSP</li>
+            <li>hybrid: shallow and deep. similar or slight worse than deep ConvNet</li>
+            <li>ResNet. worst than deep ConvNet</li>
+        </ul>
+        </li>
+        <li>effects of design choices are crucial for high decoding accuracies such as:</li>
+        <ul>
+            <li>dropout, 0.5 probability, increased accuracy</li>
+            <li>batch norm, standardise outputs to zero mean and unit variance of training examples, increased accuracy</li>
+            <li>regularisation, new objective function which penalise discrepancies between predictions of neighboring crops</li>
+            <li>exp linear units (ELU), ReLU worsened performance, use ELU instead</li>
+        </ul>
+        <li>input and target:</li>
+        <ul>
+            <li>input: whole trials, target: trial labels</li>
+            <li>input: crop 2s sliding time windows, target: trial labels. increased accuracies for deep ConvNet.</li>
+        </ul>
+        <li>has pre-processing to avoid decoding eye related signals, filtered removed below 4Hz with 3rd order Butterworth filter (2.7.1)</li>
+        <li>author has good visualisation for each classification, by gamma band activity</li>
+    </ul>
   </td>
 </tr>
 
