@@ -102,18 +102,23 @@ description: Notes on my readings in research papers containing Electroencephalo
   </a>
   </td>
   <td>
-- questions to answer:
-    - how convolution architecture affects
-    - how to train a CNN for EEG
-- 3 convolution architecture
-    - shallow: 2 layers
-    - deeper: 5 to 31 layers
-    - hybrid: shallow and deep
-- effects of design choices such as:
-    - dropout
-    - batch norm
-    - regularisation
-    - exp linear units
+
+- end to end convolution architecture (2 parts: feature extraction + classifier):
+    - shallow: 2 layers. not as good as FBCSP
+    - deeper: 5 to 31 layers. better than FBCSP
+    - hybrid: shallow and deep. similar or slight worse than deep ConvNet
+    - ResNet. worst than deep ConvNet
+- effects of design choices are crucial for high decoding accuracies such as:
+    - dropout, 0.5 probability, increased accuracy
+    - batch norm, standardise outputs to zero mean and unit variance of training examples, increased accuracy
+    - regularisation, new objective function which penalise discrepancies between predictions of neighboring crops
+    - exp linear units (ELU), ReLU worsened performance, use ELU instead
+- input and target:
+    - input: whole trials, target: trial labels
+    - input: crop 2s sliding time windows, target: trial labels. increased accuracies for deep ConvNet.
+- has pre-processing to avoid decoding eye related signals, filtered removed below 4Hz with 3rd order Butterworth filter (2.7.1)
+
+
   </td>
 </tr>
 
