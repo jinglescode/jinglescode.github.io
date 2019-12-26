@@ -24,6 +24,6 @@ permalink: pretty
 defaults:
   -
     scope:
-      path: "research/pdfs/*.pdf"
+      path: "/research/pdfs/*"
     values:
       sitemap: false
