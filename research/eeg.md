@@ -10,6 +10,22 @@ description: Notes on my readings in research papers containing Electroencephalo
 
 <tr>
   <td>[2019]
+  <a href="https://ieeexplore.ieee.org/abstract/document/8713896/">
+    Utilizing Deep Learning Towards Multi-modal Bio-sensing and Vision-based Affective Computing
+  </a></td>
+  <td>
+    <ul>
+        <li>classify emotions. used 4 different dataset, they are all different in various ways</li>
+        <li>3 EEG band into 3 channels like RGB</li>
+        <li>used imagenet pre-trained VGG-16 to extract features</li>
+        <li>include LSTM for DEAP dataset, improve accuracy</li>
+        <li>combine multiple datasets outperform individual dataset</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td>[2019]
   <a href="https://www.ncbi.nlm.nih.gov/pubmed/30626132">
     Validating deep neural networks for online decoding of motor imagery movements from EEG signals
   </a>
