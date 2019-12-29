@@ -99,7 +99,7 @@ Eeg-based user identification system using 1d-convolutional long short-term memo
   <a href="https://ieeexplore.ieee.org/abstract/document/8553378/">
     Fast and Accurate Multiclass Inference for MI-BCIs Using Large Multiscale Temporal and Spectral Features
   </a>
-  [<a href="https://github.com/MultiScale- BCI/IV- 2a">Code</a>]
+  [<a href="https://github.com/MultiScale-BCI/IV-2a">Code</a>]
   </td>
   <td>
     <ul>
@@ -134,11 +134,10 @@ Eeg-based user identification system using 1d-convolutional long short-term memo
 </tr>
 
 <tr>
-  <td>[2017]
-  <a href="https://www.researchgate.net/publication/315096373_Deep_learning_with_convolutional_neural_networks_for_brain_mapping_and_decoding_of_movement-related_information_from_the_human_EEG">
+  <td>[2017] <a href="https://www.researchgate.net/publication/315096373_Deep_learning_with_convolutional_neural_networks_for_brain_mapping_and_decoding_of_movement-related_information_from_the_human_EEG">
     Deep learning with convolutional neural networks for brain mapping and decoding of movement-related information from the human EEG
-  </a>
-  <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23730">
+  </a><br/>
+  [2017] <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23730">
     Deep Learning With Convolutional Neural Networks for EEG Decoding and Visualization
   </a>
   </td>
