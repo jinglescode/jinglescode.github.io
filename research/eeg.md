@@ -27,6 +27,22 @@ Eeg-based user identification system using 1d-convolutional long short-term memo
 
 <tr>
   <td>[2019]
+  <a href="https://ieeexplore.ieee.org/abstract/document/8713896/">
+    Utilizing Deep Learning Towards Multi-modal Bio-sensing and Vision-based Affective Computing
+  </a></td>
+  <td>
+    <ul>
+        <li>classify emotions. used 4 different dataset, they are all different in various ways</li>
+        <li>3 EEG band into 3 channels like RGB</li>
+        <li>used imagenet pre-trained VGG-16 to extract features</li>
+        <li>include LSTM for DEAP dataset, improve accuracy</li>
+        <li>combine multiple datasets outperform individual dataset</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td>[2019]
   <a href="https://www.ncbi.nlm.nih.gov/pubmed/30626132">
     Validating deep neural networks for online decoding of motor imagery movements from EEG signals
   </a>
@@ -117,7 +133,6 @@ Eeg-based user identification system using 1d-convolutional long short-term memo
   </td>
 </tr>
 
-
 <tr>
   <td>[2017]
   <a href="https://www.researchgate.net/publication/315096373_Deep_learning_with_convolutional_neural_networks_for_brain_mapping_and_decoding_of_movement-related_information_from_the_human_EEG">
@@ -128,18 +143,30 @@ Eeg-based user identification system using 1d-convolutional long short-term memo
   </a>
   </td>
   <td>
-- questions to answer:
-    - how convolution architecture affects
-    - how to train a CNN for EEG
-- 3 convolution architecture
-    - shallow: 2 layers
-    - deeper: 5 to 31 layers
-    - hybrid: shallow and deep
-- effects of design choices such as:
-    - dropout
-    - batch norm
-    - regularisation
-    - exp linear units
+    <ul>
+        <li>end to end convolution architecture (2 parts: feature extraction + classifier):
+        <ul>
+            <li>shallow: 2 layers. not as good as FBCSP</li>
+            <li>deeper: 5 to 31 layers. better than FBCSP</li>
+            <li>hybrid: shallow and deep. similar or slight worse than deep ConvNet</li>
+            <li>ResNet. worst than deep ConvNet</li>
+        </ul>
+        </li>
+        <li>effects of design choices are crucial for high decoding accuracies such as:</li>
+        <ul>
+            <li>dropout, 0.5 probability, increased accuracy</li>
+            <li>batch norm, standardise outputs to zero mean and unit variance of training examples, increased accuracy</li>
+            <li>regularisation, new objective function which penalise discrepancies between predictions of neighboring crops</li>
+            <li>exp linear units (ELU), ReLU worsened performance, use ELU instead</li>
+        </ul>
+        <li>input and target:</li>
+        <ul>
+            <li>input: whole trials, target: trial labels</li>
+            <li>input: crop 2s sliding time windows, target: trial labels. increased accuracies for deep ConvNet.</li>
+        </ul>
+        <li>has pre-processing to avoid decoding eye related signals, filtered removed below 4Hz with 3rd order Butterworth filter (2.7.1)</li>
+        <li>author has good visualisation for each classification, by gamma band activity</li>
+    </ul>
   </td>
 </tr>
 

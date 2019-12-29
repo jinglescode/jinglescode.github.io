@@ -20,3 +20,10 @@ paginate: 6
 paginate_path: "/page:num/"
 
 permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: "/research/pdfs/*"
+    values:
+      sitemap: false
