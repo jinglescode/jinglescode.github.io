@@ -7,9 +7,31 @@ description: Notes on my readings in research papers containing Electroencephalo
 to read:
 Eeg-based user identification system using 1d-convolutional long short-term memory neural networks
 
+
+
+
+
+
+
 <table>
 <thead><th>Paper</th><th>Key Ideas</th></thead>
 <tbody>
+
+<tr>
+  <td>[2019]
+  <a href="https://ieeexplore.ieee.org/abstract/document/8629079/">
+    Multilevel weighted feature fusion using convolutional neural networks for EEG motor imagery classification
+  </a>
+  </td>
+  <td>
+    <ul>
+      <li>proposed model architecture is like AlexNet, with batch norm and dropout, and exp linear units</li>
+      <li>extract features at every convu layers after pooling</li>
+      <li>raw EEG to 2D array (time and channels)</li>
+      <li>pretrain using High Gamma dataset, and train on BCI2a. (has different # of channels, so i dont know how they do it)</li>
+    </ul>
+  </td>
+</tr>
 
 <tr>
   <td>[2019]
@@ -90,6 +112,21 @@ Eeg-based user identification system using 1d-convolutional long short-term memo
             </ul>
         </li>
         <li>dropout 0.8 and 0.01 L2 regularisation</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td>[2018]
+  <a href="https://ieeexplore.ieee.org/document/8310961">
+    Learning Temporal Information for Brain-Computer Interface Using Convolutional Neural Networks
+  </a>
+  </td>
+  <td>
+    <ul>
+      <li>preserve temporal representation of EEG</li>
+      <li>explored 3 types of convolution, time, channels, time & channels</li>
+      <li>explored breaking 2D (time & channels) into 2x 1D convolu</li>
     </ul>
   </td>
 </tr>
@@ -204,7 +241,9 @@ Eeg-based user identification system using 1d-convolutional long short-term memo
   <td>[2015]
   <a href="https://arxiv.org/abs/1511.06448">
     Learning representations from EEG with deep recurrent-convolutional neural networks
-  </a></td>
+  </a>
+  [<a href="https://github.com/pbashivan/EEGLearn">Code</a>]
+  </td>
   <td>
     <ul>
         <li>issues:
@@ -230,6 +269,46 @@ Eeg-based user identification system using 1d-convolutional long short-term memo
 
 
 # Survey
+
+[EEG-Based Brain-Computer Interfaces Using Motor-Imagery: Techniques and Challenges](https://www.mdpi.com/1424-8220/19/6/1423)
+
+feature extraction techniques:
+- time-domain approach
+- frequency-domain approach
+- time-frequency domain approach
+- common spatial pattern (CSP)
+  - common sparse spatio-spectral patterns (CSSSP)
+  - sub-band common spatial pattern (SBCSP)
+
+feature selection techniques:
+- principal component analysis (PCA)
+- filter bank selection
+  - Filter bank CSP (FBCSP)
+  - Sparse filter bank CSP (SFBCSP)
+- evolutionary algorithms (EAs)
+  - particle swarm optimization (PSO)
+  - differential evolution (DE) optimization
+  - artificial bee colony (ABC) optimization
+  - ant colony optimization (ACO)
+  - firefly algorithm
+
+classification methods:
+- non-deep learning
+  - SVM
+  - LDA
+  - k-NN
+  - naive Bayes
+  - regression trees
+- deep Learning
+  - CNN
+    - convert 2 seconds EEG data to image
+    - raw data fed into CNN, first layer extract spatial and temporal information
+  - RNN
+  - stacked auto encoders (SAEs)
+  - deep belief networks
+  - LSTM-RNN
+
+
 
 [Deep learning-based electroencephalography analysis: a systematic review](https://iopscience.iop.org/article/10.1088/1741-2552/ab260c/meta)
 
