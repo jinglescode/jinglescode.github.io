@@ -2,7 +2,7 @@
 title: Project Euler: Problem 1: Multiples of 3 and 5
 layout: note
 image: /assets/img/posts/project-euler100.jpg
-description: Practice as many algorithm and data structures
+description: Project Euler (pronounced Oiler) is a series of challenging mathematical/computer programming problems meant to delve into unfamiliar areas and learn new concepts in a fun and recreational manner.
 category: javascript
 tags:
   - ProjectEuler100
