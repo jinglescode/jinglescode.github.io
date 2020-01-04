@@ -11,6 +11,7 @@ tags:
 
 # Project Euler: Problem 1: Multiples of 3 and 5
 
+## The problem 
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
 Find the sum of all the multiples of 3 or 5 below the provided parameter value number.
@@ -30,6 +31,7 @@ function run_function(func) {
 }
 ```
 
+## Attempt #1: recursive functions
 Personal challenge, I love recursive functions, so here is my take on this problem with recursive function. 
 
 ```
@@ -66,6 +68,7 @@ Hmmm, but if the test number is `19564`:
 RangeError: Maximum call stack size exceeded
 ```
 
+## Attempt #2: for-loop
 Go back to the good old for-loop:
 ```
 var sum = 0;
