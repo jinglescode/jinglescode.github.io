@@ -31,7 +31,7 @@ function run_function(func) {
 ```
 
 ## Attempt #1: recursive functions
-Personal challenge, I always enjoy stretching myself with recursive functions, so here is my take on this problem with recursive function. 
+Personal challenge, I always enjoy stretching myself with recursive functions, so here is my take on this problem with a recursive function. 
 ```
 function multiplesOf3and5(number) {
   number = number - 1;
