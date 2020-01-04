@@ -29,7 +29,7 @@ function multiplesOfN(list_numbers, number, n) {
 run_function(multiplesOf3and5(test_number));
 
 var sum = 0;
-function multiplesOf3and5a(number) {
+function multiplesOf3and5_b(number) {
   for(var i = 1; i < number; i++){
     if((i % 3 === 0 )||(i % 5 === 0)||(i % 3 === 0 && i % 5 === 0)){
       sum = sum + i;
@@ -38,4 +38,4 @@ function multiplesOf3and5a(number) {
   return sum;
 }
 
-run_function(multiplesOf3and5a(test_number));
+run_function(multiplesOf3and5_b(test_number));
