@@ -1,17 +1,15 @@
 ---
-title: Project Euler: Problem 1: Multiples of 3 and 5
+title: Project Euler - Problem 1 - Multiples of 3 and 5
 layout: note
-image: /assets/img/posts/project-euler100.jpg
-description: Project Euler (pronounced Oiler) is a series of challenging mathematical/computer programming problems meant to delve into unfamiliar areas and learn new concepts in a fun and recreational manner.
+image: /assets/img/posts/project-euler.jpg
+description: Find the sum of all the multiples of 3 or 5 below the provided parameter value number.
 category: javascript
 tags:
-  - ProjectEuler100
-  - javascript
+- ProjectEuler100
+- javascript
 ---
 
-# Project Euler: Problem 1: Multiples of 3 and 5
-
-## The problem 
+## The problem
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
 Find the sum of all the multiples of 3 or 5 below the provided parameter value number.
@@ -33,7 +31,6 @@ function run_function(func) {
 
 ## Attempt #1: recursive functions
 Personal challenge, I love recursive functions, so here is my take on this problem with recursive function. 
-
 ```
 function multiplesOf3and5(number) {
   number = number - 1;
@@ -63,7 +60,7 @@ Output: 16687353
 Took 0.5999999993946403 milliseconds.
 ```
 
-Hmmm, but if the test number is `19564`:
+Hmmm, but if the test number is `19564`, recursive functions will overflow:
 ```
 RangeError: Maximum call stack size exceeded
 ```
