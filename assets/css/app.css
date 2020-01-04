@@ -42,7 +42,7 @@ h6 {
 
 .highlighter-rouge{
   background-color: rgba(0,0,0,.04); / *rgba(30,30,30,.05); */
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 .highlight{
   padding: 5px;
@@ -821,6 +821,7 @@ table td{
 }
 .blog_post h2 {
     font-size: 26px;
+    margin-top: 40px;
 }
 .blog_post p {
     font-size: 20px;
@@ -834,3 +835,5 @@ table td{
     max-width: 500px;
     width: 100%;
 }
+
+h2
