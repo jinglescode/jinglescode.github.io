@@ -7,6 +7,7 @@ category: javascript
 tags:
 - ProjectEuler100
 - javascript
+- ProjectEuler
 ---
 
 ## The problem
