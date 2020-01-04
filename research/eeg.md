@@ -4,15 +4,6 @@ layout: note
 description: Notes on my readings in research papers containing Electroencephalography (EEG)
 ---
 
-to read:
-Eeg-based user identification system using 1d-convolutional long short-term memory neural networks
-
-
-
-
-
-
-
 <table>
 <thead><th>Paper</th><th>Key Ideas</th></thead>
 <tbody>
@@ -269,6 +260,62 @@ Eeg-based user identification system using 1d-convolutional long short-term memo
 
 
 # Survey
+
+[A review of classification algorithms for EEG-based brain–computer interfaces](https://iopscience.iop.org/article/10.1088/1741-2560/4/2/R01)
+
+problems:
+- curse of dimensionality: training sample small compared to size of features
+- bias-variance tradeoff: stable classifiers have high bias and low variance thus simple classifiers outperform complex models
+
+classifiers categories:
+- linear classifiers
+    - Linear Discriminant Analysis (LDA), success in great number of BCI applications, simple and provides good results, but poor results on complex nonlinear EEG data 
+    - Support Vector Machine (SVM), good for BCI application, insensitive to overfitting
+- neural networks
+    - multilayer perceptrons, most popular, sensitive to overfitting to noise therefore need regularisation
+- nonlinear bayesian classifiers
+    - Bayes quadratic, have some success to motor imagery and mental task classification
+    - Hidden Markov Model, not promising classifiers for BCI systems
+- nearest neighbor classifiers
+    - k-NN, not popular, very sensitive to curse of dimensionality
+    - mahalanobis distance, simple and robust classifier, good performances, but scarcely used in BCI
+- combinations of classifiers
+    - boosting with MLP
+    - by majority voting
+    - by stacking models
+
+different kinds of classifiers:
+- generative: 
+    - bayes
+- discriminative:
+    - e.g. SVM
+    - perform better than generative in presence of noise or outliers
+    - deal with high dimensionality feature vectors
+- static:
+    - multilayer perceptrons
+- dynamic:
+    - hidden markov, able to classify raw EEG, exploit temporal information
+- stable:
+    - linear discriminant analysis
+- unstable:
+    - multilayer perceptrons
+    
+performance metric:
+    - kappa coefficient
+    - mutual information
+    - sensitivity
+    - specificity
+
+
+[A review of classification algorithms for EEG-based brain–computer interfaces: a 10 year update](https://iopscience.iop.org/article/10.1088/1741-2552/aab2f2/meta)
+
+classifiers categories:
+- adaptive classifiers
+- matrix and tensor classifiers
+- transfer learning and deep learning
+- miscellaneous classifiers
+
+
 
 [EEG-Based Brain-Computer Interfaces Using Motor-Imagery: Techniques and Challenges](https://www.mdpi.com/1424-8220/19/6/1423)
 
