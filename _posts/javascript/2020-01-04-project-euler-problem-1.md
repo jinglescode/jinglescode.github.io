@@ -11,12 +11,16 @@ tags:
 ---
 
 ## The problem
-If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
-Find the sum of all the multiples of 3 or 5 below the provided parameter value number.
+This is [problem 1](https://projecteuler.net/problem=1) from the [Project Euler](https://projecteuler.net/).
+
+> If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+> Find the sum of all the multiples of 3 or 5 below the provided parameter value number.
 
 ---
 
+## Let's begin
 Initialise variables and common functions:
 ```
 var test_number = 8456; // this number we wanna test
@@ -31,7 +35,7 @@ function run_function(func) {
 ```
 
 ## Attempt #1: recursive functions
-Personal challenge, I always enjoy stretching myself with recursive functions, so here is my take on this problem with a recursive function. 
+Personal challenge, I always enjoy stretching myself with recursive functions, so here is my take on this problem with a recursive function.  
 ```
 function multiplesOf3and5(number) {
   number = number - 1;
@@ -93,3 +97,9 @@ Works great for test number `19564`:
 Output: 89301183
 Took 0.6550000034621917 milliseconds.
 ```
+
+---
+
+The recursive method overflow at bigger test case and good old for-loop is more efficient. Can it be any better?
+
+I just began my [Project Euler Challenge](https://projecteuler.net/) journey; anyone wants to do this together? It will be fun and we can learn a thing or two by solving this problem in different ways.
