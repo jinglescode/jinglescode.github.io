@@ -1,5 +1,5 @@
 // list of numbers we wanna test
-var test_values = [2, 3, 5, 7, 13195];
+var test_values = [2, 3, 5, 7, 13195, 600851475143];
 
 // this function execute the code and records the time to execute
 function run_function(func, test_values) {
@@ -14,18 +14,30 @@ function run_function(func, test_values) {
 }
 
 function largestPrimeFactor(number) {
+
+  // only even prime number is 2. All other even numbers can be divided by 2.
   if(number%2===0){
     return 2;
   }
 
-  var largest_prime = 3;
-  for(var i=3; i<number; i+=2){
-    if(number%i===0){
-      largest_prime = i;
+  // test the odd numbers, greater than 3
+  var list_of_prime_numbers = [];
+  var i = 3;
+
+  // check the division of the input number and i variable
+  // if division no reminder, it is one of the prime numbers
+  // if not, increase i by 2 to test the next odd number
+  while(number != 1){
+    if(number % i === 0){
+      number /= i;
+      list_of_prime_numbers.push(i);
+    }else{
+      i+=2; // increase by 2 to test the next odd number
     }
   }
 
-  return largest_prime;
+  // return the last prime value
+  return list_of_prime_numbers[list_of_prime_numbers.length-1];
 }
 
 run_function(largestPrimeFactor, test_values);
