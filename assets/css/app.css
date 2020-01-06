@@ -823,6 +823,9 @@ table td{
     font-size: 26px;
     margin-top: 40px;
 }
+.blog_post h2 {
+    font-size: 20px;
+}
 .blog_post p {
     font-size: 20px;
 }
