@@ -176,6 +176,4 @@ Took 103.56499999761581 ms
 
 ---
 
-Here's my solution, anyone has a better approach? Post your attempt in the comments. I will update in comments too if I got one.
-
 This is my [Project Euler Challenge](https://projecteuler.net/) journey; anyone wants to do this together? It will be fun and we can learn a thing or two by solving this problem in different ways.
