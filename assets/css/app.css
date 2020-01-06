@@ -826,7 +826,7 @@ table td{
 .blog_post h3 {
     font-size: 20px;
 }
-.blog_post p {
+.blog_post{
     font-size: 20px;
 }
 .blog_post blockquote {
