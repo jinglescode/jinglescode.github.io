@@ -131,7 +131,7 @@ The idea is simple, 2 for-loops from the largest to smallest number, and compare
 
 1. We will break out of the inner loop when we find a palindrome number. Because that will be the largest palindrome number for that outer loop.
 
-2. In order not to multiply values that will be smaller than the current largest palindrome number, we update the `smallest_number` to reduce the number of computation.
+2. In order not to multiply values that will be smaller than the current largest palindrome number, we update the `smallest_number` to current `inner_i` value to reduce the number of computation.
 
 ```
 function largestPalindromeProduct(n) {
