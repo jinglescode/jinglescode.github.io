@@ -812,7 +812,9 @@ p.card-type{
 table td{
     vertical-align: top;
 }
-
+.blog_post{
+    font-size: 20px !important;
+}
 .blog_post .title {
     font-size: 40px;
 }
@@ -826,12 +828,12 @@ table td{
 .blog_post h3 {
     font-size: 20px;
 }
-.blog_post{
-    font-size: 20px !important;
+.blog_post code {
+    font-size: 16px;
 }
-.blog_post blockquote {
-    font-size: 24px;
-    margin: 0px 0px 20px 20px;
+
+.blog_post blockquote, .blog_post blockquote p {
+  margin: 0px;
 }
 
 .blog_post img[src*="#skinny_image"] {
