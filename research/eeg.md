@@ -269,7 +269,7 @@ problems:
 
 classifiers categories:
 - linear classifiers
-    - Linear Discriminant Analysis (LDA), success in great number of BCI applications, simple and provides good results, but poor results on complex nonlinear EEG data 
+    - Linear Discriminant Analysis (LDA), success in great number of BCI applications, simple and provides good results, but poor results on complex nonlinear EEG data
     - Support Vector Machine (SVM), good for BCI application, insensitive to overfitting
 - neural networks
     - multilayer perceptrons, most popular, sensitive to overfitting to noise therefore need regularisation
@@ -285,7 +285,7 @@ classifiers categories:
     - by stacking models
 
 different kinds of classifiers:
-- generative: 
+- generative:
     - bayes
 - discriminative:
     - e.g. SVM
@@ -299,7 +299,7 @@ different kinds of classifiers:
     - linear discriminant analysis
 - unstable:
     - multilayer perceptrons
-    
+
 performance metric:
     - kappa coefficient
     - mutual information
@@ -314,6 +314,63 @@ classifiers categories:
 - matrix and tensor classifiers
 - transfer learning and deep learning
 - miscellaneous classifiers
+
+feature extraction
+- spatial filtering
+  - Principal Component Analysis (PCA)
+  - Common Spatial Patterns (CSP)
+  - Filter Bank CSP (FBCSP)
+- combine various sensors data into two or more dimensions matrices
+  - increase classification accuracies
+  - but it increases dimensions, so require feature selection
+
+feature selection
+- purpose:
+  - remove redundant, not related to task
+  - fewer parameters to optimise, also reduce possible overfitting on small data set
+  - with fewer features, easier to observe which feature are actually related to tasks
+  - fewer parameters leads to faster computation
+  - storage space reduced
+- for P300-BCI
+  - stepwise Linear Discriminant Analysis
+- for motor imagery
+  - frequency bands selection
+- popular methods
+  - maximum relevance minimum redundancy
+  - r^2
+  - correlation-based
+  - information gain
+  - 1R ranking
+
+evaluation metrics
+- kappa
+- confusion matrix
+- sensitivity-specificity
+- ROC
+- AUC
+
+challenges
+- low signal-to-noise ratio of EEG signals
+- non-stationarity over time, within or between users
+- limited amount of training data that is generally available to calibrate the classifiers
+- overall low reliability and performance of current BCIs
+
+new EEG classifiers from 2007-2017
+- adaptive
+  - each feature in a linear discriminant hyperplane, are incrementally re-estimated and updated over time as new EEG data become available
+  - both supervised and unsupervised adaptation, and semi-supervised adaptation
+  - for motor imagery:
+    - LDA
+    - Quadratic Discriminant Analysis (QDA)
+    - Kernel Discriminant Analysis (KDA)
+  - for ERP-based:
+    - adaptive Support Vector Machine (SVM)
+    - adaptive LDA
+    - stochastic gradient-based adaptive linear classifier
+    - online Passive-Aggressive (PA) algorithms
+  - for P300:
+    - bayesian LDA
+    - standard LDA
 
 
 
