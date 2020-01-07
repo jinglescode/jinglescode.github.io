@@ -357,6 +357,7 @@ challenges
 
 new EEG classifiers from 2007-2017
 - adaptive
+  - works well for motor-imagery and some ERP tasks
   - each feature in a linear discriminant hyperplane, are incrementally re-estimated and updated over time as new EEG data become available
   - both supervised and unsupervised adaptation, and semi-supervised adaptation
   - for motor imagery:
@@ -371,7 +372,16 @@ new EEG classifiers from 2007-2017
   - for P300:
     - bayesian LDA
     - standard LDA
-
+- matrices and tensors
+  - map EEG data directly into some form of covariance matrix
+  - Riemannian minimum distance to mean (RMDM) classifier is robust to noise and generalise better
+  - tensor dimensions: space (channels), time, frequency, subjects, trials, groups, conditions, wavelets, dictionaries)
+  - HODA algorithm estimate 4 most significant features, improved accuracy
+- deep learning
+  - convolutional
+  - restricted boltzmann machines: a markov random field with bipartite undirect graph
+  - CNN + Deep Belief Network (DBN) is effective
+  - shallow networks are effective due to the small of data samples of BCI
 
 
 [EEG-Based Brain-Computer Interfaces Using Motor-Imagery: Techniques and Challenges](https://www.mdpi.com/1424-8220/19/6/1423)
