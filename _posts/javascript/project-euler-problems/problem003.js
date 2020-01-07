@@ -1,3 +1,9 @@
+/*
+Project Euler: Problem 3: Largest prime factorPassed
+The prime factors of 13195 are 5, 7, 13 and 29.
+What is the largest prime factor of the given number?
+*/
+
 // list of numbers we wanna test
 var test_values = [2, 3, 5, 7, 13195, 600851475143];
 
