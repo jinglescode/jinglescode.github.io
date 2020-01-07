@@ -753,6 +753,9 @@ p.card-type{
 
 
 
+
+
+
 @charset "UTF-8";
 
 .rounded-social-buttons {
@@ -771,7 +774,6 @@ p.card-type{
   text-align: center;
   color: #fefefe;
   font-size: 1.5625rem;
-  font-weight: normal;
   line-height: 2em;
   border-radius: 1.6875rem;
   transition: all 0.5s ease;
@@ -795,18 +797,15 @@ p.card-type{
   border-color: #007bb5;
 }
 
-.rounded-social-buttons .social-button.github {
+.rounded-social-buttons .social-button {
   background: #000000;
 }
 
-.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
   color: #000000;
   background: #fefefe;
   border-color: #000000;
 }
-
-
-
 
 
 table td{
