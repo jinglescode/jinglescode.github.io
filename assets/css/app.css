@@ -755,7 +755,6 @@ p.card-type{
 
 
 
-
 @charset "UTF-8";
 
 .rounded-social-buttons {
@@ -840,4 +839,13 @@ table td{
     width: 100%;
 }
 
-h2
+
+@media only screen and (min-width: 500px) {
+  .top-bar-right {
+    display: block !important;
+  }
+
+  footer {
+    display: none !important;
+  }
+}
