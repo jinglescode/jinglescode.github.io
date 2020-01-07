@@ -19,11 +19,11 @@ This is [problem 5](https://projecteuler.net/problem=5) from the [Project Euler]
 
 ---
 
-## Multiply prime numbers to get
+## Multiply prime numbers
 
 I know it is something to do with `Lowest Common Multiple` and `prime numbers`; unfortunately, LCM is something I haven't seen for almost 20 years. So let's recap what LCM is.
 
-I don't know about you, but online resources didn't help me much. I will do it trial and error way to figure out the patterns.
+I don't know about you, but online resources didn't help me much. I will do the trial and error way to figure out the patterns.
 
 We are given a few test cases:
 ```
@@ -80,9 +80,9 @@ var multiply_them = prime_numbers.reduce(function(product, prime) {
 
 This is pretty straight forward.
 
-Number `2` is the only even prime number. We can skip all even numbers, as all other even numbers are not prime numbers.
+The number `2` is the only even prime number. We can skip all even numbers, as all other even numbers are not prime numbers.
 
-If a number `num` does not produce any decimal for every prime number less than `num`, `num` is a prime number.
+If a number `num` divides every other prime number less than `num` does not produce any decimal, then `num` is a prime number.
 
 Return `list_of_prime_nums` containing every prime number smaller than `n`.
 
