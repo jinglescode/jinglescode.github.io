@@ -197,6 +197,23 @@ description: Notes on my readings in research papers containing Electroencephalo
   </td>
 </tr>
 
+
+<tr>
+  <td>[2016]
+  <a href="https://www.sciencedirect.com/science/article/pii/S0165027016302333">
+    Interpretable deep neural networks for single-trial EEG classification
+  </a></td>
+  <td>
+    <ul>
+      <li>produces neurophysiologically highly plausible explanations of how a DNN reaches a decision</li>
+      <li>classification on motor imaginery </li>
+      <li>apply Layer-wise Relevance Propagation (LRP) to produce heatmaps that indicate the relevance of each data point of a spatio-temporal EEG epoch for the classifier’s decision</li>
+      <li>downsampled to 100 Hz</li>
+      <li>bandpass filter range 9-13 Hz</li>
+    </ul>
+  </td>
+</tr>
+
 <tr>
   <td>[2016]
   <a href="https://iopscience.iop.org/article/10.1088/1741-2552/aace8c/meta">

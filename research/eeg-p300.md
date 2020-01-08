@@ -12,7 +12,7 @@ description: Notes on my readings in research papers containing P300 Detection w
 <tr>
   <td>[2015]
   <a href="https://www.frontiersin.org/articles/10.3389/fncom.2015.00146">
-    CConvolutional neural network for multi-category rapid serial visual presentation BCI
+    Convolutional neural network for multi-category rapid serial visual presentation BCI
   </a>
   </td>
   <td>
