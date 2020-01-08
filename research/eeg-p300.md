@@ -4,10 +4,38 @@ layout: note
 description: Notes on my readings in research papers containing P300 Detection with EEG
 ---
 
-
 <table>
 <thead><th>Paper</th><th>Key Ideas</th></thead>
 <tbody>
+
+
+<tr>
+  <td>[2015]
+  <a href="https://www.frontiersin.org/articles/10.3389/fncom.2015.00146">
+    CConvolutional neural network for multi-category rapid serial visual presentation BCI
+  </a>
+  </td>
+  <td>
+    <ul>
+      <li>amplitude and latency of P300 have large variance between subjects and within subject</li>
+      <li>categorise 5 classes (planes, faces, cars, eggs, watches), 360x360px images presented at 10 Hz</li>
+      <li>remove 3 subjects (out of 5) due to blinking, technical, and uncomfortable</li>
+      <li>architecture:</li>
+      <ul>
+        <li>input: 64 channels, 64 time samples</li>
+        <li>1st convolutional layer, spatial convolution, using filters of size 64×1, learning features which represent a spatial distribution across the scalp</li>
+        <li>max-pool to reduce dimension, size 3, stride 2</li>
+        <li>then temporal convolutional layer, find temporal patterns in the signal that represent the change in amplitude of the spatial maps learned in the first layer</li>
+        <li>2 fully connected, 2048 and 4096</li>
+      </ul>
+      <li>spatio temporal regularisation</li>
+      <ul>
+        <li>first convolu learn spatial, that change slowly in time by adding penalty to the cost function</li>
+        <li>encourage small differences between consecutive temporal values</li>
+      </ul>
+    </ul>
+  </td>
+</tr>
 
 <tr>
   <td>[2011]
