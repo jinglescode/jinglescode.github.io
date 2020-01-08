@@ -1,13 +1,35 @@
----
-title: Page not found
-permalink: /404.html
-layout: default
----
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}} - Jingles</title>
+    <link rel="stylesheet" href="{{'/assets/css/foundation.min.css?v=' | append: site.github.build_revision | relative_url}}" media="screen" type="text/css">
+    <!-- <link rel="stylesheet" href="{{'/assets/css/foundation-icons/foundation-icons.css?v=' | append: site.github.build_revision | relative_url}}" media="screen" type="text/css"> -->
+    <link rel="stylesheet" href="{{'/assets/css/app.css?v=' | append: site.github.build_revision | relative_url}}" media="screen" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="{{'/assets/fonts/fontawesome/css/all.min.css?v=' | append: site.github.build_revision | relative_url}}" media="screen" type="text/css">
 
-<div class="grid-container" style="margin-top:20px;">
-  <div class="grid-x grid-padding-x">
-    <div class="large-12 medium-12 small-12 cell">
-        This page must have been removed or had its name changed.
-    </div>
-  </div>
-</div>
+    <meta name="robots" content="noindex">
+  </head>
+  <body>
+
+    {% include navigation.html %}
+    <div style="margin-bottom:80px;"></div>
+      <div class="grid-container" style="margin-top:20px;">
+        <div class="grid-x grid-padding-x">
+          <div class="large-12 medium-12 small-12 cell">
+              This page must have been removed or had its name changed.
+          </div>
+        </div>
+      </div>
+    <div style="height:50px;"></div>
+   {% include footer.html %}
+
+    <script src="{{'/assets/js/vendor/jquery.js?v=' | append: site.github.build_revision | relative_url}}"></script>
+    <script src="{{'/assets/js/vendor/what-input.js?v=' | append: site.github.build_revision | relative_url}}"></script>
+    <script src="{{'/assets/js/vendor/foundation.min.js?v=' | append: site.github.build_revision | relative_url}}"></script>
+    <script src="{{'/assets/js/app.js?v=' | append: site.github.build_revision | relative_url}}"></script>
+  </body>
+</html>
