@@ -4,9 +4,6 @@ layout: note
 description: Notes on my readings in research papers containing Electroencephalography (EEG)
 ---
 
-read 32, 156: dnn, cnn, p300
-read 207: dnn, cnn, dbn
-
 <table>
 <thead><th>Paper</th><th>Key Ideas</th></thead>
 <tbody>

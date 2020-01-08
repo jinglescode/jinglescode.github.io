@@ -839,6 +839,10 @@ table td{
     width: 100%;
 }
 
+.blog_post blockquote {
+  padding: 0.5rem !important;
+}
+
 
 @media only screen and (min-width: 500px) {
   .top-bar-right {
