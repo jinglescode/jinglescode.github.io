@@ -4,6 +4,7 @@ layout: note
 description: Notes on my readings in research papers containing P300 Detection with EEG
 ---
 
+
 <table>
 <thead><th>Paper</th><th>Key Ideas</th></thead>
 <tbody>
