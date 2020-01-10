@@ -62,9 +62,7 @@ description: Notes on my readings in research papers containing steady-state vis
   - affective valence
 - data were first bandpass-filtered with a 12th order Butterworth filter having a width of 0.5-Hz (48 dB/octave), around the target frequencies of 15 and 20 Hz.
 
-2015
-The steady-state visual evoked potential in vision research: a review
-https://tvst.arvojournals.org/article.aspx?articleid=2291652
+[2015][The steady-state visual evoked potential in vision research: a review](https://tvst.arvojournals.org/article.aspx?articleid=2291652)
 
 - SSVEP stimulus frequency (i.e., presentation rate) tends to be above 8–10 Hz
 - SSVEP response is periodic, it is confined to a specific set of frequencies, and it is thus natural to analyze it in the frequency domain instead of the time domain
@@ -74,8 +72,3 @@ https://tvst.arvojournals.org/article.aspx?articleid=2291652
 2007
 Spatiotemporal analysis of the cortical sources of the steady‐state visual evoked potential
 https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.20276
-
-
-1996
-Selective attention to stimulus location modulates the steady-state visual evoked potential
-https://www.pnas.org/content/93/10/4770.short
