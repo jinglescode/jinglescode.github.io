@@ -32,6 +32,27 @@ description: Notes on my readings in research papers containing steady-state vis
   - these flickering rates can be directly derived by dividing screen refresh rate (60Hz)
   - 8-15Hz range are reliable and high amplitude SSVEP responses
 
+[2017][Compact convolutional neural networks for classification of asynchronous steady-state visual evoked potentials](https://iopscience.iop.org/article/10.1088/1741-2552/aae5d8/meta)
+
+- [code available](https://github.com/vlawhern/arl-eegmodels)
+- Compact-CNN to learn 12 classes
+  - 12 keys of num pad
+  - hz range from 9.25 to 14.75, with 0.5 gap
+- compare performance with CCA and combined-CCA
+- EEGNet architecture, model name `EEGNet_SSVEP`
+  - performing temporal convolutions, with the convolutional kernel weights being identified from the data
+  - performs a temporal convolution to mimic a bandpass frequency filter
+  - depthwise spatial convolutions that act as spatial filters to reduce the dimensionality of the data
+  - use separable convolutions
+    - reducing the number of parameters to fit
+    - explicitly decoupling the relationship within and across outputs
+  - batch norm
+  - pooling
+  - dropout
+  - ELU
+
+
+
 [2017][A convolutional neural network for steady state visual evoked potential classification under ambulatory environment](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)
 
 - CNN based classifier, uses frequency features as input, for SSVEP detection in ambulatory conditions
