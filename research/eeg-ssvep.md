@@ -1,13 +1,36 @@
+---
+title: Readings on SSVEP Detection
+layout: note
+description: Notes on my readings in research papers containing steady-state visual evoked potentials Detection with EEG
+---
 
-2018
-Steady state visual evoked potential (SSVEP) based brain-computer interface (BCI) performance under different perturbations
-https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0191673
+[2018][Steady state visual evoked potential (SSVEP) based brain-computer interface (BCI) performance under different perturbations](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0191673)
 
+- test robustness of SSVEP signals, 4 class classification, 4 different perturbations when subject is
+  - just focusing
+  - speaking (counting out loud 1-10)
+  - thinking (of numbers 1-10)
+  - listening (to verbal 1-10)
+- classifiers tested
+  - Decision tree
+  - Naïve Bayes
+  - K-Nearest Neighbor
+- results
+  - speaking and thinking decreased classification accuracy
+  - no significant difference between listening and control group
+  - 1s stimuli: ~70%. 2s stimuli: ~95%
+  - they have analysis from results to neuroscience, about attention and how each part of the brain could be activated by the tasks
 
-2018
-A Study of SSVEP Responses in Case of Overt and Covert Visual Attention with Different View Angles
-https://www.researchgate.net/publication/330477941_A_Study_of_SSVEP_Responses_in_Case_of_Overt_and_Covert_Visual_Attention_with_Different_View_Angles
+[2018][A Study of SSVEP Responses in Case of Overt and Covert Visual Attention with Different View Angles](https://www.researchgate.net/publication/330477941_A_Study_of_SSVEP_Responses_in_Case_of_Overt_and_Covert_Visual_Attention_with_Different_View_Angles)
 
+- investigate on how visual attention affects SSVEP responses in both fovea and peripheral vision. focuses on studying the influence of view angles, visual attentions, frequencies in modulating SSVEP responses and characteristics in peripheral vision
+- to evaluate how SSVEP response change across field of view range
+  - view angles
+  - vision attention states
+  - stimulus frequency
+- four stimulus frequencies (8.57, 10, 12, 15 Hz)
+  - these flickering rates can be directly derived by dividing screen refresh rate (60Hz)
+  - 8-15Hz range are reliable and high amplitude SSVEP responses
 
 [2017][A convolutional neural network for steady state visual evoked potential classification under ambulatory environment](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)
 
@@ -31,14 +54,13 @@ https://www.researchgate.net/publication/330477941_A_Study_of_SSVEP_Responses_in
   - CNN need more data to perform better than CCA-KNN, use shift size (in ms) to adjust number of data samples
   - Ambulatory SSVEP, despite having more data than static, learning from ambulatory is more difficult
 
+[2016][Attention mechanisms during predictable and unpredictable threat - A steady-state visual evoked potential approach](https://www.sciencedirect.com/science/article/pii/S1053811916302750)
 
-
-
-
-2016
-Attention mechanisms during predictable and unpredictable threat - A steady-state visual evoked potential approach
-https://www.sciencedirect.com/science/article/pii/S1053811916302750
-
+- electric stimuli applied, subjects to provide
+  - scale pain level from 0-10
+  - scale arousal
+  - affective valence
+- data were first bandpass-filtered with a 12th order Butterworth filter having a width of 0.5-Hz (48 dB/octave), around the target frequencies of 15 and 20 Hz.
 
 2015
 The steady-state visual evoked potential in vision research: a review
