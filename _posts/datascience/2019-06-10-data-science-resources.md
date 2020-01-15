@@ -1,7 +1,7 @@
 ---
 title: Machine Learning Resources
 layout: note
-image: /assets/img/posts/machine-learning-resources-01.jpg
+image: /assets/img/posts/machine-learning-resources-01.webp
 description: Machine Learning links I find useful
 category: datascience
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 
-![cover](/assets/img/posts/machine-learning-resources-01.jpg)
+![cover](/assets/img/posts/machine-learning-resources-01.webp)
 
 # Resources on Deep Learning
 
@@ -80,4 +80,3 @@ tags:
 
 ## Music for reading
 - [Top 40 Acoustic Guitar Covers Of Popular Songs - Best Instrumental Music 2019](https://www.youtube.com/watch?v=_UucPr2M-qU)
-
