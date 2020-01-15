@@ -1,7 +1,7 @@
 ---
 title: Project Euler - Problem 4 - Largest palindrome product
 layout: note
-image: /assets/img/posts/project-euler.jpg
+image: /assets/img/posts/project-euler.webp
 description: Find the largest palindrome made from the product of two `n`-digit numbers.
 category: javascript
 tags:

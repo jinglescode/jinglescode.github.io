@@ -1,7 +1,7 @@
 ---
 title: Why Linear Regression is not suitable for Classification
 layout: note
-image: https://i.ibb.co/cvnssKZ/Why-Linear-Regression-is-not-suitable-for-Classification.png
+image: /assets/img/posts/why-lr-00.webp
 description: Linear Regression vs Logistic Regression for Classification Tasks
 category: datascience
 tags:
@@ -12,8 +12,7 @@ tags:
 
 ---
 
-[![cover](https://i.ibb.co/cvnssKZ/Why-Linear-Regression-is-not-suitable-for-Classification.png)](https://towardsdatascience.com/why-linear-regression-is-not-suitable-for-binary-classification-c64457be8e28)
-
+![cover](/assets/img/posts/why-lr-00.webp)
 
 This article explains why logistic regression performs better than linear regression for classification problems, and 2 reasons why linear regression is not suitable:
 - the predicted value is continuous, not probabilistic
@@ -33,11 +32,11 @@ Examples 1 and 2 are examples of binary classification problems, where there are
 # Can classification problems be solved using Linear Regression?
 Let’s say we create a perfectly balanced dataset (as all things should be), where it contains a list of customers and a label to determine if the customer had purchased. In the dataset, there are 20 customers. 10 customers age between 10 to 19 who purchased, and 10 customers age between 20 to 29 who did not purchase. “Purchased” is a binary label denote by 0 and 1, where 0 denote “customer did not make a purchase” and 1 denote “customer made a purchase”.
 
-![Our sample training dataset of 20 customers and their purchase label](/assets/img/posts/why-lr-01.png)
+![Our sample training dataset of 20 customers and their purchase label](/assets/img/posts/why-lr-01.webp)
 
 The objective of a [linear regression](https://en.wikipedia.org/wiki/Linear_regression) model is to find a relationship between the input variables and a target variable. Below is our linear regression model that was trained using the above dataset. The red line is the best fit line for the training dataset, which aims to minimise the distance between the predicted value and actual value.
 
-![Linear regression model, showing best fit line for the training dataset](/assets/img/posts/why-lr-02.png)
+![Linear regression model, showing best fit line for the training dataset](/assets/img/posts/why-lr-02.webp)
 
 To use this model for prediction is pretty straight forward. Given any age, we are able to predict the value along the Y-axis. If Y is greater than 0.5 (above the green line), predict that this customer will make purchases otherwise will not make purchases.
 
@@ -62,7 +61,7 @@ Using our linear regression model, anyone age 30 and greater than has a predicti
 
 Yes, it might work, but [logistic regression](https://en.wikipedia.org/wiki/Logistic_regression) is more suitable for classification task and we want to prove that logistic regression yields better results than linear regression. Let’s see how logistic regression classifies our dataset.
 
-![Logistic regression model, a sigmoid curve that fit the training dataset](/assets/img/posts/why-lr-03.png)
+![Logistic regression model, a sigmoid curve that fit the training dataset](/assets/img/posts/why-lr-03.webp)
 
 Now we have 2 models trained on the same dataset, one by linear regression, and another by logistic regression. We can compare both models performance by using root mean squared error (RMSE) and the coefficient of determination (R² score).
 
@@ -85,7 +84,7 @@ From the metrics, logistic regression performed much better than linear regressi
 
 Let’s add 10 more customers age between 60 to 70, and train our linear regression model, finding the best fit line.
 
-![Linear regression model on 30 customers](/assets/img/posts/why-lr-04.png)
+![Linear regression model on 30 customers](/assets/img/posts/why-lr-04.webp)
 
 Our linear regression model manages to fit a new line, but if you look closer, some customers (age 20 to 22) outcome are predicted wrongly.
 
@@ -106,7 +105,7 @@ Our linear regression model manages to fit a new line, but if you look closer, s
 
 As linear regression tries to fit the regression line by minimising prediction error, in order to minimise the distance of predicted and actual value for customers age between 60 to 70. Let’s train a logistic regression model with the same dataset.
 
-![Logistic regression model on the same training dataset](/assets/img/posts/why-lr-05.png)
+![Logistic regression model on the same training dataset](/assets/img/posts/why-lr-05.webp)
 
 Yes! In this very simple dataset, logistic regression manages to classify all data points perfectly.
 
@@ -135,7 +134,7 @@ Let’s compare the R² and RMSE again for both models, and you will see that lo
 
 # Conclusion
 
-![Both the linear and the logistic regression line](/assets/img/posts/why-lr-06.png)
+![Both the linear and the logistic regression line](/assets/img/posts/why-lr-06.webp)
 
 Linear regression is suitable for predicting output that is continuous value, such as predicting the price of a property. Its prediction output can be any real number, range from negative infinity to infinity. The regression line is a straight line.
 

@@ -10,7 +10,7 @@ tags:
 
 ---
 
-[![cover](/assets/img/posts/analyze-airbnb-00.webp)](https://towardsdatascience.com/airbnb-in-seattle-data-analysis-8222207579d7)
+![cover](/assets/img/posts/analyze-airbnb-00.webp)
 
 For all prospective Airbnb hosts in Seattle, I will answer these questions in this article:
 - when to rent to maximise revenue?

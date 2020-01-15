@@ -1,7 +1,7 @@
 ---
 title: Biomedical Image Segmentation - U-Net
 layout: note
-image: /assets/img/posts/unet-00.png
+image: /assets/img/posts/unet-00.webp
 description: Works with very few training images and yields more precise segmentation
 category: datascience
 tags:
@@ -12,7 +12,7 @@ tags:
 
 ---
 
-[![cover](/assets/img/posts/unet-00.png)](https://towardsdatascience.com/biomedical-image-segmentation-u-net-a787741837fa)
+![cover](/assets/img/posts/unet-00.webp)
 
 # Image Segmentation
 
@@ -20,7 +20,7 @@ Suppose we want to know where an object is located in the image and the shape of
 
 ## Differences between Image Classification, Object Detection and Image Segmentation
 
-![Differences between Image Classification, Object Detection and Image Segmentation](/assets/img/posts/unet-01.jpeg)
+![Differences between Image Classification, Object Detection and Image Segmentation](/assets/img/posts/unet-01.webp)
 
 **Image Classification** helps us to classify what is contained in an image. The goal is to answer “is there a cat in this image?”, by predicting either yes or no.
 
@@ -57,7 +57,7 @@ Limitation of related work:
 
 U-Net has elegant architecture, the expansive path is more or less symmetric to the contracting path, and yields a u-shaped architecture.
 
-![unet arcitecture](/assets/img/posts/unet-02.jpg)
+![unet arcitecture](/assets/img/posts/unet-02.webp)
 
 **Contraction path (downsampling)**
 
@@ -89,7 +89,7 @@ We will be using [binary_cross_entropy_with_logits](https://pytorch.org/docs/sta
 
 **Dice coefficient**
 
-![Dice coefficient](/assets/img/posts/unet-03.jpeg#skinny_image)
+![Dice coefficient](/assets/img/posts/unet-03.webp#skinny_image)
 
 A common metric measure of overlap between the predicted and the ground truth. The calculation is 2 * the area of overlap (*between the predicted and the ground truth*) divided by the total area (*of both predict and ground truth combined*).
 
@@ -99,7 +99,7 @@ I will be using this metric together with the Binary cross-entropy as the loss f
 
 **Intersection over Union**
 
-![Intersection over Union](/assets/img/posts/unet-04.jpeg#skinny_image)
+![Intersection over Union](/assets/img/posts/unet-04.webp#skinny_image)
 
 A simple (yet effective!) metric to calculate how accurate the predicted mask is with the ground truth mask. The calculation to compute the area of overlap (*between the predicted and the ground truth*) and divide by the area of the union (*of predicted and ground truth*).
 
@@ -111,7 +111,7 @@ To optimize this model as well as subsequent U-Net implementation for comparison
 
 The model completed training in 11m 33s, each epoch took about 14 seconds. A total of 34,527,106 trainable parameters.
 
-![metrics](/assets/img/posts/unet-05.png)
+![metrics](/assets/img/posts/unet-05.webp)
 
 The epoch with the best performance is epoch #36 (out of 50).
 - Binary cross-entropy: 0.3319
@@ -120,7 +120,7 @@ The epoch with the best performance is epoch #36 (out of 50).
 
 Test the model with a few unseen samples, to predict optical disc (red) and optical cup (yellow).
 
-![results](/assets/img/posts/unet-06.jpeg)
+![results](/assets/img/posts/unet-06.webp)
 
 From these test samples, the results are pretty good. I chose the first image because it has an interesting edge along the top left, there is a misclassification there. The second image is a little dark, but there are no issues getting the segments.
 

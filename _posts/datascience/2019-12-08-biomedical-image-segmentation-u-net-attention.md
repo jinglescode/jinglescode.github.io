@@ -1,7 +1,7 @@
 ---
 title: Biomedical Image Segmentation - Attention U-Net
 layout: note
-image: /assets/img/posts/unet-attention-01.png
+image: /assets/img/posts/unet-attention-01.webp
 description: Improving model sensitivity and accuracy by attaching attention gates on top of the standard U-Net
 category: datascience
 tags:
@@ -12,7 +12,7 @@ tags:
 
 ---
 
-![cover](/assets/img/posts/unet-attention-01.png)
+![cover](/assets/img/posts/unet-attention-01.webp)
 
 Medical image segmentation has been actively studied to automate clinical analysis. Deep learning models generally require a large amount of data, but acquiring medical images is tedious and error-prone.
 
@@ -24,7 +24,7 @@ Attention U-Net aims to automatically learn to focus on target structures of var
 
 U-Nets are commonly used for image segmentation tasks because of its performance and efficient use of GPU memory. It aims to achieve high precision that is reliable for clinical usage with fewer training samples because acquiring annotated medical images can be resource-intensive. Read more about U-Net.
 
-![unet architectures](/assets/img/posts/unet-attention-02.jpg)
+![unet architectures](/assets/img/posts/unet-attention-02.webp)
 
 Despite U-Net excellent representation capability, it relies on multi-stage cascaded convolutional neural networks to work. These cascaded frameworks extract the region of interests and make dense predictions. This approach leads to excessive and redundant use of computational resources as it repeatedly extracting low-level features.
 
@@ -32,7 +32,7 @@ Despite U-Net excellent representation capability, it relies on multi-stage casc
 
 ["Need to pay attention" by Jetley et al.](https://arxiv.org/abs/1804.02391) introduced end-to-end-trainable attention module. Attention gates are commonly used in natural image analysis and natural language processing.
 
-![attention module](/assets/img/posts/unet-attention-03.png)
+![attention module](/assets/img/posts/unet-attention-03.webp)
 
 Attention is used to perform class-specific pooling, which results in a more accurate and robust image classification performance. These attention maps can amplify the relevant regions, thus demonstrating superior generalisation over several benchmark datasets.
 
@@ -50,7 +50,7 @@ To improve segmentation performance, [Khened et al.](https://www.sciencedirect.c
 
 As a result, attention gates incorporated into U-Net can improve model sensitivity and accuracy to foreground pixels without requiring significant computation overhead. Attention gates can progressively suppress features responses in irrelevant background regions.
 
-![attention gates](/assets/img/posts/unet-attention-04.png)
+![attention gates](/assets/img/posts/unet-attention-04.webp)
 
 Attention gates are implemented before concatenation operation to merge only relevant activations. Gradients originating from background regions are down-weighted during the backward pass. This allows model parameters in prior layers to be updated based on spatial regions that are relevant to a given task.
 
@@ -68,7 +68,7 @@ Additive soft attention is used in the sentence to sentence translation ([Bahdan
 
 Below is an illustration of Attention U-Net.
 
-![unet attention architectures](/assets/img/posts/unet-attention-05.jpg)
+![unet attention architectures](/assets/img/posts/unet-attention-05.webp)
 
 # My experiment on  Attention U-Net
 
@@ -78,7 +78,7 @@ The experiment setup and the metrics used will be the same as the [U-Net](https:
 
 The model completed training in 13 minutes; each epoch took approximately 15 seconds.
 
-![training](/assets/img/posts/unet-attention-06.png)
+![training](/assets/img/posts/unet-attention-06.webp)
 
 The metrics between several U-Net models for comparison, as shown below.
 
@@ -86,7 +86,7 @@ The metrics between several U-Net models for comparison, as shown below.
 
 The test began with the model processing a few unseen samples, to predict optical disc (red) and optical cup (yellow). Here are the test results for Attention U-Net, UNet++ and U-Net for comparison.
 
-![result](/assets/img/posts/unet-attention-07.png)
+![result](/assets/img/posts/unet-attention-07.webp)
 
 # Conclusion
 

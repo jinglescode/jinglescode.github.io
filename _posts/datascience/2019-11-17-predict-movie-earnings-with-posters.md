@@ -12,7 +12,7 @@ tags:
 
 ---
 
-[![cover](/assets/img/posts/predict-movie-00.webp)](https://towardsdatascience.com/predict-movie-earnings-with-posters-786e9fd82bdc)
+![cover](/assets/img/posts/predict-movie-00.webp)
 
 If you have a summer blockbuster or a short film, what would be the best way to capture your audience’s attention and interest? The 2 most prominent methods are apparent: posters and trailers.
 
