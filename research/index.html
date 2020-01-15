@@ -1,26 +1,31 @@
 ---
-layout: default
+layout: main
 title: Research
 excerpt:
 ---
 
-<div class="grid-container">
-  <div class="grid-x grid-padding-x">
 
-   {% for page in site.pages %}
-   {% if page.url contains 'research' and page.url != '/research/' %}
-    <div class="large-4 medium-6 small-12 cell">
-      <a href="{{ page.url | prepend: site.baseurl }}">
-        <div class="card card--article not-visible" style="min-height: 180px;">
-          <div class="card-body">
-            <div class="card-title">{{page.title}} {{page.type}}</div>
-            <div class="card-description">{{ page.description | truncate: 160 }}</div>
+<div class="section section-basic">
+  <div class="container">
+    <div class="row">
+
+      {% for page in site.pages %}
+      {% if page.url contains 'research' and page.url != '/research/' %}
+
+      <div class="col-sm-6 col-md-6">
+        <a href="{{ page.url | prepend: site.baseurl }}">
+          <div class="card">
+            <div class="card-body" style="height:200px">
+              <div class="card-title">{{page.title}} {{page.type}}</div>
+              <div class="card-description">{{ page.description | truncate: 160 }}</div>
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
-    {% endif %}
-    {% endfor %}
+        </a>
+      </div>
 
+      {% endif %}
+      {% endfor %}
+
+    </div>
   </div>
 </div>

@@ -51,8 +51,6 @@ description: Notes on my readings in research papers containing steady-state vis
   - dropout
   - ELU
 
-
-
 [2017][A convolutional neural network for steady state visual evoked potential classification under ambulatory environment](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)
 
 - CNN based classifier, uses frequency features as input, for SSVEP detection in ambulatory conditions
