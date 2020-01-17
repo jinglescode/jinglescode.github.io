@@ -10,3 +10,8 @@ Introduction to Modern Brain-Computer Interface Design
 Christian A. Kothe
 Swartz Center for Computational Neuroscience, University of California San Diego
 https://www.youtube.com/playlist?list=PLbbCsk7MUIGcO_lZMbyymWU2UezVHNaMq
+
+
+Learn MNE
+https://mne.tools/
+https://www.youtube.com/watch?v=iW0g_KDYIYg
