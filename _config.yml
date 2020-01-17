@@ -30,3 +30,8 @@ defaults:
       path: "/research/pdfs/*"
     values:
       sitemap: false
+  -
+    scope:
+      path: "/assets/*"
+    values:
+      sitemap: false
