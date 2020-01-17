@@ -35,3 +35,8 @@ defaults:
       path: "/assets/*"
     values:
       sitemap: false
+  -
+    scope:
+      path: "/backup/*"
+    values:
+      sitemap: false
