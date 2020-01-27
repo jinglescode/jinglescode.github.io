@@ -12,11 +12,11 @@ tags:
   - animate
 ---
 
-100% JavaScript solution to extracting phrases from text (here i use hotel reviews) and display key points in a beautiful D3 wordcloud. Phrases (or ngrams) extraction are done in *get_top_phrases.js*, adjustments to the wordcloud can be done in *make_wordcloud.js*. get the code from [Github](https://github.com/lonedune/d3-wordcloud)
+100% JavaScript solution to extracting phrases from text (here i use hotel reviews) and display key points in a beautiful D3 wordcloud. Phrases (or ngrams) extraction are done in *get_top_phrases.js*, adjustments to the wordcloud can be done in *make_wordcloud.js*. get the code from [Github](https://github.com/jinglescode/demos/tree/master/src/app/components/phrases-extraction-d3-wordcloud)
 
 # Demo
 {::nomarkdown}
-<iframe src="https://cdn.rawgit.com/lonedune/d3-wordcloud/master/main.html" width=100% height=500 border=0></iframe>
+<iframe src="https://jinglescode.github.io/demos/phrases-extraction-d3-wordcloud" width=100% height=500 border=0></iframe>
 {:/}
 
 # Data
