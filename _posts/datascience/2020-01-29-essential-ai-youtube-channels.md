@@ -2,7 +2,7 @@
 title: 7 Essential AI YouTube Channels
 layout: note
 image: https://cdn-images-1.medium.com/max/1600/0*5svbBBSkgCrv9oTu.jpg
-description: To keep you updated with machine learning advancements
+description: 7 YouTube channels to keep you up with the latest and coolest advances in machine learning
 category: datascience
 tags:
 - learning
