@@ -36,6 +36,8 @@ The list of selected research on this channel is definitely one that is interest
 
 Since this is my favourite channel, let me show you one of the videos, [OpenAI Plays Hide and Seek and Breaks The Game! 🤖](https://www.youtube.com/watch?v=Lu56xVlZ40M) I am sure you will enjoy it.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lu56xVlZ40M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 YouTube: [Two Minute Papers](https://www.youtube.com/user/keeroyz/featured)
 
 # 2. Lex Fridman
