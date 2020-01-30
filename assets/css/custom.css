@@ -81,6 +81,20 @@ body {
   font-weight: 500;
 }
 
+.markdown-content img[src*="#skinny_image"] {
+  max-width: 500px;
+  width: 100%;
+}
+
+.markdown-content img[src*="#float_left"] {
+  max-width: 500px;
+  width: 100%;
+  display: inline;
+  margin-right: 30px;
+}
+
+
+
 /* about */
 .image-container {
   height: 400px;
