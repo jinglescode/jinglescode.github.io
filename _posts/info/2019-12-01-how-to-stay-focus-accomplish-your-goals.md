@@ -5,9 +5,8 @@ image: /assets/img/posts/stay-focus-accomplish-goals-01.webp
 description: We can't multitask, we allocate time blocks for productivity and enter the Flow state
 category: info
 tags:
-  - focus
-  - productivity
-  - flow
+  - personal growth
+  - mindfulness
 ---
 
 ![cover](/assets/img/posts/stay-focus-accomplish-goals-01.webp)

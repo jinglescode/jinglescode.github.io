@@ -6,7 +6,6 @@ description: Understand Airbnb rental landscape in Seattle
 category: datascience
 tags:
 - data analysis
-- airbnb
 
 ---
 

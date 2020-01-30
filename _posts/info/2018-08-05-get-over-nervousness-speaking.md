@@ -5,9 +5,7 @@ image: https://image.ibb.co/jeurgV/thoughts.jpg
 description: Tips on getting over nervousness when comes to speaking
 category: info
 tags:
-  - personal
-  - speaking
-  - communication
+  - personal growth
 ---
 
 # Watch yourself on video giving presentation

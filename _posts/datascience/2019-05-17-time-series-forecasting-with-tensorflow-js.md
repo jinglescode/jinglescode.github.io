@@ -5,10 +5,6 @@ image: /assets/img/posts/time-series-00.webp
 description: Pull stock prices from online API and perform predictions using Recurrent Neural Network & Long Short Term Memory (LSTM) with TensorFlow.js framework
 category: datascience
 tags:
-- unsupervised learning
-- machine learning
-- data science
-- artificial intelligence
 - tensorflow
 
 ---

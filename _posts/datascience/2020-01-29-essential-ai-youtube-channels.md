@@ -5,7 +5,7 @@ image: /assets/img/posts/ai-youtube-01.webp
 description: YouTube channels to keep you up with the latest and coolest advances in machine learning
 category: datascience
 tags:
-- learning
+- resources
 ---
 
 ![cover](/assets/img/posts/ai-youtube-02.webp#skinny_image)

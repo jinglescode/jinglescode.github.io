@@ -5,9 +5,8 @@ image: /assets/img/posts/project-euler.webp
 description: Find the difference between the sum of the squares of the first n natural numbers and the square of the sum.
 category: javascript
 tags:
-- ProjectEuler100
 - javascript
-- ProjectEuler
+- algorithm
 ---
 
 ## The problem

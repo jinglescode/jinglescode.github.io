@@ -5,9 +5,8 @@ image: /assets/img/posts/project-euler.webp
 description: What is the smallest positive number that is evenly divisible by all of the numbers from 1 to n?
 category: javascript
 tags:
-- ProjectEuler100
 - javascript
-- ProjectEuler
+- algorithm
 ---
 
 ## The problem

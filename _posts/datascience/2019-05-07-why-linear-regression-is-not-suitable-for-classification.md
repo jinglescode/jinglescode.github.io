@@ -5,9 +5,6 @@ image: /assets/img/posts/why-lr-00.webp
 description: Linear Regression vs Logistic Regression for Classification Tasks
 category: datascience
 tags:
-- machine learning
-- classification
-- data science
 - regression
 
 ---

@@ -5,10 +5,7 @@ image: /assets/img/posts/predict-movie-00.webp
 description: Identify the genre and earnings of the movie with movie posters
 category: datascience
 tags:
-- biomedical
-- image processing
-- machine learning
-- deep learning
+- image recognition
 
 ---
 

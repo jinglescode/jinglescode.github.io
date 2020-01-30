@@ -5,9 +5,8 @@ image: /assets/img/posts/project-euler.webp
 description: What is the largest prime factor of the given number?
 category: javascript
 tags:
-- ProjectEuler100
 - javascript
-- ProjectEuler
+- algorithm
 ---
 
 ## The problem

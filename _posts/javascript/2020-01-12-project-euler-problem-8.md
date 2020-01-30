@@ -5,9 +5,8 @@ image: /assets/img/posts/project-euler.webp
 description: What is the nth prime number?
 category: javascript
 tags:
-- ProjectEuler100
 - javascript
-- ProjectEuler
+- algorithm
 ---
 
 I am currently on this [Project Euler Challenge](https://projecteuler.net/) journey.

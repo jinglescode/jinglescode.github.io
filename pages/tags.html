@@ -1,0 +1,51 @@
+---
+layout: main
+title: Browse Article by Tags
+excerpt: Jingles articles by tags
+---
+
+<!-- <div class="section section-basic">
+  <div class="container">
+    <div class="row">
+      {% for tag in site.tags %}
+        <span class="badge badge-info"><a href="#{{ tag[0] | slugify }}" style="color: #fff;">{{ tag[0] }}</a></span>
+      {% endfor %}
+    </div>
+  </div>
+</div> -->
+
+<div class="section section-basic">
+  <div class="container">
+
+    {% assign sorted_tags = site.tags | sort %}
+    {% for tag in sorted_tags %}
+    <div class="row" id="{{ tag[0] | slugify }}">
+
+      <div class="col-sm-12">
+
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">{{ tag | first }}</h2>
+
+            <div class="card-description">
+              {% for post in tag[1] %}
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                  {{ post.title }}
+                  <small>- {{ post.date | date_to_string }}</small>
+                </a><br/>
+              {% endfor %}
+            </div>
+            <div class="card-footer">
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    {% endfor %}
+
+  </div>
+</div>

@@ -5,11 +5,8 @@ image: https://image.ibb.co/kD20aq/wordcloud.jpg
 description: JavaScript solution to extracting ngrams from reviews and visualise topics on wordcloud
 category: datascience
 tags:
-  - extract
-  - phrases
-  - d2
-  - wordcloud
-  - animate
+  - javascript
+  - visualisation
 ---
 
 100% JavaScript solution to extracting phrases from text (here i use hotel reviews) and display key points in a beautiful D3 wordcloud. Phrases (or ngrams) extraction are done in *get_top_phrases.js*, adjustments to the wordcloud can be done in *make_wordcloud.js*. get the code from [Github](https://github.com/jinglescode/demos/tree/master/src/app/components/phrases-extraction-d3-wordcloud)

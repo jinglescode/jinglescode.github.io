@@ -5,9 +5,8 @@ image: /assets/img/posts/project-euler.webp
 description: Find the sum of all the multiples of 3 or 5 below the provided parameter value number.
 category: javascript
 tags:
-- ProjectEuler100
 - javascript
-- ProjectEuler
+- algorithm
 ---
 
 ## The problem

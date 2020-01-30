@@ -6,9 +6,7 @@ description: Improving model sensitivity and accuracy by attaching attention gat
 category: datascience
 tags:
 - medical
-- image processing
-- machine learning
-- deep learning
+- image recognition
 
 ---
 

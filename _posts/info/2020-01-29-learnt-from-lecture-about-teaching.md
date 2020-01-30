@@ -5,7 +5,7 @@ image: /assets/img/posts/learnt-from-lecuture-teaching-01.webp
 description: 3 things I should be aware of and shouldn't do
 category: info
 tags:
-  - learn
+  - personal growth
 ---
 
 This story has nothing to do with the actual content that is covered in class. But instead, it is focusing on the teaching style and delivery methods.

@@ -5,9 +5,8 @@ image: /assets/img/posts/project-euler.webp
 description: Find the largest palindrome made from the product of two `n`-digit numbers.
 category: javascript
 tags:
-- ProjectEuler100
 - javascript
-- ProjectEuler
+- algorithm
 ---
 
 ## The problem

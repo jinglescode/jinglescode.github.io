@@ -6,10 +6,6 @@ description: A reinforcement learning algorithm for agents to learn the tic-tac-
 category: datascience
 tags:
 - reinforcement learning
-- machine learning
-- data science
-- programming
-- artificial intelligence
 
 ---
 

@@ -5,12 +5,7 @@ image: /assets/img/posts/machine-learning-resources-01.webp
 description: Machine Learning links I find useful
 category: datascience
 tags:
-- data science
-- machine learning
-- tutorials
-- courses
 - resources
-
 ---
 
 ![cover](/assets/img/posts/machine-learning-resources-01.webp)

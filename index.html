@@ -70,41 +70,52 @@ excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
 
 <div class="section section-basic justify-content-center">
   <div class="container">
-    <!-- Pagination links -->
-    {% if paginator.total_pages > 1 %}
-    <ul class="pagination">
-      {% if paginator.previous_page %}
-      <li class="page-item">
-        <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
-          <span aria-hidden="true"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
-        </a>
-      </li>
-      {% endif %}
 
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <li class="page-item active">
-            <a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-          </li>
-        {% elsif page == 1 %}
-          <li class="page-item">
-            <a class="page-link" href="/">{{ page }}</a>
-          </li>
-        {% else %}
-          <li class="page-item">
-            <a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
+      <div class="row">
+        <div class="col-sm-9">
+          <!-- Pagination links -->
+          {% if paginator.total_pages > 1 %}
+          <ul class="pagination">
+            {% if paginator.previous_page %}
+            <li class="page-item">
+              <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
+                <span aria-hidden="true"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            {% endif %}
 
-      {% if paginator.next_page %}
-      <li class="page-item">
-        <a class="page-link" href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
-          <span aria-hidden="true"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
-        </a>
-      </li>
-      {% endif %}
-    </ul>
-    {% endif %}
+            {% for page in (1..paginator.total_pages) %}
+              {% if page == paginator.page %}
+                <li class="page-item active">
+                  <a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+                </li>
+              {% elsif page == 1 %}
+                <li class="page-item">
+                  <a class="page-link" href="/">{{ page }}</a>
+                </li>
+              {% else %}
+                <li class="page-item">
+                  <a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+            <li class="page-item">
+              <a class="page-link" href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
+                <span aria-hidden="true"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            {% endif %}
+          </ul>
+          {% endif %}
+
+          <!-- END Pagination links -->
+        </div>
+        <div class="col-sm-3" style="text-align:right;">
+          <a href="/pages/tags/">Browse articles by tags</a>
+        </div>
+      </div>
+
   </div>
 </div>

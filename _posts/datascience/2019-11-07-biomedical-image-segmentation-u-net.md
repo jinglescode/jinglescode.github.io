@@ -5,10 +5,8 @@ image: /assets/img/posts/unet-00.webp
 description: Works with very few training images and yields more precise segmentation
 category: datascience
 tags:
-- biomedical
-- image processing
-- machine learning
-- deep learning
+- medical
+- image recognition
 
 ---
 

@@ -5,9 +5,7 @@ image: https://i.ibb.co/stBFTKP/recommendation.jpg
 description: Summarise a few recommendation systems machine learning algorithms
 category: datascience
 tags:
-  - recommendation
-  - systems
-  - algorithms
+  - recsys
 ---
 
 # Introduction

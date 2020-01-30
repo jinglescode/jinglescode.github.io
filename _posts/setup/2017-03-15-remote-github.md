@@ -5,7 +5,7 @@ image: https://image.ibb.co/csB41V/github.png
 description: How to setup Github repo and synchronise with local copy
 category: setup
 tags:
-  - Github
+  - how to
 ---
 
 Personally, I tend to forget how to setup a Git repo, and thus I'm writing this as a guide for myself.

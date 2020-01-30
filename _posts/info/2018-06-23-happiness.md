@@ -5,8 +5,7 @@ image: https://image.ibb.co/jDmF8A/happiness.jpg
 description: tips to happiness, to create better well-being, to live a more fulfilling life
 category: info
 tags:
-  - psychology
-  - happiness
+  - mindfulness
 ---
 
 # What is happiness
