@@ -96,7 +96,10 @@ body {
 
 
 /* about */
-.image-container {
+.section-about-us .image-container {
   height: 400px;
   margin-bottom: 20px;
+}
+.section-about-us p {
+  font-weight: 500;
 }
