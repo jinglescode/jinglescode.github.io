@@ -1,6 +1,6 @@
 ---
 title: Readings on Medical Imaging
-layout: note
+layout: pages
 description: Notes on my readings in research papers containing image processing on medical data
 ---
 

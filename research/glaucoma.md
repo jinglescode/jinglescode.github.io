@@ -1,6 +1,6 @@
 ---
 title: Readings on Glaucoma Medical Imaging
-layout: note
+layout: pages
 description: Notes on my readings in research papers containing Glaucoma
 ---
 
@@ -27,7 +27,7 @@ Implementations
 What's the reason for performing this research? (objective)
 - to use both from EDI-OCT images and fundus images to screen glaucoma in the early stage
 - network 1: EDI-OCT images, region aware strategy and residual u-net to classify each pixel to either anterior lamina cribrosa surface (ALCS) or background
-- network 2: fundus images, CDR and textural features are extracted 
+- network 2: fundus images, CDR and textural features are extracted
 - hybrid features extracted from EDI-OCT images and fundus images using gcForest as the classifier
 
 Implementations
@@ -172,7 +172,7 @@ Implementations
     - 2 networks for 2 images:
         - global fundus image
         - segmented, local disc region
-- data augmentation: 
+- data augmentation:
     - standard augmentation (rotation and scaling) does not aid in AS-OCT screening
     - they used intensity-based augmentation to enlarge the data with varied intensities
     - they also shift the ACA position to extract multiple patches
@@ -234,7 +234,7 @@ what is glaucoma
 - measuring cup to disc ratio, healthy eye is 0.3
 
 how clinic diagnose glaucoma
-- tonometry measures the pressure within the eye, if exceed 21mm Hg, person diagnosed with glaucoma 
+- tonometry measures the pressure within the eye, if exceed 21mm Hg, person diagnosed with glaucoma
 - eye drops are used to dilate the pupil so that the doctor can see through the eye to examine the shape and color of the optic nerve
 - pachymetry test, measures cornea thickness, helps in clinical diagnosis as it has great influence on eye pressure reading
 
@@ -257,7 +257,7 @@ For understanding
     - optic cup: central bright zone
     - neuroretinal rim: peripheral region
 - to detect for glaucoma:
-    - indicators are the enlargement of the cup with respect to the optic disc, such as the 
+    - indicators are the enlargement of the cup with respect to the optic disc, such as the
         - vertical cup to disc ratio (CDR): major consideration of clinicians, manually annotating is labor-intensive
         - disc diameter
         - ISNT rule

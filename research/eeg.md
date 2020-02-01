@@ -1,6 +1,6 @@
 ---
 title: Readings on Electroencephalography
-layout: note
+layout: pages
 description: Notes on my readings in research papers containing Electroencephalography (EEG)
 ---
 
@@ -8,16 +8,9 @@ description: Notes on my readings in research papers containing Electroencephalo
 A deep learning architecture for temporal sleep stage classification using multivariate and multimodal time series
 https://ieeexplore.ieee.org/abstract/document/8307462/
 
-
-
 2018
 A convolutional neural network for sleep stage scoring from raw single-channel EEG
 https://www.sciencedirect.com/science/article/pii/S1746809417302847
-
-
-
-
-
 
 
 <table>

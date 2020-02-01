@@ -1,13 +1,12 @@
 ---
 title: Readings on P300 Detection
-layout: note
+layout: pages
 description: Notes on my readings in research papers containing P300 Detection with EEG
 ---
 
 <table>
 <thead><th>Paper</th><th>Key Ideas</th></thead>
 <tbody>
-
 
 <tr>
   <td>[2015]

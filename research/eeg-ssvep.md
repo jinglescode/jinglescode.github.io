@@ -1,9 +1,8 @@
 ---
 title: Readings on SSVEP Detection
-layout: note
+layout: pages
 description: Notes on my readings in research papers containing steady-state visual evoked potentials Detection with EEG
 ---
-
 
 [2019] [3D Convolutional Neural Networks for Event-Related Potential detection](https://ieeexplore.ieee.org/abstract/document/8856485/)
 - 3D CNN to capture spatial domain and temporal dimension

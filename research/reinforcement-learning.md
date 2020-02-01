@@ -1,6 +1,6 @@
 ---
 title: Readings on Reinforcement Learning
-layout: note
+layout: pages
 description: Notes on my readings in research papers containing reinforcement learning
 ---
 
@@ -19,7 +19,7 @@ Main findings
 - experience replay - randomize over data, removing correlations in observation sequence and smooth changes in the data distribution
 - iterative update that adjust action values (Q), towards target values that are only periodically updated, reducing correlations with the target
 - instead use an architecture in which there is a separate output unit for each possible action, and only the state representation is an input to the neural network. The outputs correspond to the predicted Q-values of the individual actions for the input state. The main advantage of this type of architecture is the ability to compute Q-values for all possible actions in a given state with only a single forward pass through the network
-- As the scale of scores varies greatly from game to game, we clipped all positive rewards at 1 and all negative rewards at -1, leaving 0 rewards unchanged. Clipping the rewards in this manner limits the scale of the error derivatives and makes it easier to use the same learning rate across multiple games. 
+- As the scale of scores varies greatly from game to game, we clipped all positive rewards at 1 and all negative rewards at -1, leaving 0 rewards unchanged. Clipping the rewards in this manner limits the scale of the error derivatives and makes it easier to use the same learning rate across multiple games.
 
 
 [Luketina, Jelena, et al. "A Survey of Reinforcement Learning Informed by Natural Language." arXiv preprint arXiv:1906.03926 (2019).](https://arxiv.org/pdf/1906.03926.pdf)

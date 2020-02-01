@@ -1,6 +1,6 @@
 ---
 title: Readings on Segmentation
-layout: note
+layout: pages
 description: Notes on my readings in research papers containing segmentation and mask generation
 ---
 

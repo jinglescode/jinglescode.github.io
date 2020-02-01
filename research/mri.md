@@ -1,6 +1,6 @@
 ---
 title: Readings on Magnetic Resonance Imaging
-layout: note
+layout: pages
 description: Notes on my readings in research papers containing MRI
 ---
 
