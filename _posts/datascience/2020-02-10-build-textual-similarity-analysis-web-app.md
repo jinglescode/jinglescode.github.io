@@ -8,8 +8,6 @@ tags:
 - resources
 ---
 
-![cover](/assets/img/posts/ai-youtube-02.webp#skinny_image)
-
 Have you wondered how search engines understand your queries and match the relevant results? How chatbot extract your intent from your questions and provide the most appropriate response?
 
 In this story, I will detail each component needed to build a textual similarity analysis web-app and include further readings for those who want to dig deeper.
