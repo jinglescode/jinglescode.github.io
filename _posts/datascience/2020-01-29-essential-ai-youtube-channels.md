@@ -1,142 +1,147 @@
 ---
-title: Essential AI YouTube Channels
+title: 7 Essential AI YouTube Channels
 layout: note
 image: /assets/img/posts/ai-youtube-01.webp
-description: YouTube channels to keep you up with the latest and coolest advances in machine learning
+description: How to stay updated with the latest and coolest machine learning advancements
 category: datascience
 tags:
 - resources
 ---
 
-![cover](/assets/img/posts/ai-youtube-02.webp#skinny_image)
+![cover](/assets/img/posts/ai-youtube-01.webp)
 
-Machine learning has been amongst the hottest topics around for several years, with research spending focused on machine learning [growing sharply](https://pureai.com/articles/2019/07/23/nwsdes-machine-learning-market-growth.aspx): from about $1.58 billion in 2017 to a projected $20.83 billion in 2024.
+Machine learning has been one of the hottest topics around for several years. Everyone is talking about it; organisations of all sizes are embracing these technologies.
 
-On the academic scene, approximately 100 new scientific machine learning papers are [published every day on Arxiv](http://data-mining.philippe-fournier-viger.com/too-many-machine-learning-papers/), averaging one article every 15 minutes.
+Harvard Business Review describes the role of a data scientist as “[The Sexiest Job of the 21st Century](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century)”. They are critical for business decision-making, and they are desperately in demand.
 
-![trend](/assets/img/posts/ai-youtube-03.webp#skinny_image)
+Spending on machine learning research is  [growing](https://pureai.com/articles/2019/07/23/nwsdes-machine-learning-market-growth.aspx), from $1.58 billion in 2017 to a projected $20.83 billion in 2024. On the academic scene, researchers publish approximately  [100 new machine learning papers](http://data-mining.philippe-fournier-viger.com/too-many-machine-learning-papers/)  every day on  [Arxiv](https://arxiv.org/).
 
-This shows the level of excitement and progress in machine learning. If you are like me, how are you going to keep up with advances in this field?
+One paper every 15 minutes!
 
-In this article, I will share 7 YouTube channels that share the same excitement as you (and I) do. These channels aim to uncover the latest and coolest development in machine learning.
+![cover](/assets/img/posts/ai-youtube-02.webp#float_left)
+![trend](/assets/img/posts/ai-youtube-03.webp#float_left)
 
-Let's begin.
+This chart shows the level of excitement and progress in machine learning. How could anyone keep up with advances in this field? 🤔
 
-# 1. Two Minute Papers
+In this article, I will introduce seven YouTube channels that share our excitement. These channels aim to uncover the latest and coolest developments in machine learning.
 
-First on the list, I personally highly recommend Two Minute Papers. It introduces the latest AI-related research in a way that is engaging and fun.
+_Let’s begin._
 
-> Awesome research for everyone. Two new science videos every week. You'll love it!
+----------
+
+# #1. Two Minute Papers
 
 ![channel](/assets/img/posts/ai-youtube-04.webp#float_left)
 ![channel](/assets/img/posts/ai-youtube-05.webp#float_left)
 
-Whether you are looking for reinforcement learning, robotics, DeepFake detector, development on AlphaStar or natural language processing; you name it, they have it.
+First on the list, the one I love the most,  _Two Minute Papers_  by  _Károly Zsolnai-Fehér_. His videos are entertaining, engaging, and an absolute joy to watch. He selects and reviews the most exciting research developments. OpenAI on DotA games, detecting DeepFake, simulating physics, or cloning your voice. He has it all in his channel.
 
-The list of selected research on this channel is definitely one that is interesting. The content delivery and demonstrations are so clear and concise. It is an absolute pleasure to watch every time.
+Károly will describe what is so brilliant about the research he is reviewing. Even for the most advanced and recent AI research, watching his videos do not need a PhD in Computer Science. His demonstrations are so clear that someone without machine learning knowledge can understand.
 
-Since this is my favourite channel, let me show you one of the videos, [OpenAI Plays Hide and Seek and Breaks The Game! 🤖](https://www.youtube.com/watch?v=Lu56xVlZ40M) I am sure you will enjoy it.
+Since this is my favourite channel, let me show you one of the videos,  [_OpenAI Plays Hide and Seek and Breaks The Game_](https://www.youtube.com/watch?v=Lu56xVlZ40M)! 🤖 I’m sure you’ll enjoy it.
+
+It’s about two AI teams (hiders and seekers) playing hide-and-seek against each other. When one side learns a new strategy, the other team will adapt to counter back. The agents played until a point where they learn to abuse the game physics engine. Bravo!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lu56xVlZ40M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-YouTube: [Two Minute Papers](https://www.youtube.com/user/keeroyz/featured)
+YouTube:  [_Two Minute Papers_](https://www.youtube.com/user/keeroyz/)
 
-# 2. Lex Fridman
+----------
 
-Lex Fridman conducts interviews with experts on artificial intelligence, deep learning, and autonomous vehicles.
-
-> Videos exploring research topics in artificial intelligence, deep learning, autonomous vehicles, and beyond.
+# #2. Lex Fridman
 
 ![channel](/assets/img/posts/ai-youtube-06.webp#float_left)
 ![channel](/assets/img/posts/ai-youtube-07.webp#float_left)
 
-My favourite part of this channel is the AI podcast that features interviews with experts working on AI. In the interviews, they discuss opinions on recent AI advances. This channel will keep you updated on the latest developments, ideas and concerns revolve around AI.
+_Lex Fridman_  conducts interviews with the artificial intelligence industry superstars. Elon Musk, Yann LeCun, Yoshua Bengio, Eric Schmidt? Yea, Lex has already interviewed them.
 
-Lex Fridman is a research scientist at MIT; he conducts and uploads deep learning lectures and autonomous vehicle lectures at MIT.
+These interviews can give you a glimpse on the future, as they will share what they are working on. Finding a cure for cancer using AI; Adobe is working on AI; Neuralink; new iRobot vacuum capabilities; YouTube algorithm. You can find a vast selection of topics.
 
-YouTube: [Lex Fridman](https://www.youtube.com/user/lexfridman/featured)
+Lex Fridman is a research scientist at MIT. He conducts deep learning and autonomous vehicle lectures. If attending MIT deep learning lectures interests you, Lex shares them on his channel too.
 
-# 3. Kaggle
+YouTube:  [_Lex Fridman_](https://www.youtube.com/user/lexfridman/)
 
-Kaggle, Your Home for Data Science. In data science, Kaggle is no stranger. It is a platform for users to find datasets, explore and learn from one another, and enter competitions to solve data science challenges.
+----------
 
-> Kaggle is the world's largest community of data scientists. Join us to compete, collaborate, learn, and do your data science work.
-
-![channel](/assets/img/posts/ai-youtube-08.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-09.webp#float_left)
-
-The lesser-known is their [YouTube channel](https://www.youtube.com/channel/UCSNeZleDn9c74yQc-EKnVTA), and it is as amazing as the main website. They included tutorials on all aspects of data science, stories on winning competitions, and live coding sessions to solve data science problems. There are so much to learn from this channel.
-
-There is also a playlist called the [Kaggle Reading Group](https://www.youtube.com/playlist?list=PLqFaTIg4myu8t5ycqvp7I07jTjol3RCl9) where someone will read and discuss research papers weekly. Wow!
-
-YouTube: [Kaggle](https://www.youtube.com/channel/UCSNeZleDn9c74yQc-EKnVTA)
-
-# 4. ArXiv Insights
-
-ArXiv Insights aims to simplify and explain technical components in machine learning scientific papers.
-
-> My name is Xander Steenbrugge, and I read a ton of papers on Machine Learning and AI. But papers can be a bit dry & take a while to read. … In this channel, I try to summarize my core take-aways from a technical point of view while making them accessible for a bigger audience.
-
-![channel](/assets/img/posts/ai-youtube-10.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-11.webp#float_left)
-
-At the time of writing, this channel has only 11 videos, but its high quality and reliable content have attracted 45K subscribers. Xander Steenbrugge videos are so engaging; he breakdown complicated topics like generative adversarial networks into step by step bite-size explanations.
-
-YouTube: [ArXiv Insights](https://www.youtube.com/channel/UCNIkB2IeJ-6AmZv7bQ1oBYg/featured)
-
-# 5. Yannic Kilcher
-
-Yannic Kilcher focuses on explaining deep learning research papers by thoroughly reading through the paper and supporting documents. He explains concepts in these papers with notes and drawings. He covers topics on deep learning architectures, natural language processing and reinforcement learning.
-
-![channel](/assets/img/posts/ai-youtube-12.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-13.webp#float_left)
-
-What I like about his videos is his picks on novelty papers. He explains with such high level of details that he uncovers each idea paragraph by paragraph. He will reference additional resources to reveal any concepts outside of the paper. At the end of it, it feels like I have a full understanding of the paper as if I have read thoroughly for at least three times.
-
-YouTube: [Yannic Kilcher](https://www.youtube.com/channel/UCZHmQk67mSJgfCCTn7xBfew/featured)
-
-# 6. Leo Isikdogan
-
-Leo Isikdogan creates educational how-tos videos on machine learning, computer vision and image & video processing.
-
-> … concise videos that intuitively explain the hot topics in computer science, including artificial intelligence, machine learning, computer vision, and image and video processing.
-
-![channel](/assets/img/posts/ai-youtube-14.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-15.webp#float_left)
-
-Leo Isikdogan updates us on interesting projects and use-cases from on how machine learning can be applied in our projects through his how-tos videos.
-This channel is also great for anyone starting on deep learning, so much to learn from with the deep learning crash course series and hands-on with TensorFlow coding sessions.
-
-YouTube: [Leo Isikdogan](https://www.youtube.com/channel/UC-YAxUbpa1hvRyfJBKFNcJA/featured)
-
-# 7. Henry AI Labs
-
-Just scrolling through the list of videos, NLP, reinforcement learning, GAN, weakly supervised; all the cool stuff!
-
-> … post weekly … about new papers that research labs from companies such as Google and Facebook are publishing, as well as miscellaneous interesting news from the AI community
+# #3. Henry AI Labs
 
 ![channel](/assets/img/posts/ai-youtube-16.webp#float_left)
 ![channel](/assets/img/posts/ai-youtube-17.webp#float_left)
 
-What I like about this channel is the way he summaries research papers. Definitely useful if you want to stay up to date with the latest AI developments. He gives an overview and you don't have to digest the full paper on your own! Check out his list of videos on Github.
+_Henry AI Labs_. This channel is rich! Natural language processing, reinforcement learning, generative adversarial network, weakly supervised learning. All the hottest topics covered.
 
-YouTube: [Henry AI Labs](https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw)
+Henry summarises new papers that research labs from companies such as Google and Facebook are publishing. Definitely useful if you want to stay up to date with the latest AI developments. He gives an overview of the newest research topics and real-world applications, and you don’t have to digest the full paper on your own.
 
-# 8. Preserve Knowledge
+YouTube:  [_Henry AI Labs_](https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw)
 
-Preserve Knowledge shares selective presentation from conferences such as NeurIPS and interviews with machine learning superstars like Geoffrey Hinton and Yann LeCun.
+----------
 
-> Preserve Knowledge focuses on advances in mathematics, computer science, and artificial intelligence. Its goal is to bring together the world's leading researchers and students in computer science and related fields.
+# #4. ArXiv Insights
 
-![channel](/assets/img/posts/ai-youtube-18.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-19.webp#float_left)
+![channel](/assets/img/posts/ai-youtube-10.webp#float_left)
+![channel](/assets/img/posts/ai-youtube-11.webp#float_left)
 
-For those who prefer to listen from the authors directly, this channel selects speech and interviews that are shareworthy.
+Research papers can be a bit dry & take a while to read, right?  _ArXiv Insights_  by  _Xander Steenbrugge_  is here to help! He aims to simplify and explain technical details in machine learning papers.
 
-YouTube: [Preserve Knowledge](https://www.youtube.com/user/Charleshche/featured)
+At the time of writing, this channel has only 11 videos. But his high quality and reliable content have attracted 45K subscribers. He breakdown complicated topics like  _generative adversarial networks_, into step-by-step bite-size explanations.
 
----
+While watching his videos, I was thinking, “man,  _how I wish my lecturers would explain concepts like him_”.
 
-There you go! I will end here with this quote by Roy Bennett:
+YouTube:  [_ArXiv Insights_](https://www.youtube.com/channel/UCNIkB2IeJ-6AmZv7bQ1oBYg)
 
-> There are five important things for living a successful and fulfilling life: never stop dreaming, never stop believing, never give up, never stop trying, and never stop learning. ― Roy Bennett
+----------
+
+# #5. Yannic Kilcher
+
+![channel](/assets/img/posts/ai-youtube-12.webp#float_left)
+![channel](/assets/img/posts/ai-youtube-13.webp#float_left)
+
+_Yannic Kilcher_  focuses on explaining deep learning research papers. He introduces the paper and describes the novelty behind it. He reads the paper meticulously to you, and he tells it like a story. He covers topics on deep learning architectures, natural language processing and reinforcement learning.
+
+The level of details is incredible. Yannic breaks up a dense paper into parts and uncovers each idea paragraph by paragraph. He explains and scribbles on the screen to walk you through the thought process. When there are concepts not covered by the paper, he references additional resources to reveal any concepts outside of the paper.
+
+At the end of the video, it feels like I have a full understanding of the paper as if I have read thoroughly for at least three times. How I wish he reviews the papers I am reading.
+
+YouTube:  [_Yannic Kilcher_](https://www.youtube.com/channel/UCZHmQk67mSJgfCCTn7xBfew/featured)
+
+----------
+
+# #6. Leo Isikdogan
+
+![channel](/assets/img/posts/ai-youtube-14.webp#float_left)
+![channel](/assets/img/posts/ai-youtube-15.webp#float_left)
+
+_Leo Isikdogan_  showcases and concise research topics into practical, real-world application. He covers topics on machine learning and computer vision. He also creates educational how-to machine learning tutorials.
+
+Leo is a researcher at Intel, and he introduces his work in the channel. One that I like is the research on  [Eye Contact Correction using Deep Neural Networks](https://arxiv.org/pdf/1906.05378.pdf). In his video, he explains that maintain eye contact during a call requires looking into the camera rather than the screen. His work is to correct the gaze, to improve the quality of video conferencing experience.
+
+I love it when research has real-world application and impact.
+
+This channel is also great for anyone starting on deep learning, so much to learn from. Check out the playlists in his channel, the  _deep learning crash course series_  and  _hands-on with TensorFlow coding sessions_.
+
+YouTube:  [_Leo Isikdogan_](https://www.youtube.com/channel/UC-YAxUbpa1hvRyfJBKFNcJA/featured)
+
+----------
+
+# #7. Kaggle
+
+![channel](/assets/img/posts/ai-youtube-08.webp#float_left)
+![channel](/assets/img/posts/ai-youtube-09.webp#float_left)
+
+Last by not least,  [Kaggle](https://kaggle.com/),  _Your Home for Data Science_. It is the largest data science community. Users can find datasets and code within the Kaggle platform. They can publish notebooks to share codes, collaborate and learn from each other. There are competitions with cash prizes; competing is a great way to learn, and cash is definitely a great motivation to do well.
+
+If  [Kaggle](https://www.kaggle.com/)  is where you do and learn, then the  [Kaggle YouTube channel](https://www.youtube.com/channel/UCSNeZleDn9c74yQc-EKnVTA)  is where you watch and learn.
+
+There are “how-tos” coding tutorials on deep learning, building dashboards, and data processing. They have live coding sessions on how to solve data science problems.
+
+For updates on the latest NLP research, there is a playlist,  [Kaggle Reading Group](https://www.youtube.com/playlist?list=PLqFaTIg4myu8t5ycqvp7I07jTjol3RCl9). She reads and discusses NLP research papers. She will explain every single paragraph, diagrams, code, mathematics equations to you. If you are a new researcher or new to academic papers, watch these videos, and you will learn how to dissect papers.
+
+YouTube:  [_Kaggle_](https://www.youtube.com/channel/UCSNeZleDn9c74yQc-EKnVTA)
+
+----------
+
+There you go! I hope you will enjoy these channels. Let me (and other readers) know in the comments if you have channels to recommend.
+
+I will end here with this quote by  _Roy Bennett_.
+
+> There are five important things for living a successful and fulfilling life: never stop dreaming, never stop believing, never give up, never stop trying, and never stop learning.
