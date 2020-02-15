@@ -3,24 +3,51 @@ layout: main
 ---
 <div class="section section-basic" id="basic-elements">
   <div class="container">
-    <h2>
-      {{page.title}}
-      <br>
-      <small>{{page.description}}</small>
-    </h2>
+    <div class="row">
+      <div class="col-12">
+        <h2>
+          {{page.title}}
+          <br>
+          <small>{{page.description}}</small>
+        </h2>
 
-    <div class="markdown-content">
-      {{ content }}
+        <div class="markdown-content">
+          {{ content }}
+        </div>
+
+        <span class="badge badge-default">{{ page.date | date_to_string }}</span>
+
+        <a href="/pages/tags/">
+        {{page.tag}}
+        {% for tag in page.tags %}
+          <span class="badge badge-primary">{{tag}}</span>
+        {% endfor %}
+        </a>
+
+      </div>
     </div>
 
-    <span class="badge badge-default">{{ page.date | date_to_string }}</span>
+    <!-- <hr/> -->
 
-    <a href="/pages/tags/">
-    {{page.tag}}
-    {% for tag in page.tags %}
-      <span class="badge badge-primary">{{tag}}</span>
-    {% endfor %}
-    </a>
+    <!-- <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <a href="/research/">
+          <div class="card">
+            <div class="card-body">
+              <script src="https://utteranc.es/client.js"
+                repo="jinglescode/jinglescode.github.io"
+                issue-term="pathname"
+                label="comment"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+              </script>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div> -->
 
   </div>
+
 </div>

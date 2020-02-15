@@ -31,4 +31,5 @@ Most contents on this repo can be viewed from [jinglescode.github.io](https://ji
 ```
 
 # Useful tools
-[Convert image to webp format](https://image.online-convert.com/convert-to-webp)
+- [Convert image to webp format](https://image.online-convert.com/convert-to-webp)
+- [StackEdit: In-browser Markdown editor](https://stackedit.io/app)

@@ -2,7 +2,7 @@
 title: Build Textual Similarity Analysis Web App
 layout: note
 image: /assets/img/posts/build-textual-similarity-analysis-web-app-01.webp
-description: A journey from word embeddings to universal sentence encoder to web-app demo
+description: A journey from word embeddings to universal sentence encoder to web app demo
 category: datascience
 tags:
 - tensorflow
