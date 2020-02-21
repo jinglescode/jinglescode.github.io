@@ -10,9 +10,6 @@ tags:
 - nlp
 ---
 
-----------
-
-
 ![Show me the red and yellow Brighton Bathing Boxes](/assets/img/posts/build-textual-similarity-analysis-web-app-01.webp)
 
 Some Brighton Bathing Boxes are more like each other than others. “Show me those in red” [photo by [me](https://medium.com/@jinglesnote)]
