@@ -1,8 +1,8 @@
 ---
-title: Control Exoskeleton with your Brain
+title: Decoding Brain Signals with Machine Learning and Neuroscience
 layout: note
 image: /assets/img/posts/control-exoskeleton-with-your-brain-01.webp
-description: With Brain-Computer Interface & Convolutional Neural Network
+description: Become Professor X and unlock the secrets of our mind
 category: datascience
 tags:
 - medical
