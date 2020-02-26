@@ -43,7 +43,7 @@ For this experiment, our focus is on the [occipital lobe](https://en.wikipedia.o
 
 # The type of data we can collect from our brain
 
-![](/assets/img/posts/control-exoskeleton-with-your-brain-03.webp)
+![](/assets/img/posts/control-exoskeleton-with-your-brain-03.webp#skinny_image)
 
 [X-Men Origins: Wolverine](https://en.wikipedia.org/wiki/X-Men_Origins:_Wolverine)
 
