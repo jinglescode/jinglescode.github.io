@@ -12,8 +12,6 @@ tags:
 ![](/assets/img/posts/control-exoskeleton-with-your-brain-01.webp)
 Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski) on Unsplash
 
-X-Men: Apocalypse [[source](https://en.wikipedia.org/wiki/X-Men:_Apocalypse)]
-
 In the X-Men comics, Professor Charles Xavier is one of the most powerful mutant. He possesses the mental power to read minds and move things.
 
 Want to become Professor X? Read on!
