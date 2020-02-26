@@ -10,6 +10,7 @@ tags:
 ---
 
 ![](/assets/img/posts/control-exoskeleton-with-your-brain-01.webp)
+Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski) on Unsplash
 
 X-Men: Apocalypse [[source](https://en.wikipedia.org/wiki/X-Men:_Apocalypse)]
 
@@ -43,13 +44,13 @@ For this experiment, our focus is on the [occipital lobe](https://en.wikipedia.o
 
 # The type of data we can collect from our brain
 
-![](/assets/img/posts/control-exoskeleton-with-your-brain-03.webp#skinny_image)
-
-[X-Men Origins: Wolverine](https://en.wikipedia.org/wiki/X-Men_Origins:_Wolverine)
-
 The purpose of a brain-computer interface (BCI) is to have a direct communication pathway between the brain and an external device. That enables its users to interact with computers by mean of brain-activity.
 
 BCI isn’t a mind-reading device like a [Cerebro](https://en.wikipedia.org/wiki/Cerebro). Instead, it detects the changes in the energy emitted by the brain. A human brain contains about 86 billion neurons, each individually linked to other neurons. Every time we think or move a muscle, these neurons are at work, activated with energy. A BCI recognises these energy patterns in the brain.
+
+![](/assets/img/posts/control-exoskeleton-with-your-brain-03.webp#skinny_image)
+
+Spike and wave discharges monitored with EEG [source](https://en.wikipedia.org/wiki/Electroencephalography)
 
 [Electroencephalogram](https://en.wikipedia.org/wiki/Electroencephalography) (EEG) is a popular technique for recording signals from our brain. It is non-invasive, so we don’t need to cut open our skull to collect our brain signals.
 
