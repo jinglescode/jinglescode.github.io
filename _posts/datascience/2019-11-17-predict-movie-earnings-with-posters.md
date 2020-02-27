@@ -6,7 +6,7 @@ description: Identify the genre and earnings of the movie with movie posters
 category: datascience
 tags:
 - image recognition
-
+- data analysis
 ---
 
 ![cover](/assets/img/posts/predict-movie-00.webp)

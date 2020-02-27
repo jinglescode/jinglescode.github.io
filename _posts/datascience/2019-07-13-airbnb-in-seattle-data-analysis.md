@@ -6,7 +6,7 @@ description: Understand Airbnb rental landscape in Seattle
 category: datascience
 tags:
 - data analysis
-
+- visualisation
 ---
 
 ![cover](/assets/img/posts/analyze-airbnb-00.webp)
@@ -18,7 +18,7 @@ For all prospective Airbnb hosts in Seattle, I will answer these questions in th
 - bedroom configurations to maximise booking rates?
 - how to achieve a good rating?
 - do hosts with higher rating have higher revenue?
-- amenities to include?
+- amenities to include? 
 
 # Get and prepare data
 

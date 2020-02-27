@@ -8,9 +8,9 @@ collections:
   info:
     output: true
     permalink: /info/:path/
-  javascript:
+  programming:
     output: true
-    permalink: /javascript/:path/
+    permalink: /programming/:path/
 
 plugins:
   - jekyll-seo-tag

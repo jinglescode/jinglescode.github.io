@@ -27,27 +27,110 @@ layout: main
       </div>
     </div>
 
-    <!-- <hr/> -->
-
-    <!-- <div class="row justify-content-center">
-      <div class="col-12 col-lg-8">
-        <a href="/research/">
-          <div class="card">
-            <div class="card-body">
-              <script src="https://utteranc.es/client.js"
-                repo="jinglescode/jinglescode.github.io"
-                issue-term="pathname"
-                label="comment"
-                theme="github-light"
-                crossorigin="anonymous"
-                async>
-              </script>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div> -->
-
   </div>
 
+</div>
+
+<div class="section section-basic">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto text-center">
+        <h2>Thanks for reading!</h2>
+      </div>
+    </div>
+    <div class="row">
+
+      {% assign maxRelated = 4 %}
+      {% assign minCommonTags = 2 %}
+      {% assign maxRelatedCounter = 0 %}
+      {% assign numRelatedStories = 0 %}
+
+      {% for post in site.posts %}
+
+        {% assign sameTagCount = 0 %}
+        {% assign commonTags = '' %}
+
+        {% for tag in post.tags %}
+          {% if post.url != page.url %}
+            {% if page.tags contains tag %}
+              {% assign sameTagCount = sameTagCount | plus: 1 %}
+              {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+              {% assign commonTags = commonTags | append: tagmarkup %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% if sameTagCount >= minCommonTags %}
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <div class="card">
+                <div class="card-body" style="height:436px;">
+                  <div class="card-image" style="background-image: url({{post.image}})"></div>
+                  <span class="badge badge-default">{{ post.date | date_to_string }}</span>
+                  <div class="card-title">{{post.title}} {{post.type}}</div>
+                  <div class="card-description">{{ post.description | truncate: 160 }}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+          {% if maxRelatedCounter >= maxRelated %}
+            {% break %}
+          {% endif %}
+        {% endif %}
+
+      {% endfor %}
+
+      <!-- END of try 2 tags, now try 1 tag -->
+
+      {% if maxRelatedCounter <= maxRelated %}
+
+        {% assign minCommonTags = 1 %}
+
+        {% for post in site.posts %}
+
+          {% if maxRelatedCounter >= maxRelated %}
+            {% break %}
+          {% endif %}
+
+          {% assign sameTagCount = 0 %}
+          {% assign commonTags = '' %}
+
+          {% for tag in post.tags %}
+            {% if post.url != page.url %}
+              {% if page.tags contains tag %}
+                {% assign sameTagCount = sameTagCount | plus: 1 %}
+                {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+                {% assign commonTags = commonTags | append: tagmarkup %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+
+          {% if sameTagCount >= minCommonTags %}
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                <div class="card">
+                  <div class="card-body" style="height:436px;">
+                    <div class="card-image" style="background-image: url({{post.image}})"></div>
+                    <span class="badge badge-default">{{ post.date | date_to_string }}</span>
+                    <div class="card-title">a{{post.title}} {{post.type}}</div>
+                    <div class="card-description">{{ post.description | truncate: 160 }}</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+
+          {% endif %}
+
+        {% endfor %}
+
+      {% endif %}
+
+      <!-- END of try 1 tags -->
+
+    </div>
+  </div>
 </div>

@@ -3,7 +3,7 @@ title: Project Euler - Problem 1 - Multiples of 3 and 5
 layout: note
 image: /assets/img/posts/project-euler.webp
 description: Find the sum of all the multiples of 3 or 5 below the provided parameter value number.
-category: javascript
+category: programming
 tags:
 - javascript
 - algorithm

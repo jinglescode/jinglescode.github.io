@@ -4,6 +4,24 @@ layout: pages
 description: Notes on my readings in research papers containing steady-state visual evoked potentials Detection with EEG
 ---
 
+[Comparing user-dependent and user-independent training of CNN for SSVEP BCI](https://iopscience.iop.org/article/10.1088/1741-2552/ab6a67)
+- using time domain as input CNN challenge:
+  - depend on sampling rate, up or down sample would change or loss of information
+  - modifying length of time window affect input layer of CNN
+- they propose to combine real and imaginary parts of FFT as input
+- architecture
+  - 4 layers: input, 2CNN, 1FC
+  - conv1: spatial filtering (ch, 1)
+  - conv2: spectral: (1,10)
+  - batch norm on both CNN
+  - ReLU
+  - Dropout
+  - FC + softmax
+- hyper parameter search
+
+
+
+
 [2019] [3D Convolutional Neural Networks for Event-Related Potential detection](https://ieeexplore.ieee.org/abstract/document/8856485/)
 - 3D CNN to capture spatial domain and temporal dimension
 - only compare against different number of 3D convolutions, did not compare with CCA, or 2D convolutions

@@ -3,7 +3,7 @@ title: Project Euler - Problem 7 - 10001st prime
 layout: note
 image: /assets/img/posts/project-euler.webp
 description: What is the nth prime number?
-category: javascript
+category: programming
 tags:
 - javascript
 - algorithm
