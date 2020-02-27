@@ -44,24 +44,25 @@ excerpt: Hong Jing (Jingles) data scientist, PhD student, writer
   <div class="container">
     <div class="row">
 
-      {% for page in paginator.posts %}
-      <div class="col-sm-6 col-md-6 col-lg-4">
-        <a href="{{ page.url | prepend: site.baseurl }}">
-          <div class="card">
-            <div class="card-body" style="height:436px;">
-              <div class="card-image" style="background-image: url({{page.image}})"></div>
-              <span class="badge badge-default">{{ page.date | date_to_string }}</span>
-              <div class="card-title">{{page.title}} {{page.type}}</div>
+      {% for post in paginator.posts %}
+        {% include post_card.html %}
+        <!-- <div class="col-sm-6 col-md-6 col-lg-4">
+          <a href="{{ page.url | prepend: site.baseurl }}">
+            <div class="card">
+              <div class="card-body" style="height:436px;">
+                <div class="card-image" style="background-image: url({{page.image}})"></div>
+                <span class="badge badge-default">{{ page.date | date_to_string }}</span>
+                <div class="card-title">{{page.title}} {{page.type}}</div>
 
-              <div class="card-description">{{ page.description | truncate: 160 }}</div>
-              <div class="card-footer">
+                <div class="card-description">{{ page.description | truncate: 160 }}</div>
+                <div class="card-footer">
+
+                </div>
 
               </div>
-
             </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div> -->
       {% endfor %}
 
     </div>

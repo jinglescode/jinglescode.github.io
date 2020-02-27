@@ -40,7 +40,7 @@ layout: main
     </div>
     <div class="row">
 
-      {% assign maxRelated = 4 %}
+      {% assign maxRelated = 6 %}
       {% assign minCommonTags = 2 %}
       {% assign maxRelatedCounter = 0 %}
       {% assign numRelatedStories = 0 %}
@@ -61,19 +61,7 @@ layout: main
         {% endfor %}
 
         {% if sameTagCount >= minCommonTags %}
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-              <div class="card">
-                <div class="card-body" style="height:436px;">
-                  <div class="card-image" style="background-image: url({{post.image}})"></div>
-                  <span class="badge badge-default">{{ post.date | date_to_string }}</span>
-                  <div class="card-title">{{post.title}} {{post.type}}</div>
-                  <div class="card-description">{{ post.description | truncate: 160 }}</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
+          {% include post_card.html %}
           {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
           {% if maxRelatedCounter >= maxRelated %}
             {% break %}
@@ -85,8 +73,6 @@ layout: main
       <!-- END of try 2 tags, now try 1 tag -->
 
       {% if maxRelatedCounter <= maxRelated %}
-
-        {% assign minCommonTags = 1 %}
 
         {% for post in site.posts %}
 
@@ -107,8 +93,9 @@ layout: main
             {% endif %}
           {% endfor %}
 
-          {% if sameTagCount >= minCommonTags %}
-            <div class="col-sm-6 col-md-6 col-lg-4">
+          {% if sameTagCount == 1 %}
+            {% include post_card.html %}
+            <!-- <div class="col-sm-6 col-md-6 col-lg-4">
               <a href="{{ post.url | prepend: site.baseurl }}">
                 <div class="card">
                   <div class="card-body" style="height:436px;">
@@ -119,7 +106,7 @@ layout: main
                   </div>
                 </div>
               </a>
-            </div>
+            </div> -->
 
             {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
 
