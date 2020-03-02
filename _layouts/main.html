@@ -14,9 +14,11 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="{{'/assets/css/bootstrap.min.css?v=' | append: site.github.build_revision | relative_url}}">
+  <link rel="stylesheet" href="{{'/assets/css/now-ui-kit.min.css?v=' | append: site.github.build_revision | relative_url}}">
+  <link rel="stylesheet" href="{{'/assets/css/custom.css?v=' | append: site.github.build_revision | relative_url}}">
   <!-- <link rel="preload" href="{{'/assets/css/bootstrap.min.css?v=' | append: site.github.build_revision | relative_url}}" as="style" onload="this.rel='stylesheet'"> -->
-  <link rel="preload" href="{{'/assets/css/now-ui-kit.min.css?v=' | append: site.github.build_revision | relative_url}}" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="{{'/assets/css/custom.css?v=' | append: site.github.build_revision | relative_url}}" as="style" onload="this.rel='stylesheet'">
+  <!-- <link rel="preload" href="{{'/assets/css/now-ui-kit.min.css?v=' | append: site.github.build_revision | relative_url}}" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="{{'/assets/css/custom.css?v=' | append: site.github.build_revision | relative_url}}" as="style" onload="this.rel='stylesheet'"> -->
 
   {%if page.tags %}
   <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>

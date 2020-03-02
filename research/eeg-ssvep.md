@@ -4,7 +4,7 @@ layout: pages
 description: Notes on my readings in research papers containing steady-state visual evoked potentials Detection with EEG
 ---
 
-[Comparing user-dependent and user-independent training of CNN for SSVEP BCI](https://iopscience.iop.org/article/10.1088/1741-2552/ab6a67)
+[2020] [Comparing user-dependent and user-independent training of CNN for SSVEP BCI](https://iopscience.iop.org/article/10.1088/1741-2552/ab6a67)
 - using time domain as input CNN challenge:
   - depend on sampling rate, up or down sample would change or loss of information
   - modifying length of time window affect input layer of CNN
@@ -18,8 +18,7 @@ description: Notes on my readings in research papers containing steady-state vis
   - Dropout
   - FC + softmax
 - hyper parameter search
-
-
+- using freq domain (instead of time) as input is good for architecture that works across multiple datasets
 
 
 [2019] [3D Convolutional Neural Networks for Event-Related Potential detection](https://ieeexplore.ieee.org/abstract/document/8856485/)
@@ -68,6 +67,7 @@ description: Notes on my readings in research papers containing steady-state vis
   - these flickering rates can be directly derived by dividing screen refresh rate (60Hz)
   - 8-15Hz range are reliable and high amplitude SSVEP responses
 
+
 [2017] [Compact convolutional neural networks for classification of asynchronous steady-state visual evoked potentials](https://iopscience.iop.org/article/10.1088/1741-2552/aae5d8/meta)
 
 - [code available](https://github.com/vlawhern/arl-eegmodels)
@@ -86,6 +86,7 @@ description: Notes on my readings in research papers containing steady-state vis
   - pooling
   - dropout
   - ELU
+
 
 [2017] [A convolutional neural network for steady state visual evoked potential classification under ambulatory environment](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)
 
