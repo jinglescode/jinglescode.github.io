@@ -37,6 +37,10 @@ body {
 
 /* article markdown-content */
 
+.markdown-content{
+  font-size: 1.2em
+}
+
 .markdown-content pre.highlight{
   border-color: #f96332;
   border-left: none;
@@ -65,12 +69,16 @@ body {
   margin: 0px;
 }
 
+.markdown-content h1, h2, h3, h4 {
+  margin-bottom: 10px;
+}
+
 .markdown-content h1 {
-  font-size: 2.5em;
+  font-size: 2.0em;
 }
 
 .markdown-content h2 {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .markdown-content h3 {
