@@ -6,7 +6,7 @@ description: Improve segmentation accuracy with a series of nested, dense skip 
 category: datascience
 tags:
 - medical
-- image recognition
+- computer vision
 ---
 
 ![cover](/assets/img/posts/unet-nested-01.webp)

@@ -6,7 +6,7 @@ description: Works with very few training images and yields more precise segment
 category: datascience
 tags:
 - medical
-- image recognition
+- computer vision
 
 ---
 

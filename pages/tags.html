@@ -19,7 +19,7 @@ excerpt: Browse Jingles articles by tags, about machine learning, data science, 
 
             <div class="card-description">
               {% for post in tag[1] %}
-                <a href="{{ site.baseurl }}{{ post.url }}">
+                <a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 20px;">
                   {{ post.title }}
                   <small>- {{ post.date | date_to_string }}</small>
                 </a><br/>
