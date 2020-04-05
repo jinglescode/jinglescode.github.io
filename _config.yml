@@ -12,6 +12,7 @@ collections:
     output: true
     permalink: /programming/:path/
 
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap

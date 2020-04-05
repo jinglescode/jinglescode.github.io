@@ -4,7 +4,7 @@ layout: note
 image: https://image.ibb.co/eWDj1V/tensorflowjs.jpg
 description: Job endured his losses and worshiped God
 category: wordofgod
-
+permalink: wordofgod/:basename
 ---
 
 Job, was a blameless and upright man (v1), and God affirmed it in (v8). He fears God and shuns evil (v8), he offered burnt offering on behalf of their children because they might have sinned or cursed God during their feasting (v5). He was wealthy, very wealthy–owned thousands of animals, has many children, and was the greatest man among all the people (v2-3). All these were blessings from God (v10).
