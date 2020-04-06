@@ -1,7 +1,6 @@
 ---
 title: Job 2
 layout: note
-image: https://image.ibb.co/eWDj1V/tensorflowjs.jpg
 description: Job endured his sufferings and stood firm in his faith
 category: wordofgod
 permalink: wordofgod/:basename

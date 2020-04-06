@@ -1,7 +1,6 @@
 ---
 title: Job 1
 layout: note
-image: https://image.ibb.co/eWDj1V/tensorflowjs.jpg
 description: Job endured his losses and worshiped God
 category: wordofgod
 permalink: wordofgod/:basename
