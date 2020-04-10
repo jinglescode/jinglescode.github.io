@@ -1,5 +1,5 @@
 ---
-title: Job 1
+title: Job 5
 layout: note
 description: Eliphaz explains the causes of Job's state
 category: wordofgod
