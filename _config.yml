@@ -3,10 +3,11 @@ collections:
     output: true
     label: research
     permalink: /research/:name
-  wordofgod:
+  word:
     output: true
-    label: wordofgod
-    permalink: /wordofgod/:name
+    label: word
+    permalink: /word/:name
+
 
 plugins:
   - jekyll-seo-tag
