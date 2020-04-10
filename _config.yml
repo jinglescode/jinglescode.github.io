@@ -1,17 +1,12 @@
 collections:
-  datascience:
+  research:
     output: true
-    permalink: /datascience/:path/
-  setup:
+    label: research
+    permalink: /research/:name
+  wordofgod:
     output: true
-    permalink: /setup/:path/
-  info:
-    output: true
-    permalink: /info/:path/
-  programming:
-    output: true
-    permalink: /programming/:path/
-
+    label: wordofgod
+    permalink: /wordofgod/:name
 
 plugins:
   - jekyll-seo-tag
@@ -28,7 +23,7 @@ permalink: pretty
 defaults:
   -
     scope:
-      path: "/research/pdfs/*"
+      path: "/pages/research/pdfs/*"
     values:
       sitemap: false
   -

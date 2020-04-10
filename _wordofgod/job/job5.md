@@ -2,10 +2,7 @@
 title: Job 5
 layout: note
 description: Eliphaz explains the causes of Job's state
-category: wordofgod
-permalink: wordofgod/:basename
-tags:
-  - job
+book: job
 ---
 
 Eliphaz described the fate of a foolish man, is one that great disaster fell upon him. That hardship and trouble do not just spring up from nowhere. There must be a reason for them (v6).

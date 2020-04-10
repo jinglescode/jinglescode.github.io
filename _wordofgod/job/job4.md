@@ -2,10 +2,7 @@
 title: Job 4
 layout: note
 description: Eliphaz suggested that Job had sinned against God
-category: wordofgod
-permalink: wordofgod/:basename
-tags:
-  - job
+book: job
 ---
 
 Job’s three friends, Eliphaz, Bildad and Zophar, came to sympathize and comfort him (Job 2:11). In this chapter, Eliphaz has a few things to say. Job is a great man, able to instruct to get things done and support others in time of need (v3-4). But now this happened to Job, and he could not apply to himself what he preached to others (v5-6).

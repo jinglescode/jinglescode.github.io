@@ -2,10 +2,7 @@
 title: Job 6
 layout: note
 description: Job replied Eliphaz, that his argument is shallow
-category: wordofgod
-permalink: wordofgod/:basename
-tags:
-  - job
+book: job
 ---
 
 After Eliphaz highlighted about sin and asked Job to repent, now he replied.
@@ -14,4 +11,4 @@ Job suffered a lot; his anguish and misery is a lot (v2-3) because he felt that 
 
 We ought to show kindness to people who are suffering, even if we think it is because they have sinned (v14). Eliphaz pointed out it was due to sins, and Job asked to show him his mistakes (v24).
 
-We have listened to many sermons and know some God's word, but if we ignore the message, we are ignorant and denial the word of God. We also shouldn't jump into conclusion based on our analysis; this is a lack of discernment. 
+We have listened to many sermons and know some God's word, but if we ignore the message, we are ignorant and denial the word of God. We also shouldn't jump into conclusion based on our analysis; this is a lack of discernment.

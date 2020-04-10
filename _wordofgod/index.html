@@ -1,0 +1,27 @@
+---
+layout: main
+title: Word of God
+excerpt: My readings and its notes
+permalink: /wordofgod/
+---
+
+<div class="section section-basic">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h2>Job</h2>
+            {% for page in site['wordofgod'] %}
+            {% if page.url != '/wordofgod/index' and page.book == 'job' %}
+              <a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a> - {{ page.description | truncate: 160 }} <br/>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

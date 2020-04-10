@@ -1,16 +1,16 @@
 ---
 layout: main
-title: Word of God
-excerpt: My readings and its notes
-permalink: wordofgod/
+title: Research
+excerpt: My research readings and its notes
+permalink: /research/
 ---
 
 <div class="section section-basic">
   <div class="container">
     <div class="row">
 
-      {% for page in site.pages %}
-      {% if page.url contains 'wordofgod' and page.url != '/wordofgod/' %}
+      {% for page in site['research'] %}
+      {% if page.url != '/research/index' %}
 
       <div class="col-sm-6 col-md-6">
         <a href="{{ page.url | prepend: site.baseurl }}">

@@ -2,10 +2,7 @@
 title: Job 2
 layout: note
 description: Job endured his sufferings and stood firm in his faith
-category: wordofgod
-permalink: wordofgod/:basename
-tags:
-  - job
+book: job
 ---
 
 In the previous chapter, Job's possessions and children were taken away from him, and he did not sin against God; he still retained his integrity (v3). Satan suggested that Job did not curse God because that would bring punishment of God directly on himself (v4-skin for skin). Job is more willing to lose his children and his possession than losing his own life. So Satan suggested allowing physical sufferings, as physical pain is more constant than the pain that came from losing things "outside" of Job, he might curse God. God allows us to be tested, and go through suffering, to test our faith.

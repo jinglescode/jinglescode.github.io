@@ -2,10 +2,7 @@
 title: Job 3
 layout: note
 description: Job cursed the day of his birth and wondered why he is in such a situation
-category: wordofgod
-permalink: wordofgod/:basename
-tags:
-  - job
+book: job
 ---
 
 Satan wants Job to curse God, this time he cursed the day of his birth (v3-10), and he would rather have not lived (v11-19). Birth and death. The pain and misery he faced caused him to say/write all these, and he did not blame God.
