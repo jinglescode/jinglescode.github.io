@@ -5,7 +5,8 @@ image: /assets/img/posts/deepfake-existence-01.webp
 description: Industry, academia, national laboratories and federal agencies working together to solve this crisis
 category: datascience
 tags:
--
+- experiences
+- medical
 ---
 
 ![](/assets/img/posts/ai-played-critical-role-pandemic-01.webp)
