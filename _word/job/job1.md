@@ -13,4 +13,7 @@ In a short period, Satan destroyed Job's blessings; he lost his animals and chil
 
 Job's has an unshaken commitment to God; he did not sin nor curse God for his losses. Instead, he mourned for the damages (tore robe and shaved head) and fell to the ground in worship (v20). Despite his circumstances and feelings, he did choose to worship (v21-Lord be praised) and acknowledge God sovereignty (v21-Lord gave and the Lord has taken away). Job loved God more than his earthly possessions.
 
-God can bless his people, and he can take them away. God allows hardships to test our faith. God is always in control, as he determines the limitation of damages could be done on Job. God is worthy to be blessed and praised in any circumstances.
+- God can bless his people, and he can take them away.
+- God allows hardships to test our faith.
+- God is always in control, as he determines the limitation of damages could be done on Job.
+- God is worthy to be blessed and praised in any circumstances.

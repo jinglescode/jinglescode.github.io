@@ -11,4 +11,6 @@ Eliphaz suggested seeking God, to appeal to God, because God can work in ways we
 
 Blessed are those whom God corrects, for he wounds, but he also binds up; he injures, but his hands also heal. (v17). Will be delivered (v20), and will be protected (v21).
 
-Eliphaz analysis is based on his own experiences (v3), though he may not be wrong, he still reminded us of a few valuable lessons. Foolish people will eventually seek destruction. God disciplines us to correct us to keep us from that destruction, for his punishment, wounds and injuries, he can heal and bind up. God will help the helpless and bring down those who are proud.
+- Eliphaz analysis is based on his own experiences (v3), though he may not be wrong, he still reminded us of a few valuable lessons. Foolish people will eventually seek destruction.
+- God disciplines us to correct us to keep us from that destruction, for his punishment, wounds and injuries, he can heal and bind up.
+- God will help the helpless and bring down those who are proud.

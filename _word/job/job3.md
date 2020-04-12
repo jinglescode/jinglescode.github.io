@@ -9,4 +9,5 @@ Satan wants Job to curse God, this time he cursed the day of his birth (v3-10), 
 
 Job wonder why he is in such a situation (v20). Interestingly, Job still feared God and have faith in God, he is not concerned about what he has lost, and his health; Job is more concerned about losing God. Job is concerned about him or his children sinning against God (Job 1:5), that is what he greatly feared (v25).
 
-Despite Job situation, he did not sin against God, he wondered why he is in such a situation. I believe God is listening to him.
+- Despite Job situation, he did not sin against God.
+- He wondered why he is in such a situation. God is listening to him.
