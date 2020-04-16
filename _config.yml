@@ -3,11 +3,6 @@ collections:
     output: true
     label: research
     permalink: /research/:name
-  word:
-    output: true
-    label: word
-    permalink: /word/:name
-
 
 plugins:
   - jekyll-seo-tag
