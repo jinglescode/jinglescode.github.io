@@ -1,5 +1,5 @@
 ---
-title: Setting up a LaTeX on your Atom Editor
+title: Setting up LaTeX on your Atom Editor
 layout: note
 image: /assets/img/posts/setup-latex-atom-01.webp
 description: Edit and preview .tex files, all from within your Atom editor

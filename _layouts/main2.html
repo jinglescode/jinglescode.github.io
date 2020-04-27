@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>{{page.title}} - Hong Jing (Jingles)</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel='stylesheet' type='text/css'>
+  <link href="{{'/assets/css/materialize.css?v=' | append: site.github.build_revision | relative_url}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{'/assets/css/style.css?v=' | append: site.github.build_revision | relative_url}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="grey darken-3" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="grey darken-4">
+    {{ content }}
+  </div>
+
+  <!--  Scripts-->
+  <script src="{{'/assets/js/jquery-2.1.1.min.js?v=' | append: site.github.build_revision | relative_url}}"></script>
+  <script src="{{'/assets/js/materialize.js?v=' | append: site.github.build_revision | relative_url}}" type="text/javascript"></script>
+  <script src="{{'/assets/js/init.js?v=' | append: site.github.build_revision | relative_url}}" type="text/javascript"></script>
+
+  </body>
+</html>
