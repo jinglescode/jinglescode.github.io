@@ -8,8 +8,6 @@ tags:
  - how to
 ---
 
-![](/assets/img/posts/setup-latex-atom-01.webp)
-
 In this tutorial, I will guide you through setting up a LaTeX editor on [Atom](https://atom.io/), and here are some reasons and benefits for doing so:
 
 - preview your work side by side as you save your work
@@ -54,14 +52,20 @@ On OS X, download [MacTeX](http://www.tug.org/mactex/). As of April 2020, the di
 
 If you don’t want to install the entire MacTeX distribution — which is pretty big, and if you are someone like me who prefers to select what gets installed, you can download [BasicTeX](https://www.tug.org/mactex/morepackages.html), which is only 80MB. BasicTeX contains the [TeX Live](https://www.tug.org/texlive/) distribution that suffices the need to generate PDF from _.tex_ files; it does not include GUI applications, Ghostscript, and other libraries. But this means that you have to search and download all the packages you may need. I will cover this later.
 
-![](/assets/img/posts/setup-latex-atom-02.webp#float_left)
-![](/assets/img/posts/setup-latex-atom-03.webp#float_left)
+{% include figure.html
+  file1="/assets/img/posts/setup-latex-atom-02.webp"
+  file2="/assets/img/posts/setup-latex-atom-03.webp"
+  size="c2"
+%}
 
 MacTeX is for OS X. But if you are on Linux or Windows, download [TeX Live](https://www.tug.org/texlive/).
 
 ## Atom
 
-![](/assets/img/posts/setup-latex-atom-04.webp#float_left)
+{% include figure.html
+  file="/assets/img/posts/setup-latex-atom-04.webp"
+  size="s"
+%}
 
 Atom is a beautiful text editor that is available on OS X, Windows, and Linux. It has a package manager that allows you to install thousands of open source packages that add new features and functionality to your editor. You can easily browse your project files on a single interface. You can split your interface into multiple panes to edit/reference code across files. [Download and install Atom](https://atom.io/).
 
@@ -77,11 +81,14 @@ This will prompt you for your password and install the _latexmk_ package.
 
 These packages enable you to use Atom as a LaTeX editor.
 
-- [Latex package](https://atom.io/packages/latex) compiles LaTeX documents from within Atom. It will execute Latexmk to build your work.
-- [PDF View package](https://atom.io/packages/pdf-view) enables you to view PDF files in Atom.
-- [Language-LaTeX package](https://atom.io/packages/language-latex) does LaTeX syntax highlighting in Atom. It is particularly useful to help you check that your syntax has valid LaTeX grammar.
+- **Compile**. [Latex package](https://atom.io/packages/latex) compiles LaTeX documents from within Atom. It will execute Latexmk to build your work.
+- **Preview PDF**. [PDF View package](https://atom.io/packages/pdf-view) enables you to view PDF files in Atom. This allows you to preview your work side-by-side. Clicking on the preview will bring your cursor to the syntax's location.
+- **Syntax highlighting**. [Language-LaTeX package](https://atom.io/packages/language-latex) does LaTeX syntax highlighting in Atom. It is particularly useful to help you check that your syntax has valid LaTeX grammar.
 
-![](/assets/img/posts/setup-latex-atom-05.webp#float_left)
+{% include figure.html
+  file="/assets/img/posts/setup-latex-atom-05.webp"
+  size="s"
+%}
 
 # You did it!
 
@@ -92,9 +99,15 @@ At this point, you should have a working LaTeX editor on your Atom. I recommend 
 - [uncheck] Open Result in Background
 - Under Output Directory, type “_build_”
 
-![](/assets/img/posts/setup-latex-atom-06.webp#float_left)
+{% include figure.html
+  file="/assets/img/posts/setup-latex-atom-06.webp"
+  size="s"
+%}
 
-## If you need additional packages
+In _language-latex_ package:
+- [check] Soft Wrap
+
+## Additional packages
 
 If you have download BasicTeX, chances are you have to download packages that publishers use in their templates. The easiest way is to Google search for the missing packages, or search [Comprehensive TEX Archive Network (CTAN)](https://ctan.org/pkg).
 

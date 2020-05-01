@@ -8,8 +8,6 @@ tags:
 - resources
 ---
 
-![cover](/assets/img/posts/machine-learning-resources-01.webp)
-
 # Resources on Deep Learning
 
 ## Courses on Deep Learning

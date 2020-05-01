@@ -8,8 +8,6 @@ tags:
 - computer vision
 ---
 
-![](/assets/img/posts/deepfake-existence-01.webp)
-
 Ladies and gentlemen, Deepfake videos are so easy to create, that anyone can make one. You do not need a PhD, and you don’t have to train models for hours, you don’t even have to take a course on Generative Adversarial Network.
 
 All that you have to do is, to record a video of yourself, and pick one photo of a person you want to impersonate. Machine learning will animate the person in the picture the way you want it in your video.
@@ -20,9 +18,10 @@ Image animation aims to generate video sequences such that the person in the sou
 
 This technology lies within the field of computer vision, and academic researchers have been working on to produce more realistic videos. It leverages on machine learning to manipulate and generate visual images or videos that replaces a person with someone else’s.
 
-![](/assets/img/posts/deepfake-existence-02.gif)
-
-First Order Motion Model for Image Animation [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]
+{% include figure.html
+  file="/assets/img/posts/deepfake-existence-02.gif"
+  caption="First Order Motion Model for Image Animation [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]"
+%}
 
 For the love of science and from a research standpoint, [Aliaksandr’s work](https://aliaksandrsiarohin.github.io/first-order-model-website/) is certainly impressive. It has been published in [NeurIPS](http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation), and the [source codes](https://github.com/AliaksandrSiarohin/first-order-model) are available online.
 
@@ -32,15 +31,17 @@ His work outperforms state of the art on all the benchmarks, and it works on a v
 
 Its ability to learn the facial movements is unbelievable. You can see that it can identify key points on the face, and it follows these key points to the movements in the video very well.
 
-![](/assets/img/posts/deepfake-existence-03.gif)
-
-Model learns to identify key points [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]
+{% include figure.html
+  file="/assets/img/posts/deepfake-existence-03.gif"
+  caption="Model learns to identify key points [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]"
+%}
 
 In previous works, we need additional information such as facial landmarks to map head movement and pose estimation to map full-body movement.
 
-![](/assets/img/posts/deepfake-existence-04.webp)
-
-Past works require facial landmarks and pose estimation [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]
+{% include figure.html
+  file="/assets/img/posts/deepfake-existence-04.webp"
+  caption="Past works require facial landmarks and pose estimation [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]"
+%}
 
 In this work, it **can work without using any annotation or prior information** about the specific object to animate. Once the model has trained on faces, the model can transfer any motion onto any faces.
 
@@ -50,17 +51,19 @@ You can record a video of yourself and animate the person in the photo. Yes, eve
 
 You can look up and turn your head around. You can say something, and the mouth movements look great. You can roll your eyes, and it maps the eye movements nicely onto the target video.
 
-![](/assets/img/posts/deepfake-existence-05.gif)
-
-Generated head movements [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]
+{% include figure.html
+  file="/assets/img/posts/deepfake-existence-05.gif"
+  caption="Generated head movements [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]"
+%}
 
 #### Full-body movement too
 
 It works for videos with full-body movement as well! Theoretically, this means that you can take the [Billie Jean video](https://www.youtube.com/watch?v=b6pomaq30Gg) and make Donald Trump do moonwalk like Michael Jackson.
 
-![](/assets/img/posts/deepfake-existence-06.gif)
-
-Generated full-body movements [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]
+{% include figure.html
+  file="/assets/img/posts/deepfake-existence-06.gif"
+  caption="Generated body movements [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]"
+%}
 
 #### It generates the background
 
@@ -70,13 +73,16 @@ As the person covers the part of the image, the algorithm needs to figure out th
 
 Aliaksandr work consists of the motion extractor which learns to extract key points along with their local affine transformations. There is a generator network that models occlusions in the target motions and combines the appearance extracted from the source image and the motion derived from the driving video.
 
-![](/assets/img/posts/deepfake-existence-07.webp)
-
-First Order Motion Model [from [paper](http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation)]
+{% include figure.html
+  file="/assets/img/posts/deepfake-existence-07.webp"
+  caption="First Order Motion Model [from [paper](http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation)]"
+%}
 
 To understand how it works, I suggest you to visit the [GitHub page](https://aliaksandrsiarohin.github.io/first-order-model-website/) and examine the [research paper](http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation). You can also watch his [video](https://www.youtube.com/watch?v=u-0cQ-grXBQ) explaining how it works. Solid cool stuff.
 
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u-0cQ-grXBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 Want to make your own? Check out this [Colab notebook](https://colab.research.google.com/github/AliaksandrSiarohin/first-order-model/blob/master/demo.ipynb).
 

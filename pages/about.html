@@ -5,149 +5,412 @@ excerpt: Khok Hong Jing (Jingles) is a data scientist & Alibaba PhD student, wri
 permalink: about/
 ---
 
-<div class="section section-about-us">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 ml-auto mr-auto text-center">
-        <h5>Hi, I'm Hong Jing, you can call me Jingles. A data scientist with four years of machine learning industry experience in the area of natural language processing and recommendation systems. Working on a range of classification and optimisation problems. Ability to deliver innovative solutions accurately and efficiently solve challenging business problems. Nimble and agile professional to deliver solutions in a rapidly changing environment. Curious and inquisitive with a constant desire to learn and pioneer new uses for machine learning.</h5>
+<div class="container" id="about-page">
+  <div class="row">
+
+    <div class="col s12 l10 offset-l1">
+      <div class="card">
+        <!-- <div class="card-image">
+          <img src="/assets/img/hongjing.jpeg">
+          <span class="card-title">Hi! I'm Hong Jing, you can call me Jingles</span>
+        </div> -->
+        <div class="card-content">
+          <img class="circle" src="/assets/img/hongjing.jpeg" style="width: 100px; float:left; margin: 10px;">
+          <span class="card-title">Hi! I'm Hong Jing, you can call me Jingles</span>
+          <p>A data scientist with five years of machine learning industry experience in the area of natural language processing and recommendation systems. Working on a range of classification and optimisation problems. Ability to deliver innovative solutions accurately and efficiently solve challenging business problems. Nimble and agile professional to deliver solutions in a rapidly changing environment. Curious and inquisitive with a constant desire to learn and pioneer new uses for machine learning.</p>
+        </div>
       </div>
     </div>
 
-    <div class="separator separator-primary"></div>
+    <div class="col s12 m4">
+      <a class="modal-trigger" href="#modal_phd">
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/logo-alibaba-ntu.webp">
+          </div>
+          <div class="card-content">
+            Currently pursuing PhD...
+          </div>
+        </div>
+      </a>
+    </div>
 
-    <div class="section-story-overview">
+    <div class="col s12 m4">
+      <a class="modal-trigger" href="#modal_alibaba">
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/logo-alibaba.webp">
+          </div>
+          <div class="card-content">
+            Previously at Alibaba Group...
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col s12 m4">
+      <a class="modal-trigger" href="#modal_dsta">
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/logo-dsta.webp">
+          </div>
+          <div class="card-content">
+            Previously, at Defence Science and Technology Agency...
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col s12 m4">
+      <a class="modal-trigger" href="#modal_ntu">
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/logo-ntu.webp">
+          </div>
+          <div class="card-content">
+            During my time in Nanyang Technological University...
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col s12 m4">
+      <a class="modal-trigger" href="#modal_enjoy">
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/tioman.webp">
+          </div>
+          <div class="card-content">
+            And I enjoy...
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col s12 m4">
+      <a class="modal-trigger" href="#modal_teaching">
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/logo-ntu.webp">
+          </div>
+          <div class="card-content">
+            Teaching
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col s12 m4">
+      <a class="modal-trigger" href="#modal_spotify">
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/spotify.webp">
+          </div>
+          <div class="card-content">
+            My Spotify Playlists
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12 m6 l4">
+              <img class="materialboxed" width="100%" src="{{'/assets/img/about-taobao.webp' | relative_url}}">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal_alibaba">Modal</a>
+            </div>
+            <div class="col s12 m6 l8">
+              <span class="card-title">Currently at <a href="https://www.alibabagroup.com/">Alibaba Group</a>...</span>
+              <p>I've been travelling to Hangzhou throughout the year, working with <a href="https://www.alibaba.com/">Alibaba</a> counterparts. My main focus this year is to work on recommendations systems for campaigns (such as double 11) and vouchers recommendation.</p>
+              <h1>My involvement in campaigns</h1>
+              <p>As my modules are shown at the top and throughout the main campaign page, the purpose is to improve the click-through rate (CTR) and conversion rate. My modules recommend a list of categories and shops which are personalised for every user. I've built 2 types of models for CTR, parameter server logistic regression and Wide and Deep model, and challenges to improve CTR from previous campaigns.</p>
+              <h1>Recommends the best vouchers to the right person</h1>
+              <p>For vouchers, my modules recommend voucher for users to improve the redemption rate which converts to sales. I also built the voucher redemption model to predict customers spending habits, type of vouchers users collect and redeem, and did A/B testing to validation every model performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12">
+              <span class="card-title">Previously, at <a href="https://www.dsta.gov.sg/">Defence Science and Technology Agency</a>...</span>
+              <p>A statutory board, of the <a href="https://www.mindef.gov.sg/">Singapore Ministry of Defence</a>. My role is focusing on natural language processing and fleet management system.</p>
+              <h1>Built a text analytic web app</h1>
+              <p>As there are many ad-hoc requests to analyse text data from surveys or documents, I built a user-friendly text analytic web-based app for corporate staffs. I further improve it by understanding the pain points users faced at their work, and by getting their feedback from using the tool. Users upload their data and the backend server will extract topics and topic/entity-level sentiments. Users can explore their data from the interactive dashboard and further analyse the data by slicing the data by demographics and search functions. This reduced time that is taken to analyse and report by eliminating the time spent on reading lengthy documents. The user interface is built on Angular, and backend is Python with Flask, TensorFlow, Spacy and various packages.</p>
+              <h1>Predict possible machine failures</h1>
+              <p>I'm also involved in 1) analysis of sensor data of engines from naval ships, 2) accident logs from vehicles, and 3) failure logs from aircraft. The findings from my analysis match the domain knowledge of subject matter experts, thus gaining trust and confidence from users that data science is applicable for them. I am also part of the team that designed and developed prototypes for showcasing fleet management systems, which has gained many approval and funding, from both internal staffs and external ministers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12">
+              <span class="card-title">During my time in <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a></span>
+              <p>Graduated with Second Upper Honors in Computer Science. Focusing on machine learning, data structure, algorithms, natural language processing and artificial intelligence. I also did my internship in Institut supérieur d'électronique de Paris as a research scientist for data centre load balancing algorithm using cost-aware prediction. My final year project is on keyword ambiguity search within XML documents, by providing user suggestion words that disambiguate their search. For example, when a user is searching for "Cambridge", machine suggested "UK" or "MA" in order to disambiguate the search tree.</p>
+            </div>
+            <div class="col s12">
+              <div class="row">
+                <div class="col s12 m6 l8">
+                  <h1>Led 8 person team on a robotics project</h1>
+                  <p>Our team got the 2nd place (out of 30 teams) to explore the obstacles map and finding the shortest path from assigned point A to point B. This robotics project has 3 main parts, logic (on a raspberry pi), hardware (on Arduino), and control & display (on android). There are many challenges, from the hardware such as power supply affecting calibrated motors, irregular readings from sensors, to the limitation on processing power on the raspberry pi. Integrating every component and leading a team to work together within 10 weeks. Watch the final report on <a href="https://www.youtube.com/watch?v=1xrpDKF9mj0">Youtube</a>.</p>
+                </div>
+                <div class="col s12 m6 l4">
+                  <img class="materialboxed" width="100%" src="{{'/assets/img/about-robot.webp' | relative_url}}">
+                </div>
+              </div>
+            </div>
+            <div class="col s12">
+              <h1>I'm very involved in <a href="http://ntucac.com/">Cultural Activities Club</a></h1>
+              <p>I was the Media and IT Director, in the 21st Executive Committee. I managed a committee of 20, provided video coverage for 23 performing arts events, managed 2 web development projects, and directed our very own <a href="https://www.youtube.com/watch?v=M5ax5IdOTsE">corporate video</a>. On my 2nd year, I was the Chief Publicity & Publications, in Arts from the Heart, a charity committee that brings joy and fundraising to the less fortunate children through activities. Managed a team of 5, designed T-shirts, posters, stage backdrop, voucher coupons, videos for our activities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12 m6 l4">
+              <img class="materialboxed" width="100%" src="{{'/assets/img/about-freediving.webp' | relative_url}}">
+            </div>
+            <div class="col s12 m6 l8">
+              <span class="card-title">And I enjoy...</span>
+              <p><a href="https://en.wikipedia.org/wiki/Freediving">Freediving</a>! I enjoy being in the water, especially if there are fishes. My best record for static breath hold is 4 mins and 50 seconds, and longest single breath swim across the pool is 90 metres. I have only managed to dive in a few places around the warm waters in south-east Asia.</p>
+              <p>I also enjoy travelling, especially if it is a road trip with scenery and good food. My favourite road trip experience is in Hokkaido. Road trip from Gold Coast to Great Ocean Road and horse riding at Alpine National Park was very memorable too. I hope to do a US/Canada road trip one day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12">
+              <span class="card-title">Teaching</span>
+
+              <span class="new badge blue" data-badge-caption="Spring 2020"></span>
+              <h1>Introduction to Data Science and Artificial Intelligence (CZ1015)</h1>
+              <ul>
+                <li>identify and define data-oriented problems and data-driven decisions in real life</li>
+                <li>discuss and illustrate the problems in terms of data exploration and visualization</li>
+                <li>apply basic machine learning tools to extract inferential information from the data</li>
+                <li>compose an engaging “data-story” to communicate the problem and the inference</li>
+                <li>discuss and explain fundamentals of state space search and reinforcement learning in the context of artificial intelligence</li>
+              </ul>
+
+              <h2>My role</h2>
+              <ul>
+                <li>lead the class and facilitate discussion and lab exercises on my own</li>
+                <li>guide their thinking process to improve their problem-solving skills</li>
+                <li>share from my experiences on how I would approach real-world problems</li>
+                <li>share cool and interesting external materials and from my writings to spark their interests in data science and artificial intelligence</li>
+                <li>students approach me to discuss on data science problems outside course work</li>
+              </ul>
+
+              <h2>Content covered</h2>
+              <ul>
+                <li>Basic Data Handling</li>
+                <li>Data Analysis Statistics and EDA</li>
+                <li>Linear Regression</li>
+                <li>Classification Trees</li>
+                <li>Clustering Algorithms</li>
+                <li>Data Dashboards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12">
+              <span class="card-title">My Playlists</span>
+
+              <h1>While coding and reading research papers</h1>
+              <p>Regardless of how I am feeling at the moment, play this playlist will activate my productivity engines immediately.</p>
+              <iframe src="https://open.spotify.com/embed/playlist/4rZLeEAWoKuZapsOR0TLVO" width="100%" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              <hr/>
+
+              <h1>While writing and chillaxing</h1>
+              <p>Sometimes, we just have to stay calm and slow down. This playlist does that for me.</p>
+              <iframe src="https://open.spotify.com/embed/playlist/4kbqmiLGcISukhkNjSCaC0" width="100%" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+
+  <div id="modal_phd" class="modal">
+    <div class="modal-content">
       <div class="row">
-        <div class="col-md-6">
-          <div class="image-container" alt="{{page.title}}" style="background-image: url({{'/assets/img/about-taobao.webp' | relative_url}});"></div>
+        <div class="col s12">
+          <span class="card-title">Currently pursuing my PhD</span>
+          <p>Alibaba PhD in machine learning applying machine learning on neuroscience & healthcare. Particularly, working on brain-computer interface. </p>
         </div>
-        <div class="col-md-6">
-          <h3>Currently at <a href="https://www.alibabagroup.com/">Alibaba Group</a>...</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal_alibaba" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12 m6 l4">
+          <img class="materialboxed" width="100%" src="{{'/assets/img/about-taobao.webp' | relative_url}}">
+        </div>
+        <div class="col s12 m6 l8">
+          <span class="card-title">Previously at <a href="https://www.alibabagroup.com/">Alibaba Group</a>...</span>
           <p>I've been travelling to Hangzhou throughout the year, working with <a href="https://www.alibaba.com/">Alibaba</a> counterparts. My main focus this year is to work on recommendations systems for campaigns (such as double 11) and vouchers recommendation.</p>
-        </div>
-        <div class="col-md-12">
-          <h4>My involvement in campaigns</h4>
+          <h1>My involvement in campaigns</h1>
           <p>As my modules are shown at the top and throughout the main campaign page, the purpose is to improve the click-through rate (CTR) and conversion rate. My modules recommend a list of categories and shops which are personalised for every user. I've built 2 types of models for CTR, parameter server logistic regression and Wide and Deep model, and challenges to improve CTR from previous campaigns.</p>
-          <h4>Recommends the best vouchers to the right person</h4>
+          <h1>Recommends the best vouchers to the right person</h1>
           <p>For vouchers, my modules recommend voucher for users to improve the redemption rate which converts to sales. I also built the voucher redemption model to predict customers spending habits, type of vouchers users collect and redeem, and did A/B testing to validation every model performance.</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="section-story-overview">
+  <div id="modal_dsta" class="modal">
+    <div class="modal-content">
       <div class="row">
-        <div class="col-md-12">
-          <h3>Previously, at <a href="https://www.dsta.gov.sg/">Defence Science and Technology Agency</a>...</h3>
+        <div class="col s12">
+          <span class="card-title">Previously, at <a href="https://www.dsta.gov.sg/">Defence Science and Technology Agency</a>...</span>
           <p>A statutory board, of the <a href="https://www.mindef.gov.sg/">Singapore Ministry of Defence</a>. My role is focusing on natural language processing and fleet management system.</p>
-          <h4>Built a text analytic web app</h4>
+          <h1>Built a text analytic web app</h1>
           <p>As there are many ad-hoc requests to analyse text data from surveys or documents, I built a user-friendly text analytic web-based app for corporate staffs. I further improve it by understanding the pain points users faced at their work, and by getting their feedback from using the tool. Users upload their data and the backend server will extract topics and topic/entity-level sentiments. Users can explore their data from the interactive dashboard and further analyse the data by slicing the data by demographics and search functions. This reduced time that is taken to analyse and report by eliminating the time spent on reading lengthy documents. The user interface is built on Angular, and backend is Python with Flask, TensorFlow, Spacy and various packages.</p>
-          <h4>Predict possible machine failures</h4>
+          <h1>Predict possible machine failures</h1>
           <p>I'm also involved in 1) analysis of sensor data of engines from naval ships, 2) accident logs from vehicles, and 3) failure logs from aircraft. The findings from my analysis match the domain knowledge of subject matter experts, thus gaining trust and confidence from users that data science is applicable for them. I am also part of the team that designed and developed prototypes for showcasing fleet management systems, which has gained many approval and funding, from both internal staffs and external ministers.</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="section-story-overview">
+  <div id="modal_ntu" class="modal">
+    <div class="modal-content">
       <div class="row">
-        <div class="col-md-12">
-          <h3>During my time in <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a></h3>
+        <div class="col s12">
+          <span class="card-title">During my time in <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a></span>
           <p>Graduated with Second Upper Honors in Computer Science. Focusing on machine learning, data structure, algorithms, natural language processing and artificial intelligence. I also did my internship in Institut supérieur d'électronique de Paris as a research scientist for data centre load balancing algorithm using cost-aware prediction. My final year project is on keyword ambiguity search within XML documents, by providing user suggestion words that disambiguate their search. For example, when a user is searching for "Cambridge", machine suggested "UK" or "MA" in order to disambiguate the search tree.</p>
         </div>
-        <div class="col-md-6">
-          <h4>Led 8 person team on a robotics project</h4>
-          <p>Our team got the 2nd place (out of 30 teams) to explore the obstacles map and finding the shortest path from assigned point A to point B. This robotics project has 3 main parts, logic (on a raspberry pi), hardware (on Arduino), and control & display (on android). There are many challenges, from the hardware such as power supply affecting calibrated motors, irregular readings from sensors, to the limitation on processing power on the raspberry pi. Integrating every component and leading a team to work together within 10 weeks. Watch the final report on <a href="https://www.youtube.com/watch?v=1xrpDKF9mj0">Youtube</a>.</p>
+        <div class="col s12">
+          <div class="row">
+            <div class="col s12 m6 l8">
+              <h1>Led 8 person team on a robotics project</h1>
+              <p>Our team got the 2nd place (out of 30 teams) to explore the obstacles map and finding the shortest path from assigned point A to point B. This robotics project has 3 main parts, logic (on a raspberry pi), hardware (on Arduino), and control & display (on android). There are many challenges, from the hardware such as power supply affecting calibrated motors, irregular readings from sensors, to the limitation on processing power on the raspberry pi. Integrating every component and leading a team to work together within 10 weeks. Watch the final report on <a href="https://www.youtube.com/watch?v=1xrpDKF9mj0">Youtube</a>.</p>
+            </div>
+            <div class="col s12 m6 l4">
+              <img class="materialboxed" width="100%" src="{{'/assets/img/about-robot.webp' | relative_url}}">
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <div class="image-container" alt="{{page.title}}" style="background-image: url({{'/assets/img/about-robot.webp' | relative_url}});"></div>
-        </div>
-        <div class="col-md-12">
-          <h4>I'm very involved in <a href="http://ntucac.com/">Cultural Activities Club</a></h4>
+        <div class="col s12">
+          <h1>I'm very involved in <a href="http://ntucac.com/">Cultural Activities Club</a></h1>
           <p>I was the Media and IT Director, in the 21st Executive Committee. I managed a committee of 20, provided video coverage for 23 performing arts events, managed 2 web development projects, and directed our very own <a href="https://www.youtube.com/watch?v=M5ax5IdOTsE">corporate video</a>. On my 2nd year, I was the Chief Publicity & Publications, in Arts from the Heart, a charity committee that brings joy and fundraising to the less fortunate children through activities. Managed a team of 5, designed T-shirts, posters, stage backdrop, voucher coupons, videos for our activities.</p>
         </div>
       </div>
-
     </div>
+  </div>
 
-    <div class="section-story-overview">
+  <div id="modal_enjoy" class="modal">
+    <div class="modal-content">
       <div class="row">
-        <div class="col-md-6">
-          <div class="image-container" alt="{{page.title}}" style="background-image: url({{'/assets/img/about-freediving.webp' | relative_url}});"></div>
+        <div class="col s12">
+          <span class="card-title">And I enjoy...</span>
         </div>
-        <div class="col-md-6">
-          <h3>And I enjoy...</h3>
+        <div class="col s12 m6 l4">
+          <img class="materialboxed" width="100%" src="{{'/assets/img/about-freediving.webp' | relative_url}}">
+        </div>
+        <div class="col s12 m6 l8">
           <p><a href="https://en.wikipedia.org/wiki/Freediving">Freediving</a>! I enjoy being in the water, especially if there are fishes. My best record for static breath hold is 4 mins and 50 seconds, and longest single breath swim across the pool is 90 metres. I have only managed to dive in a few places around the warm waters in south-east Asia.</p>
+        </div>
+        <div class="col s12">
           <p>I also enjoy travelling, especially if it is a road trip with scenery and good food. My favourite road trip experience is in Hokkaido. Road trip from Gold Coast to Great Ocean Road and horse riding at Alpine National Park was very memorable too. I hope to do a US/Canada road trip one day.</p>
+          <img class="materialboxed" width="100%" src="{{'/assets/img/tioman.webp' | relative_url}}">
+          <img class="materialboxed" width="100%" src="{{'/assets/img/aussie.webp' | relative_url}}">
+          <img class="materialboxed" width="100%" src="{{'/assets/img/hokkaido.webp' | relative_url}}">
         </div>
       </div>
     </div>
-
   </div>
-</div>
 
-<div class="section section-about-us">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 ml-auto mr-auto text-center">
-        <h1>Teaching</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <span class="badge badge-default">Spring 2020</span>
-        <h2>Introduction to Data Science and Artificial Intelligence (CZ1015)</h2>
+  <div id="modal_teaching" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12">
+          <span class="card-title">Teaching</span>
 
-        <h3>Objective of course</h3>
-        <ul>
-          <li>identify and define data-oriented problems and data-driven decisions in real life</li>
-          <li>discuss and illustrate the problems in terms of data exploration and visualization</li>
-          <li>apply basic machine learning tools to extract inferential information from the data</li>
-          <li>compose an engaging “data-story” to communicate the problem and the inference</li>
-          <li>discuss and explain fundamentals of state space search and reinforcement learning in the context of artificial intelligence</li>
-        </ul>
+          <span class="new badge blue" data-badge-caption="Spring 2020"></span>
+          <h1>Introduction to Data Science and Artificial Intelligence (CZ1015)</h1>
+          <ul>
+            <li>identify and define data-oriented problems and data-driven decisions in real life</li>
+            <li>discuss and illustrate the problems in terms of data exploration and visualization</li>
+            <li>apply basic machine learning tools to extract inferential information from the data</li>
+            <li>compose an engaging “data-story” to communicate the problem and the inference</li>
+            <li>discuss and explain fundamentals of state space search and reinforcement learning in the context of artificial intelligence</li>
+          </ul>
 
-        <h3>My role</h3>
-        <ul>
-          <li>lead the class and facilitate discussion and lab exercises on my own</li>
-          <li>guide their thinking process to improve their problem-solving skills</li>
-          <li>share from my experiences on how I would approach real-world problems</li>
-          <li>share cool and interesting external materials and from my writings to spark their interests in data science and artificial intelligence</li>
-          <li>students approach me to discuss on data science problems outside course work</li>
-        </ul>
+          <h2>My role</h2>
+          <ul>
+            <li>lead the class and facilitate discussion and lab exercises on my own</li>
+            <li>guide their thinking process to improve their problem-solving skills</li>
+            <li>share from my experiences on how I would approach real-world problems</li>
+            <li>share cool and interesting external materials and from my writings to spark their interests in data science and artificial intelligence</li>
+            <li>students approach me to discuss on data science problems outside course work</li>
+          </ul>
 
-        <h3>Content covered</h3>
-        <ul>
-          <li>Basic Data Handling</li>
-          <li>Data Analysis Statistics and EDA</li>
-          <li>Linear Regression</li>
-          <li>Classification Trees</li>
-          <li>Clustering Algorithms</li>
-          <li>Data Dashboards</li>
-        </ul>
-        <hr/>
+          <h2>Content covered</h2>
+          <ul>
+            <li>Basic Data Handling</li>
+            <li>Data Analysis Statistics and EDA</li>
+            <li>Linear Regression</li>
+            <li>Classification Trees</li>
+            <li>Clustering Algorithms</li>
+            <li>Data Dashboards</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="section section-about-us">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 ml-auto mr-auto text-center">
-        <h1>My Playlists</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>While coding and reading research papers</h2>
-        <p>Regardless of how I am feeling at the moment, play this playlist will activate my productivity engines immediately.</p>
-        <iframe src="https://open.spotify.com/embed/playlist/4rZLeEAWoKuZapsOR0TLVO" width="100%" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <hr/>
-      </div>
-      <div class="col-md-12">
-        <h2>While writing and chillaxing</h2>
-        <p>Sometimes, we just have to stay calm and slow down. This playlist does that for me.</p>
-        <iframe src="https://open.spotify.com/embed/playlist/4kbqmiLGcISukhkNjSCaC0" width="100%" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <hr/>
+  <div id="modal_spotify" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12">
+          <span class="card-title">My Spotify Playlists</span>
+
+          <h1>While coding and reading research papers</h1>
+          <p>Regardless of how I am feeling at the moment, play this playlist will activate my productivity engines immediately.</p>
+          <iframe src="https://open.spotify.com/embed/playlist/4rZLeEAWoKuZapsOR0TLVO" width="100%" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <hr/>
+
+          <h1>While writing and chillaxing</h1>
+          <p>Sometimes, we just have to stay calm and slow down. This playlist does that for me.</p>
+          <iframe src="https://open.spotify.com/embed/playlist/4kbqmiLGcISukhkNjSCaC0" width="100%" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        </div>
       </div>
     </div>
   </div>
+
 </div>

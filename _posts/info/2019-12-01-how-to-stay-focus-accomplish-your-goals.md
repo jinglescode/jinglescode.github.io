@@ -2,14 +2,13 @@
 title: How to Stay Focus and Accomplish Your Goals
 layout: note
 image: /assets/img/posts/stay-focus-accomplish-goals-01.webp
+image-caption: "We can't multitask, we allocate time blocks for productivity and enter the Flow state"
 description: We can't multitask, we allocate time blocks for productivity and enter the Flow state
 category: info
 tags:
   - personal growth
   - mindfulness
 ---
-
-![cover](/assets/img/posts/stay-focus-accomplish-goals-01.webp)
 
 Just like using a magnifying glass to focus the power of the Sun into a single spot on a pile of hay, with enough perseverance and determination, you might just be able to ignite a fire. Conversely, if you keep shifting the magnifying glass around, you wouldn’t find much success in the endeavour and end up frustrated and wondering: “This is utter nonsense! It’s just not possible to start a fire this way!”
 
@@ -25,7 +24,10 @@ In this article, I will share a few things I have learnt and applied and unleash
 
 # We can’t multitask
 
-![Photo by Austin Distel on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-02.webp)
+{% include figure.html
+  file="/assets/img/posts/stay-focus-accomplish-goals-02.webp"
+  caption="Photo by Austin Distel on Unsplash"
+%}
 
 In [Mihaly Csikszentmihalyi’s research](https://www.researchgate.net/publication/224927532_Flow_The_Psychology_of_Optimal_Experience) “Flow” he wrote
 >Concentration is so intense that there is no attention left over to think about anything irrelevant, or to worry about problems. Self-consciousness disappears, and the sense of time becomes distorted.
@@ -47,7 +49,10 @@ Being busy does not equate to being productive, so disconnect from distractions 
 
 # We can allocate time blocks for productivity
 
-![Photo by Wil Stewart on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-03.webp)
+{% include figure.html
+  file="/assets/img/posts/stay-focus-accomplish-goals-03.webp"
+  caption="Photo by Wil Stewart on Unsplash"
+%}
 
 Time blocking is all about scheduling tasks by time periods, in order to get more things done intentionally and ensure you stick to the schedule and not procrastinate. It can come in many forms such as a physical planner, or given modern technology, multiple time blocking apps is readily available for use.
 
@@ -73,7 +78,10 @@ Focus on activities that produce the most results and eliminating (or outsourcin
 
 # We can stay focus and be highly productive
 
-![Photo by Avi Richards on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-04.webp)
+{% include figure.html
+  file="/assets/img/posts/stay-focus-accomplish-goals-04.webp"
+  caption="Photo by Avi Richards on Unsplash"
+%}
 
 You may have read about someone being in a psychological state of mind where they are highly productive or mayhap even experienced it yourself. You being so focused on a project that you don’t realise that 12 hours had elapsed. You realised that for the past 12 hours you barely had any food, still energetic despite the lack of sleep and immersed in your work that you haven’t thought of anything else. You are so focused, so absorbed into what you love doing, what you are good at that your mind simply haven’t had the opportunity to wander and everything else seem so minute at the moment, it is undoubtedly one of the best experiences in the world.
 
@@ -85,7 +93,10 @@ So how did Musk and his team find the motivation to work on a project? What driv
 
 # We can be in the ‘Flow’ state
 
-![Photo by Malachi Brooks on Unsplash](/assets/img/posts/stay-focus-accomplish-goals-05.webp)
+{% include figure.html
+  file="/assets/img/posts/stay-focus-accomplish-goals-05.webp"
+  caption="Photo by Malachi Brooks on Unsplash"
+%}
 
 Most of us would agree that we would definitely feel a sense of accomplishment and satisfaction when a purpose is fulfilled yielding intrinsic rewards. This is the Flow state — where there is happiness and productivity are proportional and closely tied; an increase in both productivity and happiness.
 
@@ -120,7 +131,10 @@ Ragen Chastain set a Guinness World Record for the heaviest woman to complete a 
 
 > I can’t explain why or how, but no matter how difficult the training and the marathon were, when they put that medal around my neck it became completely worth it, hence my personal motto “Cross finish line, get the medal.”
 
-![Nearing the finish line! (Taken from Ragen article)](/assets/img/posts/stay-focus-accomplish-goals-06.webp)
+{% include figure.html
+  file="/assets/img/posts/stay-focus-accomplish-goals-06.webp"
+  caption="Nearing the finish line! (Taken from Ragen article)"
+%}
 
 ## Key #2: These activities must have clear and quick feedback
 
@@ -142,7 +156,11 @@ So what does the above mean? Let’s put it this way, you decide to play a game 
 
 From the standpoint as a programmer and data scientist, professionals in our field would take hours or even days to complete a project yet we are enjoying the process of it. There are constantly so much to learn and fix and we believe that all the blockers are solvable, eventually getting it to work. For every new breakthrough, we learn new methods to solve and implement the codes and functions which in turn improves and broaden our skill sets. It is an amazing and rewarding feeling when my lunar lander not only lands between the flags but also landed softly. This is challenging enough that it was not boring yet not too daunting to deter me from even trying.
 
-![Mental state in terms of challenge level and skill level, according to Csikszentmihalyi’s flow model (Taken from Wikipedia)](/assets/img/posts/stay-focus-accomplish-goals-07.webp)
+{% include figure.html
+  file="/assets/img/posts/stay-focus-accomplish-goals-07.webp"
+  caption="Mental state in terms of challenge level and skill level, according to Csikszentmihalyi’s flow model (Taken from Wikipedia)"
+  size="s"
+%}
 
 Csikszentmihalyi developed a model for his Flow theory, essentially a psychological state plotted against both skills and difficulty. On the X-axis is the range of your skill level as compared to the difficulty of the task at hand which is represented by the Y-axis.
 

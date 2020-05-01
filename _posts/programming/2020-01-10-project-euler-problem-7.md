@@ -223,3 +223,9 @@ Test value: 10001
 Output: 104743
 Took 73.96999999764375 ms
 ```
+
+---
+
+# Full Code
+
+<script src="https://gist.github.com/jinglescode/08b9a9d7179c4b20700e66d82e3c570d.js"></script>

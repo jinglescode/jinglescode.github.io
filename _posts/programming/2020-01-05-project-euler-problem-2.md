@@ -90,3 +90,7 @@ Took 0.08000000525498763 milliseconds.
 Here's my solution, can it be any better?
 
 This is my [Project Euler Challenge](https://projecteuler.net/) journey; anyone wants to do this together? It will be fun and we can learn a thing or two by solving this problem in different ways.
+
+# Full Code
+
+<script src="https://gist.github.com/jinglescode/16491fa1b84117cc3e5c58ee5366aa68.js"></script>

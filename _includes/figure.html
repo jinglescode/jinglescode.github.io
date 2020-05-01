@@ -1,0 +1,40 @@
+{% if include.size == "c2" %}
+  <div class="row">
+    <div class="col s12 m6">
+      <img class="materialboxed" data-caption="{{ include.caption }}" src="{{ include.file1 }}" alt="{{ include.caption }}">
+    </div>
+    <div class="col s12 m6">
+      <img class="materialboxed" data-caption="{{ include.caption }}" src="{{ include.file2 }}" alt="{{ include.caption }}">
+    </div>
+  </div>
+{% elsif include.size == "c3" %}
+  <div class="row">
+    <div class="col s12 m4">
+      <img class="materialboxed" data-caption="{{ include.caption }}" src="{{ include.file1 }}" alt="{{ include.caption }}">
+    </div>
+    <div class="col s12 m4">
+      <img class="materialboxed" data-caption="{{ include.caption }}" src="{{ include.file2 }}" alt="{{ include.caption }}">
+    </div>
+    <div class="col s12 m4">
+      <img class="materialboxed" data-caption="{{ include.caption }}" src="{{ include.file3 }}" alt="{{ include.caption }}">
+    </div>
+  </div>
+{% elsif include.size == "s" %}
+  <div class="row">
+    <div class="col s6 offset-s3">
+      <img class="materialboxed" data-caption="{{ include.caption }}" src="{{ include.file }}" alt="{{ include.caption }}">
+    </div>
+  </div>
+{% elsif include.size == "m" %}
+  <div class="row">
+    <div class="col s8 offset-s2">
+      <img class="materialboxed" data-caption="{{ include.caption }}" src="{{ include.file }}" alt="{{ include.caption }}">
+    </div>
+  </div>
+{% else %}
+  <div class="row">
+    <div class="col s12">
+      <img class="materialboxed" data-caption="{{ include.caption }}" src="{{ include.file }}" alt="{{ include.caption }}">
+    </div>
+  </div>
+{% endif %}

@@ -102,3 +102,7 @@ Took 0.6550000034621917 milliseconds.
 The recursive method overflow at bigger test case and good old for-loop is more efficient. Can it be any better?
 
 I just began my [Project Euler Challenge](https://projecteuler.net/) journey; anyone wants to do this together? It will be fun and we can learn a thing or two by solving this problem in different ways.
+
+# Full Code
+
+<script src="https://gist.github.com/jinglescode/9ac5bbd02c6c2ea995d2f66699f8aea7.js"></script>

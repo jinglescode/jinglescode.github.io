@@ -176,3 +176,9 @@ Took 103.56499999761581 ms
 ---
 
 This is my [Project Euler Challenge](https://projecteuler.net/) journey; anyone wants to do this together? It will be fun and we can learn a thing or two by solving this problem in different ways.
+
+---
+
+# Full Code
+
+<script src="https://gist.github.com/jinglescode/4c40443a80d34056b0b1a879cf7e907e.js"></script>

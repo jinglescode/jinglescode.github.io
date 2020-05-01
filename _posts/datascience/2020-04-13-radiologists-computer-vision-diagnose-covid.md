@@ -2,15 +2,13 @@
 title: How Radiologists used Computer Vision to Diagnose COVID-19
 layout: note
 image: /assets/img/posts/radiologists-computer-vision-diagnose-covid-01.webp
+image-caption: "Image by [mohamed Hassan](https://pixabay.com/users/mohamed_hassan-5229782) from [Pixabay](https://pixabay.com/)"
 description: By shortening assessments time by 65%, artificial intelligence plays a critical role to fight against the spread of COVID-19
 category: datascience
 tags:
 - computer vision
 - medical
 ---
-
-![](/assets/img/posts/radiologists-computer-vision-diagnose-covid-01.webp)
-Image by [mohamed Hassan](https://pixabay.com/users/mohamed_hassan-5229782) from [Pixabay](https://pixabay.com/)
 
 Coronavirus pandemic has spread all over the world. The Reverse Transcription-Polymerase Chain Reaction (RT-PCR) test is commonly used to screen patients, allowing those infected to receive treatment quickly.
 
@@ -34,7 +32,11 @@ Image segmentation is an essential step in AI-based COVID-19 image processing an
 
 The [U-Net](https://jinglescode.github.io/datascience/2019/11/07/biomedical-image-segmentation-u-net/) is a commonly used technique for medical image segmentation. This [paper](https://arxiv.org/pdf/1505.04597.pdf) by Ronneberger et al. is published in [2015 MICCAI](https://www.miccai2019.org/) and has over 13,000 citations in Apr 2020. It has a U-shape architecture with an expansive path and a contracting path, which **yield more precise segmentation suitable for medical imagery**.
 
-![unet arcitecture](/assets/img/posts/unet-02.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-02.webp"
+  caption="UNet architecture"
+  size="m"
+%}
 
 ## UNet++
 
@@ -44,7 +46,11 @@ Building on U-Net, Zhou et al. proposed the [UNet++](https://jinglescode.github.
 - Dense skip connections improve segmentation accuracy and improve gradient flow
 - Deep supervision allows for model complexity tuning to balance between speed and performance optimisation
 
-![unet++ architecture](/assets/img/posts/unet-nested-03.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-nested-03.webp"
+  caption="UNet++ architecture"
+  size="m"
+%}
 
 ## Attention U-Net
 
@@ -52,7 +58,11 @@ The attention mechanisms can learn to single out certain parts of the features i
 
 Because the infected regions could be small, with a variety of shapes and textures, locating these regions is a challenging task. The **attention gates incorporated into U-Net improve model sensitivity and accuracy** to foreground pixels without requiring significant computation overhead. Attention gates can progressively suppress features responses in irrelevant background regions.
 
-![unet attention architectures](/assets/img/posts/unet-attention-05.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-attention-05.webp"
+  caption="UNet Attention architecture"
+  size="m"
+%}
 
 # Image segmentation in COVID-19 applications
 

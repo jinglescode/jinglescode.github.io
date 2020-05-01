@@ -5,31 +5,51 @@ excerpt: Browse Jingles articles by tags, about machine learning, data science, 
 permalink: tags/
 ---
 
+<!-- <div class="section section-basic">
+  <div class="container">
+
+    <ul class="collapsible expandable popout">
+      {% assign sorted_tags = site.tags | sort %}
+      {% for tag in sorted_tags %}
+        <li>
+          <div class="collapsible-header" style="text-transform:capitalize;">{{ tag | first }}</div>
+          <div class="collapsible-body">
+            <div class="collection">
+              {% for post in tag[1] %}
+                <a href="{{ site.baseurl }}{{ post.url }}" class="collection-item">
+                  {{ post.title }}
+                  <span class="new badge blue" data-badge-caption="{{ post.date | date_to_string }}"></span>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</div> -->
+
 <div class="section section-basic">
   <div class="container">
 
     {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
-    <div class="row" id="{{ tag[0] | slugify }}">
+    <div class="row">
 
       <div class="col-sm-12">
 
         <div class="card">
-          <div class="card-body">
-            <h2 class="card-title">{{ tag | first }}</h2>
-
-            <div class="card-description">
+          <div class="card-content">
+            <span class="card-title" style="text-transform:capitalize;">{{ tag | first }}</span>
+            <div class="collection">
               {% for post in tag[1] %}
-                <a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 20px;">
+                <a href="{{ site.baseurl }}{{ post.url }}" class="collection-item">
                   {{ post.title }}
-                  <small>- {{ post.date | date_to_string }}</small>
-                </a><br/>
+                  <span class="new badge blue" data-badge-caption="{{ post.date | date_to_string }}"></span>
+                </a>
               {% endfor %}
             </div>
-            <div class="card-footer">
-
-            </div>
-
           </div>
         </div>
 

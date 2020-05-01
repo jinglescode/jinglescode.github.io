@@ -2,13 +2,12 @@
 title: 7 Essential AI YouTube Channels
 layout: note
 image: /assets/img/posts/ai-youtube-01.webp
+image-caption: "How to stay updated with the latest and coolest machine learning advancements"
 description: How to stay updated with the latest and coolest machine learning advancements
 category: datascience
 tags:
 - resources
 ---
-
-![cover](/assets/img/posts/ai-youtube-01.webp)
 
 Machine learning has been one of the hottest topics around for several years. Everyone is talking about it; organisations of all sizes are embracing these technologies.
 
@@ -18,8 +17,12 @@ Spending on machine learning research is  [growing](https://pureai.com/articles/
 
 One paper every 15 minutes!
 
-![cover](/assets/img/posts/ai-youtube-02.webp#float_left)
-![trend](/assets/img/posts/ai-youtube-03.webp#float_left)
+{% include figure.html
+  file1="/assets/img/posts/ai-youtube-02.webp"
+  file2="/assets/img/posts/ai-youtube-03.webp"
+  caption="This chart shows the level of excitement and progress in machine learning. How could anyone keep up with advances in this field? 🤔"
+  size="c2"
+%}
 
 This chart shows the level of excitement and progress in machine learning. How could anyone keep up with advances in this field? 🤔
 
@@ -31,8 +34,12 @@ _Let’s begin._
 
 # #1. Two Minute Papers
 
-![channel](/assets/img/posts/ai-youtube-04.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-05.webp#float_left)
+{% include figure.html
+  file1="/assets/img/posts/ai-youtube-04.webp"
+  file2="/assets/img/posts/ai-youtube-05.webp"
+  caption="Two Minute Papers"
+  size="c2"
+%}
 
 First on the list, the one I love the most,  _Two Minute Papers_  by  _Károly Zsolnai-Fehér_. His videos are entertaining, engaging, and an absolute joy to watch. He selects and reviews the most exciting research developments. OpenAI on DotA games, detecting DeepFake, simulating physics, or cloning your voice. He has it all in his channel.
 
@@ -42,7 +49,7 @@ Since this is my favourite channel, let me show you one of the videos,  [_OpenAI
 
 It’s about two AI teams (hiders and seekers) playing hide-and-seek against each other. When one side learns a new strategy, the other team will adapt to counter back. The agents played until a point where they learn to abuse the game physics engine. Bravo!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Lu56xVlZ40M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Lu56xVlZ40M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
 YouTube:  [_Two Minute Papers_](https://www.youtube.com/user/keeroyz/)
 
@@ -50,8 +57,12 @@ YouTube:  [_Two Minute Papers_](https://www.youtube.com/user/keeroyz/)
 
 # #2. Lex Fridman
 
-![channel](/assets/img/posts/ai-youtube-06.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-07.webp#float_left)
+{% include figure.html
+  file1="/assets/img/posts/ai-youtube-06.webp"
+  file2="/assets/img/posts/ai-youtube-07.webp"
+  caption="Lex Fridman"
+  size="c2"
+%}
 
 _Lex Fridman_  conducts interviews with the artificial intelligence industry superstars. Elon Musk, Yann LeCun, Yoshua Bengio, Eric Schmidt? Yea, Lex has already interviewed them.
 
@@ -65,8 +76,12 @@ YouTube:  [_Lex Fridman_](https://www.youtube.com/user/lexfridman/)
 
 # #3. Henry AI Labs
 
-![channel](/assets/img/posts/ai-youtube-16.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-17.webp#float_left)
+{% include figure.html
+  file1="/assets/img/posts/ai-youtube-16.webp"
+  file2="/assets/img/posts/ai-youtube-17.webp"
+  caption="Henry AI Labs"
+  size="c2"
+%}
 
 _Henry AI Labs_. This channel is rich! Natural language processing, reinforcement learning, generative adversarial network, weakly supervised learning. All the hottest topics covered.
 
@@ -78,8 +93,12 @@ YouTube:  [_Henry AI Labs_](https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgx
 
 # #4. ArXiv Insights
 
-![channel](/assets/img/posts/ai-youtube-10.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-11.webp#float_left)
+{% include figure.html
+  file1="/assets/img/posts/ai-youtube-10.webp"
+  file2="/assets/img/posts/ai-youtube-11.webp"
+  caption="ArXiv Insights"
+  size="c2"
+%}
 
 Research papers can be a bit dry & take a while to read, right?  _ArXiv Insights_  by  _Xander Steenbrugge_  is here to help! He aims to simplify and explain technical details in machine learning papers.
 
@@ -93,8 +112,12 @@ YouTube:  [_ArXiv Insights_](https://www.youtube.com/channel/UCNIkB2IeJ-6AmZv7bQ
 
 # #5. Yannic Kilcher
 
-![channel](/assets/img/posts/ai-youtube-12.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-13.webp#float_left)
+{% include figure.html
+  file1="/assets/img/posts/ai-youtube-12.webp"
+  file2="/assets/img/posts/ai-youtube-13.webp"
+  caption="Yannic Kilcher"
+  size="c2"
+%}
 
 _Yannic Kilcher_  focuses on explaining deep learning research papers. He introduces the paper and describes the novelty behind it. He reads the paper meticulously to you, and he tells it like a story. He covers topics on deep learning architectures, natural language processing and reinforcement learning.
 
@@ -108,8 +131,12 @@ YouTube:  [_Yannic Kilcher_](https://www.youtube.com/channel/UCZHmQk67mSJgfCCTn7
 
 # #6. Leo Isikdogan
 
-![channel](/assets/img/posts/ai-youtube-14.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-15.webp#float_left)
+{% include figure.html
+  file1="/assets/img/posts/ai-youtube-14.webp"
+  file2="/assets/img/posts/ai-youtube-15.webp"
+  caption="Leo Isikdogan"
+  size="c2"
+%}
 
 _Leo Isikdogan_  showcases and concise research topics into practical, real-world application. He covers topics on machine learning and computer vision. He also creates educational how-to machine learning tutorials.
 
@@ -125,8 +152,12 @@ YouTube:  [_Leo Isikdogan_](https://www.youtube.com/channel/UC-YAxUbpa1hvRyfJBKF
 
 # #7. Kaggle
 
-![channel](/assets/img/posts/ai-youtube-08.webp#float_left)
-![channel](/assets/img/posts/ai-youtube-09.webp#float_left)
+{% include figure.html
+  file1="/assets/img/posts/ai-youtube-08.webp"
+  file2="/assets/img/posts/ai-youtube-09.webp"
+  caption="Kaggle"
+  size="c2"
+%}
 
 Last by not least,  [Kaggle](https://kaggle.com/),  _Your Home for Data Science_. It is the largest data science community. Users can find datasets and code within the Kaggle platform. They can publish notebooks to share codes, collaborate and learn from each other. There are competitions with cash prizes; competing is a great way to learn, and cash is definitely a great motivation to do well.
 

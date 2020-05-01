@@ -2,15 +2,13 @@
 title: Decoding Brain Signals with Machine Learning and Neuroscience
 layout: note
 image: /assets/img/posts/control-exoskeleton-with-your-brain-01.webp
+image-caption: "Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski) on Unsplash"
 description: Become Professor X and unlock the secrets of our mind
 category: datascience
 tags:
 - medical
 - brain computer interface
 ---
-
-![](/assets/img/posts/control-exoskeleton-with-your-brain-01.webp)
-Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski) on Unsplash
 
 In the X-Men comics, Professor Charles Xavier is one of the most powerful mutant. He possesses the mental power to read minds and move things.
 
@@ -34,9 +32,11 @@ In this article, let me share with you about an exciting research work where we 
 
 The human brain is an amazing three-pound organ that controls all our body functions. It processes all our thoughts, it is the neurobiological basis of human intelligence, creativity, emotion, and memory. Our brain is divided into several parts, and each part has a primary function.
 
-![](/assets/img/posts/control-exoskeleton-with-your-brain-02.webp)
-
-The lateral surface of the cerebrum, 4 lobes are shown [[source](https://en.wikipedia.org/wiki/Lobes_of_the_brain)]
+{% include figure.html
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-02.webp"
+  caption="The lateral surface of the cerebrum, 4 lobes are shown [[source](https://en.wikipedia.org/wiki/Lobes_of_the_brain)]"
+  size="m"
+%}
 
 For this experiment, our focus is on the [occipital lobe](https://en.wikipedia.org/wiki/Occipital_lobe). That is our visual processing centre, the part that handles our vision. It processes and enables our brain to recognise what we are looking at.
 
@@ -46,9 +46,11 @@ The purpose of a brain-computer interface (BCI) is to have a direct communicatio
 
 BCI isn’t a mind-reading device like a [Cerebro](https://en.wikipedia.org/wiki/Cerebro). Instead, it detects the changes in the energy emitted by the brain. A human brain contains about 86 billion neurons, each individually linked to other neurons. Every time we think or move a muscle, these neurons are at work, activated with energy. A BCI recognises these energy patterns in the brain.
 
-![](/assets/img/posts/control-exoskeleton-with-your-brain-03.webp#skinny_image)
-
-Spike and wave discharges monitored with EEG [source](https://en.wikipedia.org/wiki/Electroencephalography)
+{% include figure.html
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-03.webp"
+  caption="Spike and wave discharges monitored with EEG [source](https://en.wikipedia.org/wiki/Electroencephalography)"
+  size="s"
+%}
 
 [Electroencephalogram](https://en.wikipedia.org/wiki/Electroencephalography) (EEG) is a popular technique for recording signals from our brain. It is non-invasive, so we don’t need to cut open our skull to collect our brain signals.
 
@@ -80,17 +82,20 @@ The user can choose one of the five actions available to operate the exoskeleton
 -   stand up (13Hz)
 -   sit down (17Hz)
 
-![](/assets/img/posts/control-exoskeleton-with-your-brain-04.webp)
-
-Subject wearing the exoskeleton and focusing on an LED from the visual stimulus generator [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]
+{% include figure.html
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-04.webp"
+  caption="Subject wearing the exoskeleton and focusing on an LED from the visual stimulus generator [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]"
+%}
 
 If the intention is to move forward, the user focuses on the LED diode that is blinking at 9 Hz. Likewise, by focusing on the LED diode blinking at 15 Hz, it will operate the exoskeleton to turn right.
 
 During the experiment, there are voice instructions provided to guide the user. Their task was to follow the instructions given, and operate the exoskeleton according, by focusing on the corresponding LED light.
 
-![](/assets/img/posts/control-exoskeleton-with-your-brain-05.webp#float_left)
-
-EEG channel layout using 8 channels for SSVEP acquisition [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]
+{% include figure.html
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-05.webp"
+  caption="EEG channel layout using 8 channels for SSVEP acquisition [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]"
+  size="s"
+%}
 
 To build a supervised learning classifier, EEG signals collected are input data, and the assigned tasks are the labels. For this experiment, the authors have chosen eight electrodes on the EEG cap, this corresponds to the eight channels in the input data.
 
@@ -100,9 +105,11 @@ They also performed a fast Fourier transform to convert the signal from the time
 
 [No-Sang Kwak et al.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578) proposed a robust SSVEP classifier using a convolutional neural network. In the paper, they named it CNN-1. It has two hidden layers with kernel size 1x8 and 11x1, respectively. These are followed by an output layer with 5-units, which represents the five possible actions for the exoskeleton movement. The learning rate was 0.1 and weights were initialised with a normal distribution.
 
-![](/assets/img/posts/control-exoskeleton-with-your-brain-06.webp)
-
-CNN-1 architecture. Composed of two convolutional layers and an output layer [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]
+{% include figure.html
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-06.webp"
+  caption="CNN-1 architecture. Composed of two convolutional layers and an output layer [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]"
+  size="m"
+%}
 
 The authors also implemented two other neural networks and three signal processing methods to compare the performance against CNN-1:
 
@@ -118,17 +125,19 @@ These methods are used for comparing the performance against the above described
 
 The authors performed 10-fold cross-validation with 13500 training data and 1500 test data. This table shows the classification accuracy for each classifier.
 
-![](/assets/img/posts/control-exoskeleton-with-your-brain-07.webp)
-
-10-fold cross-validation results by subject, comparing different classification methods [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]
+{% include figure.html
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-07.webp"
+  caption="10-fold cross-validation results by subject, comparing different classification methods [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]"
+%}
 
 This table shows that CNN-1 has outperformed other neural network architectures. CNN-1 has also performed better than CCA, which is a popular method for SSVEP classification. Overall, the results of the neural network are more robust than CCA, as CCA exhibits significantly lower performance.
 
 Deep neural networks generally perform better with large amounts of data. To find out the amount of data required to outperform traditional methods. The authors validate the performance with various training sample size.
 
-![](/assets/img/posts/control-exoskeleton-with-your-brain-08.webp)
-
-10-fold cross-validation results, changing the amount of training data, comparing different classification methods [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]
+{% include figure.html
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-08.webp"
+  caption="10-fold cross-validation results, changing the amount of training data, comparing different classification methods [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]"
+%}
 
 CNN-1 has outperforms other neural networks for every data quantity. However, CCA-KNN shows better classification performance for fewer than 4500 training data samples.
 
@@ -140,6 +149,7 @@ BCI systems have a great potential to assist people with disabilities to control
 
 But constructing a reliable BCI system is [challenging](https://towardsdatascience.com/deep-learning-in-brain-computer-interface-f650d00268d0), and significant effort is still needed to bring these devices from the laboratory to the mass market.
 
-![](/assets/img/posts/control-exoskeleton-with-your-brain-09.webp)
-
-Photo by [S M Tuhin Chowdhury](https://unsplash.com/@smtuhin) on [Unsplash](https://unsplash.com)
+{% include figure.html
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-09.webp"
+  caption="Photo by [S M Tuhin Chowdhury](https://unsplash.com/@smtuhin) on [Unsplash](https://unsplash.com)"
+%}

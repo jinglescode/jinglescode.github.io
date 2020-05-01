@@ -80,7 +80,10 @@ excerpt: Hong Jing is a data scientist & Alibaba PhD student, write about Machin
             {% if paginator.previous_page %}
             <li class="page-item">
               <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
-                <span aria-hidden="true"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
+                <span aria-hidden="true">
+                  <!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
+                  <i class="material-icons">chevron_left</i>
+                </span>
               </a>
             </li>
             {% endif %}
@@ -96,7 +99,7 @@ excerpt: Hong Jing is a data scientist & Alibaba PhD student, write about Machin
                 </li>
               {% else %}
                 <li class="page-item">
-                  <a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+                  <a class="page-link waves-effect" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
                 </li>
               {% endif %}
             {% endfor %}
@@ -104,7 +107,10 @@ excerpt: Hong Jing is a data scientist & Alibaba PhD student, write about Machin
             {% if paginator.next_page %}
             <li class="page-item">
               <a class="page-link" href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
-                <span aria-hidden="true"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                <span aria-hidden="true">
+                  <!-- <i class="fa fa-angle-double-right" aria-hidden="true"></i> -->
+                  <i class="material-icons">chevron_right</i>
+                </span>
               </a>
             </li>
             {% endif %}

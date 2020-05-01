@@ -1,51 +1,78 @@
 ---
 layout: main
 ---
-<div class="section section-basic" id="basic-elements">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>
-          {{page.title}}
-          <br>
-          <small>{{page.description}}</small>
-        </h2>
 
-        <div class="markdown-content">
-          {{ content }}
-        </div>
-
-        <!-- <span class="badge badge-default">{{ page.date | date_to_string }}</span> -->
-
-        <a href="/tags/">
+<div class="container">
+  <div class="card">
+    <div class="card-content flow-text blog-content">
+      <span class="new badge blue" data-badge-caption="{{ page.date | date_to_string }}"></span>
+      <h1 class="title grey-text text-darken-4">{{page.title}}</h1>
+      <h5 class="subtitle grey-text text-darken-2">{{page.description}}</h5>
+    </div>
+    <div class="card-image">
+      <img class="materialboxed" data-caption="{{ page.image-caption }}" src="{{ page.image }}" alt="{{ page.image-caption }}">
+      <!-- <span class="card-title" style="text-shadow: 1px 1px 2px black;">{{page.image-caption}}</span> -->
+    </div>
+    <div class="card-content flow-text blog-content">
+      {{ content }}
+    </div>
+    <div class="card-action">
+      <a href="/tags/">
         {{page.tag}}
         {% for tag in page.tags %}
-          <span class="badge badge-primary">{{tag}}</span>
+          <span class="new badge blue" data-badge-caption="{{tag}}"></span>
+          <!-- <span class="new badge blue">{{tag}}</span> -->
         {% endfor %}
-        </a>
-
-      </div>
+      </a>
     </div>
-
   </div>
 
-</div>
-
-<div class="section section-basic">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 ml-auto mr-auto text-center">
-        <h2>Thanks for reading!</h2>
-      </div>
+  <div class="row">
+    <div class="col s12">
+      <h4>Thanks for reading!</h4>
     </div>
-    <div class="row">
+  </div>
+  <div class="row">
 
-      {% assign maxRelated = 6 %}
-      {% assign minCommonTags = 2 %}
-      {% assign maxRelatedCounter = 0 %}
-      {% assign numRelatedStories = 0 %}
+    {% assign maxRelated = 6 %}
+    {% assign minCommonTags = 2 %}
+    {% assign maxRelatedCounter = 0 %}
+    {% assign numRelatedStories = 0 %}
+
+    {% for post in site.posts %}
+
+      {% assign sameTagCount = 0 %}
+      {% assign commonTags = '' %}
+
+      {% for tag in post.tags %}
+        {% if post.url != page.url %}
+          {% if page.tags contains tag %}
+            {% assign sameTagCount = sameTagCount | plus: 1 %}
+            {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+            {% assign commonTags = commonTags | append: tagmarkup %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% if sameTagCount >= minCommonTags %}
+        {% include post_card.html %}
+        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+        {% if maxRelatedCounter >= maxRelated %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+
+    {% endfor %}
+
+    <!-- END of try 2 tags, now try 1 tag -->
+
+    {% if maxRelatedCounter <= maxRelated %}
 
       {% for post in site.posts %}
+
+        {% if maxRelatedCounter >= maxRelated %}
+          {% break %}
+        {% endif %}
 
         {% assign sameTagCount = 0 %}
         {% assign commonTags = '' %}
@@ -60,64 +87,31 @@ layout: main
           {% endif %}
         {% endfor %}
 
-        {% if sameTagCount >= minCommonTags %}
+        {% if sameTagCount == 1 %}
           {% include post_card.html %}
+          <!-- <div class="col-sm-6 col-md-6 col-lg-4">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <div class="card">
+                <div class="card-body" style="height:436px;">
+                  <div class="card-image" style="background-image: url({{post.image}})"></div>
+                  <span class="badge badge-default">{{ post.date | date_to_string }}</span>
+                  <div class="card-title">a{{post.title}} {{post.type}}</div>
+                  <div class="card-description">{{ post.description | truncate: 160 }}</div>
+                </div>
+              </div>
+            </a>
+          </div> -->
+
           {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-          {% if maxRelatedCounter >= maxRelated %}
-            {% break %}
-          {% endif %}
+
         {% endif %}
 
       {% endfor %}
 
-      <!-- END of try 2 tags, now try 1 tag -->
+    {% endif %}
 
-      {% if maxRelatedCounter <= maxRelated %}
+    <!-- END of try 1 tags -->
 
-        {% for post in site.posts %}
-
-          {% if maxRelatedCounter >= maxRelated %}
-            {% break %}
-          {% endif %}
-
-          {% assign sameTagCount = 0 %}
-          {% assign commonTags = '' %}
-
-          {% for tag in post.tags %}
-            {% if post.url != page.url %}
-              {% if page.tags contains tag %}
-                {% assign sameTagCount = sameTagCount | plus: 1 %}
-                {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
-                {% assign commonTags = commonTags | append: tagmarkup %}
-              {% endif %}
-            {% endif %}
-          {% endfor %}
-
-          {% if sameTagCount == 1 %}
-            {% include post_card.html %}
-            <!-- <div class="col-sm-6 col-md-6 col-lg-4">
-              <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="card">
-                  <div class="card-body" style="height:436px;">
-                    <div class="card-image" style="background-image: url({{post.image}})"></div>
-                    <span class="badge badge-default">{{ post.date | date_to_string }}</span>
-                    <div class="card-title">a{{post.title}} {{post.type}}</div>
-                    <div class="card-description">{{ post.description | truncate: 160 }}</div>
-                  </div>
-                </div>
-              </a>
-            </div> -->
-
-            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-
-          {% endif %}
-
-        {% endfor %}
-
-      {% endif %}
-
-      <!-- END of try 1 tags -->
-
-    </div>
   </div>
+
 </div>

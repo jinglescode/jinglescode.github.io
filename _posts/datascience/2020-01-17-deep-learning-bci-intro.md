@@ -2,14 +2,13 @@
 title: Deep Learning in Brain-Computer Interface
 layout: note
 image: /assets/img/posts/bci-dl-intro-01.webp
+image-caption: "Current status & challenges to advance the field forward"
 description: Current status & challenges to advance the field forward
 category: datascience
 tags:
 - medical
 - brain computer interface
 ---
-
-![cover](/assets/img/posts/bci-dl-intro-01.webp)
 
 # What is Brain-Computer Interface?
 

@@ -122,3 +122,9 @@ Took 0.2799999997478153 ms
 Here's my solution, can it be any better?
 
 This is my [Project Euler Challenge](https://projecteuler.net/) journey; anyone wants to do this together? It will be fun and we can learn a thing or two by solving this problem in different ways.
+
+---
+
+# Full Code
+
+<script src="https://gist.github.com/jinglescode/842d29ae37df5bc7cbbcee068507b0a5.js"></script>

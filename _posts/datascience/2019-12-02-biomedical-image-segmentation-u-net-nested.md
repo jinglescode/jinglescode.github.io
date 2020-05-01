@@ -2,14 +2,13 @@
 title: Biomedical Image Segmentation - UNet++
 layout: note
 image: /assets/img/posts/unet-nested-01.webp
+image-caption: "UNet++ improve segmentation accuracy with a series of nested, dense skip pathways"
 description: Improve segmentation accuracy with a series of nested, dense skip pathways
 category: datascience
 tags:
 - medical
 - computer vision
 ---
-
-![cover](/assets/img/posts/unet-nested-01.webp)
 
 In this article, we will be exploring [*UNet++: A Nested U-Net Architecture for Medical Image Segmentation*](https://arxiv.org/abs/1807.10165) written by Zhou et al. from the Arizona State University. This article is a continuation of the [U-Net article](https://jinglescode.github.io/datascience/2019/11/07/biomedical-image-segmentation-u-net.html), which we will be comparing UNet++ with the original [U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) by Ronneberger et al.
 
@@ -23,7 +22,10 @@ Algorithms designed for medical imaging must achieve high performance and accura
 
 Below is an illustration of UNet++ and U-Net architecture.
 
-![architectures](/assets/img/posts/unet-nested-02.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-nested-02.webp"
+  caption="UNet++ and U-Net architecture"
+%}
 
 UNet++ have 3 additions to the original U-Net:
 
@@ -32,8 +34,6 @@ UNet++ have 3 additions to the original U-Net:
 3.  deep supervision (shown in red)
 
 ## Redesigned skip pathways
-
-![architecture](/assets/img/posts/unet-nested-03.webp#skinny_image)
 
 In UNet++, the redesigned skip pathways (shown in green) have been added to bridge the semantic gap between the encoder and decoder subpaths.
 
@@ -47,15 +47,17 @@ All convolutional layers on the skip pathway use kernels of size 3×3.
 
 ## Dense skip connections
 
-![architecture](/assets/img/posts/unet-nested-03.webp#skinny_image)
-
 In UNet++, Dense skip connections (shown in blue) has implemented skip pathways between the encoder and decoder. These Dense blocks are inspired by [DenseNet](https://arxiv.org/abs/1608.06993) with the purpose to improve segmentation accuracy and improves gradient flow.
 
 Dense skip connections ensure that all prior feature maps are accumulated and arrive at the current node because of the dense convolution block along each skip pathway. This generates full resolution feature maps at multiple semantic levels.
 
 ## Deep supervision
 
-![deep supervise](/assets/img/posts/unet-nested-04.webp#skinny_image)
+{% include figure.html
+  file="/assets/img/posts/unet-nested-04.webp"
+  caption="Deep supervise"
+  size="s"
+%}
 
 In UNet++, deep supervision (shown in red) are added, so that model can be pruned to adjust the model complexity, to balance between *speed* (inference time) and *performance*.
 
@@ -67,7 +69,10 @@ Zhou et al. conducted experiments to determine the best segmentation performance
 
 They experimented on four segmentation tasks: a) cell nuclei, b) colon polyp, c) liver, and d) lung nodule. The results are as follows:
 
-![pruning](/assets/img/posts/unet-nested-05.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-nested-05.webp"
+  caption="Pruning"
+%}
 
 L3 achieved, on average 32.2% reduction in inference time compared to L4 while degrading *Intersection over Union* marginally.
 
@@ -81,7 +86,9 @@ My experiment on UNet++ will be using [Drishti-GS dataset](https://cvit.iiit.ac.
 
 The model completed training 36.6M trainable parameters in 27 minutes; each epoch took approximately 32 seconds.
 
-![loss](/assets/img/posts/unet-nested-06.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-nested-06.webp"
+%}
 
 The epoch with the best performance is epoch #45 (out of 50).
 
@@ -95,7 +102,9 @@ We are comparing the metrics of the best epoch between U-Net and UNet++.
 
 The test began with the model processing a few unseen samples, to predict optical disc (red) and optical cup (yellow). Here are the test results for UNet++ and U-Net for comparison.
 
-![result](/assets/img/posts/unet-nested-07.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-nested-07.webp"
+%}
 
 From the metrics table, UNet++ has outperformed U-Net approximately 2% in *Intersection over Union*. From the qualitative test results, UNet++ has managed to correctly segment the first image, which U-Net did not do so well.
 

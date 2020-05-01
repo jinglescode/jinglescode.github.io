@@ -1,11 +1,23 @@
-<div class="col-sm-6 col-md-6 col-lg-4">
+<div class="col s12 m6 l4">
   <a href="{{ post.url | prepend: site.baseurl }}">
-    <div class="card">
-      <div class="card-body" style="height:436px;">
-        <div class="card-image" style="background-image: url({{post.image}})"></div>
-        <span class="badge badge-default">{{ post.date | date_to_string }}</span>
-        <div class="card-title">{{post.title}} {{post.type}}</div>
-        <div class="card-description">{{ post.description | truncate: 160 }}</div>
+    <div class="card hoverable">
+      <div class="card-image waves-effect waves-block waves-light" style="">
+        <img class="activator" src="{{post.image}}" style="height:180px; object-fit: cover">
+      </div>
+      <div class="card-content" style="height:140px; overflow:hidden;">
+        <span class="new badge blue" data-badge-caption="{{ post.date | date_to_string }}"></span>
+        <span class="card-title activator grey-text text-darken-4" style="font-size:20px;">
+          {{post.title}}
+          <!-- <i class="material-icons right">more_vert</i> -->
+        </span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">
+          <span class="new badge blue" data-badge-caption="{{ post.date | date_to_string }}"></span>
+          {{post.title}}
+          <!-- <i class="material-icons right">close</i> -->
+        </span>
+        <p>{{ post.description }}</p>
       </div>
     </div>
   </a>

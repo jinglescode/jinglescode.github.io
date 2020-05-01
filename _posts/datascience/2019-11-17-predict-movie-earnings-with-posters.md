@@ -9,8 +9,6 @@ tags:
 - data analysis
 ---
 
-![cover](/assets/img/posts/predict-movie-00.webp)
-
 If you have a summer blockbuster or a short film, what would be the best way to capture your audience’s attention and interest? The 2 most prominent methods are apparent: posters and trailers.
 
 Movie posters communicate essential information about the movie such as the title, theme, characters and casts as well as producers involved in the movie. Movie posters serve to inform the audience what genre of movie they are watching, so if given a movie poster, can a machine learning model tell the genre of a movie?
@@ -42,15 +40,27 @@ Firstly, we will remove those with missing information:
 
 After filtering out the undesirable data, there are 40727 movies. Below is the distribution of the number of movies in each genre:
 
-![genres](/assets/img/posts/predict-movie-01.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-01.webp"
+  caption="Genres"
+  size="s"
+%}
 
 For our genre prediction task, we want to predict between 10 classes. So we will select the top 10 genres and remove the rest.
 
-![genres top 10](/assets/img/posts/predict-movie-02.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-02.webp"
+  caption="Genres top 10"
+  size="s"
+%}
 
 Hence, we select the top 1000 most popular movies in each genre based on popularity. These are the movies posters we will be downloading, 10,000 images across 10 genres.
 
-![genres top 10 equal](/assets/img/posts/predict-movie-03.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-03.webp"
+  caption="Genres top 10 equal"
+  size="s"
+%}
 
 # Download the movie posters
 
@@ -68,7 +78,11 @@ In order to make use of pretrained models, we would first need to transform our 
 - padding
 - random crop and resize
 
-![poster](/assets/img/posts/predict-movie-04.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-04.webp"
+  caption="Poster"
+  size="s"
+%}
 
 ## Method #1: PIL library resize
 
@@ -83,7 +97,11 @@ image.save(NEWPATH)
 
 The processed image after resize was distorted below:
 
-![poster](/assets/img/posts/predict-movie-05.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-05.webp"
+  caption="Poster: PIL library resize"
+  size="s"
+%}
 
 ## Method #2: center crop
 
@@ -101,7 +119,11 @@ dataset = datasets.ImageFolder(PATH, transform=do_transforms)
 
 The processed image caused both the top and bottom of the image are cropped.
 
-![poster](/assets/img/posts/predict-movie-06.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-06.webp"
+  caption="Poster: center crop"
+  size="s"
+%}
 
 ## Method #3: padding
 
@@ -129,7 +151,11 @@ resized_img = resize(padded, output_shape=(side, side))
 
 The processed image after applying *Padding*:
 
-![poster](/assets/img/posts/predict-movie-07.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-07.webp"
+  caption="Poster: padding"
+  size="s"
+%}
 
 ## Method #4: random crop and resize
 
@@ -148,7 +174,11 @@ dataset = datasets.ImageFolder(PATH, transform=do_transforms)
 
 The processed image after *Random Crop and Resize*.
 
-![poster](/assets/img/posts/predict-movie-08.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-08.webp"
+  caption="Poster: random crop and resize"
+  size="s"
+%}
 
 ## Image processing results
 
@@ -163,7 +193,10 @@ Model accuracy with different image processing methods are as follows:
 - Padding is approximately 85%
 - Random crop and resize is approximately 85%
 
-![poster compare](/assets/img/posts/predict-movie-09.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-09.webp"
+  caption="Poster: compare"
+%}
 
 *Random Crop and Resize* method performs the best in model accuracy and processing speed. Position of the object in an image does not matter in convolution neural networks.
 
@@ -173,13 +206,20 @@ In our preprocessing step, we can achieve approximately 85% accuracy for classif
 
 Here are some of our test cases, which are unseen by the model:
 
-![predict](/assets/img/posts/predict-movie-10.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-10.webp"
+  caption="Predicted genre"
+%}
 
 Interestingly, the model can learn and differentiate between these 2 genres. The model can likely pick up posters with skulls designs and associate the poster with *horror* movies. The 4th image shows that not all posters with a white background are *comedy* movies and that the model prediction is correct.
 
 However, as not all genres following the general requirement of movie poster designs, these posters may cause the model to misread the designs. Subsequently, the model may misclassify these movies into the opposite genre. Below are some examples of movie posters deviating from the general designs associated with their respective genres.
 
-![predict](/assets/img/posts/predict-movie-11.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-11.webp"
+  caption="Predicted genre"
+  size="m"
+%}
 
 The first image contains many regions of white and generally looked cheerful while the second image contains large regions of black which resulted in the poster looking dark despite cartoonish designs and fonts. These layouts misled the model, thus resulting in the wrong prediction.
 
@@ -189,13 +229,20 @@ In our dataset, we have 10 genres; each genre contains 1000 movie posters. An 80
 
 We utilised weights from the pretrained ResNet18 model to train a model to classify the genre of the movie based on its poster. These are the accuracies and losses during the training.
 
-![predict](/assets/img/posts/predict-movie-12.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-12.webp"
+  caption="Accuracies and losses during the training"
+%}
 
 The validation accuracy is approximately 32%. Our model can learn and overfit on the trainset, but unable to generalise on the validation dataset.
 
 The top-3 accuracy is approximately 65%. Which leads us to think, what could be causing all the misclassification? How could we further improve its accuracy? Below is a heatmap showing all the misclassification for top-1 model:
 
-![heatmap](/assets/img/posts/predict-movie-13.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-13.webp"
+  caption="Actual vs predicted"
+  size="m"
+%}
 
 What we realised is that the model is having difficulty differentiating between *horror* and *thriller* posters. If you think about it, it is true even for us humans, where we might not be able to tell the difference between *horror* and *thriller* posters.
 
@@ -213,7 +260,10 @@ We created 2 classes with the *revenue to budget ratio*, “did well” and “d
 
 Yes! Our pretrained ResNet18 model can correctly identify if a movie would potentially make money, approximately 68% of the time.
 
-![loss accuracies](/assets/img/posts/predict-movie-14.webp)
+{% include figure.html
+  file="/assets/img/posts/predict-movie-14.webp"
+  caption="Accuracies and losses during the training"
+%}
 
 Can we do better than this? I could change to a deeper Resnet but would not be interesting, so here are a few other experiments that we tried.
 

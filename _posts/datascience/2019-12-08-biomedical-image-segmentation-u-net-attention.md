@@ -10,8 +10,6 @@ tags:
 
 ---
 
-![cover](/assets/img/posts/unet-attention-01.webp)
-
 Medical image segmentation has been actively studied to automate clinical analysis. Deep learning models generally require a large amount of data, but acquiring medical images is tedious and error-prone.
 
 Attention U-Net aims to automatically learn to focus on target structures of varying shapes and sizes; thus, the name of the paper ["learning where to look for the Pancreas" by Oktay et al.](https://arxiv.org/abs/1804.03999).
@@ -22,7 +20,11 @@ Attention U-Net aims to automatically learn to focus on target structures of var
 
 U-Nets are commonly used for image segmentation tasks because of its performance and efficient use of GPU memory. It aims to achieve high precision that is reliable for clinical usage with fewer training samples because acquiring annotated medical images can be resource-intensive. Read more about U-Net.
 
-![unet architectures](/assets/img/posts/unet-attention-02.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-attention-02.webp"
+  caption="U-Net"
+  size="m"
+%}
 
 Despite U-Net excellent representation capability, it relies on multi-stage cascaded convolutional neural networks to work. These cascaded frameworks extract the region of interests and make dense predictions. This approach leads to excessive and redundant use of computational resources as it repeatedly extracting low-level features.
 
@@ -30,7 +32,11 @@ Despite U-Net excellent representation capability, it relies on multi-stage casc
 
 ["Need to pay attention" by Jetley et al.](https://arxiv.org/abs/1804.02391) introduced end-to-end-trainable attention module. Attention gates are commonly used in natural image analysis and natural language processing.
 
-![attention module](/assets/img/posts/unet-attention-03.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-attention-03.webp"
+  caption="Attention module"
+  size="m"
+%}
 
 Attention is used to perform class-specific pooling, which results in a more accurate and robust image classification performance. These attention maps can amplify the relevant regions, thus demonstrating superior generalisation over several benchmark datasets.
 
@@ -48,7 +54,10 @@ To improve segmentation performance, [Khened et al.](https://www.sciencedirect.c
 
 As a result, attention gates incorporated into U-Net can improve model sensitivity and accuracy to foreground pixels without requiring significant computation overhead. Attention gates can progressively suppress features responses in irrelevant background regions.
 
-![attention gates](/assets/img/posts/unet-attention-04.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-attention-04.webp"
+  caption="Attention gates"  
+%}
 
 Attention gates are implemented before concatenation operation to merge only relevant activations. Gradients originating from background regions are down-weighted during the backward pass. This allows model parameters in prior layers to be updated based on spatial regions that are relevant to a given task.
 
@@ -66,7 +75,11 @@ Additive soft attention is used in the sentence to sentence translation ([Bahdan
 
 Below is an illustration of Attention U-Net.
 
-![unet attention architectures](/assets/img/posts/unet-attention-05.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-attention-05.webp"
+  caption="U-Net attention architecture"
+  size="m"
+%}
 
 # My experiment on  Attention U-Net
 
@@ -76,7 +89,9 @@ The experiment setup and the metrics used will be the same as the [U-Net](https:
 
 The model completed training in 13 minutes; each epoch took approximately 15 seconds.
 
-![training](/assets/img/posts/unet-attention-06.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-attention-06.webp"
+%}
 
 The metrics between several U-Net models for comparison, as shown below.
 
@@ -84,7 +99,9 @@ The metrics between several U-Net models for comparison, as shown below.
 
 The test began with the model processing a few unseen samples, to predict optical disc (red) and optical cup (yellow). Here are the test results for Attention U-Net, UNet++ and U-Net for comparison.
 
-![result](/assets/img/posts/unet-attention-07.webp)
+{% include figure.html
+  file="/assets/img/posts/unet-attention-07.webp"
+%}
 
 # Conclusion
 

@@ -2,6 +2,7 @@
 title: What 200,000 Years of Humanity Taught Us about Data Storytelling
 layout: note
 image: /assets/img/posts/humanity-taught-data-storytelling-01.webp
+image-caption: "Engage your audience with your data story and help them comprehend your insights. Image by [Sasin Tipchai](https://pixabay.com/users/sasint-3639875)"
 description: A data scientist is also an efficient communicator who brings data to life.
 category: datascience
 tags:
@@ -10,18 +11,16 @@ tags:
 - experiences
 ---
 
-![](/assets/img/posts/humanity-taught-data-storytelling-01.webp)
-
-Engage your audience with your data story and help them comprehend your insights. Image by [Sasin Tipchai](https://pixabay.com/users/sasint-3639875)
-
 In ancient times, 200,000 years ago, people sit around the [campfire to learn from each other’s experiences through stories](https://www.sciencemag.org/news/2014/09/ancient-campfires-led-rise-storytelling). Our ancestors taught each other [how to control fire, hunt animals](https://www.pnas.org/content/111/39/14027), what to eat and what not to eat. These narratives advance human knowledge by learning from others’ successes and failures.
 
 [Ancient Egyptian arts](https://en.wikipedia.org/wiki/Art_of_ancient_Egypt) contain stories that pass on to generations about what has happened in the past. How did they build their empire, what are the tools they use, and what they considered important. Even today, we can learn from the drawings about the history of humanity.
 
-![](/assets/img/posts/humanity-taught-data-storytelling-02.webp#float_left)
-![](/assets/img/posts/humanity-taught-data-storytelling-03.webp#float_left)
-
-Ancient Egyptian arts [source from [Wikipedia](https://en.wikipedia.org/wiki/Art_of_ancient_Egypt)]
+{% include figure.html
+  file1="/assets/img/posts/humanity-taught-data-storytelling-02.webp"
+  file2="/assets/img/posts/humanity-taught-data-storytelling-03.webp"
+  caption="Ancient Egyptian arts [source from [Wikipedia](https://en.wikipedia.org/wiki/Art_of_ancient_Egypt)]"
+  size="c2"
+%}
 
 Today, the most engaging TED Talks and highest-grossing movies are [anchored in storytelling](https://ideas.ted.com/storytelling-is-a-powerful-communication-tool-heres-how-to-use-it-from-ted/). Stories that resonate with us, stories that bring ideas to life, stories that connect audiences.
 
@@ -29,9 +28,11 @@ Storytelling is as old as time, and it has a place in every culture and society.
 
 In this age of big data, this is how we are to learn from each other — telling [data stories](https://hbr.org/2015/10/the-best-data-storytellers-arent-always-the-numbers-people). There are **three crucial fundamentals of data storytelling, data, visualisation and narrative**.
 
-![](/assets/img/posts/humanity-taught-data-storytelling-04.webp)
-
-3 fundamentals of data storytelling: data, visualisation and narrative
+{% include figure.html
+  file="/assets/img/posts/humanity-taught-data-storytelling-04.webp"
+  caption="3 fundamentals of data storytelling: data, visualisation and narrative"
+  size="m"
+%}
 
 ----------
 
@@ -65,26 +66,32 @@ If the data you have consist of time variables, likely you will be interested in
 
 Sometimes, a feature can have a cyclical pattern. For example, the number of air travel passengers will increase during the holiday period, and the amount of rainfall in a year varies by season.
 
-![](/assets/img/posts/humanity-taught-data-storytelling-05.webp#float_left)
-![](/assets/img/posts/humanity-taught-data-storytelling-06.webp#float_left)
-
-Line charts can show you trends over time
+{% include figure.html
+  file1="/assets/img/posts/humanity-taught-data-storytelling-05.webp"
+  file2="/assets/img/posts/humanity-taught-data-storytelling-06.webp"
+  caption="Line charts can show you trends over time"
+  size="c2"
+%}
 
 ## Distribution of values
 
 For numerical features, you may want to find the range of the variables. This enables you to know the smallest, largest, mean and median of the feature. It also informs us if the data is left or right-skewed. A common approach to display distribution is using a histogram.
 
-![](/assets/img/posts/humanity-taught-data-storytelling-07.webp#float_left)
-![](/assets/img/posts/humanity-taught-data-storytelling-08.webp#float_left)
-
-Bar charts are useful for visualising distributions
+{% include figure.html
+  file1="/assets/img/posts/humanity-taught-data-storytelling-07.webp"
+  file2="/assets/img/posts/humanity-taught-data-storytelling-08.webp"
+  caption="Bar charts are useful for visualising distributions"
+  size="c2"
+%}
 
 A histogram can also identify anomaly data and default values. For example, you can extract those houses with humongous floor area and variables with -1 default values.
 
-![](/assets/img/posts/humanity-taught-data-storytelling-09.webp#float_left)
-![](/assets/img/posts/humanity-taught-data-storytelling-10.webp#float_left)
-
-Left: a number of houses with humongous floor area at the right-most bar. Right: a number of people with -1 age.
+{% include figure.html
+  file1="/assets/img/posts/humanity-taught-data-storytelling-09.webp"
+  file2="/assets/img/posts/humanity-taught-data-storytelling-10.webp"
+  caption="Left: a number of houses with humongous floor area at the right-most bar. Right: a number of people with -1 age."
+  size="c2"
+%}
 
 ## Correlation between features
 
@@ -92,9 +99,11 @@ Looking for a mutual relationship between two or more features is a valuable ins
 
 A useful chart to show correlation is a scatterplot. You can also add a fitted line to check if it is positively or negatively correlated.
 
-![](/assets/img/posts/humanity-taught-data-storytelling-11.webp#float_left)
-
-The simplest form to check the correlation between 2 variables, use scatterplot
+{% include figure.html
+  file="/assets/img/posts/humanity-taught-data-storytelling-11.webp"
+  caption="The simplest form to check the correlation between 2 variables, use scatterplot"
+  size="m"
+%}
 
 Knowing how features correlate can help you build a better prediction model. If two features are highly correlated, you have to scrutinize it as it could be a result of duplicated data. And if a feature is highly correlated to your target label, that feature may be significant.
 
@@ -126,4 +135,6 @@ Your audience needs reasons why they should be listening to you. Using a narrati
 
 [Andrew Stanton](https://en.wikipedia.org/wiki/Andrew_Stanton) is a film director who worked on Toy Story, Finding Nemo and Monsters, Inc. He shares his discoveries of great storytelling in [this TED Talk](https://www.youtube.com/watch?v=KxDwieKpawg). He explains how great stories can engage the audience and how we can connect to each other’s experiences.
 
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KxDwieKpawg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>

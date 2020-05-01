@@ -112,3 +112,9 @@ Took 0.7700000005570473 ms
 ```
 
 I am sure it can be improve to be more efficient than this.
+
+---
+
+# Full Code
+
+<script src="https://gist.github.com/jinglescode/ddd7a80e4779d7aca89bc1d8261f44a1.js"></script>
