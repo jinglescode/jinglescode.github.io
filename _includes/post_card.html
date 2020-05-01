@@ -5,20 +5,18 @@
         <img class="activator" src="{{post.image}}" style="height:180px; object-fit: cover">
       </div>
       <div class="card-content" style="height:140px; overflow:hidden;">
-        <span class="new badge blue" data-badge-caption="{{ post.date | date_to_string }}"></span>
         <span class="card-title activator grey-text text-darken-4" style="font-size:20px;">
           {{post.title}}
           <!-- <i class="material-icons right">more_vert</i> -->
         </span>
       </div>
-      <div class="card-reveal">
+      <!-- <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">
           <span class="new badge blue" data-badge-caption="{{ post.date | date_to_string }}"></span>
           {{post.title}}
-          <!-- <i class="material-icons right">close</i> -->
         </span>
         <p>{{ post.description }}</p>
-      </div>
+      </div> -->
     </div>
   </a>
 </div>
