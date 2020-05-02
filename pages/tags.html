@@ -45,8 +45,8 @@ permalink: tags/
             <div class="collection">
               {% for post in tag[1] %}
                 <a href="{{ site.baseurl }}{{ post.url }}" class="collection-item grey-text text-darken-3">
+                  <span class="new badge blue hide-on-small-only" data-badge-caption="{{ post.date | date_to_string }}"></span>
                   {{ post.title }}
-                  <span class="new badge blue" data-badge-caption="{{ post.date | date_to_string }}"></span>
                 </a>
               {% endfor %}
             </div>

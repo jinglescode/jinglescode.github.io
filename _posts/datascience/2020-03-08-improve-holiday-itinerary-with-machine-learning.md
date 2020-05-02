@@ -120,7 +120,12 @@ Which one did I end up using?  **K-Means**. Because it is straight forward, and 
 
 The clustering algorithm did a great job grouping locations by proximity. Next, I am interested in finding out the most optimal route from a region to another region.
 
-**Find the middle of each cluster.** We need to find the middle point of each cluster. We do this with  [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)  `groupby`  function:  `places.groupby(‘cluster’).mean()`. That will give us a DataFrame, where each row represents a cluster of locations, and it’s latitude and longitude.
+**Find the middle of each cluster.** We need to find the middle point of each cluster. We do this with  [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)  `groupby`  function:  
+```
+places.groupby(‘cluster’).mean()
+```
+
+That will give us a DataFrame, where each row represents a cluster of locations, and it’s latitude and longitude.
 
 <script src="https://gist.github.com/jinglescode/0325f6715a60f940255c27c06b64483d.js"></script>
 
