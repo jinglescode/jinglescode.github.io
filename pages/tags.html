@@ -44,7 +44,7 @@ permalink: tags/
             <span class="card-title" style="text-transform:capitalize;">{{ tag | first }}</span>
             <div class="collection">
               {% for post in tag[1] %}
-                <a href="{{ site.baseurl }}{{ post.url }}" class="collection-item">
+                <a href="{{ site.baseurl }}{{ post.url }}" class="collection-item grey-text text-darken-3">
                   {{ post.title }}
                   <span class="new badge blue" data-badge-caption="{{ post.date | date_to_string }}"></span>
                 </a>

@@ -79,30 +79,30 @@ This will prompt you for your password and install the _latexmk_ package.
 
 ## Atom packages
 
+{% include figure.html
+  file="/assets/img/posts/setup-latex-atom-05.webp"
+  size="s"
+%}
+
 These packages enable you to use Atom as a LaTeX editor.
 
 - **Compile**. [Latex package](https://atom.io/packages/latex) compiles LaTeX documents from within Atom. It will execute Latexmk to build your work.
 - **Preview PDF**. [PDF View package](https://atom.io/packages/pdf-view) enables you to view PDF files in Atom. This allows you to preview your work side-by-side. Clicking on the preview will bring your cursor to the syntax's location.
 - **Syntax highlighting**. [Language-LaTeX package](https://atom.io/packages/language-latex) does LaTeX syntax highlighting in Atom. It is particularly useful to help you check that your syntax has valid LaTeX grammar.
 
-{% include figure.html
-  file="/assets/img/posts/setup-latex-atom-05.webp"
-  size="s"
-%}
-
 # You did it!
 
-At this point, you should have a working LaTeX editor on your Atom. I recommend a few changes to the configurations. Go to _Atom -> Preferences -> Packages_. Go to _Settings_ of the _latex_ package and:
-
-- [check] Build on Save
-- [uncheck] Open Result after Successful Build
-- [uncheck] Open Result in Background
-- Under Output Directory, type “_build_”
+At this point, you should have a working LaTeX editor on your Atom. I recommend a few changes to the configurations. Go to _Atom -> Preferences -> Packages_. Go to _Settings_ of the _latex_ package.
 
 {% include figure.html
   file="/assets/img/posts/setup-latex-atom-06.webp"
   size="s"
 %}
+
+- [check] Build on Save
+- [uncheck] Open Result after Successful Build
+- [uncheck] Open Result in Background
+- Under Output Directory, type “_build_”
 
 In _language-latex_ package:
 - [check] Soft Wrap
