@@ -135,6 +135,6 @@ Your audience needs reasons why they should be listening to you. Using a narrati
 
 [Andrew Stanton](https://en.wikipedia.org/wiki/Andrew_Stanton) is a film director who worked on Toy Story, Finding Nemo and Monsters, Inc. He shares his discoveries of great storytelling in [this TED Talk](https://www.youtube.com/watch?v=KxDwieKpawg). He explains how great stories can engage the audience and how we can connect to each other’s experiences.
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KxDwieKpawg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+{% include youtube.html
+  link="https://www.youtube.com/embed/KxDwieKpawg"
+%}
