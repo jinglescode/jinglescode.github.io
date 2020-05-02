@@ -10,11 +10,10 @@
   <link href="{{'/assets/css/materialize.css?v=' | append: site.github.build_revision | relative_url}}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{{'/assets/css/custom.css?v=' | append: site.github.build_revision | relative_url}}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="preload" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" as="style" onload="this.rel='stylesheet'">
+  <meta name="author" content="Khok Hong Jing (Jingles)">
   {%if page.tags %}
   <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
   {%endif %}
-
-  {% seo title=false %}
 
   {% if jekyll.environment == 'production' %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -90,6 +89,8 @@
     <meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
   {% endif %} -->
   <!-- END Twitter cards metadatas -->
+
+  {% seo %}
 </head>
 <body>
 
