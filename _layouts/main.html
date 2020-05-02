@@ -10,9 +10,8 @@
   <link href="{{'/assets/css/materialize.css?v=' | append: site.github.build_revision | relative_url}}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{{'/assets/css/custom.css?v=' | append: site.github.build_revision | relative_url}}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="preload" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" as="style" onload="this.rel='stylesheet'">
-
   {%if page.tags %}
-    <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
+  <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
   {%endif %}
 
   {% seo title=false %}
@@ -30,7 +29,7 @@
   {% endif %}
 
   <!-- facebook Open Graph Metadatas -->
-  <meta content="{{ site.title }}" property="og:site_name">
+  <!-- <meta content="{{ site.title }}" property="og:site_name">
   {% if page.title %}
     <meta content="{{ page.title }}" property="og:title">
   {% else %}
@@ -67,11 +66,11 @@
     {% for tag in page.tags %}
     <meta content="{{ tag }}" property="article:tag">
     {% endfor %}
-  {% endif %}
+  {% endif %} -->
   <!-- END facebook Open Graph Metadatas -->
 
   <!-- Twitter cards metadatas -->
-  <meta name="twitter:card" content="summary">
+  <!-- <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@vdaubry">
   <meta name="twitter:creator" content="@vdaubry">
   {% if page.title %}
@@ -89,7 +88,7 @@
   {% endif %}
   {% if page.header-img %}
     <meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
-  {% endif %}
+  {% endif %} -->
   <!-- END Twitter cards metadatas -->
 </head>
 <body>
