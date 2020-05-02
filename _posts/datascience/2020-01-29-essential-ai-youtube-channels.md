@@ -49,7 +49,9 @@ Since this is my favourite channel, let me show you one of the videos,  [_OpenAI
 
 It’s about two AI teams (hiders and seekers) playing hide-and-seek against each other. When one side learns a new strategy, the other team will adapt to counter back. The agents played until a point where they learn to abuse the game physics engine. Bravo!
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Lu56xVlZ40M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+{% include youtube.html
+  link="https://www.youtube.com/embed/Lu56xVlZ40M"
+%}
 
 YouTube:  [_Two Minute Papers_](https://www.youtube.com/user/keeroyz/)
 

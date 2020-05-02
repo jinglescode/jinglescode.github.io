@@ -80,9 +80,9 @@ Aliaksandr work consists of the motion extractor which learns to extract key poi
 
 To understand how it works, I suggest you to visit the [GitHub page](https://aliaksandrsiarohin.github.io/first-order-model-website/) and examine the [research paper](http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation). You can also watch his [video](https://www.youtube.com/watch?v=u-0cQ-grXBQ) explaining how it works. Solid cool stuff.
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u-0cQ-grXBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+{% include youtube.html
+  link="https://www.youtube.com/embed/u-0cQ-grXBQ"
+%}
 
 Want to make your own? Check out this [Colab notebook](https://colab.research.google.com/github/AliaksandrSiarohin/first-order-model/blob/master/demo.ipynb).
 
