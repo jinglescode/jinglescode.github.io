@@ -57,7 +57,7 @@ body {
 .blog-content ul, ol {
   margin-top: 0px;
 }
-.blog-content li {
+.blog-content ul:not(.dropdown-content) li {
   list-style-type: square !important;
   margin-left: 50px;
 }

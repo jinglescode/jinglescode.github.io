@@ -14,8 +14,8 @@ Machine learning is becoming increasingly popular these days and a growing numbe
 
 Disclaimer: As stock markets fluctuation are dynamic and unpredictable owing to multiple factors, this experiment is 100% educational and by no means a trading prediction tool.
 
-[Explore Demo](https://jinglescode.github.io/demos/tfjs-timeseries-stocks/) |
-[View Code](https://github.com/jinglescode/demos/tree/master/src/app/components/tfjs-timeseries-stocks) |
+[Explore Demo](https://jinglescode.github.io/time-series-forecasting-tensorflowjs/) |
+[View Code](https://github.com/jinglescode/time-series-forecasting-tensorflowjs) |
 
 ---
 
@@ -93,7 +93,7 @@ Now that the training data is ready, it is time to create a model for time serie
 
 The model will be trained using [Adam](https://js.tensorflow.org/api/latest/#train.adam) ([research paper](https://arxiv.org/abs/1412.6980)), a popular optimisation algorithm for machine learning. [Root mean square error](https://js.tensorflow.org/api/latest/#losses.meanSquaredError) which will determine the difference between predicted values and the actual values, so the model is able to learn by minimising the error during the training process.
 
-Here is a code snippet of the model described above, [full code on Github](https://github.com/jinglescode/demos/tree/master/src/app/components/tfjs-timeseries-stocks).
+Here is a code snippet of the model described above, [full code on Github](https://github.com/jinglescode/time-series-forecasting-tensorflowjs).
 
 <script src="https://gist.github.com/jinglescode/0ca2ea62fdd3332db0c808674ce68671.js"></script>
 
@@ -151,6 +151,6 @@ There are many ways to do time series prediction other than using a simple movin
 
 With TensorFlow.js, machine learning on a web browser is possible, and it is actually pretty cool.
 
-[Explore the demo on Github](https://jinglescode.github.io/demos/tfjs-timeseries-stocks), this experiment is 100% educational and by no means a trading prediction tool.
+[Explore the demo on Github](https://jinglescode.github.io/time-series-forecasting-tensorflowjs), this experiment is 100% educational and by no means a trading prediction tool.
 
-[View source code on Github](https://github.com/jinglescode/demos/tree/master/src/app/components/tfjs-timeseries-stocks)
+[View source code on Github](https://github.com/jinglescode/time-series-forecasting-tensorflowjs)

@@ -1,0 +1,65 @@
+---
+layout: main
+title: Showcase some projects here
+description: Here are the list of projects in this repo, that I work on during my free time
+permalink: playground/
+---
+
+<div class="container">
+  <div class="row">
+
+  {% for project in site.data.projects %}
+  <div class="col s12 m6 l4">
+    <div class="card hoverable">
+      <div class="card-image waves-effect waves-block waves-light" style="">
+        <img class="activator" src="{{project.image}}" style="height:180px; object-fit: cover">
+      </div>
+      <div class="card-content" style="height:160px; overflow:hidden;">
+        <span class="card-title activator grey-text text-darken-4" style="font-size:20px;">
+          <i class="material-icons right">more_vert</i>
+          {{project.name}}
+        </span>
+
+        <div class="row">
+          <div class="col s4">
+            <a href="{{project.site}}" style="color:#000;">
+              <center>
+                <i class="fas fa-laptop-code" style="font-size: 20px;"></i><br/>
+                <span style="font-size:20px;">Demo</span><br/>
+              </center>
+            </a>
+          </div>
+          <div class="col s4">
+            <a href="{{project.repo}}" style="color:#000;">
+              <center>
+                <i class="fab fa-github" style="font-size: 20px;"></i><br/>
+                <span style="font-size:20px;">Repo</span><br/>
+              </center>
+            </a>
+          </div>
+
+          <div class="col s4">
+            <a href="{{project.story}}" style="color:#000;">
+              <center>
+                <i class="fas fa-align-justify"></i><br/>
+                <span style="font-size:20px;">Article</span><br/>
+              </center>
+            </a>
+          </div>
+
+        </div><!-- E <div class="row"> -->
+
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">
+          <i class="material-icons right">close</i>
+          {{project.name}}
+        </span>
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  </div>
+</div>

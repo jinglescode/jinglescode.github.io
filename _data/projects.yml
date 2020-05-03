@@ -1,0 +1,6 @@
+- name: Time Series Forecasting With TensorFlow.Js
+  description: Pull stock prices from online API and perform predictions using Recurrent Neural Network and Long Short-Term Memory (LSTM) with TensorFlow.js framework.
+  repo: https://github.com/jinglescode/time-series-forecasting-tensorflowjs
+  site: https://jinglescode.github.io/time-series-forecasting-tensorflowjs
+  story: https://jinglescode.github.io/datascience/2019/05/17/time-series-forecasting-with-tensorflow-js/
+  image: https://jinglescode.github.io/assets/img/posts/time-series-00.webp
