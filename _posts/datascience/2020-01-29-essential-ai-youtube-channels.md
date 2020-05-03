@@ -2,6 +2,7 @@
 title: 7 Essential AI YouTube Channels
 layout: note
 image: /assets/img/posts/ai-youtube-01.webp
+image-thumb: /assets/img/posts/ai-youtube-01-mini.webp
 image-caption: "How to stay updated with the latest and coolest machine learning advancements"
 description: How to stay updated with the latest and coolest machine learning advancements
 category: datascience

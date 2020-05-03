@@ -1,7 +1,8 @@
 ---
 title: Phrases extraction and D3 Wordcloud
 layout: note
-image: https://image.ibb.co/kD20aq/wordcloud.jpg
+image: /assets/img/posts/extract-phrases-display-wordcloud-01.webp
+image-thumb: /assets/img/posts/extract-phrases-display-wordcloud-01-mini.webp
 description: JavaScript solution to extracting ngrams from reviews and visualise topics on wordcloud
 category: datascience
 tags:

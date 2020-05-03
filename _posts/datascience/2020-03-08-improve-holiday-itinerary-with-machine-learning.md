@@ -2,6 +2,7 @@
 title: How to Improve Holiday Itinerary with Machine Learning
 layout: note
 image: /assets/img/posts/improve-holiday-itinerary-with-machine-learning-01.webp
+image-thumb: /assets/img/posts/improve-holiday-itinerary-with-machine-learning-01-mini.webp
 description: Perfect your travel plans with this kick-ass strategy - saving time, effort and money!
 category: datascience
 tags:

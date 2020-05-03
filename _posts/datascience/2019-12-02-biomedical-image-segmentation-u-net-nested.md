@@ -2,6 +2,7 @@
 title: Biomedical Image Segmentation - UNet++
 layout: note
 image: /assets/img/posts/unet-nested-01.webp
+image-thumb: /assets/img/posts/unet-nested-01-mini.webp
 image-caption: "UNet++ improve segmentation accuracy with a series of nested, dense skip pathways"
 description: Improve segmentation accuracy with a series of nested, dense skip pathways
 category: datascience

@@ -2,6 +2,7 @@
 title: Realistic Deepfakes in 5 Minutes on Colab
 layout: note
 image: /assets/img/posts/deepfake-existence-01.webp
+image-thumb: /assets/img/posts/deepfake-existence-01-mini.webp
 description: And why we should educate the public about the existence of such technology
 category: datascience
 tags:

@@ -2,6 +2,7 @@
 title: What 200,000 Years of Humanity Taught Us about Data Storytelling
 layout: note
 image: /assets/img/posts/humanity-taught-data-storytelling-01.webp
+image-thumb: /assets/img/posts/humanity-taught-data-storytelling-01-mini.webp
 image-caption: "Engage your audience with your data story and help them comprehend your insights. Image by [Sasin Tipchai](https://pixabay.com/users/sasint-3639875)"
 description: A data scientist is also an efficient communicator who brings data to life.
 category: datascience

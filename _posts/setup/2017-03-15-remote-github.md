@@ -1,7 +1,8 @@
 ---
 title: Sync remote Github repo with local
 layout: note
-image: https://image.ibb.co/csB41V/github.png
+image: /assets/img/posts/remote-github-01.webp
+image-thumb: /assets/img/posts/remote-github-01-mini.webp
 description: How to setup Github repo and synchronise with local copy
 category: setup
 tags:

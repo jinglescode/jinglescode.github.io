@@ -2,6 +2,7 @@
 title: Biomedical Image Segmentation - Attention U-Net
 layout: note
 image: /assets/img/posts/unet-attention-01.webp
+image-thumb: /assets/img/posts/unet-attention-01-mini.webp
 description: Improving model sensitivity and accuracy by attaching attention gates on top of the standard U-Net
 category: datascience
 tags:

@@ -2,6 +2,7 @@
 title: Predict Movie Earnings with Posters
 layout: note
 image: /assets/img/posts/predict-movie-00.webp
+image-thumb: /assets/img/posts/predict-movie-00-mini.webp
 description: Identify the genre and earnings of the movie with movie posters
 category: datascience
 tags:

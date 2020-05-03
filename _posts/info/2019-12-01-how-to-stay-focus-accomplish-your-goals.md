@@ -2,6 +2,7 @@
 title: How to Stay Focus and Accomplish Your Goals
 layout: note
 image: /assets/img/posts/stay-focus-accomplish-goals-01.webp
+image-thumb: /assets/img/posts/stay-focus-accomplish-goals-01-mini.webp
 image-caption: "We can't multitask, we allocate time blocks for productivity and enter the Flow state"
 description: We can't multitask, we allocate time blocks for productivity and enter the Flow state
 category: info

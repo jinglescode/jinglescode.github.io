@@ -2,6 +2,7 @@
 title: Decoding Brain Signals with Machine Learning and Neuroscience
 layout: note
 image: /assets/img/posts/control-exoskeleton-with-your-brain-01.webp
+image-thumb: /assets/img/posts/control-exoskeleton-with-your-brain-01-mini.webp
 image-caption: "Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski) on Unsplash"
 description: Become Professor X and unlock the secrets of our mind
 category: datascience

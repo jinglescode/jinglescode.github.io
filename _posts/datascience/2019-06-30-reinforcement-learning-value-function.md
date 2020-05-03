@@ -2,6 +2,7 @@
 title: Reinforcement Learning — The Value Function
 layout: note
 image: /assets/img/posts/rl-value-func-00.webp
+image-thumb: /assets/img/posts/rl-value-func-00-mini.webp
 description: A reinforcement learning algorithm for agents to learn the tic-tac-toe, using the value function
 category: datascience
 tags:

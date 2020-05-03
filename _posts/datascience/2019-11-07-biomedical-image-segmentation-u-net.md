@@ -2,6 +2,7 @@
 title: Biomedical Image Segmentation - U-Net
 layout: note
 image: /assets/img/posts/unet-00.webp
+image-thumb: /assets/img/posts/unet-00-mini.webp
 image-caption: "U-Net works with very few training images and yields more precise segmentation"
 description: Works with very few training images and yields more precise segmentation
 category: datascience

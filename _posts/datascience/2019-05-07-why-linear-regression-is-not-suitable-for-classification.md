@@ -2,6 +2,7 @@
 title: Why Linear Regression is not suitable for Classification
 layout: note
 image: /assets/img/posts/why-lr-00.webp
+image-thumb: /assets/img/posts/why-lr-00-mini.webp
 image-caption: "Linear Regression vs Logistic Regression for Classification Tasks"
 description: Linear Regression vs Logistic Regression for Classification Tasks
 category: datascience

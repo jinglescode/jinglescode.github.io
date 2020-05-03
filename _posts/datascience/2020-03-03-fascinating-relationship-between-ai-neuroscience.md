@@ -2,6 +2,7 @@
 title: The Fascinating Relationship between AI and Neuroscience
 layout: note
 image: /assets/img/posts/fascinating-relationship-between-ai-neuroscience-01.webp
+image-thumb: /assets/img/posts/fascinating-relationship-between-ai-neuroscience-01-mini.webp
 description: They inspire and advance together which benefits both fields
 category: datascience
 tags:

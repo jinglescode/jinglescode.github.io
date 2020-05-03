@@ -2,6 +2,7 @@
 title: Airbnb in Seattle — Data Analysis
 layout: note
 image: /assets/img/posts/analyze-airbnb-00.webp
+image-thumb: /assets/img/posts/analyze-airbnb-00-mini.webp
 description: Understand Airbnb rental landscape in Seattle
 category: datascience
 tags:

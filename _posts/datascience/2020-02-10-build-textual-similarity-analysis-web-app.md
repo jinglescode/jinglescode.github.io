@@ -2,6 +2,7 @@
 title: Build Textual Similarity Analysis Web App
 layout: note
 image: /assets/img/posts/build-textual-similarity-analysis-web-app-01.webp
+image-thumb: /assets/img/posts/build-textual-similarity-analysis-web-app-01-mini.webp
 image-caption: "Some Brighton Bathing Boxes are more like each other than others. “Show me those in red” [photo by [me](https://medium.com/@jinglesnote)]"
 description: A journey from word embeddings to universal sentence encoder to web app demo
 category: datascience

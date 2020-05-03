@@ -2,6 +2,7 @@
 title: Time Series Forecasting with TensorFlow.js
 layout: note
 image: /assets/img/posts/time-series-00.webp
+image-thumb: /assets/img/posts/time-series-00-mini.webp
 description: Pull stock prices from online API and perform predictions using Recurrent Neural Network & Long Short Term Memory (LSTM) with TensorFlow.js framework
 category: datascience
 tags:

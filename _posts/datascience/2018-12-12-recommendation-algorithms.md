@@ -1,7 +1,9 @@
 ---
 title: Recommendation Systems Algorithms
 layout: note
-image: https://i.ibb.co/stBFTKP/recommendation.jpg
+image: /assets/img/posts/recommendation-algorithms-01.webp
+image-thumb: /assets/img/posts/recommendation-algorithms-01-mini.webp
+image-caption: Image by Arek Socha from Pixabay
 description: Summarise a few recommendation systems machine learning algorithms
 category: datascience
 tags:

@@ -2,6 +2,7 @@
 title: Project Euler - Problem 3 - Largest prime factor
 layout: note
 image: /assets/img/posts/project-euler.webp
+image-thumb: /assets/img/posts/project-euler.webp
 description: What is the largest prime factor of the given number?
 category: programming
 tags:

@@ -2,6 +2,7 @@
 title: Data Scientist - The Dirtiest Job of the 21st Century
 layout: note
 image: /assets/img/posts/data-scientist-dirtiest-job-century-01.webp
+image-thumb: /assets/img/posts/data-scientist-dirtiest-job-century-01-mini.webp
 image-caption: "Photo by [Medienstürmer](https://unsplash.com/@medienstuermer) on [Unsplash](https://unsplash.com/)"
 description: Data scientist, sexiest job of the 21st century. While they do make discoveries while swimming in data, but the data needs cleaning and labelling first.
 category: datascience

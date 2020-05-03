@@ -2,6 +2,7 @@
 title: How Radiologists used Computer Vision to Diagnose COVID-19
 layout: note
 image: /assets/img/posts/radiologists-computer-vision-diagnose-covid-01.webp
+image-thumb: /assets/img/posts/radiologists-computer-vision-diagnose-covid-01-mini.webp
 image-caption: "Image by [mohamed Hassan](https://pixabay.com/users/mohamed_hassan-5229782) from [Pixabay](https://pixabay.com/)"
 description: By shortening assessments time by 65%, artificial intelligence plays a critical role to fight against the spread of COVID-19
 category: datascience

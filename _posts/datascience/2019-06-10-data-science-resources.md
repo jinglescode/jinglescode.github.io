@@ -2,6 +2,7 @@
 title: Machine Learning Resources
 layout: note
 image: /assets/img/posts/machine-learning-resources-01.webp
+image-thumb: /assets/img/posts/machine-learning-resources-01-mini.webp
 description: Machine Learning links I find useful
 category: datascience
 tags:
