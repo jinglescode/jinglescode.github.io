@@ -10,9 +10,9 @@ tags:
 
 ---
 
-[Explore Demo](https://jinglescode.github.io/demos/rl-value-function-tic-tac-toe)
+[Explore Demo](https://jinglescode.github.io/reinforcement-learning-tic-tac-toe)
 
-[View Code](https://github.com/jinglescode/demos/tree/master/src/app/components/rl-value-function-tic-tac-toe)
+[View Code](https://github.com/jinglescode/reinforcement-learning-tic-tac-toe)
 
 # Intuition
 
@@ -54,7 +54,7 @@ If you are in state F (in figure 2), which can only lead to state G, followed by
   size="s"
 %}
 
-[In this game of tic-tac-toe,](https://jinglescode.github.io/demos/rl-value-function-tic-tac-toe) getting 2 Xs in a row (state J in figure 3) does not win the game, hence there is no reward. But being at state J places you one step closer to reaching state K, completing the row of X to win the game, thus being in state J yields a good value.
+[In this game of tic-tac-toe,](https://jinglescode.github.io/reinforcement-learning-tic-tac-toe) getting 2 Xs in a row (state J in figure 3) does not win the game, hence there is no reward. But being at state J places you one step closer to reaching state K, completing the row of X to win the game, thus being in state J yields a good value.
 
 {% include figure.html
   file="/assets/img/posts/rl-value-func-04.webp"
@@ -101,7 +101,7 @@ The goal of the agent is to update the value function after a game is played to 
   size="s"
 %}
 
-Given enough training, the agent would have learnt the value (or probability of winning) of any given state. So, when we play a game against our trained agent, the agent uses the exploit strategy to maximise winning rate. [See if you can win against the agent](https://jinglescode.github.io/demos/rl-value-function-tic-tac-toe).
+Given enough training, the agent would have learnt the value (or probability of winning) of any given state. So, when we play a game against our trained agent, the agent uses the exploit strategy to maximise winning rate. [See if you can win against the agent](https://jinglescode.github.io/reinforcement-learning-tic-tac-toe).
 
 At each state of the game, the agent loop through every possibility, picking the next state with the highest value, therefore selecting the best course of action. In figure 6, the agent would pick the bottom-right corner to win the game.
 
@@ -115,6 +115,6 @@ The value of each state is updated reversed chronologically through the state hi
 
 There are many ways to define a value function, this is just one that is suitable for a tic-tac-toe game.
 
-[Explore the demo on Github](https://jinglescode.github.io/demos/rl-value-function-tic-tac-toe)
+[Explore the demo on Github](https://jinglescode.github.io/reinforcement-learning-tic-tac-toe)
 
-[View source code on Github](https://github.com/jinglescode/demos/tree/master/src/app/components/rl-value-function-tic-tac-toe)
+[View source code on Github](https://github.com/jinglescode/reinforcement-learning-tic-tac-toe)
