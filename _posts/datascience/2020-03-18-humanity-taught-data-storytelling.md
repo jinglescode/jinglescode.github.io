@@ -43,7 +43,7 @@ Before you can tell any data stories, you need data. If you are working in an or
 
 If you don’t have data yet, you have to define your hypothesis before collecting data. Your hypothesis should be measurable and clear. This will guide you to find or collect suitable dataset for analysis. Try searching for an open-source dataset that might answer your key question. However, if your question is niche, you have to build your data collection system.
 
-Before you can extract any insights from your data, you have to ensure that the data is correct. This process is defined as [**data cleaning**](https://towardsdatascience.com/data-scientist-the-dirtiest-job-of-the-21st-century-7f0c8215e845?source=friends_link&sk=4a19193cb50580e59c9c481fd840bbec). Typically you want to clean data that are incomplete, inaccurate, inconsistent and duplicated; to have accurate results.
+Before you can extract any insights from your data, you have to ensure that the data is correct. This process is defined as [**data cleaning**](https://jinglescode.github.io/datascience/2020/02/18/data-scientist-dirtiest-job-century/). Typically you want to clean data that are incomplete, inaccurate, inconsistent and duplicated; to have accurate results.
 
 ## Identify bad data
 

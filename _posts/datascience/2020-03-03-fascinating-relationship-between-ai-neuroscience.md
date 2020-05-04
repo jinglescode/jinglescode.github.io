@@ -85,7 +85,7 @@ Artificial intelligence is rapidly becoming an invaluable tool in neuroscience. 
 
 ## AI helps us to understand how our brain works.
 
-Neuroscientists are researching how the human brain processes thoughts and how it moves our bodies. By knowing more about the brain, we are equipped to better  [diagnose mental diseases](https://www.healtheuropa.eu/ai-in-psychiatry-detecting-mental-illness-with-artificial-intelligence/95028/)  and  [enable people with disabilities to improve movement capabilities](https://towardsdatascience.com/decoding-brain-signals-with-machine-learning-and-neuroscience-bee288c1d585?source=friends_link&sk=ef44e89d2c47306292a46b486b858196).
+Neuroscientists are researching how the human brain processes thoughts and how it moves our bodies. By knowing more about the brain, we are equipped to better  [diagnose mental diseases](https://www.healtheuropa.eu/ai-in-psychiatry-detecting-mental-illness-with-artificial-intelligence/95028/)  and  [enable people with disabilities to improve movement capabilities](https://jinglescode.github.io/datascience/2020/02/24/control-exoskeleton-with-your-brain/).
 
 The advancement of artificial intelligence systems can help drive neuroscience forward and unlock the secrets of the brain. It allows neuroscientists and researchers to build better models to simulate the human brain.
 
@@ -104,7 +104,7 @@ Machine learning’s main strength lies in the ability to recognise patterns in 
 
 Functional magnetic resonance imaging measures activity in our brain by detecting changes in the blood flow. It generates high dimensional snapshots of brain activity every second. Using machine learning to analyse data helps to uncover the patterns in brain activities which speeds up research work.
 
-Machine learning also helps us develop applications that were thought not possible before.  [Korean University](https://towardsdatascience.com/decoding-brain-signals-with-machine-learning-and-neuroscience-bee288c1d585?source=friends_link&sk=ef44e89d2c47306292a46b486b858196)  designed an experimental environment for controlling a lower-limb exoskeleton. Users can control the exoskeleton by focusing their attention by staring at blinking lights.
+Machine learning also helps us develop applications that were thought not possible before.  [Korean University](https://jinglescode.github.io/datascience/2020/02/24/control-exoskeleton-with-your-brain/)  designed an experimental environment for controlling a lower-limb exoskeleton. Users can control the exoskeleton by focusing their attention by staring at blinking lights.
 
 {% include figure.html
   file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-07.webp"
@@ -119,7 +119,7 @@ The human brain is the paramount inspiration for building human-like artificial 
 
 On the flip side, artificial intelligence accelerates research in neuroscience. Neuroscientists learn from the behaviour of artificial agents to interpret our brains.
 
-Naturally, these  [two disciplines fit together](https://towardsdatascience.com/deep-learning-in-brain-computer-interface-f650d00268d0?source=friends_link&sk=d34b6f7371922cc55304fb70e33b7a45)  and will continue to  [build on each other’s insights](https://deepmind.com/blog/article/ai-and-neuroscience-virtuous-circle).
+Naturally, these  [two disciplines fit together](https://jinglescode.github.io/datascience/2020/03/03/fascinating-relationship-between-ai-neuroscience/)  and will continue to  [build on each other’s insights](https://deepmind.com/blog/article/ai-and-neuroscience-virtuous-circle).
 
 I’m optimistic about the future of this partnership between neuroscience and artificial intelligence.
 

@@ -21,7 +21,7 @@ What if we can intercept these signals? By creating a device to read the mind, y
 
 ----------
 
-A [brain-computer interface](https://towardsdatascience.com/deep-learning-in-brain-computer-interface-f650d00268d0) allows the decoding of our intentions using our brain signals. This means you don’t even have to move a muscle!
+A [brain-computer interface](https://jinglescode.github.io/datascience/2020/01/17/deep-learning-bci-intro/) allows the decoding of our intentions using our brain signals. This means you don’t even have to move a muscle!
 
 Imagine this, if I would like to send a text message. I begin by staring at the keyboard, on the letters I want to type. And my phone starts typing the words and sentences I am thinking about!
 
@@ -148,7 +148,7 @@ In this study, the aim is to build a robust BCI system with a deep learning clas
 
 BCI systems have a great potential to assist people with disabilities to control devices such as an exoskeleton (like an Ironman suit) or a wheelchair (like Professor X).
 
-But constructing a reliable BCI system is [challenging](https://towardsdatascience.com/deep-learning-in-brain-computer-interface-f650d00268d0), and significant effort is still needed to bring these devices from the laboratory to the mass market.
+But constructing a reliable BCI system is [challenging](https://jinglescode.github.io/datascience/2020/01/17/deep-learning-bci-intro/), and significant effort is still needed to bring these devices from the laboratory to the mass market.
 
 {% include figure.html
   file="/assets/img/posts/control-exoskeleton-with-your-brain-09.webp"
