@@ -65,7 +65,10 @@ Hence, we select the top 1000 most popular movies in each genre based on popular
 
 # Download the movie posters
 
-From the data frame shown above, the *poster_path* is the name of the file. To get the image URL for Toy Story poster, we append *http://image.tmdb.org/t/p/w185/* to the poster URL to get: [http://image.tmdb.org/t/p/w185//rhIRbceoE9lR4veEXuwCC2wARtG.jpg](http://image.tmdb.org/t/p/w185//rhIRbceoE9lR4veEXuwCC2wARtG.jpg).
+From the data frame shown above, the *poster_path* is the name of the file. To get the image URL for Toy Story poster, we append *http://image.tmdb.org/t/p/w185/* to the poster URL, for example:
+```
+http://image.tmdb.org/t/p/w185//rhIRbceoE9lR4veEXuwCC2wARtG.jpg
+```
 
 We can download all the images with the Requests library. I would suggest adding a 1-second delay between each image download. This code is to download and save the images into respective genre folders for predicting the genre of the movie:
 
