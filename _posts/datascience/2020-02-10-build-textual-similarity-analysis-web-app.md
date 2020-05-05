@@ -3,7 +3,7 @@ title: Build Textual Similarity Analysis Web App
 layout: note
 image: /assets/img/posts/build-textual-similarity-analysis-web-app-01.webp
 image-thumb: /assets/img/posts/build-textual-similarity-analysis-web-app-01-mini.webp
-image-caption: "Some Brighton Bathing Boxes are more like each other than others. “Show me those in red” [photo by [me](https://medium.com/@jinglesnote)]"
+image-caption: "Some Brighton Bathing Boxes are more like each other than others. “Show me those in red” [photo by me]"
 description: A journey from word embeddings to universal sentence encoder to web app demo
 category: datascience
 tags:
@@ -22,7 +22,7 @@ In this story, I will detail each part needed to build a textual similarity anal
 -   build a textual similarity analysis web-app
 -   analysis of results
 
-Try the [textual similarity analysis web-app](https://jinglescode.github.io/demos/nlp-sentence-encoder), and let me know how it works for you in the comments below!
+Try the [textual similarity analysis web-app](https://jinglescode.github.io/textual-similarity-universal-sentence-encoder/), and let me know how it works for you in the comments below!
 
 ----------
 
@@ -137,7 +137,7 @@ For example, “_How old are you?_” and “_What is your age?_”, both questi
 
 {% include figure.html
   file="/assets/img/posts/build-textual-similarity-analysis-web-app-11.webp"
-  caption="“How are you?” and “How old are you?” have 33% similarity even though having identical words [[demo](https://jinglescode.github.io/demos/nlp-sentence-encoder)]"
+  caption="“How are you?” and “How old are you?” have 33% similarity even though having identical words [[demo](https://jinglescode.github.io/textual-similarity-universal-sentence-encoder/)]"
   size="s"
 %}
 
@@ -323,11 +323,11 @@ cosine_similarity_matrix(matrix){
 
 I have introduced all the major components needed for this project. Now we just have to stack them up like Legos, package it and deploy to Github.
 
-Voilà! We get a [web application](https://jinglescode.github.io/demos/nlp-sentence-encoder) for a live demo.
+Voilà! We get a [web application](https://jinglescode.github.io/textual-similarity-universal-sentence-encoder/) for a live demo.
 
 {% include figure.html
   file="/assets/img/posts/build-textual-similarity-analysis-web-app-18.webp"
-  caption="Input a list of sentences for semantic similarity [[demo](https://jinglescode.github.io/demos/nlp-sentence-encoder)]"
+  caption="Input a list of sentences for semantic similarity [[demo](https://jinglescode.github.io/textual-similarity-universal-sentence-encoder/)]"
   size="s"
 %}
 
@@ -362,7 +362,7 @@ This heatmap shows how similar each sentence are to other sentences. The brighte
 
 {% include figure.html
   file="/assets/img/posts/build-textual-similarity-analysis-web-app-20.webp"
-  caption="Semantic similarity of 12 sentences pairs [[demo](https://jinglescode.github.io/demos/nlp-sentence-encoder)]"
+  caption="Semantic similarity of 12 sentences pairs [[demo](https://jinglescode.github.io/textual-similarity-universal-sentence-encoder/)]"
   size="s"
 %}
 
@@ -400,15 +400,13 @@ Likewise for “_The cat ate the mouse_” and “_The mouse ate the cat_”, I 
 
 Thanks for reading thus far!
 
-Once again, do try the [textual similarity analysis web-app](https://jinglescode.github.io/demos/nlp-sentence-encoder), and let me know how it works for you in the comments below!
+Once again, do try the [textual similarity analysis web-app](https://jinglescode.github.io/textual-similarity-universal-sentence-encoder/), and let me know how it works for you in the comments below!
 
-Check out the [codes](https://github.com/jinglescode/demos/tree/master/src/app/components/nlp-sentence-encoder) for the web application if you would like to build something similar.
+Check out the [codes](https://github.com/jinglescode/textual-similarity-universal-sentence-encoder) for the web application if you would like to build something similar.
 
 ----------
 
 # Other machine learning web applications I’ve built
-
-As I enjoy building web applications, I have developed these web-apps to showcase machine learning capabilities on the web. Do follow me on Medium ([Jingles](https://medium.com/@jinglesnote)) because I will be building more of such.
 
 [Time Series Forecasting with TensorFlow.js](/datascience/2019/05/17/time-series-forecasting-with-tensorflow-js/)
 
