@@ -1,15 +1,21 @@
-- name: Time Series Forecasting With TensorFlow.Js
-  description: Pull stock prices from online API and perform predictions using Recurrent Neural Network and Long Short-Term Memory (LSTM) with TensorFlow.js framework.
-  repo: https://github.com/jinglescode/time-series-forecasting-tensorflowjs
-  site: https://jinglescode.github.io/time-series-forecasting-tensorflowjs
-  story: https://jinglescode.github.io/datascience/2019/05/17/time-series-forecasting-with-tensorflow-js/
-  image: https://jinglescode.github.io/assets/img/posts/time-series-00-mini.webp
+- name: Sentence Similarity with TensorFlow.js Sentence Encoder
+  description: Extract embeddings and group sentences with universal sentence encoder package from TensorFlow.js.
+  repo: https://github.com/jinglescode/textual-similarity-universal-sentence-encoder
+  site: https://jinglescode.github.io/textual-similarity-universal-sentence-encoder
+  story: https://jinglescode.github.io/datascience/2020/02/10/build-textual-similarity-analysis-web-app/
+  image: https://jinglescode.github.io/assets/img/posts/build-textual-similarity-analysis-web-app-01-mini.webp
 - name: Reinforcement Learning Tic Tac Toe with Value Function
   description: A reinforcement learning algorithm for agents to learn the tic-tac-toe, using the value function.
   repo: https://github.com/jinglescode/reinforcement-learning-tic-tac-toe
   site: https://jinglescode.github.io/reinforcement-learning-tic-tac-toe
   story: https://jinglescode.github.io/datascience/2019/06/30/reinforcement-learning-value-function/
   image: https://jinglescode.github.io/assets/img/posts/rl-value-func-00-mini.webp
+- name: Time Series Forecasting With TensorFlow.Js
+  description: Pull stock prices from online API and perform predictions using Recurrent Neural Network and Long Short-Term Memory (LSTM) with TensorFlow.js framework.
+  repo: https://github.com/jinglescode/time-series-forecasting-tensorflowjs
+  site: https://jinglescode.github.io/time-series-forecasting-tensorflowjs
+  story: https://jinglescode.github.io/datascience/2019/05/17/time-series-forecasting-with-tensorflow-js/
+  image: https://jinglescode.github.io/assets/img/posts/time-series-00-mini.webp
 - name: Phrases extraction and Word Cloud
   description: Extracting n-grams from text and display in beautiful D3 word cloud.
   repo: https://github.com/jinglescode/phrases-extraction-wordcloud
