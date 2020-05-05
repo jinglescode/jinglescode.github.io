@@ -3,10 +3,16 @@
   repo: https://github.com/jinglescode/time-series-forecasting-tensorflowjs
   site: https://jinglescode.github.io/time-series-forecasting-tensorflowjs
   story: https://jinglescode.github.io/datascience/2019/05/17/time-series-forecasting-with-tensorflow-js/
-  image: https://jinglescode.github.io/assets/img/posts/time-series-00.webp
+  image: https://jinglescode.github.io/assets/img/posts/time-series-00-mini.webp
 - name: Reinforcement Learning Tic Tac Toe with Value Function
-  description: A reinforcement learning algorithm for agents to learn the tic-tac-toe, using the value function
+  description: A reinforcement learning algorithm for agents to learn the tic-tac-toe, using the value function.
   repo: https://github.com/jinglescode/reinforcement-learning-tic-tac-toe
   site: https://jinglescode.github.io/reinforcement-learning-tic-tac-toe
   story: https://jinglescode.github.io/datascience/2019/06/30/reinforcement-learning-value-function/
-  image: https://jinglescode.github.io/assets/img/posts/rl-value-func-00.webp
+  image: https://jinglescode.github.io/assets/img/posts/rl-value-func-00-mini.webp
+- name: Phrases extraction and Word Cloud
+  description: Extracting n-grams from text and display in beautiful D3 word cloud.
+  repo: https://github.com/jinglescode/phrases-extraction-wordcloud
+  site: https://jinglescode.github.io/phrases-extraction-wordcloud
+  story: https://jinglescode.github.io/datascience/2017/10/01/extract-phrases-display-wordcloud/
+  image: https://jinglescode.github.io/assets/img/posts/extract-phrases-display-wordcloud-01-mini.webp
