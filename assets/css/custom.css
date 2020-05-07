@@ -72,17 +72,21 @@ body {
   /* padding: 7px 12px 7px 12px; */
   padding: 2px 7px 2px 7px;
   border: solid 1px rgba(51,51,51,0.12);
-  background: rgba(246,246,246,0.2);
+  background: rgba(226,226,226,0.2);
   margin-bottom: 20px;
   overflow: scroll;
+}
+.blog-content code{
+  color: #24292e;
+  font-size: 18px;
 }
 .blog-content .highlighter-rouge pre {
   margin: 0px;
 }
-.blog-content code{
-  color: #86868b;
-  font-size: 18px;
+.blog-content .highlighter-rouge pre code {
+  font-size: 16px;
 }
+
 
 #about-page{
   font-family: 'Lato', sans-serif;
