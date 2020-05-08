@@ -25,7 +25,7 @@ Similar to machine translation that translates from a source language into targe
   caption="Automatically 'translate' an image from one into the other [[paper](https://arxiv.org/pdf/1703.10593.pdf)]"
 %}
 
-In a study done by Berkeley [[4](https://arxiv.org/pdf/1703.10593.pdf)], their algorithm learns to translate an image from one into another. Such as from zebras to horses, and from summer to winter. In their work, they presented a method to learn from the absence of paired examples using adversarial loss.
+In a study done by Berkeley [[4](https://arxiv.org/pdf/1703.10593.pdf)], their algorithm learns to translate an image from one into another. Such as from zebras to horses, and from summer to winter. In their work, they presented a method to learn from the absence of paired examples using adversarial loss, pushing the boundaries of unsupervised learning. Do check out their [website](https://junyanz.github.io/CycleGAN/) on various creative (i.e. [Turning Fortnite into PUBG](https://towardsdatascience.com/turning-fortnite-into-pubg-with-deep-learning-cyclegan-2f9d339dcdb0)) applications using their work.
 
 ### Text Generation
 
