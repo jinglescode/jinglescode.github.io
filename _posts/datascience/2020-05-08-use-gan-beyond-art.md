@@ -53,16 +53,16 @@ Yu et al. [[5](https://arxiv.org/pdf/1609.05473.pdf)] also used SeqGAN to genera
 
 ----------
 
-[1] Karras, T., Laine, S., Aittala, M., Hellsten, J., Lehtinen, J. and Aila, T., 2019. Analyzing and improving the image quality of stylegan. _arXiv preprint arXiv:1912.04958_. [[https://arxiv.org/abs/1912.04958](https://arxiv.org/abs/1912.04958)]
+[1] [Karras, T., Laine, S., Aittala, M., Hellsten, J., Lehtinen, J. and Aila, T., 2019. Analyzing and improving the image quality of stylegan. _arXiv preprint arXiv:1912.04958_.](https://arxiv.org/abs/1912.04958)]
 
-[2] Iizuka, S. and Simo-Serra, E., 2019. DeepRemaster: temporal source-reference attention networks for comprehensive video enhancement. _ACM Transactions on Graphics (TOG)_, _38_(6), pp.1–13. [[http://iizuka.cs.tsukuba.ac.jp/projects/remastering/en/index.html](http://iizuka.cs.tsukuba.ac.jp/projects/remastering/en/index.html)]
+[2] [Iizuka, S. and Simo-Serra, E., 2019. DeepRemaster: temporal source-reference attention networks for comprehensive video enhancement. _ACM Transactions on Graphics (TOG)_, _38_(6), pp.1–13.](http://iizuka.cs.tsukuba.ac.jp/projects/remastering/en/index.html)]
 
-[3] Siarohin, A., Lathuilière, S., Tulyakov, S., Ricci, E. and Sebe, N., 2019. First Order Motion Model for Image Animation. In _Advances in Neural Information Processing Systems_ (pp. 7135–7145).[[https://aliaksandrsiarohin.github.io/first-order-model-website/](https://aliaksandrsiarohin.github.io/first-order-model-website/)]
+[3] [Siarohin, A., Lathuilière, S., Tulyakov, S., Ricci, E. and Sebe, N., 2019. First Order Motion Model for Image Animation. In _Advances in Neural Information Processing Systems_ (pp. 7135–7145).](https://aliaksandrsiarohin.github.io/first-order-model-website/)]
 
-[4] Zhu, J.Y., Park, T., Isola, P. and Efros, A.A., 2017. Unpaired image-to-image translation using cycle-consistent adversarial networks. In _Proceedings of the IEEE international conference on computer vision_ (pp. 2223–2232). [[https://arxiv.org/pdf/1703.10593.pdf](https://arxiv.org/pdf/1703.10593.pdf)]
+[4] [Zhu, J.Y., Park, T., Isola, P. and Efros, A.A., 2017. Unpaired image-to-image translation using cycle-consistent adversarial networks. In _Proceedings of the IEEE international conference on computer vision_ (pp. 2223–2232).](https://arxiv.org/pdf/1703.10593.pdf)]
 
-[5] Yu, L., Zhang, W., Wang, J. and Yu, Y., 2017, February. Seqgan: Sequence generative adversarial nets with policy gradient. In _Thirty-First AAAI Conference on Artificial Intelligence_. [[https://arxiv.org/pdf/1609.05473.pdf](https://arxiv.org/pdf/1609.05473.pdf)]
+[5] [Yu, L., Zhang, W., Wang, J. and Yu, Y., 2017, February. Seqgan: Sequence generative adversarial nets with policy gradient. In _Thirty-First AAAI Conference on Artificial Intelligence_.](https://arxiv.org/pdf/1609.05473.pdf)]
 
-[6] Bojchevski, A., Shchur, O., Zügner, D. and Günnemann, S., 2018. Netgan: Generating graphs via random walks. _arXiv preprint arXiv:1803.00816_. [[https://arxiv.org/pdf/1803.00816.pdf](https://arxiv.org/pdf/1803.00816.pdf)]
+[6] [Bojchevski, A., Shchur, O., Zügner, D. and Günnemann, S., 2018. Netgan: Generating graphs via random walks. _arXiv preprint arXiv:1803.00816_.](https://arxiv.org/pdf/1803.00816.pdf)]
 
-[7] Donahue, C., McAuley, J. and Puckette, M., 2018. Adversarial audio synthesis. _arXiv preprint arXiv:1802.04208._ [[https://arxiv.org/pdf/1802.04208.pdf](https://arxiv.org/pdf/1802.04208.pdf)]
+[7] [Donahue, C., McAuley, J. and Puckette, M., 2018. Adversarial audio synthesis. _arXiv preprint arXiv:1802.04208._](https://arxiv.org/pdf/1802.04208.pdf)]

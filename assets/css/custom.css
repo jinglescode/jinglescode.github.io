@@ -68,12 +68,6 @@ body {
 .blog-content tr {
   border: none;
 }
-.blog-content a {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
 .blog-content .highlighter-rouge {
   /* padding: 7px 12px 7px 12px; */
