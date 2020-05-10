@@ -9,6 +9,7 @@ category: datascience
 tags:
 - medical
 - brain computer interface
+- neuroscience
 ---
 
 In the X-Men comics, Professor Charles Xavier is one of the most powerful mutant. He possesses the mental power to read minds and move things.

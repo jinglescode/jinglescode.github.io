@@ -6,8 +6,7 @@ image-thumb: /assets/img/posts/fascinating-relationship-between-ai-neuroscience-
 description: They inspire and advance together which benefits both fields
 category: datascience
 tags:
-- medical
-- brain computer interface
+- neuroscience
 ---
 
 > With so much at stake, the need for the field of neuroscience and AI to come together is now more urgent than ever before. — [DeepMind](https://deepmind.com/blog/article/ai-and-neuroscience-virtuous-circle)

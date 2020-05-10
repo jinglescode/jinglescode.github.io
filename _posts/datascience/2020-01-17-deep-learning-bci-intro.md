@@ -9,6 +9,7 @@ category: datascience
 tags:
 - medical
 - brain computer interface
+- neuroscience
 ---
 
 # What is Brain-Computer Interface?
