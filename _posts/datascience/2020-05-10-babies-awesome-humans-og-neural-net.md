@@ -2,7 +2,7 @@
 title: Babies are awesome… Humans are the OG neural net.
 layout: note
 image: /assets/img/posts/babies-awesome-humans-og-neural-net-01.webp
-image-thumb: /assets/img/posts/use-gan-beyond-art-01-mini.webp
+image-thumb: /assets/img/posts/babies-awesome-humans-og-neural-net-01-mini.webp
 image-caption: "Image by [Jan Helebrant](https://pixabay.com/users/Juhele-3094317/) from Pixabay"
 description: Even though AI and neuroscience are similar in many ways, they are not identical.
 category: datascience
