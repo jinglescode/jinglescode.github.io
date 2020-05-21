@@ -8,6 +8,7 @@ description: GANs are relatively new, with many research directions still remain
 category: datascience
 tags:
 - computer vision
+canonical_url: '/2020/05/08/use-gan-beyond-art'
 ---
 
 Generative Adversarial Networks (GANs) has progressed substantially, where it can synthesize near-perfect human faces [[1](https://arxiv.org/abs/1912.04958)], restores color and quality of old videos [[2](http://iizuka.cs.tsukuba.ac.jp/projects/remastering/en/index.html)], and generate realistic Deepfake videos [[3](https://aliaksandrsiarohin.github.io/first-order-model-website/)].
