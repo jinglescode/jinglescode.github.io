@@ -5,7 +5,6 @@ image: /assets/img/posts/three-types-sequence-prediction-problems-01.webp
 image-thumb: /assets/img/posts/three-types-sequence-prediction-problems-01-mini.webp
 image-caption: "[[source](https://pixabay.com/photos/flight-seagull-sequence-bird-1179587/)]"
 description: Understanding your problems before implementing your sequence prediction model.
-category: datascience
 tags:
 - natural language processing
 ---

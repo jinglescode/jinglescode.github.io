@@ -5,7 +5,6 @@ image: /assets/img/posts/use-gan-beyond-art-01.webp
 image-thumb: /assets/img/posts/use-gan-beyond-art-01-mini.webp
 image-caption: "Image by Comfreak from Pixabay"
 description: GANs are relatively new, with many research directions still remaining open.
-category: datascience
 tags:
 - computer vision
 ---

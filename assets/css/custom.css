@@ -50,11 +50,11 @@ body {
 }
 .blog-content h1 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .blog-content h2 {
   font-size: 1.7rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .blog-content ul, ol {
   margin-top: 0px;
