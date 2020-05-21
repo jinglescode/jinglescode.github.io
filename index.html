@@ -44,7 +44,9 @@ excerpt: Hong Jing is a data scientist & Alibaba PhD student, write about Machin
     <div class="row">
 
       {% for post in paginator.posts %}
-        {% include post_card.html %}
+        {% if post.show_homepage != false %}
+          {% include post_card.html %}
+        {% endif %}
         <!-- <div class="col-sm-6 col-md-6 col-lg-4">
           <a href="{{ page.url | prepend: site.baseurl }}">
             <div class="card">
