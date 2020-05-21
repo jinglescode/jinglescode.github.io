@@ -5,13 +5,10 @@ image: /assets/img/posts/control-exoskeleton-with-your-brain-01.webp
 image-thumb: /assets/img/posts/control-exoskeleton-with-your-brain-01-mini.webp
 image-caption: "Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski) on Unsplash"
 description: Become Professor X and unlock the secrets of our mind
-category: datascience
 tags:
 - medical
 - brain computer interface
 - neuroscience
-canonical_url: 'https://jinglescode.github.io/2020/02/24/control-exoskeleton-with-your-brain/'
-show_homepage: false
 ---
 
 In the X-Men comics, Professor Charles Xavier is one of the most powerful mutant. He possesses the mental power to read minds and move things.

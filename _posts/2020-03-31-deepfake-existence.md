@@ -4,11 +4,8 @@ layout: note
 image: /assets/img/posts/deepfake-existence-01.webp
 image-thumb: /assets/img/posts/deepfake-existence-01-mini.webp
 description: And why we should educate the public about the existence of such technology
-category: datascience
 tags:
 - computer vision
-canonical_url: 'https://jinglescode.github.io/2020/03/31/deepfake-existence/'
-show_homepage: false
 ---
 
 Ladies and gentlemen, Deepfake videos are so easy to create, that anyone can make one. You do not need a PhD, and you don’t have to train models for hours, you don’t even have to take a course on Generative Adversarial Network.

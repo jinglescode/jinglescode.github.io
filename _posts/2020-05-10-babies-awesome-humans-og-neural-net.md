@@ -5,11 +5,8 @@ image: /assets/img/posts/babies-awesome-humans-og-neural-net-01.webp
 image-thumb: /assets/img/posts/babies-awesome-humans-og-neural-net-01-mini.webp
 image-caption: "Image by [Jan Helebrant](https://pixabay.com/users/Juhele-3094317/) from Pixabay"
 description: Even though AI and neuroscience are similar in many ways, they are not identical.
-category: datascience
 tags:
 - neuroscience
-canonical_url: 'https://jinglescode.github.io/2020/05/10/babies-awesome-humans-og-neural-net/'
-show_homepage: false
 ---
 
 > “Babies are awesome… Humans are the OG neural net.” — Elon Musk, during a recent [Joe Rogan interview](https://www.youtube.com/watch?v=RcYjXbSJBN8) as they were discussing about his newborn, X Æ A-12.

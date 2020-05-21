@@ -5,13 +5,10 @@ image: /assets/img/posts/humanity-taught-data-storytelling-01.webp
 image-thumb: /assets/img/posts/humanity-taught-data-storytelling-01-mini.webp
 image-caption: "Engage your audience with your data story and help them comprehend your insights. Image by [Sasin Tipchai](https://pixabay.com/users/sasint-3639875)"
 description: A data scientist is also an efficient communicator who brings data to life.
-category: datascience
 tags:
 - data analysis
 - visualisation
 - experiences
-canonical_url: 'https://jinglescode.github.io/2020/03/18/humanity-taught-data-storytelling/'
-show_homepage: false
 ---
 
 In ancient times, 200,000 years ago, people sit around the [campfire to learn from each other’s experiences through stories](https://www.sciencemag.org/news/2014/09/ancient-campfires-led-rise-storytelling). Our ancestors taught each other [how to control fire, hunt animals](https://www.pnas.org/content/111/39/14027), what to eat and what not to eat. These narratives advance human knowledge by learning from others’ successes and failures.

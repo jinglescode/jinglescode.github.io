@@ -44,10 +44,12 @@ permalink: tags/
             <span class="card-title" style="text-transform:capitalize;">{{ tag | first }}</span>
             <div class="collection">
               {% for post in tag[1] %}
+                {% if post.show_homepage != false %}
                 <a href="{{ site.baseurl }}{{ post.url }}" class="collection-item grey-text text-darken-3">
                   <span class="new badge blue hide-on-small-only" data-badge-caption="{{ post.date | date_to_string }}"></span>
                   {{ post.title }}
                 </a>
+                {% endif %}
               {% endfor %}
             </div>
           </div>

@@ -5,12 +5,9 @@ image: /assets/img/posts/radiologists-computer-vision-diagnose-covid-01.webp
 image-thumb: /assets/img/posts/radiologists-computer-vision-diagnose-covid-01-mini.webp
 image-caption: "Image by [mohamed Hassan](https://pixabay.com/users/mohamed_hassan-5229782) from [Pixabay](https://pixabay.com/)"
 description: By shortening assessments time by 65%, artificial intelligence plays a critical role to fight against the spread of COVID-19
-category: datascience
 tags:
 - computer vision
 - medical
-canonical_url: 'https://jinglescode.github.io/2020/04/13/radiologists-computer-vision-diagnose-covid/'
-show_homepage: false
 ---
 
 Coronavirus pandemic has spread all over the world. The Reverse Transcription-Polymerase Chain Reaction (RT-PCR) test is commonly used to screen patients, allowing those infected to receive treatment quickly.

@@ -4,11 +4,8 @@ layout: note
 image: /assets/img/posts/fascinating-relationship-between-ai-neuroscience-01.webp
 image-thumb: /assets/img/posts/fascinating-relationship-between-ai-neuroscience-01-mini.webp
 description: They inspire and advance together which benefits both fields
-category: datascience
 tags:
 - neuroscience
-canonical_url: 'https://jinglescode.github.io/2020/03/03/fascinating-relationship-between-ai-neuroscience/'
-show_homepage: false
 ---
 
 > With so much at stake, the need for the field of neuroscience and AI to come together is now more urgent than ever before. — [DeepMind](https://deepmind.com/blog/article/ai-and-neuroscience-virtuous-circle)

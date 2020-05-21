@@ -5,11 +5,8 @@ image: /assets/img/posts/data-scientist-dirtiest-job-century-01.webp
 image-thumb: /assets/img/posts/data-scientist-dirtiest-job-century-01-mini.webp
 image-caption: "Photo by [Medienstürmer](https://unsplash.com/@medienstuermer) on [Unsplash](https://unsplash.com/)"
 description: Data scientist, sexiest job of the 21st century. While they do make discoveries while swimming in data, but the data needs cleaning and labelling first.
-category: datascience
 tags:
 - experiences
-canonical_url: 'https://jinglescode.github.io/2020/02/18/data-scientist-dirtiest-job-century/'
-show_homepage: false
 ---
 
 According to the  [Harvard Business Review](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century/), data scientist is the sexiest job of the 21st century. In the world of big data, they adopt AI/deep learning methods and discover invaluable business insights.

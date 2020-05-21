@@ -8,8 +8,6 @@ description: Industry, academia, national laboratories and federal agencies work
 category: datascience
 tags:
 - medical
-canonical_url: 'https://jinglescode.github.io/2020/04/11/ai-played-critical-role-pandemic/'
-show_homepage: false
 ---
 
 The coronavirus has affected everyone around the globe. People have lost their loved ones, countries have shut down, medical professionals are working around the clock and people have lost their jobs.

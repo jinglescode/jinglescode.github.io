@@ -4,13 +4,10 @@ layout: note
 image: /assets/img/posts/improve-holiday-itinerary-with-machine-learning-01.webp
 image-thumb: /assets/img/posts/improve-holiday-itinerary-with-machine-learning-01-mini.webp
 description: Perfect your travel plans with this kick-ass strategy - saving time, effort and money!
-category: datascience
 tags:
 - experiences
 - visualisation
 - algorithm
-canonical_url: 'https://jinglescode.github.io/2020/03/08/improve-holiday-itinerary-with-machine-learning/'
-show_homepage: false
 ---
 
 In October 2019, my friends and I are planning our awesome holiday in [Greece and Amalfi](https://tmpdrive.google.com/open?id=1klLY2yu88v6EpUkSP_vuOD4j1Dqi2ZHr&usp=sharing). The way we plan our perfect holiday itinerary is by using Google Map. We search for the places to visit and pin markers on Google Map for attractions that might interest us.
