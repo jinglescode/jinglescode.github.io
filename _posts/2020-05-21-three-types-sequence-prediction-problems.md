@@ -59,7 +59,7 @@ For example, after watching the movie _Avengers: Endgame_, I was searching for e
 Even though it seems like Google Discover Feed is recommending a collection of webpages, each webpage is an individual output.
 
 {% include figure.html
-  file="/assets/img/posts/three-types-sequence-prediction-problems-05.gif"
+  file="/assets/img/posts/three-types-sequence-prediction-problems-05.webp"
   caption="Google Discover Feed"
   size="s"
 %}
