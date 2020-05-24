@@ -4,7 +4,6 @@ layout: note
 image: /assets/img/posts/happiness-01.webp
 image-thumb: /assets/img/posts/happiness-01-mini.webp
 description: tips to happiness, to create better well-being, to live a more fulfilling life
-category: info
 tags:
   - mindfulness
 ---

@@ -4,7 +4,6 @@ layout: note
 image: /assets/img/posts/learnt-from-lecuture-teaching-01.webp
 image-thumb: /assets/img/posts/learnt-from-lecuture-teaching-01-mini.webp
 description: 3 things I should be aware of and shouldn't do
-category: info
 tags:
   - personal growth
 ---

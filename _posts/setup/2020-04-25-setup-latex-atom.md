@@ -4,7 +4,6 @@ layout: note
 image: /assets/img/posts/setup-latex-atom-01.webp
 image-thumb: /assets/img/posts/setup-latex-atom-01-mini.webp
 description: Edit and preview .tex files, all from within your Atom editor
-category: setup
 tags:
  - how to
 ---

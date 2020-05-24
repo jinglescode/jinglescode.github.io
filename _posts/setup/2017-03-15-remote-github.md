@@ -4,12 +4,9 @@ layout: note
 image: /assets/img/posts/remote-github-01.webp
 image-thumb: /assets/img/posts/remote-github-01-mini.webp
 description: How to setup Github repo and synchronise with local copy
-category: setup
 tags:
   - how to
 ---
-
-Personally, I tend to forget how to setup a Git repo, and thus I'm writing this as a guide for myself.
 
 # Have a Github account and a repository
 If you do not have one, go to [Github](https://github.com) and sign up. After you have verified your account, go on and click on the green `New repository` button.
