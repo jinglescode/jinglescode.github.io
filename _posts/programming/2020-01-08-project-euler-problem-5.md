@@ -4,7 +4,6 @@ layout: note
 image: /assets/img/posts/project-euler.webp
 image-thumb: /assets/img/posts/project-euler.webp
 description: What is the smallest positive number that is evenly divisible by all of the numbers from 1 to n?
-category: programming
 tags:
 - javascript
 - algorithm

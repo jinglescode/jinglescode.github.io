@@ -4,7 +4,6 @@ layout: note
 image: /assets/img/posts/project-euler.webp
 image-thumb: /assets/img/posts/project-euler.webp
 description: What is the nth prime number?
-category: programming
 tags:
 - javascript
 - algorithm

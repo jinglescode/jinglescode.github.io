@@ -22,7 +22,7 @@ plugins:
 
 url: "https://jinglescode.github.io"
 
-paginate: 18
+paginate: 20
 paginate_path: "/page:num/"
 
 permalink: pretty
