@@ -5,13 +5,10 @@ image: /assets/img/posts/bci-dl-intro-01.webp
 image-thumb: /assets/img/posts/bci-dl-intro-01-mini.webp
 image-caption: "Current status & challenges to advance the field forward"
 description: Current status & challenges to advance the field forward
-category: datascience
 tags:
 - medical
 - brain computer interface
 - neuroscience
-canonical_url: 'https://jinglescode.github.io/2020/01/17/deep-learning-bci-intro/'
-show_homepage: false
 ---
 
 # What is Brain-Computer Interface?

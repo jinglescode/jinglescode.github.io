@@ -5,11 +5,8 @@ image: /assets/img/posts/recommendation-algorithms-01.webp
 image-thumb: /assets/img/posts/recommendation-algorithms-01-mini.webp
 image-caption: Image by Arek Socha from Pixabay
 description: Summarise a few recommendation systems machine learning algorithms
-category: datascience
 tags:
   - recsys
-canonical_url: 'https://jinglescode.github.io/2018/12/12/recommendation-algorithms/'
-show_homepage: false
 ---
 
 # Introduction

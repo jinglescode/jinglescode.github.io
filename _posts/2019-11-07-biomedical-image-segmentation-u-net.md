@@ -5,12 +5,10 @@ image: /assets/img/posts/unet-00.webp
 image-thumb: /assets/img/posts/unet-00-mini.webp
 image-caption: "U-Net works with very few training images and yields more precise segmentation"
 description: Works with very few training images and yields more precise segmentation
-category: datascience
 tags:
 - medical
 - computer vision
-canonical_url: 'https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/'
-show_homepage: false
+
 ---
 
 # Image Segmentation

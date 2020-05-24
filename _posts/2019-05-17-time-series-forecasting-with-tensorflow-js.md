@@ -4,12 +4,9 @@ layout: note
 image: /assets/img/posts/time-series-00.webp
 image-thumb: /assets/img/posts/time-series-00-mini.webp
 description: Pull stock prices from online API and perform predictions using Recurrent Neural Network & Long Short Term Memory (LSTM) with TensorFlow.js framework
-category: datascience
 tags:
 - tensorflow
 - javascript
-canonical_url: 'https://jinglescode.github.io/2019/05/17/time-series-forecasting-with-tensorflow-js/'
-show_homepage: false
 ---
 
 Machine learning is becoming increasingly popular these days and a growing number of the world’s population see it is as a magic crystal ball: predicting when and what will happen in the future. This experiment uses artificial neural networks to reveal stock market trends and demonstrates the ability of time series forecasting to predict future stock prices based on past historical data.

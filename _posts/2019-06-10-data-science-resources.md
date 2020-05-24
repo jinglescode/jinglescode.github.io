@@ -4,11 +4,8 @@ layout: note
 image: /assets/img/posts/machine-learning-resources-01.webp
 image-thumb: /assets/img/posts/machine-learning-resources-01-mini.webp
 description: Machine Learning links I find useful
-category: datascience
 tags:
 - resources
-canonical_url: 'https://jinglescode.github.io/2019/06/10/data-science-resources/'
-show_homepage: false
 ---
 
 # Resources on Deep Learning

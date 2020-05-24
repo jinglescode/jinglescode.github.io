@@ -4,12 +4,9 @@ layout: note
 image: /assets/img/posts/predict-movie-00.webp
 image-thumb: /assets/img/posts/predict-movie-00-mini.webp
 description: Identify the genre and earnings of the movie with movie posters
-category: datascience
 tags:
 - computer vision
 - data analysis
-canonical_url: 'https://jinglescode.github.io/2019/11/17/predict-movie-earnings-with-posters/'
-show_homepage: false
 ---
 
 If you have a summer blockbuster or a short film, what would be the best way to capture your audience’s attention and interest? The 2 most prominent methods are apparent: posters and trailers.

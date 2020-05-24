@@ -5,11 +5,9 @@ image: /assets/img/posts/why-lr-00.webp
 image-thumb: /assets/img/posts/why-lr-00-mini.webp
 image-caption: "Linear Regression vs Logistic Regression for Classification Tasks"
 description: Linear Regression vs Logistic Regression for Classification Tasks
-category: datascience
 tags:
 - regression
-canonical_url: 'https://jinglescode.github.io/2019/05/07/why-linear-regression-is-not-suitable-for-classification/'
-show_homepage: false
+
 ---
 
 This article explains why logistic regression performs better than linear regression for classification problems, and 2 reasons why linear regression is not suitable:

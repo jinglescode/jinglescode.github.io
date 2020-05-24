@@ -5,11 +5,8 @@ image: /assets/img/posts/ai-youtube-01.webp
 image-thumb: /assets/img/posts/ai-youtube-01-mini.webp
 image-caption: "How to stay updated with the latest and coolest machine learning advancements"
 description: How to stay updated with the latest and coolest machine learning advancements
-category: datascience
 tags:
 - resources
-canonical_url: 'https://jinglescode.github.io/2020/01/29/essential-ai-youtube-channels/'
-show_homepage: false
 ---
 
 Machine learning has been one of the hottest topics around for several years. Everyone is talking about it; organisations of all sizes are embracing these technologies.

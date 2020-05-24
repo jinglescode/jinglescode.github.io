@@ -5,13 +5,10 @@ image: /assets/img/posts/build-textual-similarity-analysis-web-app-01.webp
 image-thumb: /assets/img/posts/build-textual-similarity-analysis-web-app-01-mini.webp
 image-caption: "Some Brighton Bathing Boxes are more like each other than others. “Show me those in red” [photo by me]"
 description: A journey from word embeddings to universal sentence encoder to web app demo
-category: datascience
 tags:
 - tensorflow
 - javascript
 - natural language processing
-canonical_url: 'https://jinglescode.github.io/2020/02/10/build-textual-similarity-analysis-web-app/'
-show_homepage: false
 ---
 
 Have you wondered how search engines understand your queries and retrieve relevant results? How chatbots extract your intent from your questions and provide the most appropriate response?

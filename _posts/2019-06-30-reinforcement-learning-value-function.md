@@ -4,11 +4,9 @@ layout: note
 image: /assets/img/posts/rl-value-func-00.webp
 image-thumb: /assets/img/posts/rl-value-func-00-mini.webp
 description: A reinforcement learning algorithm for agents to learn the tic-tac-toe, using the value function
-category: datascience
 tags:
 - reinforcement learning
-canonical_url: 'https://jinglescode.github.io/2019/06/30/reinforcement-learning-value-function/'
-show_homepage: false
+
 ---
 
 [Explore Demo](https://jinglescode.github.io/reinforcement-learning-tic-tac-toe)

@@ -4,12 +4,9 @@ layout: note
 image: /assets/img/posts/extract-phrases-display-wordcloud-01.webp
 image-thumb: /assets/img/posts/extract-phrases-display-wordcloud-01-mini.webp
 description: JavaScript solution to extracting ngrams from reviews and visualise topics on wordcloud
-category: datascience
 tags:
   - javascript
   - visualisation
-canonical_url: 'https://jinglescode.github.io/2017/10/01/extract-phrases-display-wordcloud/'
-show_homepage: false
 ---
 
 100% JavaScript solution to extracting phrases from text and display key points in a beautiful D3 wordcloud. Phrases (or ngrams) extraction are done in *phrase_extraction.js*, adjustments to the wordcloud can be done in *wordcloud.js*. get the code from [Github](https://github.com/jinglescode/phrases-extraction-wordcloud)
