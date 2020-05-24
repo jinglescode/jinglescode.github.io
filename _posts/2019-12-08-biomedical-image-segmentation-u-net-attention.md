@@ -7,7 +7,6 @@ description: Improving model sensitivity and accuracy by attaching attention gat
 tags:
 - medical
 - computer vision
-
 ---
 
 Medical image segmentation has been actively studied to automate clinical analysis. Deep learning models generally require a large amount of data, but acquiring medical images is tedious and error-prone.
@@ -18,7 +17,7 @@ Attention U-Net aims to automatically learn to focus on target structures of var
 
 ## U-Net
 
-U-Nets are commonly used for image segmentation tasks because of its performance and efficient use of GPU memory. It aims to achieve high precision that is reliable for clinical usage with fewer training samples because acquiring annotated medical images can be resource-intensive. Read more about U-Net.
+U-Nets are commonly used for image segmentation tasks because of its performance and efficient use of GPU memory. It aims to achieve high precision that is reliable for clinical usage with fewer training samples because acquiring annotated medical images can be resource-intensive. [Read more about U-Net](https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/).
 
 {% include figure.html
   file="/assets/img/posts/unet-attention-02.webp"
@@ -85,7 +84,7 @@ Below is an illustration of Attention U-Net.
 
 I will be using the Drishti-GS Dataset, which contains 101 retina images, and annotated mask of the optical disc and optical cup. 50 images will are for training and 51 for validation.
 
-The experiment setup and the metrics used will be the same as the [U-Net](https://jinglescode.github.io/datascience/2019/11/07/biomedical-image-segmentation-u-net.html).
+The experiment setup and the metrics used will be the same as the [U-Net](https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/).
 
 The model completed training in 13 minutes; each epoch took approximately 15 seconds.
 
@@ -97,7 +96,7 @@ The metrics between several U-Net models for comparison, as shown below.
 
 <script src="https://gist.github.com/jinglescode/e3c4bda75c971469f93bcc1d5cbafa85.js"></script>
 
-The test began with the model processing a few unseen samples, to predict optical disc (red) and optical cup (yellow). Here are the test results for Attention U-Net, UNet++ and U-Net for comparison.
+The test began with the model processing a few unseen samples, to predict optical disc (red) and optical cup (yellow). Here are the test results for Attention U-Net, [UNet++](https://jinglescode.github.io/2019/12/02/biomedical-image-segmentation-u-net-nested/) and [U-Net](https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/) for comparison.
 
 {% include figure.html
   file="/assets/img/posts/unet-attention-07.webp"

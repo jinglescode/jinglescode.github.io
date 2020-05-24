@@ -10,7 +10,7 @@ tags:
 - computer vision
 ---
 
-In this article, we will be exploring [*UNet++: A Nested U-Net Architecture for Medical Image Segmentation*](https://arxiv.org/abs/1807.10165) written by Zhou et al. from the Arizona State University. This article is a continuation of the [U-Net article](https://jinglescode.github.io/datascience/2019/11/07/biomedical-image-segmentation-u-net.html), which we will be comparing UNet++ with the original [U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) by Ronneberger et al.
+In this article, we will be exploring [*UNet++: A Nested U-Net Architecture for Medical Image Segmentation*](https://arxiv.org/abs/1807.10165) written by Zhou et al. from the Arizona State University. This article is a continuation of the [U-Net article](https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/), which we will be comparing UNet++ with the original [U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) by Ronneberger et al.
 
 UNet++ aims to improve segmentation accuracy by including Dense block and convolution layers between the encoder and decoder.
 
@@ -82,7 +82,7 @@ We can tune the number of layers for our use-cases when utilising UNet++.
 
 # My experiment on UNet++
 
-My experiment on UNet++ will be using [Drishti-GS dataset](https://cvit.iiit.ac.in/projects/mip/drishti-gs/mip-dataset2/Home.php). The experiment setup and the metrics used will be the same as the [U-Net](https://jinglescode.github.io/datascience/2019/11/07/biomedical-image-segmentation-u-net.html).
+My experiment on UNet++ will be using [Drishti-GS dataset](https://cvit.iiit.ac.in/projects/mip/drishti-gs/mip-dataset2/Home.php). The experiment setup and the metrics used will be the same as the [U-Net](https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/).
 
 The model completed training 36.6M trainable parameters in 27 minutes; each epoch took approximately 32 seconds.
 
@@ -100,7 +100,7 @@ We are comparing the metrics of the best epoch between U-Net and UNet++.
 
 <script src="https://gist.github.com/jinglescode/e3c4bda75c971469f93bcc1d5cbafa85.js"></script>
 
-The test began with the model processing a few unseen samples, to predict optical disc (red) and optical cup (yellow). Here are the test results for UNet++ and U-Net for comparison.
+The test began with the model processing a few unseen samples, to predict optical disc (red) and optical cup (yellow). Here are the test results for UNet++ and [U-Net](https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/) for comparison.
 
 {% include figure.html
   file="/assets/img/posts/unet-nested-07.webp"

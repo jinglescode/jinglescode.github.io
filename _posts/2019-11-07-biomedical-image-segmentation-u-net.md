@@ -8,7 +8,6 @@ description: Works with very few training images and yields more precise segment
 tags:
 - medical
 - computer vision
-
 ---
 
 # Image Segmentation
