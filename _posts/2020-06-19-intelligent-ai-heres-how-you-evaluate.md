@@ -22,6 +22,7 @@ A human’s capacity for abstract reasoning can be estimated using a visual IQ t
 {% include figure.html
   file="/assets/img/posts/intelligent-ai-heres-how-you-evaluate-02.webp"
   caption="An IQ test item in the style of a Raven’s Progressive Matrices test. Given eight patterns, the subject must identify the missing ninth pattern. [source: [Wikipedia](https://en.wikipedia.org/wiki/Raven%27s_Progressive_Matrices)]"
+  size="s"
 %}
 
 Since one of the goals of AI is to develop machines with similar abstract reasoning capabilities to humans, researchers at Deepmind proposed an IQ test for AI, designed to probe their abstract visual reasoning ability. In order to succeed in this challenge, models must be able to generalize well for every question.
@@ -29,6 +30,7 @@ Since one of the goals of AI is to develop machines with similar abstract reason
 {% include figure.html
   file="/assets/img/posts/intelligent-ai-heres-how-you-evaluate-03.webp"
   caption="2 Raven-style Progressive Matrices questions on 1) arithmetic progression and 2) n XOR relation. “A” is the correct choice for both. [source [paper](https://arxiv.org/abs/1807.04225)]"
+  size="m"
 %}
 
 In this [study](https://arxiv.org/abs/1807.04225), they compared the performance of several standard deep neural networks and proposed two models that include modules that specially designed for abstract reasoning:
@@ -45,6 +47,7 @@ The IQ test questions aren’t challenging enough; so they added various shapes,
 {% include figure.html
   file="/assets/img/posts/intelligent-ai-heres-how-you-evaluate-04.webp"
   caption="Distractions were added with varying shapes, line thickness, and colors. [source [paper](https://arxiv.org/abs/1807.04225)]"
+  size="m"
 %}
 
 The best performing model is the WReN model! This is due to the Relation Network module designed explicitly for reasoning about the relations between objects. After removing distractions, the WReN model performed notably better at 78.3%, compared with 62.6% with distractions!
@@ -122,6 +125,7 @@ With human performance at 1.0, these are the GLUE score for each language model.
 {% include figure.html
   file="/assets/img/posts/intelligent-ai-heres-how-you-evaluate-11.webp"
   caption="Questions for tasks in SuperGLUE. [source [paper](https://arxiv.org/abs/1905.00537)]"
+  size="m"
 %}
 
 Researchers have evaluated the BERT-based models and find that they still lag behind humans by nearly 20 points. Given the difficulty of SuperGLUE, further progress in multi-task, transfer, and unsupervised/self-supervised learning techniques will be necessary to approach human-level performance on the benchmark.
