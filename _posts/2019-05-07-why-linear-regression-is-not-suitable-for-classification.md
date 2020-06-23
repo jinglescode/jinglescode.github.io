@@ -5,6 +5,7 @@ image: /assets/img/posts/why-lr-00.webp
 image-thumb: /assets/img/posts/why-lr-00-mini.webp
 image-caption: "Linear Regression vs Logistic Regression for Classification Tasks"
 description: Linear Regression vs Logistic Regression for Classification Tasks
+last_modified_at: "2020-06-22"
 tags:
 - regression
 
@@ -156,7 +157,7 @@ Let’s compare the R² and RMSE again for both models, and you will see that lo
   size="m"
 %}
 
-Linear regression is suitable for predicting output that is continuous value, such as predicting the price of a property. Its prediction output can be any real number, range from negative infinity to infinity. The regression line is a straight line.
+Linear regression is suitable for predicting output that is continuous value, such as predicting the price of a property. Its prediction output can be any real number, range from negative infinity to infinity. The regression line is generally a straight line.
 
 Whereas logistic regression is for classification problems, which predicts a probability range between 0 to 1. For example, predict whether a customer will make a purchase or not. The regression line is a sigmoid curve.
 
