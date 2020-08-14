@@ -19,7 +19,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-
+  - jekyll-feed
+  
 url: "https://jinglescode.github.io"
 
 paginate: 22
