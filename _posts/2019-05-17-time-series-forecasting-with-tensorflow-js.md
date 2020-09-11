@@ -1,8 +1,8 @@
 ---
 title: Time Series Forecasting with TensorFlow.js
 layout: note
-image: /assets/img/posts/time-series-00.webp
-image-thumb: /assets/img/posts/time-series-00-mini.webp
+image: /assets/img/posts/time-series-00.jpg
+image-thumb: /assets/img/posts/time-series-00-mini.jpg
 description: Pull stock prices from online API and perform predictions using Recurrent Neural Network & Long Short Term Memory (LSTM) with TensorFlow.js framework
 tags:
 - tensorflow
@@ -39,7 +39,7 @@ The API yields the following fields:
 To prepare training dataset for our neural network, we will be using closing stocks price. This also means that we will be aiming to predict the future closing price. Below graph shows 20 years of Microsoft Corporation weekly closing prices.
 
 {% include figure.html
-  file="/assets/img/posts/time-series-01.webp"
+  file="/assets/img/posts/time-series-01.jpg"
   caption="20 years of Microsoft Corporation weekly closing prices data from alphavantage.co"
 %}
 
@@ -72,7 +72,7 @@ function ComputeSMA(data, window_size)
 And this is what we get, weekly stock closing price in blue, and SMA in orange. Because SMA is the moving average of 50 weeks, it is smoother than the weekly price, which can fluctuate.
 
 {% include figure.html
-  file="/assets/img/posts/time-series-02.webp"
+  file="/assets/img/posts/time-series-02.jpg"
   caption="Simple Moving Average of Microsoft Corporation closing prices data"
 %}
 
@@ -103,7 +103,7 @@ These are the [hyper-parameters](https://en.wikipedia.org/wiki/Hyperparameter_(m
 - Hidden LSTM Layers: to increase the model complexity to learn in higher dimensional space ([learn more](https://machinelearningmastery.com/how-to-configure-the-number-of-layers-and-nodes-in-a-neural-network/))
 
 {% include figure.html
-  file="/assets/img/posts/time-series-03.webp"
+  file="/assets/img/posts/time-series-03.jpg"
   caption="Web frontend, showing parameters available for tweaking"
   size="s"
 %}
@@ -111,7 +111,7 @@ These are the [hyper-parameters](https://en.wikipedia.org/wiki/Hyperparameter_(m
 Click the Begin Training Model button…
 
 {% include figure.html
-  file="/assets/img/posts/time-series-04.webp"
+  file="/assets/img/posts/time-series-04.jpg"
   caption="User interface showing training model progress"
   size="m"
 %}
@@ -127,7 +127,7 @@ The data has been split into 2 sets, training and validation set. The training s
 So let us use the remaining data for prediction which allow us to see how closely our predicted values are compared to the actual values.
 
 {% include figure.html
-  file="/assets/img/posts/time-series-05.webp"
+  file="/assets/img/posts/time-series-05.jpg"
   caption="The green line denotes the prediction of the validation data, from web demo"
 %}
 
@@ -140,7 +140,7 @@ Other algorithms can be applied and uses the [Root Mean Square Error](https://ww
 Finally, the model has been validated and the predicted values map closely to its true values, we shall use it to predict the future. We will apply the same model.predict function and use the last 50 data points as the input, because our window size is 50. Since our training data is increment daily, we will use the past 50 days as input, to predict the 51st day.
 
 {% include figure.html
-  file="/assets/img/posts/time-series-06.webp"
+  file="/assets/img/posts/time-series-06.jpg"
   caption="Predict the 51st day"
 %}
 

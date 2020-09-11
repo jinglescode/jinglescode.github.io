@@ -1,8 +1,8 @@
 ---
 title: Illustrated Guide to Transformer
 layout: note
-image: /assets/img/posts/illustrated-guide-transformer-01.webp
-image-thumb: /assets/img/posts/illustrated-guide-transformer-01-mini.webp
+image: /assets/img/posts/illustrated-guide-transformer-01.jpg
+image-thumb: /assets/img/posts/illustrated-guide-transformer-01-mini.jpg
 image-caption: "A component by component breakdown analysis."
 description: A component by component breakdown analysis.
 tags:
@@ -16,7 +16,7 @@ Transformer relies entirely on Attention mechanisms to boost its speed by being 
 Before the Transformer model, recurrent neural networks (RNNs) have been the go-to method for sequential data, where the input data has a defined order. RNNs work like a feed-forward neural network that unrolls the input over its sequence, one after another.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-02.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-02.jpg"
   caption="Unfolding recurrent neural network [[source](https://en.wikipedia.org/wiki/Recurrent_neural_network)]"
 %}
 
@@ -27,7 +27,7 @@ Examples of sequential input data are words (or characters) in a product review 
 In machine translation and image captioning, instead of a classifier that outputs a fixed-length vector, we can replace it with a Decoder. Like the Encoder that consumes each symbol in the input individually, the Decoder produces each output symbol over several time steps.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-03.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-03.jpg"
   caption="Machine translation that uses encoder-decoder architecture."
 %}
 
@@ -42,14 +42,14 @@ The input data needs to be processed sequentially one after the other. Such a re
 Secondly, RNNs also can’t deal with long sequences very well as we get vanishing and exploding gradients if the input sequence is too long. Generally, you will see NaN (Not a Number) in the loss during the training process. These are also known as the long-term dependency problems in RNNs.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-04.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-04.jpg"
   caption="Vanishing gradients if the input sequence is too long."
 %}
 
 In 1997, [Hochreiter & Schmidhuber](https://www.mitpressjournals.org/doi/abs/10.1162/neco.1997.9.8.1735) introduced the Long Short Term Memory (LSTM) networks, which are explicitly designed to avoid long-term dependency problems. Each LSTM cell allows past information to skip all the processing of the current cell and move to the next cell; this allows the memory to be retained longer and will enable data to flow along with it unchanged. LSTM consists of an input gate that decides what new information to be stored and a forget gate that determines what information to remove.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-05.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-05.jpg"
   caption="Long Short Term Memory [[source](https://en.wikipedia.org/wiki/Recurrent_neural_network)]"
 %}
 
@@ -58,7 +58,7 @@ Certainly, LSTMs have improved memory, able to deal with longer sequences than R
 Another drawback of an RNN based encoder-decoder architecture is the fixed-length vector. Using a fixed-length vector to represent the input sequence to decode an entirely new sentence is difficult. The context vector cannot store all the information if the input sequence is large. Furthermore, it is challenging to differentiate sentences with similar words but with different meanings.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-06.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-06.jpg"
   caption="Using a fixed-length vector to represent the input sequence."
 %}
 
@@ -69,7 +69,7 @@ Imagine this, selects a paragraph above (input) and memorize it (fixed-length ve
 [Bahdanau](https://arxiv.org/pdf/1409.0473.pdf) proposed a method to search for parts of a source sentence relevant to predicting a target word in an encoder-decoder model. This is the beauty of the Attention mechanism; we can translate comparatively longer sentences without affecting its performance using Attention. For example, translating to “noir” (which means “black” in French), the Attention mechanism will focus on the word “black” and possibly “cat,” ignoring other words in the sentence.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-07.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-07.jpg"
   caption="The BLEU scores of the generated translations on the test set with respect to the lengths of the sentences. [[source](https://arxiv.org/pdf/1409.0473.pdf)]"
 %}
 
@@ -80,7 +80,7 @@ The attention mechanism has increased encoder-decoder networks’ performance, b
 Yes! Attention is all you need. The [Transformer](https://arxiv.org/pdf/1706.03762.pdf) architecture was introduced in 2017. Like the encoder-decoder architectures, where input sequences are fed into the Encoder, and Decoder will predict each word after another. The Transformer improves its time complexity and performance by eliminating RNN and utilizing the attention mechanism.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-08.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-08.jpg"
   caption="RNN unroll each word individually. Transformer process input in parallel."
 %}
 
@@ -91,7 +91,7 @@ Considering translating a sentence from English to French. In RNN, each hidden s
 Let’s assume we are training a model that translates the English sentence to French. The Transformer architecture has two parts, the Encoder (left) and the Decoder (right). Let’s examine the Transformer architecture.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-09.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-09.jpg"
   caption="The Transformer model architecture. [[source](https://arxiv.org/abs/1706.03762)]"
   size="s"
 %}
@@ -115,14 +115,14 @@ The positional encoders receive inputs from the input embeddings layer and apply
 Consider the following sentences, “The dog bit Johnny” and “Johnny bit the dog.” Without context information, both sentences would have almost identical embeddings. But we know this is not true, definitely not true for Johnny.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-10.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-10.jpg"
   caption="Word embedding and positional encoding produce word vector with context."
 %}
 
 The authors proposed using multiple sine and cosine functions to generate positional vectors. This way, we can use this positional Encoder for sentences of any length. The frequency and offset of the wave are different for each dimension, representing each position, with values between -1 and 1.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-11.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-11.jpg"
   caption="Positional encoding using multiple sine and cosine functions."
 %}
 
@@ -133,7 +133,7 @@ This binary encoding method also allows us to determine if two words are near ea
 The key purpose of Attention is answering, “what part of the input should I focus on?” If we’re encoding an English sentence, the question we want to answer is, “how relevant is a word in the English sentence relevant to other words in the same sentence?” This is represented in the Attention vector. For every word, we can have an Attention vector generated that captures contextual relationships between words in a sentence. For example, for the word “black,” the Attention mechanism focus on “black” and “cat.”
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-12.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-12.jpg"
   caption="Multiple attention vector normalized."
 %}
 
@@ -158,7 +158,7 @@ Similar to the Multi-Head Attention in the Encoder block. The Attention block ge
 Unlike the Attention block in the Encoder that receiving every word in the English sentence, only the previous words of the French sentence are fed into this Decoder’s Attention block. Thus, we mask the words appearing later using a vector and representing it in zeros, so the attention network can’t use them while performing matrix operations.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-13.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-13.jpg"
   caption="Multiple attention vector masked."
 %}
 
@@ -167,7 +167,7 @@ Unlike the Attention block in the Encoder that receiving every word in the Engli
 This Attention block acts as the Encoder-Decoder, which receives vectors from the Encoder’s multi-head Attention and Decoder’s Masked Multi-Head Attention. This Attention block will determine how related each word vector is with respect to each other, and this is where the mapping from English to French word happens. The output of this block is Attention vectors for every word in English and French sentences, where each vector representing the relationships with other words in both languages.
 
 {% include figure.html
-  file="/assets/img/posts/illustrated-guide-transformer-14.webp"
+  file="/assets/img/posts/illustrated-guide-transformer-14.jpg"
   caption="Input Attention vectors into the Decoder’s Multi-Head Attention"
 %}
 

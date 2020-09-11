@@ -1,8 +1,8 @@
 ---
 title: Realistic Deepfakes in 5 Minutes on Colab
 layout: note
-image: /assets/img/posts/deepfake-existence-01.webp
-image-thumb: /assets/img/posts/deepfake-existence-01-mini.webp
+image: /assets/img/posts/deepfake-existence-01.jpg
+image-thumb: /assets/img/posts/deepfake-existence-01-mini.jpg
 description: And why we should educate the public about the existence of such technology
 tags:
 - computer vision
@@ -39,7 +39,7 @@ Its ability to learn the facial movements is unbelievable. You can see that it c
 In previous works, we need additional information such as facial landmarks to map head movement and pose estimation to map full-body movement.
 
 {% include figure.html
-  file="/assets/img/posts/deepfake-existence-04.webp"
+  file="/assets/img/posts/deepfake-existence-04.jpg"
   caption="Past works require facial landmarks and pose estimation [by [Aliaksandr](https://aliaksandrsiarohin.github.io/first-order-model-website/)]"
 %}
 
@@ -74,7 +74,7 @@ As the person covers the part of the image, the algorithm needs to figure out th
 Aliaksandr work consists of the motion extractor which learns to extract key points along with their local affine transformations. There is a generator network that models occlusions in the target motions and combines the appearance extracted from the source image and the motion derived from the driving video.
 
 {% include figure.html
-  file="/assets/img/posts/deepfake-existence-07.webp"
+  file="/assets/img/posts/deepfake-existence-07.jpg"
   caption="First Order Motion Model [from [paper](http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation)]"
 %}
 

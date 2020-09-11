@@ -1,8 +1,8 @@
 ---
 title: State-of-the-Art Language Models in 2020
 layout: note
-image: /assets/img/posts/state-of-the-art-language-models-2020-01.webp
-image-thumb: /assets/img/posts/state-of-the-art-language-models-2020-01-mini.webp
+image: /assets/img/posts/state-of-the-art-language-models-2020-01.jpg
+image-thumb: /assets/img/posts/state-of-the-art-language-models-2020-01-mini.jpg
 image-caption: "Highlighting models for most common NLP tasks."
 description: Highlighting models for most common NLP tasks.
 tags:

@@ -1,8 +1,8 @@
 ---
 title: How to Improve Holiday Itinerary with Machine Learning
 layout: note
-image: /assets/img/posts/improve-holiday-itinerary-with-machine-learning-01.webp
-image-thumb: /assets/img/posts/improve-holiday-itinerary-with-machine-learning-01-mini.webp
+image: /assets/img/posts/improve-holiday-itinerary-with-machine-learning-01.jpg
+image-thumb: /assets/img/posts/improve-holiday-itinerary-with-machine-learning-01-mini.jpg
 description: Perfect your travel plans with this kick-ass strategy - saving time, effort and money!
 tags:
 - experiences
@@ -36,7 +36,7 @@ Great holiday itinerary isn’t it?! This sequence of locations is fully generat
 In this article, I am going to show you exactly how you can do it too for your next vacation!
 
 {% include figure.html
-  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-03.webp"
+  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-03.jpg"
   caption="View of Atrani, while hiking to Ravello [photo by Hong Jing (Jingles)]"
 %}
 
@@ -45,17 +45,17 @@ In this article, I am going to show you exactly how you can do it too for your n
 **Pin locations on Google Maps.** Visit [My Maps](https://www.google.com/maps/d/u/0/home) and create a new map for your next holiday destination. Look for places you want to visit. Attractions? Theme parks? Restaurants? Fill up your map with markers by searching for these places and “_Add to map_”. Keep doing this until you have all the places you want to visit on the map.  _I will wait for you._
 
 {% include figure.html
-  file1="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-04.webp"
-  file2="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-05.webp"
+  file1="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-04.jpg"
+  file2="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-05.jpg"
   size="c2"
 %}
 
 **Export map and upload into Colab.** After all the hard work of researching and pinning places to visit, we are ready to export the map. Select “_Export to KML/KMZ_”, and remember to check “_Export as KML_”. You will download a KML file.
 
 {% include figure.html
-  file1="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-06.webp"
-  file2="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-07.webp"
-  file3="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-08.webp"
+  file1="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-06.jpg"
+  file2="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-07.jpg"
+  file3="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-08.jpg"
   caption="Export KML file from  [Google Maps](https://www.google.com/maps/d/u/0/home)  and upload it in  [Colab](https://colab.research.google.com/)"
   size="c3"
 %}
@@ -71,7 +71,7 @@ ZIzkSyDwhp5B0_tH1$Is@fAkeAp1keY3eLYmPLY
 _Psst: this is a fake API key_ 🙃
 
 {% include figure.html
-  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-09.webp"
+  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-09.jpg"
   caption="Amalfi, Italy [photo by  [Tan Ying Ying](https://medium.com/u/f11516ac310b)]"
 %}
 
@@ -84,7 +84,7 @@ You can get the  [codes](https://gist.github.com/jinglescode/418a7ef75471dd891ae
 The API key is for plotting interactive Google Maps on Colab. The KML file contains the places of interests you have pinned on Google Maps. And lastly, the algorithm will determine where you should visit for each day based on the number of days you have set.
 
 {% include figure.html
-  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-10.webp"
+  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-10.jpg"
   size="s"
 %}
 
@@ -111,9 +111,9 @@ Which one did I end up using?  **K-Means**. Because it is straight forward, and 
 **Plot it on Google Maps!** Now, we are ready to plot it on Google Maps to visualise the 12 main areas (because we are planning a holiday for 12 days). If you are running this on  [Colab](https://gist.github.com/jinglescode/418a7ef75471dd891ae8621f36db6b62), this map is interactive.
 
 {% include figure.html
-  file1="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-11.webp"
-  file2="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-12.webp"
-  file3="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-13.webp"
+  file1="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-11.jpg"
+  file2="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-12.jpg"
+  file3="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-13.jpg"
   caption="Athens. Santorini and Crete. Amalfi and Naples."
   size="c3"
 %}
@@ -150,15 +150,15 @@ Initially, I was using the  [travelling salesman algorithm](https://en.wikipedia
 **Show the recommended itinerary.** Now we are ready to plot our markers on Google Map. It has recommended us to go from  **Athens**,  **Santorini**, and  **Crete**. Then to  **Amalfi**,  **Ravello**,  **Sorrento**  and  **Naples**. If you are running this on  [Colab](https://gist.github.com/jinglescode/418a7ef75471dd891ae8621f36db6b62), this map is interactive.
 
 {% include figure.html
-  file1="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-14.webp"
-  file2="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-15.webp"
-  file3="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-16.webp"
+  file1="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-14.jpg"
+  file2="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-15.jpg"
+  file3="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-16.jpg"
   caption="Start with Athens, Santorini, and then Crete. To Amalfi, Ravello, Sorrento and Naples."
   size="c3"
 %}
 {% include figure.html
-  file1="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-17.webp"
-  file2="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-18.webp"
+  file1="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-17.jpg"
+  file2="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-18.jpg"
   caption="Start with Athens, Santorini, and then Crete. To Amalfi, Ravello, Sorrento and Naples."
   size="c2"
 %}
@@ -171,7 +171,7 @@ places.sort_values(by=[‘days’])
 ```
 
 {% include figure.html
-  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-19.webp"
+  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-19.jpg"
   caption="Oia, Santorini, Greece [photo by [Clement Lim](https://medium.com/u/4455aa7806f7)]"
 %}
 
@@ -184,13 +184,13 @@ We need a type of clustering algorithm that constraint on the maximum number of 
 But if you are travelling in one city, the result can be promising. This is the generated itinerary for New York City. Feel free to download my  [itinerary](https://drive.google.com/open?id=1SSy8rwXf-Z7UKwPT1Jv_yZDNisHqR3H2&usp=sharing)  and try it for yourself.
 
 {% include figure.html
-  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-20.webp"
+  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-20.jpg"
   caption="[New York City](https://drive.google.com/open?id=1SSy8rwXf-Z7UKwPT1Jv_yZDNisHqR3H2&usp=sharing)"
   size="m"
 %}
 
 {% include figure.html
-  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-21.webp"
+  file="/assets/img/posts/improve-holiday-itinerary-with-machine-learning-21.jpg"
   caption="New York City [photo by  [Hong Jing (Jingles)](https://medium.com/u/641197e9ee36)]"
 %}
 

@@ -1,8 +1,8 @@
 ---
 title: Project Euler - Problem 2 - Even Fibonacci Numbers
 layout: note
-image: /assets/img/posts/project-euler.webp
-image-thumb: /assets/img/posts/project-euler.webp
+image: /assets/img/posts/project-euler.jpg
+image-thumb: /assets/img/posts/project-euler.jpg
 description: By considering the terms in the Fibonacci sequence that do not exceed the nth term, find the sum of the even-valued terms.
 tags:
 - javascript

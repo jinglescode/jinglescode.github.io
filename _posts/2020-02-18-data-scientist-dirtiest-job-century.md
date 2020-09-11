@@ -1,8 +1,8 @@
 ---
 title: Data Scientist - The Dirtiest Job of the 21st Century
 layout: note
-image: /assets/img/posts/data-scientist-dirtiest-job-century-01.webp
-image-thumb: /assets/img/posts/data-scientist-dirtiest-job-century-01-mini.webp
+image: /assets/img/posts/data-scientist-dirtiest-job-century-01.jpg
+image-thumb: /assets/img/posts/data-scientist-dirtiest-job-century-01-mini.jpg
 image-caption: "Photo by [Medienstürmer](https://unsplash.com/@medienstuermer) on [Unsplash](https://unsplash.com/)"
 description: Data scientist, sexiest job of the 21st century. While they do make discoveries while swimming in data, but the data needs cleaning and labelling first.
 tags:
@@ -32,7 +32,7 @@ Unless your job consists of working on Kaggle datasets, these job descriptions a
 The following survey results by CrowdFlower sum up a typical day for a data scientist.
 
 {% include figure.html
-  file="/assets/img/posts/data-scientist-dirtiest-job-century-02.webp"
+  file="/assets/img/posts/data-scientist-dirtiest-job-century-02.jpg"
   caption="What data scientists spend the most time doing. [taken from  [CrowdFlower](https://visit.figure-eight.com/rs/416-ZBE-142/images/CrowdFlower_DataScienceReport_2016.pdf)]"
   size="m"
 %}
@@ -48,7 +48,7 @@ Data lakes are centralised repositories to store all the company’s data. It en
 Many organisations started implementing data lakes without a clear idea of what to do with the data collected. “_Let’s just collect everything_”, they said. While the point of a data lake is to have all the company’s data in one place, it is still  **vital to design it with specific projects needs**. By not planning, it is almost like creating a new “_Untitled Folder_” and then copying and pasting the entirety of the company’s data in there.
 
 {% include figure.html
-  file="/assets/img/posts/data-scientist-dirtiest-job-century-03.webp"
+  file="/assets/img/posts/data-scientist-dirtiest-job-century-03.jpg"
 %}
 
 Poor planning resulted in little to no well-defined metadata, making it difficult for anyone to search for data. Data scientists often find themselves contacting different departments for data. They may need to seek information about the data from various data owners. Merely storing data without cataloguing is a big mistake. The  **key to having a useful data lake is by ensuring that the metadata is well-defined**.
@@ -58,7 +58,7 @@ Due to data governance or busyness of data owners who are often stakeholders fro
 When data scientists finally get their hands on the data, they need to spend time exploring and getting familiar with it. They have to reorganise the messy chunk of data into new tables to align with their project needs.
 
 {% include figure.html
-  file="/assets/img/posts/data-scientist-dirtiest-job-century-04.webp"
+  file="/assets/img/posts/data-scientist-dirtiest-job-century-04.jpg"
   caption="Photo by [Oleksii Hlembotskyi](https://unsplash.com/@lshphoto) on [Unsplash](https://unsplash.com/)"
 %}
 
@@ -73,7 +73,7 @@ Everyone who deals with data should have heard of the term “_dirty data”_. D
 **Inaccurate and inconsistent data**  is when the values are technically correct, but wrong based on the context is it in. For example, when the employee changes their address, and it wasn’t updated. Or when the data has many copies, and the data scientist got the outdated version.
 
 {% include figure.html
-  file="/assets/img/posts/data-scientist-dirtiest-job-century-05.webp"
+  file="/assets/img/posts/data-scientist-dirtiest-job-century-05.jpg"
   caption="Photo by [Jamie Street](https://unsplash.com/@jamie452) on [Unsplash](https://unsplash.com/)"
 %}
 
@@ -84,7 +84,7 @@ The site was running well and good, until one day something has changed and I di
 Therefore, two responses were sent to the same log table. From my reporting tool, the number of vouchers collected seemed to have doubled overnight! As I’ve deployed a model the day before, I thought that my new model was that impressive. I remember giving a mental standing ovation to my little models, but later I realised it was just double counting.
 
 {% include figure.html
-  file="/assets/img/posts/data-scientist-dirtiest-job-century-06.webp"
+  file="/assets/img/posts/data-scientist-dirtiest-job-century-06.jpg"
   caption="Photo by [Matthew Henry](https://unsplash.com/@matthewhenry) on [Unsplash](https://unsplash.com/)"
 %}
 
@@ -101,7 +101,7 @@ It’s necessary to point out that  **data cleaning is incredibly essential**; m
 Data scientists do make discoveries while swimming in data, but before data scientists can start training any models, they must first become data janitors. The data needs cleaning, the data needs labelling.
 
 {% include figure.html
-  file="/assets/img/posts/data-scientist-dirtiest-job-century-07.webp"
+  file="/assets/img/posts/data-scientist-dirtiest-job-century-07.jpg"
   caption="Photo by [Oliver Hale](https://unsplash.com/@4themorningshoot) on [Unsplash](https://unsplash.com/)"
 %}
 

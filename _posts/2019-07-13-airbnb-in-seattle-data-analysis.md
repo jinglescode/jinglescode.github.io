@@ -1,8 +1,8 @@
 ---
 title: Airbnb in Seattle — Data Analysis
 layout: note
-image: /assets/img/posts/analyze-airbnb-00.webp
-image-thumb: /assets/img/posts/analyze-airbnb-00-mini.webp
+image: /assets/img/posts/analyze-airbnb-00.jpg
+image-thumb: /assets/img/posts/analyze-airbnb-00-mini.jpg
 description: Understand Airbnb rental landscape in Seattle
 tags:
 - data analysis
@@ -104,14 +104,14 @@ This table shows the average revenue of listings in each neighbourhood:
 <script src="https://gist.github.com/jinglescode/98a85b497a08a63bacb9ed989b843125.js"></script>
 
 {% include figure.html
-  file="/assets/img/posts/analyze-airbnb-01.webp"
+  file="/assets/img/posts/analyze-airbnb-01.jpg"
   size="s"
 %}
 
 Airbnb properties in Downtown, Capitol Hill and Beacon Hill can fetch the highest revenue. It’s shopping and CBD district.
 
 {% include figure.html
-  file="/assets/img/posts/analyze-airbnb-02.webp"
+  file="/assets/img/posts/analyze-airbnb-02.jpg"
 %}
 
 > Downtown, Capitol Hill and Beacon Hill can fetch the highest revenue
@@ -121,7 +121,7 @@ Airbnb properties in Downtown, Capitol Hill and Beacon Hill can fetch the highes
 It would be useful to know the most popular time of the year to rent in Seattle, so Airbnb hosts are able to decide when to rent and when is the time for maintenance.
 
 {% include figure.html
-  file="/assets/img/posts/analyze-airbnb-03.webp"
+  file="/assets/img/posts/analyze-airbnb-03.jpg"
 %}
 
 July, August and September are the best periods to maximise revenue. Months before May are the best time for maintenance work. From October to December is a good time to take a break and enjoy the holidays if they want to.
@@ -161,7 +161,7 @@ Host with 1000 minimum nights has caused a bais towards higher minimum nights re
 > Minimum nights and estimated revenue are not highly correlated
 
 {% include figure.html
-  file="/assets/img/posts/analyze-airbnb-04.webp"
+  file="/assets/img/posts/analyze-airbnb-04.jpg"
 %}
 
 ## Supply and demand — bedroom configurations
@@ -193,7 +193,7 @@ A place which accommodates 14 ranked first (highest supply/demand ratio), but th
 > Renting a place for 2 or 3 people will give the host pretty good regular rentals.
 
 {% include figure.html
-  file="/assets/img/posts/analyze-airbnb-05.webp"
+  file="/assets/img/posts/analyze-airbnb-05.jpg"
 %}
 
 ## Supply and demand — bedroom configurations for 2 to 3
@@ -213,7 +213,7 @@ Airbnb bedroom configurations for 3people:
 The majority prefers 1 bedroom, less than 1% prefers 2 bedrooms. So for groups of 2s or 3s, they prefer 1 bedroom. But this could be due to the current supply of 2 bedroom properties are low.
 
 {% include figure.html
-  file="/assets/img/posts/analyze-airbnb-06.webp"
+  file="/assets/img/posts/analyze-airbnb-06.jpg"
 %}
 
 ## What factors matters?
@@ -221,7 +221,7 @@ The majority prefers 1 bedroom, less than 1% prefers 2 bedrooms. So for groups o
 Having good ratings is important for Airbnb hosts. Let us compare how different factors affect overall ratings:
 
 {% include figure.html
-  file="/assets/img/posts/analyze-airbnb-07.webp"
+  file="/assets/img/posts/analyze-airbnb-07.jpg"
   size="m"
 %}
 
@@ -232,7 +232,7 @@ Communication has the highest correlation with the overall rating. Host in Seatt
 Does having a good overall rating means the listing will bring in good wealth?
 
 {% include figure.html
-  file="/assets/img/posts/analyze-airbnb-08.webp"
+  file="/assets/img/posts/analyze-airbnb-08.jpg"
   size="m"
 %}
 
@@ -255,7 +255,7 @@ Smoke detector? I just learnt that the Washington State Building Code has requir
 So, here is the summary of this article:
 
 {% include figure.html
-  file="/assets/img/posts/analyze-airbnb-09.webp"
+  file="/assets/img/posts/analyze-airbnb-09.jpg"
 %}
 
 # Notebook

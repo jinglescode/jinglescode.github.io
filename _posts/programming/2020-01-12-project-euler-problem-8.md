@@ -1,8 +1,8 @@
 ---
 title: Project Euler - Problem 8 - Largest product in a series
 layout: note
-image: /assets/img/posts/project-euler.webp
-image-thumb: /assets/img/posts/project-euler.webp
+image: /assets/img/posts/project-euler.jpg
+image-thumb: /assets/img/posts/project-euler.jpg
 description: What is the nth prime number?
 tags:
 - javascript

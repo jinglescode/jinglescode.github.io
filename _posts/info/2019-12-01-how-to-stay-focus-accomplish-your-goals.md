@@ -1,8 +1,8 @@
 ---
 title: How to Stay Focus and Accomplish Your Goals
 layout: note
-image: /assets/img/posts/stay-focus-accomplish-goals-01.webp
-image-thumb: /assets/img/posts/stay-focus-accomplish-goals-01-mini.webp
+image: /assets/img/posts/stay-focus-accomplish-goals-01.jpg
+image-thumb: /assets/img/posts/stay-focus-accomplish-goals-01-mini.jpg
 image-caption: "We can't multitask, we allocate time blocks for productivity and enter the Flow state"
 description: We can't multitask, we allocate time blocks for productivity and enter the Flow state
 tags:
@@ -25,7 +25,7 @@ In this article, I will share a few things I have learnt and applied and unleash
 # We can’t multitask
 
 {% include figure.html
-  file="/assets/img/posts/stay-focus-accomplish-goals-02.webp"
+  file="/assets/img/posts/stay-focus-accomplish-goals-02.jpg"
   caption="Photo by Austin Distel on Unsplash"
 %}
 
@@ -50,7 +50,7 @@ Being busy does not equate to being productive, so disconnect from distractions 
 # We can allocate time blocks for productivity
 
 {% include figure.html
-  file="/assets/img/posts/stay-focus-accomplish-goals-03.webp"
+  file="/assets/img/posts/stay-focus-accomplish-goals-03.jpg"
   caption="Photo by Wil Stewart on Unsplash"
 %}
 
@@ -79,7 +79,7 @@ Focus on activities that produce the most results and eliminating (or outsourcin
 # We can stay focus and be highly productive
 
 {% include figure.html
-  file="/assets/img/posts/stay-focus-accomplish-goals-04.webp"
+  file="/assets/img/posts/stay-focus-accomplish-goals-04.jpg"
   caption="Photo by Avi Richards on Unsplash"
 %}
 
@@ -94,7 +94,7 @@ So how did Musk and his team find the motivation to work on a project? What driv
 # We can be in the ‘Flow’ state
 
 {% include figure.html
-  file="/assets/img/posts/stay-focus-accomplish-goals-05.webp"
+  file="/assets/img/posts/stay-focus-accomplish-goals-05.jpg"
   caption="Photo by Malachi Brooks on Unsplash"
 %}
 
@@ -132,7 +132,7 @@ Ragen Chastain set a Guinness World Record for the heaviest woman to complete a 
 > I can’t explain why or how, but no matter how difficult the training and the marathon were, when they put that medal around my neck it became completely worth it, hence my personal motto “Cross finish line, get the medal.”
 
 {% include figure.html
-  file="/assets/img/posts/stay-focus-accomplish-goals-06.webp"
+  file="/assets/img/posts/stay-focus-accomplish-goals-06.jpg"
   caption="Nearing the finish line! (Taken from Ragen article)"
 %}
 
@@ -157,7 +157,7 @@ So what does the above mean? Let’s put it this way, you decide to play a game 
 From the standpoint as a programmer and data scientist, professionals in our field would take hours or even days to complete a project yet we are enjoying the process of it. There are constantly so much to learn and fix and we believe that all the blockers are solvable, eventually getting it to work. For every new breakthrough, we learn new methods to solve and implement the codes and functions which in turn improves and broaden our skill sets. It is an amazing and rewarding feeling when my lunar lander not only lands between the flags but also landed softly. This is challenging enough that it was not boring yet not too daunting to deter me from even trying.
 
 {% include figure.html
-  file="/assets/img/posts/stay-focus-accomplish-goals-07.webp"
+  file="/assets/img/posts/stay-focus-accomplish-goals-07.jpg"
   caption="Mental state in terms of challenge level and skill level, according to Csikszentmihalyi’s flow model (Taken from Wikipedia)"
   size="s"
 %}

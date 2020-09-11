@@ -1,8 +1,8 @@
 ---
 title: Biomedical Image Segmentation - U-Net
 layout: note
-image: /assets/img/posts/unet-00.webp
-image-thumb: /assets/img/posts/unet-00-mini.webp
+image: /assets/img/posts/unet-00.jpg
+image-thumb: /assets/img/posts/unet-00-mini.jpg
 image-caption: "U-Net works with very few training images and yields more precise segmentation"
 description: Works with very few training images and yields more precise segmentation
 tags:
@@ -17,7 +17,7 @@ Suppose we want to know where an object is located in the image and the shape of
 ## Differences between Image Classification, Object Detection and Image Segmentation
 
 {% include figure.html
-  file="/assets/img/posts/unet-01.webp"
+  file="/assets/img/posts/unet-01.jpg"
   caption="Differences between Image Classification, Object Detection and Image Segmentation"
 %}
 
@@ -57,7 +57,7 @@ Limitation of related work:
 U-Net has elegant architecture, the expansive path is more or less symmetric to the contracting path, and yields a u-shaped architecture.
 
 {% include figure.html
-  file="/assets/img/posts/unet-02.webp"
+  file="/assets/img/posts/unet-02.jpg"
   caption="U-Net architecture"
   size="s"
 %}
@@ -93,7 +93,7 @@ We will be using [binary_cross_entropy_with_logits](https://pytorch.org/docs/sta
 **Dice coefficient**
 
 {% include figure.html
-  file="/assets/img/posts/unet-03.webp"
+  file="/assets/img/posts/unet-03.jpg"
   caption="Dice coefficient"
   size="s"
 %}
@@ -107,7 +107,7 @@ I will be using this metric together with the Binary cross-entropy as the loss f
 **Intersection over Union**
 
 {% include figure.html
-  file="/assets/img/posts/unet-04.webp"
+  file="/assets/img/posts/unet-04.jpg"
   caption="Intersection over Union"
   size="s"
 %}
@@ -123,7 +123,7 @@ To optimize this model as well as subsequent U-Net implementation for comparison
 The model completed training in 11m 33s, each epoch took about 14 seconds. A total of 34,527,106 trainable parameters.
 
 {% include figure.html
-  file="/assets/img/posts/unet-05.webp"
+  file="/assets/img/posts/unet-05.jpg"
 %}
 
 The epoch with the best performance is epoch #36 (out of 50).
@@ -134,7 +134,7 @@ The epoch with the best performance is epoch #36 (out of 50).
 Test the model with a few unseen samples, to predict optical disc (red) and optical cup (yellow).
 
 {% include figure.html
-  file="/assets/img/posts/unet-06.webp"
+  file="/assets/img/posts/unet-06.jpg"
 %}
 
 From these test samples, the results are pretty good. I chose the first image because it has an interesting edge along the top left, there is a misclassification there. The second image is a little dark, but there are no issues getting the segments.

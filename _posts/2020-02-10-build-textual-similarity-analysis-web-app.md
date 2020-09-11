@@ -1,8 +1,8 @@
 ---
 title: Build Textual Similarity Analysis Web App
 layout: note
-image: /assets/img/posts/build-textual-similarity-analysis-web-app-01.webp
-image-thumb: /assets/img/posts/build-textual-similarity-analysis-web-app-01-mini.webp
+image: /assets/img/posts/build-textual-similarity-analysis-web-app-01.jpg
+image-thumb: /assets/img/posts/build-textual-similarity-analysis-web-app-01-mini.jpg
 image-caption: "Some Brighton Bathing Boxes are more like each other than others. “Show me those in red” [photo by me]"
 description: A journey from word embeddings to universal sentence encoder to web app demo
 tags:
@@ -32,7 +32,7 @@ Word embeddings enable **knowledge representation where a vector represents a wo
 Before word embeddings were de facto standard for natural language processing, a common approach to deal with words was to use a one-hot vectorisation. Each word represents a column in the vector space, and each sentence is a vector of ones and zeros. Ones denote the presence of the word in the sentence.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-02.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-02.jpg"
   caption="One-hot vectorisation [taken from [Text Encoding: A Review](https://towardsdatascience.com/text-encoding-a-review-7c929514cccf)]"
   size="m"
 %}
@@ -50,7 +50,7 @@ Back in 2003, [Yoshua Bengio et al.](http://www.jmlr.org/papers/volume3/bengio03
 This paper is crucial and led to the development to discover word embeddings. Yoshua received the Turing Award alongside with Geoffrey Hinton, and Yann LeCun.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-03.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-03.jpg"
   caption="Input sequence of feature vectors for words, to a conditional probability distribution over words, to predict next word [image taken from [paper](http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)]"
   size="m"
 %}
@@ -59,8 +59,8 @@ In 2008, [Ronan and Jason](https://thetalkingmachines.com/sites/default/files/20
 
 
 {% include figure.html
-  file1="/assets/img/posts/build-textual-similarity-analysis-web-app-04.webp"
-  file2="/assets/img/posts/build-textual-similarity-analysis-web-app-05.webp"
+  file1="/assets/img/posts/build-textual-similarity-analysis-web-app-04.jpg"
+  file2="/assets/img/posts/build-textual-similarity-analysis-web-app-05.jpg"
   caption="Left figure: Neural network architecture for given input sentence, outputs class probabilities. Right table: 5 chosen words and 10 most similar words. [sources taken from [paper](https://thetalkingmachines.com/sites/default/files/2018-12/unified_nlp.pdf)]"
   size="c2"
 %}
@@ -74,7 +74,7 @@ Word2Vec has become popular since then. Nowadays, the word embeddings layer is i
 On Google’s pretrained Word2Vec model, they trained on roughly 100 billion words from Google News dataset. The word “_cat_” shares the closest meanings to “_cats_”, “_dog_”, “_mouse_”, “_pet_”.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-06.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-06.jpg"
   caption="The word “_cat_” is geometrically closer to to “_cats_”, “_dog_”, “_mouse_”, “_pet_”. [taken from [Embedding Projector](http://projector.tensorflow.org/)]"
   size="m"
 %}
@@ -82,7 +82,7 @@ On Google’s pretrained Word2Vec model, they trained on roughly 100 billion wor
 Word embedding also manages to recognise relationships between words. A classic example is the gender-role relationships between words. For example, “_man_” is to “_woman_” is like “_king_” is to “_queen_”.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-07.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-07.jpg"
   caption="Interesting relationships between words learnt from GloVe unsupervised learning algorithm [[image source](https://nlp.stanford.edu/projects/glove/)]"
 %}
 
@@ -111,7 +111,7 @@ We have word vectors to represent meanings for words; how about sentences?
 Like word embeddings, [universal sentence encoder](https://arxiv.org/pdf/1803.11175.pdf) is a versatile sentence embedding model that converts text into semantically-meaningful fixed-length vector representations.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-09.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-09.jpg"
   caption="Universal Sentence Encoder encodes text into high dimensional vectors [taken from [TensorFlow Hub](https://tfhub.dev/google/universal-sentence-encoder/1)]"
   size="m"
 %}
@@ -125,7 +125,7 @@ There are two universal sentence encoder models by Google. One of them is based 
 **Deep Averaging Network**, the embedding of words are first averaged together and then passed through a feedforward deep neural network to produce sentence embeddings. Unfortunately, by averaging the vectors, we lose the context of the sentence and sequence of words in the sentence in the process. It is designed for speed and efficiency, and some accuracy is sacrificed (especially on sarcasm and double negation). A great model for topic classification, classifying long articles into categories.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-10.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-10.jpg"
   caption="Sentences are semantically similar if they can be answered by the same responses. [taken from [paper](https://arxiv.org/pdf/1804.07754.pdf)]"
   size="s"
 %}
@@ -135,7 +135,7 @@ There are two universal sentence encoder models by Google. One of them is based 
 For example, “_How old are you?_” and “_What is your age?_”, both questions are semantically similar, a chatbot can reply the same answer “_I am 20 years old_”.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-11.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-11.jpg"
   caption="“How are you?” and “How old are you?” have 33% similarity even though having identical words [[demo](https://jinglescode.github.io/textual-similarity-universal-sentence-encoder/)]"
   size="s"
 %}
@@ -149,7 +149,7 @@ This is a heatmap showing the similarity between three sentences “_How old are
 [Logeswaran et al.](https://arxiv.org/abs/1803.02893) introduced a framework to learn sentence representations from unlabelled data. In this paper, the decoder (_orange box_) used in prior methods is replaced with a classifier that chooses the target sentence from a set of candidate sentences (_green boxes_); it improves the performance of question and answer system.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-12.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-12.jpg"
   caption="Replaces the decoder from prior methods with a classifier which chooses the target sentence from a set of candidate sentences [taken from [paper](https://arxiv.org/pdf/1803.02893.pdf)]"
 %}
 
@@ -174,14 +174,14 @@ With semantically-meaningful vectors for each sentence, how can we measure the s
 # Cosine similarity
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-13.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-13.jpg"
   caption="Photo by [浮萍 闪电](https://unsplash.com/@vsmilelx) on [Unsplash](https://unsplash.com)]"
 %}
 
 [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) is a measure of similarity by calculating **the cosine angle between two vectors**. If two vectors are similar, the angle between them is small, and the cosine similarity value is closer to 1.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-14.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-14.jpg"
   size="s"
 %}
 
@@ -192,7 +192,7 @@ Here we input sentences into the universal sentence encoder, and it returns us s
 With the vectors, we can take the cosine similarities between vectors. For every sentence pair, _A_ and _B_, we can calculate the cosine similarity of _A_ and _B_ vectors.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-15.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-15.jpg"
   caption="Semantic similarity is a measure of the degree to which two pieces of text carry the same meaning. [taken from [TensorFlow Hub](https://tfhub.dev/google/universal-sentence-encoder/1)]"
 %}
 
@@ -209,7 +209,7 @@ We can determine a minimum threshold to group sentence together. As similarity s
 # Building blocks of a textual similarity analysis web-app
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-16.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-16.jpg"
   caption="Photo by [Ryan Quintal](https://unsplash.com/@ryanquintal) on [Unsplash](https://unsplash.com)"
 %}
 
@@ -316,7 +316,7 @@ cosine_similarity_matrix(matrix){
 ## Combine everything together
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-17.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-17.jpg"
   caption="Photo by [Amélie Mourichon](https://unsplash.com/@amayli) on [Unsplash](https://unsplash.com)"
 %}
 
@@ -325,7 +325,7 @@ I have introduced all the major components needed for this project. Now we just 
 Voilà! We get a [web application](https://jinglescode.github.io/textual-similarity-universal-sentence-encoder/) for a live demo.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-18.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-18.jpg"
   caption="Input a list of sentences for semantic similarity [[demo](https://jinglescode.github.io/textual-similarity-universal-sentence-encoder/)]"
   size="s"
 %}
@@ -333,7 +333,7 @@ Voilà! We get a [web application](https://jinglescode.github.io/textual-similar
 We have a list of sentences, and these will be input into the universal sentence encoder. It will output will the embeddings of each sentence. Then we calculate the similarity between each sentence.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-19.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-19.jpg"
 %}
 
 ## Results
@@ -360,7 +360,7 @@ These are the sentences we will be testing our universal sentence encoder. The o
 This heatmap shows how similar each sentence are to other sentences. The brighter the green represents similarity closer to 1, which means the sentences are more identical to each other.
 
 {% include figure.html
-  file="/assets/img/posts/build-textual-similarity-analysis-web-app-20.webp"
+  file="/assets/img/posts/build-textual-similarity-analysis-web-app-20.jpg"
   caption="Semantic similarity of 12 sentences pairs [[demo](https://jinglescode.github.io/textual-similarity-universal-sentence-encoder/)]"
   size="s"
 %}

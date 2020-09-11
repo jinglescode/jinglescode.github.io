@@ -1,8 +1,8 @@
 ---
 title: Decoding Brain Signals with Machine Learning and Neuroscience
 layout: note
-image: /assets/img/posts/control-exoskeleton-with-your-brain-01.webp
-image-thumb: /assets/img/posts/control-exoskeleton-with-your-brain-01-mini.webp
+image: /assets/img/posts/control-exoskeleton-with-your-brain-01.jpg
+image-thumb: /assets/img/posts/control-exoskeleton-with-your-brain-01-mini.jpg
 image-caption: "Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski) on Unsplash"
 description: Become Professor X and unlock the secrets of our mind
 tags:
@@ -34,7 +34,7 @@ In this article, let me share with you about an exciting research work where we 
 The human brain is an amazing three-pound organ that controls all our body functions. It processes all our thoughts, it is the neurobiological basis of human intelligence, creativity, emotion, and memory. Our brain is divided into several parts, and each part has a primary function.
 
 {% include figure.html
-  file="/assets/img/posts/control-exoskeleton-with-your-brain-02.webp"
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-02.jpg"
   caption="The lateral surface of the cerebrum, 4 lobes are shown [[source](https://en.wikipedia.org/wiki/Lobes_of_the_brain)]"
   size="m"
 %}
@@ -48,7 +48,7 @@ The purpose of a brain-computer interface (BCI) is to have a direct communicatio
 BCI isn’t a mind-reading device like a [Cerebro](https://en.wikipedia.org/wiki/Cerebro). Instead, it detects the changes in the energy emitted by the brain. A human brain contains about 86 billion neurons, each individually linked to other neurons. Every time we think or move a muscle, these neurons are at work, activated with energy. A BCI recognises these energy patterns in the brain.
 
 {% include figure.html
-  file="/assets/img/posts/control-exoskeleton-with-your-brain-03.webp"
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-03.jpg"
   caption="Spike and wave discharges monitored with EEG [source](https://en.wikipedia.org/wiki/Electroencephalography)"
   size="s"
 %}
@@ -84,7 +84,7 @@ The user can choose one of the five actions available to operate the exoskeleton
 -   sit down (17Hz)
 
 {% include figure.html
-  file="/assets/img/posts/control-exoskeleton-with-your-brain-04.webp"
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-04.jpg"
   caption="Subject wearing the exoskeleton and focusing on an LED from the visual stimulus generator [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]"
 %}
 
@@ -93,7 +93,7 @@ If the intention is to move forward, the user focuses on the LED diode that is b
 During the experiment, there are voice instructions provided to guide the user. Their task was to follow the instructions given, and operate the exoskeleton according, by focusing on the corresponding LED light.
 
 {% include figure.html
-  file="/assets/img/posts/control-exoskeleton-with-your-brain-05.webp"
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-05.jpg"
   caption="EEG channel layout using 8 channels for SSVEP acquisition [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]"
   size="s"
 %}
@@ -107,7 +107,7 @@ They also performed a fast Fourier transform to convert the signal from the time
 [No-Sang Kwak et al.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578) proposed a robust SSVEP classifier using a convolutional neural network. In the paper, they named it CNN-1. It has two hidden layers with kernel size 1x8 and 11x1, respectively. These are followed by an output layer with 5-units, which represents the five possible actions for the exoskeleton movement. The learning rate was 0.1 and weights were initialised with a normal distribution.
 
 {% include figure.html
-  file="/assets/img/posts/control-exoskeleton-with-your-brain-06.webp"
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-06.jpg"
   caption="CNN-1 architecture. Composed of two convolutional layers and an output layer [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]"
   size="m"
 %}
@@ -127,7 +127,7 @@ These methods are used for comparing the performance against the above described
 The authors performed 10-fold cross-validation with 13500 training data and 1500 test data. This table shows the classification accuracy for each classifier.
 
 {% include figure.html
-  file="/assets/img/posts/control-exoskeleton-with-your-brain-07.webp"
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-07.jpg"
   caption="10-fold cross-validation results by subject, comparing different classification methods [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]"
 %}
 
@@ -136,7 +136,7 @@ This table shows that CNN-1 has outperformed other neural network architectures.
 Deep neural networks generally perform better with large amounts of data. To find out the amount of data required to outperform traditional methods. The authors validate the performance with various training sample size.
 
 {% include figure.html
-  file="/assets/img/posts/control-exoskeleton-with-your-brain-08.webp"
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-08.jpg"
   caption="10-fold cross-validation results, changing the amount of training data, comparing different classification methods [taken from [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172578)]"
 %}
 
@@ -151,6 +151,6 @@ BCI systems have a great potential to assist people with disabilities to control
 But constructing a reliable BCI system is [challenging](https://jinglescode.github.io/datascience/2020/01/17/deep-learning-bci-intro/), and significant effort is still needed to bring these devices from the laboratory to the mass market.
 
 {% include figure.html
-  file="/assets/img/posts/control-exoskeleton-with-your-brain-09.webp"
+  file="/assets/img/posts/control-exoskeleton-with-your-brain-09.jpg"
   caption="Photo by [S M Tuhin Chowdhury](https://unsplash.com/@smtuhin) on [Unsplash](https://unsplash.com)"
 %}

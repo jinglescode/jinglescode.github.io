@@ -1,8 +1,8 @@
 ---
 title: Can We Use GANs Beyond Generating Art?
 layout: note
-image: /assets/img/posts/use-gan-beyond-art-01.webp
-image-thumb: /assets/img/posts/use-gan-beyond-art-01-mini.webp
+image: /assets/img/posts/use-gan-beyond-art-01.jpg
+image-thumb: /assets/img/posts/use-gan-beyond-art-01-mini.jpg
 image-caption: "Image by Comfreak from Pixabay"
 description: GANs are relatively new, with many research directions still remaining open.
 tags:
@@ -20,7 +20,7 @@ As GANs have most successes and mainly applied in image synthesis, can we use GA
 Similar to machine translation that translates from a source language into target languages by learning sentence/phrase pair mappings, image-to-image translation learns the mapping between an input image and an output image pairs.
 
 {% include figure.html
-  file="/assets/img/posts/use-gan-beyond-art-02.webp"
+  file="/assets/img/posts/use-gan-beyond-art-02.jpg"
   caption="Automatically 'translate' an image from one into the other [[paper](https://arxiv.org/pdf/1703.10593.pdf)]"
 %}
 

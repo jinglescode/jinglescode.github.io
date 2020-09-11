@@ -1,8 +1,8 @@
 ---
 title: Setting up LaTeX on your Atom Editor
 layout: note
-image: /assets/img/posts/setup-latex-atom-01.webp
-image-thumb: /assets/img/posts/setup-latex-atom-01-mini.webp
+image: /assets/img/posts/setup-latex-atom-01.jpg
+image-thumb: /assets/img/posts/setup-latex-atom-01-mini.jpg
 description: Edit and preview .tex files, all from within your Atom editor
 tags:
  - how to
@@ -53,8 +53,8 @@ On OS X, download [MacTeX](http://www.tug.org/mactex/). As of April 2020, the di
 If you don’t want to install the entire MacTeX distribution — which is pretty big, and if you are someone like me who prefers to select what gets installed, you can download [BasicTeX](https://www.tug.org/mactex/morepackages.html), which is only 80MB. BasicTeX contains the [TeX Live](https://www.tug.org/texlive/) distribution that suffices the need to generate PDF from _.tex_ files; it does not include GUI applications, Ghostscript, and other libraries. But this means that you have to search and download all the packages you may need. I will cover this later.
 
 {% include figure.html
-  file1="/assets/img/posts/setup-latex-atom-02.webp"
-  file2="/assets/img/posts/setup-latex-atom-03.webp"
+  file1="/assets/img/posts/setup-latex-atom-02.jpg"
+  file2="/assets/img/posts/setup-latex-atom-03.jpg"
   size="c2"
 %}
 
@@ -63,7 +63,7 @@ MacTeX is for OS X. But if you are on Linux or Windows, download [TeX Live](http
 ## Atom
 
 {% include figure.html
-  file="/assets/img/posts/setup-latex-atom-04.webp"
+  file="/assets/img/posts/setup-latex-atom-04.jpg"
   size="s"
 %}
 
@@ -80,7 +80,7 @@ This will prompt you for your password and install the _latexmk_ package.
 ## Atom packages
 
 {% include figure.html
-  file="/assets/img/posts/setup-latex-atom-05.webp"
+  file="/assets/img/posts/setup-latex-atom-05.jpg"
   size="s"
 %}
 
@@ -95,7 +95,7 @@ These packages enable you to use Atom as a LaTeX editor.
 At this point, you should have a working LaTeX editor on your Atom. I recommend a few changes to the configurations. Go to _Atom -> Preferences -> Packages_. Go to _Settings_ of the _latex_ package.
 
 {% include figure.html
-  file="/assets/img/posts/setup-latex-atom-06.webp"
+  file="/assets/img/posts/setup-latex-atom-06.jpg"
   size="s"
 %}
 

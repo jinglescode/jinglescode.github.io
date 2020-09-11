@@ -1,8 +1,8 @@
 ---
 title: 7 Essential AI YouTube Channels
 layout: note
-image: /assets/img/posts/ai-youtube-01.webp
-image-thumb: /assets/img/posts/ai-youtube-01-mini.webp
+image: /assets/img/posts/ai-youtube-01.jpg
+image-thumb: /assets/img/posts/ai-youtube-01-mini.jpg
 image-caption: "How to stay updated with the latest and coolest machine learning advancements"
 description: How to stay updated with the latest and coolest machine learning advancements
 tags:
@@ -18,8 +18,8 @@ Spending on machine learning research is  [growing](https://pureai.com/articles/
 One paper every 15 minutes!
 
 {% include figure.html
-  file1="/assets/img/posts/ai-youtube-02.webp"
-  file2="/assets/img/posts/ai-youtube-03.webp"
+  file1="/assets/img/posts/ai-youtube-02.jpg"
+  file2="/assets/img/posts/ai-youtube-03.jpg"
   caption="This chart shows the level of excitement and progress in machine learning. How could anyone keep up with advances in this field? 🤔"
   size="c2"
 %}
@@ -35,8 +35,8 @@ _Let’s begin._
 # #1. Two Minute Papers
 
 {% include figure.html
-  file1="/assets/img/posts/ai-youtube-04.webp"
-  file2="/assets/img/posts/ai-youtube-05.webp"
+  file1="/assets/img/posts/ai-youtube-04.jpg"
+  file2="/assets/img/posts/ai-youtube-05.jpg"
   caption="Two Minute Papers"
   size="c2"
 %}
@@ -60,8 +60,8 @@ YouTube:  [_Two Minute Papers_](https://www.youtube.com/user/keeroyz/)
 # #2. Lex Fridman
 
 {% include figure.html
-  file1="/assets/img/posts/ai-youtube-06.webp"
-  file2="/assets/img/posts/ai-youtube-07.webp"
+  file1="/assets/img/posts/ai-youtube-06.jpg"
+  file2="/assets/img/posts/ai-youtube-07.jpg"
   caption="Lex Fridman"
   size="c2"
 %}
@@ -79,8 +79,8 @@ YouTube:  [_Lex Fridman_](https://www.youtube.com/user/lexfridman/)
 # #3. Henry AI Labs
 
 {% include figure.html
-  file1="/assets/img/posts/ai-youtube-16.webp"
-  file2="/assets/img/posts/ai-youtube-17.webp"
+  file1="/assets/img/posts/ai-youtube-16.jpg"
+  file2="/assets/img/posts/ai-youtube-17.jpg"
   caption="Henry AI Labs"
   size="c2"
 %}
@@ -96,8 +96,8 @@ YouTube:  [_Henry AI Labs_](https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgx
 # #4. ArXiv Insights
 
 {% include figure.html
-  file1="/assets/img/posts/ai-youtube-10.webp"
-  file2="/assets/img/posts/ai-youtube-11.webp"
+  file1="/assets/img/posts/ai-youtube-10.jpg"
+  file2="/assets/img/posts/ai-youtube-11.jpg"
   caption="ArXiv Insights"
   size="c2"
 %}
@@ -115,8 +115,8 @@ YouTube:  [_ArXiv Insights_](https://www.youtube.com/channel/UCNIkB2IeJ-6AmZv7bQ
 # #5. Yannic Kilcher
 
 {% include figure.html
-  file1="/assets/img/posts/ai-youtube-12.webp"
-  file2="/assets/img/posts/ai-youtube-13.webp"
+  file1="/assets/img/posts/ai-youtube-12.jpg"
+  file2="/assets/img/posts/ai-youtube-13.jpg"
   caption="Yannic Kilcher"
   size="c2"
 %}
@@ -134,8 +134,8 @@ YouTube:  [_Yannic Kilcher_](https://www.youtube.com/channel/UCZHmQk67mSJgfCCTn7
 # #6. Leo Isikdogan
 
 {% include figure.html
-  file1="/assets/img/posts/ai-youtube-14.webp"
-  file2="/assets/img/posts/ai-youtube-15.webp"
+  file1="/assets/img/posts/ai-youtube-14.jpg"
+  file2="/assets/img/posts/ai-youtube-15.jpg"
   caption="Leo Isikdogan"
   size="c2"
 %}
@@ -155,8 +155,8 @@ YouTube:  [_Leo Isikdogan_](https://www.youtube.com/channel/UC-YAxUbpa1hvRyfJBKF
 # #7. Kaggle
 
 {% include figure.html
-  file1="/assets/img/posts/ai-youtube-08.webp"
-  file2="/assets/img/posts/ai-youtube-09.webp"
+  file1="/assets/img/posts/ai-youtube-08.jpg"
+  file2="/assets/img/posts/ai-youtube-09.jpg"
   caption="Kaggle"
   size="c2"
 %}

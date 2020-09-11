@@ -1,8 +1,8 @@
 ---
 title: Happiness
 layout: note
-image: /assets/img/posts/happiness-01.webp
-image-thumb: /assets/img/posts/happiness-01-mini.webp
+image: /assets/img/posts/happiness-01.jpg
+image-thumb: /assets/img/posts/happiness-01-mini.jpg
 description: tips to happiness, to create better well-being, to live a more fulfilling life
 tags:
   - mindfulness

@@ -1,8 +1,8 @@
 ---
 title: Reinforcement Learning — The Value Function
 layout: note
-image: /assets/img/posts/rl-value-func-00.webp
-image-thumb: /assets/img/posts/rl-value-func-00-mini.webp
+image: /assets/img/posts/rl-value-func-00.jpg
+image-thumb: /assets/img/posts/rl-value-func-00-mini.jpg
 description: A reinforcement learning algorithm for agents to learn the tic-tac-toe, using the value function
 tags:
 - reinforcement learning
@@ -30,7 +30,7 @@ In order to acquire the reward, the value function is an efficient way to determ
 # Define the Value Function
 
 {% include figure.html
-  file="/assets/img/posts/rl-value-func-01.webp"
+  file="/assets/img/posts/rl-value-func-01.jpg"
   caption="Fig 1: State A leads to state B or C"
   size="s"
 %}
@@ -38,7 +38,7 @@ In order to acquire the reward, the value function is an efficient way to determ
 In figure 1, how do we determine the value of state A? There is a 50–50 chance to end up in the next 2 possible states, either state B or C. The value of state A is simply the sum of all next states’ probability multiplied by the reward for reaching that state. The value of state A is 0.5.
 
 {% include figure.html
-  file="/assets/img/posts/rl-value-func-02.webp"
+  file="/assets/img/posts/rl-value-func-02.jpg"
   caption="Fig 2: One-way future states"
   size="s"
 %}
@@ -48,7 +48,7 @@ In figure 2, you find yourself in state D with only 1 possible route to state E.
 If you are in state F (in figure 2), which can only lead to state G, followed by state H. Since state H has a negative reward of -1, state G’s value will also be -1, likewise for state F.
 
 {% include figure.html
-  file="/assets/img/posts/rl-value-func-03.webp"
+  file="/assets/img/posts/rl-value-func-03.jpg"
   caption="Fig 3: Being in state J brings you closer to state K"
   size="s"
 %}
@@ -56,7 +56,7 @@ If you are in state F (in figure 2), which can only lead to state G, followed by
 [In this game of tic-tac-toe,](https://jinglescode.github.io/reinforcement-learning-tic-tac-toe) getting 2 Xs in a row (state J in figure 3) does not win the game, hence there is no reward. But being at state J places you one step closer to reaching state K, completing the row of X to win the game, thus being in state J yields a good value.
 
 {% include figure.html
-  file="/assets/img/posts/rl-value-func-04.webp"
+  file="/assets/img/posts/rl-value-func-04.jpg"
   caption="Fig 4: State M has a higher value than state N"
   size="s"
 %}
@@ -77,7 +77,7 @@ The Value function V(s) for a tic-tac-toe game is the probability of winning for
 Updating the value function is how the agent learns from past experiences, by updating the value of those states that have been through in the training process.
 
 {% include figure.html
-  file="/assets/img/posts/rl-value-func-05.webp"
+  file="/assets/img/posts/rl-value-func-05.jpg"
   caption="Fig 5: Update the value of state s"
   size="s"
 %}
@@ -95,7 +95,7 @@ The goal of the agent is to update the value function after a game is played to 
 # Tic Tac Toe — Exploit the Value Function
 
 {% include figure.html
-  file="/assets/img/posts/rl-value-func-06.webp"
+  file="/assets/img/posts/rl-value-func-06.jpg"
   caption="Fig 6: Values of various next states"
   size="s"
 %}

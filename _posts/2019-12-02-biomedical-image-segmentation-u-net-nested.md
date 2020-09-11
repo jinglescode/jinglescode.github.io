@@ -1,8 +1,8 @@
 ---
 title: Biomedical Image Segmentation - UNet++
 layout: note
-image: /assets/img/posts/unet-nested-01.webp
-image-thumb: /assets/img/posts/unet-nested-01-mini.webp
+image: /assets/img/posts/unet-nested-01.jpg
+image-thumb: /assets/img/posts/unet-nested-01-mini.jpg
 image-caption: "UNet++ improve segmentation accuracy with a series of nested, dense skip pathways"
 description: Improve segmentation accuracy with a series of nested, dense skip pathways
 tags:
@@ -23,7 +23,7 @@ Algorithms designed for medical imaging must achieve high performance and accura
 Below is an illustration of UNet++ and U-Net architecture.
 
 {% include figure.html
-  file="/assets/img/posts/unet-nested-02.webp"
+  file="/assets/img/posts/unet-nested-02.jpg"
   caption="UNet++ and U-Net architecture"
 %}
 
@@ -54,7 +54,7 @@ Dense skip connections ensure that all prior feature maps are accumulated and ar
 ## Deep supervision
 
 {% include figure.html
-  file="/assets/img/posts/unet-nested-04.webp"
+  file="/assets/img/posts/unet-nested-04.jpg"
   caption="Deep supervise"
   size="s"
 %}
@@ -70,7 +70,7 @@ Zhou et al. conducted experiments to determine the best segmentation performance
 They experimented on four segmentation tasks: a) cell nuclei, b) colon polyp, c) liver, and d) lung nodule. The results are as follows:
 
 {% include figure.html
-  file="/assets/img/posts/unet-nested-05.webp"
+  file="/assets/img/posts/unet-nested-05.jpg"
   caption="Pruning"
 %}
 
@@ -87,7 +87,7 @@ My experiment on UNet++ will be using [Drishti-GS dataset](https://cvit.iiit.ac.
 The model completed training 36.6M trainable parameters in 27 minutes; each epoch took approximately 32 seconds.
 
 {% include figure.html
-  file="/assets/img/posts/unet-nested-06.webp"
+  file="/assets/img/posts/unet-nested-06.jpg"
 %}
 
 The epoch with the best performance is epoch #45 (out of 50).
@@ -103,7 +103,7 @@ We are comparing the metrics of the best epoch between U-Net and UNet++.
 The test began with the model processing a few unseen samples, to predict optical disc (red) and optical cup (yellow). Here are the test results for UNet++ and [U-Net](https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/) for comparison.
 
 {% include figure.html
-  file="/assets/img/posts/unet-nested-07.webp"
+  file="/assets/img/posts/unet-nested-07.jpg"
 %}
 
 From the metrics table, UNet++ has outperformed U-Net approximately 2% in *Intersection over Union*. From the qualitative test results, UNet++ has managed to correctly segment the first image, which U-Net did not do so well.

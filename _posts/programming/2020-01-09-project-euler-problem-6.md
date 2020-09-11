@@ -1,8 +1,8 @@
 ---
 title: Project Euler - Problem 6 - Sum square difference
 layout: note
-image: /assets/img/posts/project-euler.webp
-image-thumb: /assets/img/posts/project-euler.webp
+image: /assets/img/posts/project-euler.jpg
+image-thumb: /assets/img/posts/project-euler.jpg
 description: Find the difference between the sum of the squares of the first n natural numbers and the square of the sum.
 tags:
 - javascript

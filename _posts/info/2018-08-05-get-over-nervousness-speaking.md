@@ -1,8 +1,8 @@
 ---
 title: Speaking - Get Over Nervousness
 layout: note
-image: /assets/img/posts/get-over-nervousness-speaking-01.webp
-image-thumb: /assets/img/posts/get-over-nervousness-speaking-01-mini.webp
+image: /assets/img/posts/get-over-nervousness-speaking-01.jpg
+image-thumb: /assets/img/posts/get-over-nervousness-speaking-01-mini.jpg
 description: Tips on getting over nervousness when comes to speaking
 tags:
   - personal growth

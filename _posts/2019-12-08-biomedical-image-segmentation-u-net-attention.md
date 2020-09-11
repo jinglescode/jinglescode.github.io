@@ -1,8 +1,8 @@
 ---
 title: Biomedical Image Segmentation - Attention U-Net
 layout: note
-image: /assets/img/posts/unet-attention-01.webp
-image-thumb: /assets/img/posts/unet-attention-01-mini.webp
+image: /assets/img/posts/unet-attention-01.jpg
+image-thumb: /assets/img/posts/unet-attention-01-mini.jpg
 description: Improving model sensitivity and accuracy by attaching attention gates on top of the standard U-Net
 tags:
 - medical
@@ -20,7 +20,7 @@ Attention U-Net aims to automatically learn to focus on target structures of var
 U-Nets are commonly used for image segmentation tasks because of its performance and efficient use of GPU memory. It aims to achieve high precision that is reliable for clinical usage with fewer training samples because acquiring annotated medical images can be resource-intensive. [Read more about U-Net](https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/).
 
 {% include figure.html
-  file="/assets/img/posts/unet-attention-02.webp"
+  file="/assets/img/posts/unet-attention-02.jpg"
   caption="U-Net"
   size="m"
 %}
@@ -32,7 +32,7 @@ Despite U-Net excellent representation capability, it relies on multi-stage casc
 ["Need to pay attention" by Jetley et al.](https://arxiv.org/abs/1804.02391) introduced end-to-end-trainable attention module. Attention gates are commonly used in natural image analysis and natural language processing.
 
 {% include figure.html
-  file="/assets/img/posts/unet-attention-03.webp"
+  file="/assets/img/posts/unet-attention-03.jpg"
   caption="Attention module"
   size="m"
 %}
@@ -54,7 +54,7 @@ To improve segmentation performance, [Khened et al.](https://www.sciencedirect.c
 As a result, attention gates incorporated into U-Net can improve model sensitivity and accuracy to foreground pixels without requiring significant computation overhead. Attention gates can progressively suppress features responses in irrelevant background regions.
 
 {% include figure.html
-  file="/assets/img/posts/unet-attention-04.webp"
+  file="/assets/img/posts/unet-attention-04.jpg"
   caption="Attention gates"  
 %}
 
@@ -75,7 +75,7 @@ Additive soft attention is used in the sentence to sentence translation ([Bahdan
 Below is an illustration of Attention U-Net.
 
 {% include figure.html
-  file="/assets/img/posts/unet-attention-05.webp"
+  file="/assets/img/posts/unet-attention-05.jpg"
   caption="U-Net attention architecture"
   size="m"
 %}
@@ -89,7 +89,7 @@ The experiment setup and the metrics used will be the same as the [U-Net](https:
 The model completed training in 13 minutes; each epoch took approximately 15 seconds.
 
 {% include figure.html
-  file="/assets/img/posts/unet-attention-06.webp"
+  file="/assets/img/posts/unet-attention-06.jpg"
 %}
 
 The metrics between several U-Net models for comparison, as shown below.
@@ -99,7 +99,7 @@ The metrics between several U-Net models for comparison, as shown below.
 The test began with the model processing a few unseen samples, to predict optical disc (red) and optical cup (yellow). Here are the test results for Attention U-Net, [UNet++](https://jinglescode.github.io/2019/12/02/biomedical-image-segmentation-u-net-nested/) and [U-Net](https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/) for comparison.
 
 {% include figure.html
-  file="/assets/img/posts/unet-attention-07.webp"
+  file="/assets/img/posts/unet-attention-07.jpg"
 %}
 
 # Conclusion

@@ -1,8 +1,8 @@
 ---
 title: Machine Learning Resources
 layout: note
-image: /assets/img/posts/machine-learning-resources-01.webp
-image-thumb: /assets/img/posts/machine-learning-resources-01-mini.webp
+image: /assets/img/posts/machine-learning-resources-01.jpg
+image-thumb: /assets/img/posts/machine-learning-resources-01-mini.jpg
 description: Machine Learning links I find useful
 tags:
 - resources

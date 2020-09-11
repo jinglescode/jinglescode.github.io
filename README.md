@@ -6,10 +6,6 @@ Hi, I'm Hong Jing, you can call me Jingles. A data scientist with five years of 
 [Demos on Github](https://jinglescode.github.io/demos/) |
 [Repos on Github](https://github.com/jinglescode)
 
-# Resources in this repo
-Most contents on this repo can be viewed from [jinglescode.github.io](https://jinglescode.github.io/). Other supplementary documents are linked below:
-- [Research papers highlighted](https://github.com/jinglescode/jinglescode.github.io/tree/master/research/pdfs)
-
 # Useful tools
 - [Convert image to webp format](https://image.online-convert.com/convert-to-webp)
 - [StackEdit: In-browser Markdown editor](https://stackedit.io/app)

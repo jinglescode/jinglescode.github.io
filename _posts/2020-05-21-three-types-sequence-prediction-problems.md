@@ -1,8 +1,8 @@
 ---
 title: 3 Types of Sequence Prediction Problems
 layout: note
-image: /assets/img/posts/three-types-sequence-prediction-problems-01.webp
-image-thumb: /assets/img/posts/three-types-sequence-prediction-problems-01-mini.webp
+image: /assets/img/posts/three-types-sequence-prediction-problems-01.jpg
+image-thumb: /assets/img/posts/three-types-sequence-prediction-problems-01-mini.jpg
 image-caption: "[[source](https://pixabay.com/photos/flight-seagull-sequence-bird-1179587/)]"
 description: Understanding your problems before implementing your sequence prediction model.
 tags:
@@ -28,7 +28,7 @@ Sequence prediction is a common problem which finds real-life applications in va
 Being able to guess the next element of a sequence is an important question in many applications. A sequence prediction model learns to identify the pattern in the sequential input data and predict the next value.
 
 {% include figure.html
-  file="/assets/img/posts/three-types-sequence-prediction-problems-02.webp"
+  file="/assets/img/posts/three-types-sequence-prediction-problems-02.jpg"
   size="m"
 %}
 
@@ -42,8 +42,8 @@ But what makes time-series forecasting different from a regression problem? Ther
 -   Time series looks for seasonality trends. For example, the power demand in a day will drop at night, and the number of air passengers will increase during the summer.
 
 {% include figure.html
-  file1="/assets/img/posts/three-types-sequence-prediction-problems-03.webp"
-  file2="/assets/img/posts/three-types-sequence-prediction-problems-04.webp"
+  file1="/assets/img/posts/three-types-sequence-prediction-problems-03.jpg"
+  file2="/assets/img/posts/three-types-sequence-prediction-problems-04.jpg"
   caption="Left: number of air passengers over the years. Right: predicted Microsoft share price on the next day."
   size="c2"
 %}
@@ -59,7 +59,7 @@ For example, after watching the movie _Avengers: Endgame_, I was searching for e
 Even though it seems like Google Discover Feed is recommending a collection of webpages, each webpage is an individual output.
 
 {% include figure.html
-  file="/assets/img/posts/three-types-sequence-prediction-problems-05.webp"
+  file="/assets/img/posts/three-types-sequence-prediction-problems-05.jpg"
   caption="Google Discover Feed"
   size="s"
 %}
@@ -71,7 +71,7 @@ Likewise, we can apply this idea to product recommendations. If we train a seque
 Sequence classification uses labeled datasets with some sequence inputs and class labels as outputs, to train a classification model which can be used to predict the class label of an unseen sequence.
 
 {% include figure.html
-  file="/assets/img/posts/three-types-sequence-prediction-problems-06.webp"
+  file="/assets/img/posts/three-types-sequence-prediction-problems-06.jpg"
   size="m"
 %}
 
@@ -92,7 +92,7 @@ Sequence classification uses labeled datasets with some sequence inputs and clas
 Sequence-to-sequence learning (Seq2Seq) is about training models to convert an input sequence and output another sequence. Like all supervised learning, Seq2Seq models are trained with a dataset of pairs, but the input sequences and output sequences can have different lengths.
 
 {% include figure.html
-  file="/assets/img/posts/three-types-sequence-prediction-problems-07.webp"
+  file="/assets/img/posts/three-types-sequence-prediction-problems-07.jpg"
   size="m"
 %}
 
@@ -111,7 +111,7 @@ Automatically generating natural language descriptions according to the content 
 [Vinyals et al.](https://arxiv.org/pdf/1411.4555.pdf) introduced an end-to-end neural network consisting of a vision convolutional neural network followed by a language generating recurrent neural network.
 
 {% include figure.html
-  file="/assets/img/posts/three-types-sequence-prediction-problems-08.webp"
+  file="/assets/img/posts/three-types-sequence-prediction-problems-08.jpg"
   caption="Show and Tell: A Neural Image Caption Generator"
 %}
 

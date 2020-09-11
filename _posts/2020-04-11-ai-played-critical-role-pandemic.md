@@ -1,8 +1,8 @@
 ---
 title: How Artificial Intelligence Played a Critical Role in this Pandemic
 layout: note
-image: /assets/img/posts/ai-played-critical-role-pandemic-01.webp
-image-thumb: /assets/img/posts/ai-played-critical-role-pandemic-01-mini.webp
+image: /assets/img/posts/ai-played-critical-role-pandemic-01.jpg
+image-thumb: /assets/img/posts/ai-played-critical-role-pandemic-01-mini.jpg
 image-caption: "Image by fernando zhiminaicela from Pixabay"
 description: Industry, academia, national laboratories and federal agencies working together to solve this crisis
 category: datascience

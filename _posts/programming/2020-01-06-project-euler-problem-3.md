@@ -1,8 +1,8 @@
 ---
 title: Project Euler - Problem 3 - Largest prime factor
 layout: note
-image: /assets/img/posts/project-euler.webp
-image-thumb: /assets/img/posts/project-euler.webp
+image: /assets/img/posts/project-euler.jpg
+image-thumb: /assets/img/posts/project-euler.jpg
 description: What is the largest prime factor of the given number?
 tags:
 - javascript

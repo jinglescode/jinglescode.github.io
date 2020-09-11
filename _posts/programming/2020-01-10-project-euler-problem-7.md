@@ -1,8 +1,8 @@
 ---
 title: Project Euler - Problem 7 - 10001st prime
 layout: note
-image: /assets/img/posts/project-euler.webp
-image-thumb: /assets/img/posts/project-euler.webp
+image: /assets/img/posts/project-euler.jpg
+image-thumb: /assets/img/posts/project-euler.jpg
 description: What is the nth prime number?
 tags:
 - javascript

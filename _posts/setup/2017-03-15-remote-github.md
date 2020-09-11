@@ -1,8 +1,8 @@
 ---
 title: Sync remote Github repo with local
 layout: note
-image: /assets/img/posts/remote-github-01.webp
-image-thumb: /assets/img/posts/remote-github-01-mini.webp
+image: /assets/img/posts/remote-github-01.jpg
+image-thumb: /assets/img/posts/remote-github-01-mini.jpg
 description: How to setup Github repo and synchronise with local copy
 tags:
   - how to

@@ -1,8 +1,8 @@
 ---
 title: What 200,000 Years of Humanity Taught Us about Data Storytelling
 layout: note
-image: /assets/img/posts/humanity-taught-data-storytelling-01.webp
-image-thumb: /assets/img/posts/humanity-taught-data-storytelling-01-mini.webp
+image: /assets/img/posts/humanity-taught-data-storytelling-01.jpg
+image-thumb: /assets/img/posts/humanity-taught-data-storytelling-01-mini.jpg
 image-caption: "Engage your audience with your data story and help them comprehend your insights. Image by [Sasin Tipchai](https://pixabay.com/users/sasint-3639875)"
 description: A data scientist is also an efficient communicator who brings data to life.
 tags:
@@ -16,8 +16,8 @@ In ancient times, 200,000 years ago, people sit around the [campfire to learn fr
 [Ancient Egyptian arts](https://en.wikipedia.org/wiki/Art_of_ancient_Egypt) contain stories that pass on to generations about what has happened in the past. How did they build their empire, what are the tools they use, and what they considered important. Even today, we can learn from the drawings about the history of humanity.
 
 {% include figure.html
-  file1="/assets/img/posts/humanity-taught-data-storytelling-02.webp"
-  file2="/assets/img/posts/humanity-taught-data-storytelling-03.webp"
+  file1="/assets/img/posts/humanity-taught-data-storytelling-02.jpg"
+  file2="/assets/img/posts/humanity-taught-data-storytelling-03.jpg"
   caption="Ancient Egyptian arts [source from [Wikipedia](https://en.wikipedia.org/wiki/Art_of_ancient_Egypt)]"
   size="c2"
 %}
@@ -29,7 +29,7 @@ Storytelling is as old as time, and it has a place in every culture and society.
 In this age of big data, this is how we are to learn from each other — telling [data stories](https://hbr.org/2015/10/the-best-data-storytellers-arent-always-the-numbers-people). There are **three crucial fundamentals of data storytelling, data, visualisation and narrative**.
 
 {% include figure.html
-  file="/assets/img/posts/humanity-taught-data-storytelling-04.webp"
+  file="/assets/img/posts/humanity-taught-data-storytelling-04.jpg"
   caption="3 fundamentals of data storytelling: data, visualisation and narrative"
   size="m"
 %}
@@ -67,8 +67,8 @@ If the data you have consist of time variables, likely you will be interested in
 Sometimes, a feature can have a cyclical pattern. For example, the number of air travel passengers will increase during the holiday period, and the amount of rainfall in a year varies by season.
 
 {% include figure.html
-  file1="/assets/img/posts/humanity-taught-data-storytelling-05.webp"
-  file2="/assets/img/posts/humanity-taught-data-storytelling-06.webp"
+  file1="/assets/img/posts/humanity-taught-data-storytelling-05.jpg"
+  file2="/assets/img/posts/humanity-taught-data-storytelling-06.jpg"
   caption="Line charts can show you trends over time"
   size="c2"
 %}
@@ -78,8 +78,8 @@ Sometimes, a feature can have a cyclical pattern. For example, the number of air
 For numerical features, you may want to find the range of the variables. This enables you to know the smallest, largest, mean and median of the feature. It also informs us if the data is left or right-skewed. A common approach to display distribution is using a histogram.
 
 {% include figure.html
-  file1="/assets/img/posts/humanity-taught-data-storytelling-07.webp"
-  file2="/assets/img/posts/humanity-taught-data-storytelling-08.webp"
+  file1="/assets/img/posts/humanity-taught-data-storytelling-07.jpg"
+  file2="/assets/img/posts/humanity-taught-data-storytelling-08.jpg"
   caption="Bar charts are useful for visualising distributions"
   size="c2"
 %}
@@ -87,8 +87,8 @@ For numerical features, you may want to find the range of the variables. This en
 A histogram can also identify anomaly data and default values. For example, you can extract those houses with humongous floor area and variables with -1 default values.
 
 {% include figure.html
-  file1="/assets/img/posts/humanity-taught-data-storytelling-09.webp"
-  file2="/assets/img/posts/humanity-taught-data-storytelling-10.webp"
+  file1="/assets/img/posts/humanity-taught-data-storytelling-09.jpg"
+  file2="/assets/img/posts/humanity-taught-data-storytelling-10.jpg"
   caption="Left: a number of houses with humongous floor area at the right-most bar. Right: a number of people with -1 age."
   size="c2"
 %}
@@ -100,7 +100,7 @@ Looking for a mutual relationship between two or more features is a valuable ins
 A useful chart to show correlation is a scatterplot. You can also add a fitted line to check if it is positively or negatively correlated.
 
 {% include figure.html
-  file="/assets/img/posts/humanity-taught-data-storytelling-11.webp"
+  file="/assets/img/posts/humanity-taught-data-storytelling-11.jpg"
   caption="The simplest form to check the correlation between 2 variables, use scatterplot"
   size="m"
 %}

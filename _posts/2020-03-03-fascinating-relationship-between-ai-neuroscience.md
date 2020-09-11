@@ -1,8 +1,8 @@
 ---
 title: The Fascinating Relationship between AI and Neuroscience
 layout: note
-image: /assets/img/posts/fascinating-relationship-between-ai-neuroscience-01.webp
-image-thumb: /assets/img/posts/fascinating-relationship-between-ai-neuroscience-01-mini.webp
+image: /assets/img/posts/fascinating-relationship-between-ai-neuroscience-01.jpg
+image-thumb: /assets/img/posts/fascinating-relationship-between-ai-neuroscience-01-mini.jpg
 description: They inspire and advance together which benefits both fields
 tags:
 - neuroscience
@@ -37,7 +37,7 @@ In a  [study by KAIST](https://www.sciencedaily.com/releases/2020/01/20013010492
 Researchers aim to build models that can make decisions like us and solve problems in the same way that humans do. Their discoveries have opened up the possibility that advances in technology might lead to building machines that are more human-like.
 
 {% include figure.html
-  file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-02.webp"
+  file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-02.jpg"
   caption="Photo by [Toa Heftiba](https://unsplash.com/@heftiba) on [Unsplash](https://unsplash.com)"
 %}
 
@@ -52,14 +52,14 @@ A human brain contains about 86 billion neurons, each individually linked to oth
 Like a human brain, the machine learning neural network also consists of interconnected neurons. When a neuron receives inputs, it gets activated and it sends information to other neurons.
 
 {% include figure.html
-  file1="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-03.webp"
-  file2="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-04.webp"
+  file1="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-03.jpg"
+  file2="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-04.jpg"
   caption="An artificial neuron is a mathematical function conceived as a model of biological neurons [[wikipedia](https://en.wikipedia.org/wiki/Artificial_neuron)]"
   size="c2"
 %}
 
-<!-- ![](/assets/img/posts/fascinating-relationship-between-ai-neuroscience-03.webp#float_left)
-![](/assets/img/posts/fascinating-relationship-between-ai-neuroscience-04.webp#float_left)
+<!-- ![](/assets/img/posts/fascinating-relationship-between-ai-neuroscience-03.jpg#float_left)
+![](/assets/img/posts/fascinating-relationship-between-ai-neuroscience-04.jpg#float_left)
 An artificial neuron is a mathematical function conceived as a model of biological neurons [[wikipedia](https://en.wikipedia.org/wiki/Artificial_neuron)] -->
 
 Our brain’s plasticity allows us to learn and improve our skills.  Every time we learn new things, we are creating and strengthening the connections between neurons. That’s why when we practise a task, we become better at it.
@@ -69,7 +69,7 @@ Similarly, a neural network learns when we feed it with lots of data. Each conne
 For example, when we look at a picture of a cat, we know that it is a cat because we have seen enough cats in our lives. Likewise, if we provide our neural networks with enough cat images, it will start to recognise cats.
 
 {% include figure.html
-  file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-05.webp"
+  file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-05.jpg"
   caption="Photo by [Nathalie Jolie](https://unsplash.com/@visucy) on [Unsplash](https://unsplash.com)"
 %}
 
@@ -92,7 +92,7 @@ Neural networks are acting as “_virtual brains_” that capture the representa
 However, the way artificial intelligence systems work is vastly different from our brain. Neural networks are only a rough analogy of how the brain works, it models neurons as numbers in a high dimensional matrix. But in reality, our brain is a piece of sophisticated biological machinery that uses chemical and electrical activity. That makes us different from machines.
 
 {% include figure.html
-  file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-06.webp"
+  file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-06.jpg"
   caption="Photo by  [Milan Popovic](https://unsplash.com/@itsmiki5)  on  [Unsplash](https://unsplash.com/)"
 %}
 
@@ -105,7 +105,7 @@ Functional magnetic resonance imaging measures activity in our brain by detectin
 Machine learning also helps us develop applications that were thought not possible before.  [Korean University](https://jinglescode.github.io/datascience/2020/02/24/control-exoskeleton-with-your-brain/)  designed an experimental environment for controlling a lower-limb exoskeleton. Users can control the exoskeleton by focusing their attention by staring at blinking lights.
 
 {% include figure.html
-  file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-07.webp"
+  file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-07.jpg"
   caption="Photo by  [Farsai Chaikulngamdee](https://unsplash.com/@clearsky)  on  [Unsplash](https://unsplash.com/)"
 %}
 
@@ -124,6 +124,6 @@ I’m optimistic about the future of this partnership between neuroscience and a
 > We urge researchers in neuroscience and AI to find a common language, allowing a free flow of knowledge that will allow continued progress on both fronts. — [DeepMind](https://deepmind.com/blog/article/ai-and-neuroscience-virtuous-circle)
 
 {% include figure.html
-  file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-08.webp"
+  file="/assets/img/posts/fascinating-relationship-between-ai-neuroscience-08.jpg"
   caption="Photo by [Mahkeo](https://unsplash.com/@mahkeo) on [Unsplash](https://unsplash.com)"
 %}
