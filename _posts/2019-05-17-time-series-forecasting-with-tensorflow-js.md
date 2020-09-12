@@ -7,6 +7,7 @@ description: Pull stock prices from online API and perform predictions using Rec
 tags:
 - tensorflow
 - javascript
+last_modified_at: 2020-09-12
 ---
 
 Machine learning is becoming increasingly popular these days and a growing number of the world’s population see it is as a magic crystal ball: predicting when and what will happen in the future. This experiment uses artificial neural networks to reveal stock market trends and demonstrates the ability of time series forecasting to predict future stock prices based on past historical data.
