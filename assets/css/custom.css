@@ -33,6 +33,7 @@ body {
   font-family: 'Lato', sans-serif;
   color: #1d1d1f;
   font-size: 22px; font-weight: 300;
+  max-width: 1000px;
 }
 .blog-content .title {
   font-size: 40px;
