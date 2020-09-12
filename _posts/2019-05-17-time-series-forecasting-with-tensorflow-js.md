@@ -144,7 +144,7 @@ Finally, the model has been validated and the predicted values map closely to it
   caption="Predict the 51st day"
 %}
 
-# Why isn't my Model Performing?
+# Why Isn't My Model Performing?
 
 **The model has never seen similar data in the past**. In March 2020, where the market dipped and recovered within a month or two, this has never happened in history. The model is likely to fail to predict drastic changes in stock prices during those periods.
 
