@@ -232,7 +232,7 @@ $ npm install @tensorflow/tfjs
 
 An example of a simple linear regression model would look like this.
 
-```
+```javascript
 import * as tf from '@tensorflow/tfjs';
 
 const model = tf.sequential();  
@@ -258,7 +258,7 @@ $ npm install @tensorflow-models/universal-sentence-encoder
 
 This is an example to show how we can extract embeddings from each sentence using universal sentence encoder.
 
-```
+```javascript
 import * as use from '@tensorflow-models/universal-sentence-encoder';
 
 use.load().then(model => {  
@@ -281,7 +281,7 @@ For this project, I am using Angular 8.0. I enjoy building on Angular for its [m
 ## Cosine similarity
 
 Create a function to calculate the similarity of two vectors using the [cosine similarity formula](https://en.wikipedia.org/wiki/Cosine_similarity).
-```
+```javascript
 similarity(a, b) {  
   var magnitudeA = Math.sqrt(this.dot(a, a));  
   var magnitudeB = Math.sqrt(this.dot(b, b));  
@@ -293,7 +293,7 @@ similarity(a, b) {
 
 Another function to calculate the similarity scores for every sentence pair as follows.
 
-```
+```javascript
 cosine_similarity_matrix(matrix){  
   let cosine_similarity_matrix = [];  
   for(let i=0;i<matrix.length;i++){  

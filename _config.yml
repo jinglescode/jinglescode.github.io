@@ -29,6 +29,8 @@ paginate_path: "/page:num/"
 permalink: pretty
 
 future: true
+markdown:            kramdown
+highlighter:         rouge
 
 defaults:
   -
