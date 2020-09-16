@@ -6,12 +6,18 @@ layout: main
     <div class="card-content flow-text">
       <h1 class="title grey-text text-darken-4">{{page.title}}</h1>
       <h5 class="subtitle grey-text text-darken-2">{{page.description}}</h5>
-      <!-- <span class="new badge blue" data-badge-caption="{{ page.date | date_to_string }}"></span> -->
+
+      {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
+      {%- if page.last_modified_at -%}
+        <span class="new badge blue" data-badge-caption="Last Updated: {{ page.last_modified_at | date: date_format }}"></span>
+      {%- endif -%}
     </div>
+
     <div class="card-image">
       <img class="materialboxed" data-caption="{{ page.image-caption }}" src="{{ page.image }}" alt="{{ page.image-caption }}">
       <!-- <span class="card-title" style="text-shadow: 1px 1px 2px black;">{{page.image-caption}}</span> -->
     </div>
+
     <div class="card-content flow-text blog-content">
       {{ content }}
     </div>
@@ -20,7 +26,6 @@ layout: main
         {{page.tag}}
         {% for tag in page.tags %}
           <span class="new badge blue" data-badge-caption="{{tag}}"></span>
-          <!-- <span class="new badge blue">{{tag}}</span> -->
         {% endfor %}
       </a>
     </div>

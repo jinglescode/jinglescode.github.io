@@ -20,6 +20,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-redirect-from
   
 url: "https://jinglescode.github.io"
 
@@ -27,6 +28,7 @@ paginate: 21
 paginate_path: "/page:num/"
 
 permalink: pretty
+# permalink: /:title
 
 future: true
 markdown:            kramdown
