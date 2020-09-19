@@ -74,9 +74,14 @@ As the person covers the part of the image, the algorithm needs to figure out th
 
 ### How does it work?
 
-The motion extractor learns to extract key points along with their local affine transformations. A generator network models occlusions in the target motions and combines the appearance extracted from the source image and the motion derived from the driving video.
+During training, the neural network reconstructs a video with a still image and learns the latent representation of a video's motion. At test time, the model uses a source image and a driving video. The model tries to reconstruct the video by identifying the key points in the image and the video, by representing the motion between the source image moves according to the motion depicted in these frames.
 
-The model tries to reconstruct the video by identifying the key points in the image and the video and representing the motion between them. This model consists of two models, a motion extractor and a generator network. 
+{% include figure.html
+  file="/assets/img/posts/deepfake-existence-07.jpg"
+  caption="First Order Motion Model [from [paper](http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation)]"
+%}
+
+This model consists of two models, a motion extractor and a generator network. 
 
 The motion extractor learns to extract key points along with their local affine transformations. A generator network models occlusions in the target motions and combines the appearance extracted from the source image and the motion derived from the driving video.
 
@@ -87,11 +92,6 @@ The output of the model is two-fold: a dense motion field and an occlusion mask.
 This mask defines which parts of the driving video can be reconstructed by warping the source image. The context needs to infer parts that are not present in the source image, such as the back of the person in the fashion example, where the person's back is not presented in the source picture.
 
 The video generator output of the motion detector and the source image and animates it according to the driving video. It warps that source image in ways that resemble the driving video and the occluded parts.
-
-{% include figure.html
-  file="/assets/img/posts/deepfake-existence-07.jpg"
-  caption="First Order Motion Model [from [paper](http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation)]"
-%}
 
 To understand how it works, I suggest you to visit the [GitHub page](https://aliaksandrsiarohin.github.io/first-order-model-website/) and examine the [research paper](http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation). You can also watch his [video](https://www.youtube.com/watch?v=u-0cQ-grXBQ), explaining how it works. Solid cool stuff.
 
