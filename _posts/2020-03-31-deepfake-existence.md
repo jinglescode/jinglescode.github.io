@@ -74,7 +74,7 @@ As the person covers the part of the image, the algorithm needs to figure out th
 
 ### How does it work?
 
-Under the hood, they use a neural network trained to reconstruct a video, given a still image, and a latent representation of the video's motion, which is learned during training. At test time, the model takes as input a new source image and a driving video and predicts how the object in the source image moves according to the motion depicted in these frames.
+The motion extractor learns to extract key points along with their local affine transformations. A generator network models occlusions in the target motions and combines the appearance extracted from the source image and the motion derived from the driving video.
 
 The model tries to reconstruct the video by identifying the key points in the image and the video and representing the motion between them. This model consists of two models, a motion extractor and a generator network. 
 
