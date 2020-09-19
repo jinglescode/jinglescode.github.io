@@ -7,8 +7,9 @@ Hi, I'm Hong Jing, you can call me Jingles. A data scientist with five years of 
 [Repos on Github](https://github.com/jinglescode)
 
 # Useful tools
-- [Convert image to webp format](https://image.online-convert.com/convert-to-webp)
+- [Bulk Resize Photos](https://bulkresizephotos.com/)
 - [StackEdit: In-browser Markdown editor](https://stackedit.io/app)
+- [Convert image to webp format](https://image.online-convert.com/convert-to-webp)
 
 # License (for UI)
 Front-end framework based on Material Design designed and developed by [Materialize](https://materializecss.com/).

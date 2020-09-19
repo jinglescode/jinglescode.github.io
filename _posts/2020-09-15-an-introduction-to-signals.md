@@ -19,9 +19,7 @@ Sound is a wave that results from the back and forth vibration of the medium par
   size="s"
 %}
 
-When we hear something, our brain translates these air molecules’ movements that our ears pick up, into something we can recognize. Be it words or music, birds chipping or a car horn.
-
-Usually, when we describe sounds, we refer to them in terms of their frequency. We measure these waves by the number of cycles in a second, in a hertz (Hz) measurement unit.
+Usually, when we describe sounds, we refer to them in terms of their frequency. We measure these waves by the number of cycles in a second, in a hertz (Hz) measurement unit. The lowest notes your headphones can rumble out are around 20 Hz (in theory!), a 20 Hz note literally refers to the membrane inside the headphone moving to-and-fro 20 times per second. That creates compressed pulses of air which, upon arrival at your eardrum, induces a vibration at the same frequency. Our brain translates these air molecules’ movements that our ears pick up, into something we can recognize. Be it words or music, birds chipping or a car horn.
 
 For example, this is a 440 Hz sound wave, the sound of the A note above the middle C on the piano:
 
@@ -61,7 +59,7 @@ We can add more sound frequencies; the sound wave will get more and more complic
   caption="The wave gets more complicated as more frequencies are added."
 %}
 
-Even though these examples are on sound waves, these concepts are also applied in other digital signals such as an [electrocardiogram](https://en.wikipedia.org/wiki/Electrocardiography) and [electroencephalogram](https://en.wikipedia.org/wiki/Electroencephalography).
+Even though these examples are on sound waves, these concepts are also applied in other digital signals such as an [electrocardiogram](https://en.wikipedia.org/wiki/Electrocardiography) and [electroencephalogram](https://jinglescode.github.io/2020/02/24/control-exoskeleton-with-your-brain/).
 
 ## So how do we store signals digitally?
 
@@ -84,7 +82,7 @@ As humans can hear 20–20,000 Hz range; this is why audio waveform and early pr
 
 For machine learning, sampling at higher frequencies results in better-reconstructed signals, resulting in better performance. However, this requires faster CPU/GPU to convert and process the signals, and a bigger GPU memory is needed as it also increases the model’s size as your inputs get larger. Therefore, we must weigh each application’s advantages and disadvantages and be aware of the tradeoffs involved.
 
-So far, we have seen signals with a single channel. But signals in real-world applications can have multiple channels. For example, we have two channels in audio, left and right channels. In electroencephalography and electrocardiography, we can have ten or more channels. Neuralink aims to build an integrated brain-machine interface platform with thousands of channels.
+So far, we have seen signals with a single channel. But signals in real-world applications can have multiple channels. For example, we have two channels in audio, left and right channels. In [electroencephalography](https://jinglescode.github.io/2020/02/24/control-exoskeleton-with-your-brain/) and electrocardiography, we can have ten or more channels. Neuralink aims to build an integrated brain-machine interface platform with thousands of channels.
 
 ## Generate some signals (in Python)
 
@@ -135,7 +133,7 @@ With this code, you could generate your own datasets, where the input features a
 
 ----------
 
-As I am currently working on my Ph.D. on brain-computer interface research, I’ve made a repo containing codes commonly used in signal processing. This package includes functions to clean signals and other signal processing techniques. Feel free to check it out and star this repo, [torchsignal](https://github.com/jinglescode/torchsignal).
+As I am currently working on my Ph.D. on [brain-computer interface](https://jinglescode.github.io/2020/03/03/fascinating-relationship-between-ai-neuroscience/) research, I’ve made a repo containing codes commonly used in signal processing. This package includes functions to clean signals and other signal processing techniques. Feel free to check it out and star this repo, [torchsignal](https://github.com/jinglescode/torchsignal).
 
 Seeking for collaborators to contribute new features, utility functions, bug fixes, and documentation. Currently, I am working on this alone. If you are working on signal processing or brain-computer interface, and keen to build a high-quality package to apply PyTorch to the signal processing domain, do [reach out to me](https://www.linkedin.com/in/jingles/).
 
