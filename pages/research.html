@@ -1,0 +1,35 @@
+---
+layout: main
+title: Some of my published work
+description: Here are the list of research work and projects,
+permalink: research/
+---
+
+<div class="container">
+  <div class="row">
+    {% for project in site.data.research %}
+    <div class="col s12 m6 l6">
+      <a href="{{project.url}}">
+        <div class="card hoverable waves-effect waves-block waves-light">
+          <div class="card-image">
+            <img
+              src="{{project.image}}"
+              style="height: 200px; object-fit: cover"
+            />
+          </div>
+          <div class="card-content" style="height: 250px; overflow: hidden">
+            <span
+              class="card-title grey-text text-darken-4"
+              style="font-size: 20px"
+            >
+              {{project.name}}
+            </span>
+
+            <p class="grey-text text-darken-4">{{ project.description }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>

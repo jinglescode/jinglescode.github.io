@@ -1,0 +1,8 @@
+- name: Deep Multi-Task Learning for SSVEP Detection and Visual Response Mapping
+  description: Using multi-task learning to efficiently captures signals simultaneously from the fovea and the neighboring targets in the peripheral vision, generating a visual response map. A calibration-free user-independent solution, desirable for clinical diagnostics. A stepping stone for an objective assessment of glaucoma patients’ visual field.
+  image: /assets/img/research/ssvep-multi-task-learning.png
+  url: https://jinglescode.github.io/ssvep-multi-task-learning/
+- name: Reinforcement Learning on Unity Machine Learning Agents Toolkik
+  description: Our goal is to build a turret game where the player can shoot enemy units while allowing friendly units to enter. We will train a reinforcement learning agent to play as the turret, where its goal is to allow ten friendly units to enter the base, and loses if an enemy unit has entered the base or if two friendly units were shot.
+  image: /assets/img/research/unity-ml-agents-turret-defense.png
+  url: https://jinglescode.github.io/unity-ml-agents-turret-defense/
