@@ -48,7 +48,7 @@ The different sized kernel will detect differently sized features in the input a
 
 {% include figure.html
   file="/assets/img/posts/how-convolutional-layers-work-deep-learning-neural-networks-03.gif"
-  caption="Apply convolution with a kernel of size 2"
+  caption="Apply convolution with a kernel of size 2."
 %}
 
 First, we multiply 1 by 2 and get “2”, and multiply 2 by 2 and get “2”. Then we add the two numbers, 2 and 4, and we get “6”–that is the first element in the output vector. We repeat the same process until the end of the input vector and produce the output vector.
@@ -68,7 +68,7 @@ As you might have noticed, the output vector is slightly smaller than before. Th
 
 {% include figure.html
   file="/assets/img/posts/how-convolutional-layers-work-deep-learning-neural-networks-09.png"
-  caption="Calculate the shape of the output [https://pytorch.org/docs/stable/generated/torch.nn.Conv1d.html#torch.nn.Conv1d]"
+  caption="Calculate the shape of the output. [https://pytorch.org/docs/stable/generated/torch.nn.Conv1d.html#torch.nn.Conv1d]"
 %}
 
 If we apply a kernel with size 1x2 on an input vector of size 1x6, we can substitute the values accordingly and get the output length of 1x5:
@@ -87,7 +87,7 @@ In the previous example, a kernel size of 2 is a little uncommon, so let’s tak
 
 {% include figure.html
   file="/assets/img/posts/how-convolutional-layers-work-deep-learning-neural-networks-04.gif"
-  caption="Apply convolution with a kernel of size 3"
+  caption="Apply convolution with a kernel of size 3."
 %}
 
 Likewise, the output vector is smaller than the input. Applying a 1x3 kernel on a 1x6 input vector will result in a feature vector with a size of 1x4.
@@ -113,7 +113,7 @@ By adding 1 padding to the 1x6 input vector, we are artificially creating an inp
 
 {% include figure.html
   file="/assets/img/posts/how-convolutional-layers-work-deep-learning-neural-networks-05.gif"
-  caption="Apply convolution with a kernel with padding"
+  caption="Apply convolution with a kernel with padding."
 %}
 
 For a convolution with a kernel size of 5, we can also produce an output vector of the same length by adding 2 paddings at the front and the end of the input vector. Likewise, for images, applying a 3x3 kernel to the 128x128 images, we can add a border of one pixel around the outside of the image to produce the size 128x128 output feature map.
@@ -166,7 +166,7 @@ Dilated convolutions are used in the [DeepLab](https://arxiv.org/pdf/1606.00915)
 
 {% include figure.html
   file="/assets/img/posts/how-convolutional-layers-work-deep-learning-neural-networks-07.gif"
-  caption="Apply convolution with a kernel with dilation rate of 2"
+  caption="Apply convolution with a kernel with dilation rate of 2."
 %}
 
 **When to use dilated convolutions?** Generally, dilated convolutions have shown better [segmentation performance](https://jinglescode.github.io/2019/11/07/biomedical-image-segmentation-u-net/) in [DeepLab](https://arxiv.org/pdf/1606.00915) and in [Multi-Scale Context Aggregation by Dilated Convolutions](https://arxiv.org/pdf/1511.07122.pdf). You might want to use dilated convolutions if you want an exponential expansion of the receptive field without loss of resolution or coverage. This allows us to have a larger receptive field with the same computation and memory costs while preserving resolution.
@@ -188,7 +188,7 @@ When groups=2, this is essentially equivalent to having two convolution layers s
 
 {% include figure.html
   file="/assets/img/posts/how-convolutional-layers-work-deep-learning-neural-networks-08.gif"
-  caption="Apply groupwise convolution"
+  caption="Apply groupwise convolution."
 %}
 
 <script src="https://gist.github.com/jinglescode/c01185a583540cb9716d2ab9f8eff407.js"></script>
