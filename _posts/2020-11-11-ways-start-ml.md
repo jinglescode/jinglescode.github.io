@@ -21,7 +21,7 @@ So, how to break into machine learning?
 
 So, you want to get started into ML? The good news is that there are countless tutorials all over the internet. Instead of sifting through the sheer amount of content, YouTubers picked the interesting ones, made it concise, and possibly explain in layman terms.
 
-This [article introduces seven YouTube channels](https://jinglescode.github.io/assets/img/posts/ai-youtube-01-mini.jpg) that aim to uncover the latest and coolest developments in machine learning. For instant, [Two Minute Papers](https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg) videos are entertaining, engaging, and an absolute joy to watch.
+This [article introduces seven YouTube channels](https://jinglescode.github.io/2020/01/29/essential-ai-youtube-channels/) that aim to uncover the latest and coolest developments in machine learning. For instant, [Two Minute Papers](https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg) videos are entertaining, engaging, and an absolute joy to watch.
 
 Many conferences invite notable speakers and authors to present their papers for those of you who prefer to listen to the industry experts and researchers themselves. Conference on Neural Information Processing Systems (NeurIPS), one of the leading conferences in machine learning, publishes their [free access videos](https://videos.neurips.cc/).
 
@@ -95,3 +95,5 @@ There you go, 7 ways to get started in machine learning, ranging from easiest to
 It doesn’t matter which stage you are currently on. Pick the one that suits your learning style, which is comfortable for you — [the right balance between the perceived challenges of the task and one’s perceived skills](https://jinglescode.github.io/2019/12/01/how-to-stay-focus-accomplish-your-goals/).
 
 You should never quit doing something because it’s hard. Nothing worth having comes easy.
+
+Get started now? Learn about [how convolutions work](https://jinglescode.github.io/2020/11/01/how-convolutional-layers-work-deep-learning-neural-networks/). Or learn more about [Transformers and Attention](https://jinglescode.github.io/2020/05/27/illustrated-guide-transformer/).
