@@ -6,7 +6,9 @@ image-thumb: /assets/img/posts/ways-start-ml-01-mini.jpg
 image-caption: "Image by Chuck Underwood from Pixabay"
 description: Never quit doing something because it's hard, nothing worth having comes easy.
 tags:
-- 
+- experiences
+- how to
+- resources
 ---
 
 Machine learning is about teaching computers how to learn from data to make decisions (or predictions). Sitting at the intersection of computer science and statistics, and you may see several buzz words like:
