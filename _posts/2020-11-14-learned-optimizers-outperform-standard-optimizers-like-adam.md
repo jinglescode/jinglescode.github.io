@@ -9,11 +9,11 @@ tags:
 - research
 ---
 
-Optimizers, such as momentum (Polyak, 1964), AdaGrad (Duchi et al., 2011), RMSProp (Tieleman & Hinton, 2012), or Adam (Kingma & Ba, 2014), are algorithms underlying in nearly all machine learning. Combined with the loss function, they are the key pieces that enable machine learning to work. These algorithms use simple update rules derived from intuitive mechanisms and theoretical principles, a mathematical way of measuring how wrong your predictions are, and tune it to become better.
+Optimizers, such as momentum (_Polyak, 1964_), AdaGrad (_Duchi et al., 2011_), RMSProp (_Tieleman & Hinton, 2012_), or Adam (_Kingma & Ba, 2014_), are algorithms underlying in nearly all machine learning. Combined with the loss function, they are the key pieces that enable machine learning to work. These algorithms use simple update rules derived from intuitive mechanisms and theoretical principles, a mathematical way of measuring how wrong your predictions are, and tune it to become better.
 
-Recent research thread has focused on learning-based optimization algorithms; they called it learned optimizers. It has been shown that learned optimizers outperform “hand-designed” optimizers, like Adam, by directly parameterizing and training an optimizer on the distribution of tasks (Andrychowicz et al., 2016; Wichrowska et al., 2017; Lv et al., 2017; Bello et al., 2017; Li & Malik, 2016; Metz et al., 2019; 2020).
+Recent research thread has focused on learning-based optimization algorithms; they called it learned optimizers. It has been shown that learned optimizers outperform “hand-designed” optimizers, like Adam, by directly parameterizing and training an optimizer on the distribution of tasks (_Andrychowicz et al., 2016; Wichrowska et al., 2017; Lv et al., 2017; Bello et al., 2017; Li & Malik, 2016; Metz et al., 2019; 2020_).
 
-Despite the improvements in the performance from using these learned optimizers, researchers still lack an understanding of how it works. Google Brain researchers highlighted that understanding learned optimizers’ underlying mechanisms could improve robustness (Wichrowska et al., 2017; Lv et al., 2017), meta-training (Metz et al., 2019), and generalization (Metz et al., 2020) of learned optimizers. Identifying their operational flaws while also deepening our insight into why key machine learning mechanisms work and how to improve them.
+Despite the improvements in the performance from using these learned optimizers, researchers still lack an understanding of how it works. Researchers highlighted that understanding learned optimizers’ underlying mechanisms could improve robustness (_Wichrowska et al., 2017; Lv et al., 2017_), meta-training (_Metz et al., 2019_), and generalization (_Metz et al., 2020_) of learned optimizers. Identifying their operational flaws while also deepening our insight into why key machine learning mechanisms work and how to improve them.
 
 For momentum and other standard optimizers, the state variables are low-dimensional, so their dynamics are straightforward, and it is simple to describe its behavior. But in contrast, learned optimizers have high-dimensional state variables, so these systems learn complex nonlinear dynamics, which is challenging to extract intuitive descriptions of a learned optimizer’s behavior.
 
@@ -38,7 +38,7 @@ They compare the performance of learned optimizer against tuned baseline optimiz
 
 Learned optimizers outperform well-tuned baselines on three different tasks. Upper row: Task schematics. Bottom row: Optimizer performance. [[source](https://arxiv.org/pdf/2011.02159.pdf)]
 
-The learned optimizers outperform the three well-tuned optimizers on all three tasks. The optimizer performance shown in the loss curves is the mean, standard deviation error over 128 random seeds.
+The optimizers performance shown in the loss curves is the mean, standard deviation error over 128 random seeds. The learned optimizers outperform the three well-tuned optimizers on all three tasks. 
 
 ## Momentum
 
@@ -64,7 +64,7 @@ Gradient clipping in a learned optimizer. Top row: The update function computed 
 
 ## Learning rate schedules
 
-We often tune the learning rate scheduler to decay the learning rate as the optimization progresses. The authors discovered that learned optimizers could implement a scheduler using autonomous dynamics. It encodes a particular trajectory as a function of the iteration as the system relaxes to the fixed point. In the linear regression experiment, the learned optimizer initially increases the learning rate of over 25 iterations, followed by a linear decay.
+We often tune the learning rate scheduler to decay the learning rate as the optimization progresses. The authors discovered that learned optimizers could implement a scheduler using autonomous dynamics. It encodes a particular trajectory as a function of the iteration as the system relaxes to the fixed point. From the figure below, in the linear regression experiment, the learned optimizer initially increases the learning rate of over 25 iterations, followed by a linear decay.
 
 {% include figure.html
   file="/assets/img/posts/learned-optimizers-outperform-standard-optimizers-like-adam-05.png"
