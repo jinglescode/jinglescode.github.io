@@ -14,9 +14,9 @@ Most computer vision research has focused on 2D images, and it has reached an ex
 
 While 2D object prediction provides bounding boxes, which allows us to know where the object is located in the image, extending this technique for 3D prediction will enable us to capture the object’s size, position, and orientation. Advancing in 3D object prediction has great potential for various applications in robotics, self-driving vehicles, image retrieval, and augmented reality.
 
-Even though 2D object detection methods are mature and have been widely used in the industry, extending these methods for 3D object detection methods from 2D imagery is challenging. This is due to the lack of large real-world datasets compared to 2D images.
+Even though 2D object detection methods are mature and have been widely used in the industry, extending these methods for 3D object detection methods from 2D imagery is challenging. This is due to the lack of large real-world datasets of annotated 3D videos compared to 2D images.
 
-Like how [ImageNet](http://image-net.org/) has enabled computer vision researchers to advance 2D image tasks, Google has released the [Objectron dataset](https://github.com/google-research-datasets/Objectron/) for 3D object detection. This dataset aims to empower the research community to advance 3D object understanding.
+Like how [ImageNet](http://image-net.org/) has enabled computer vision researchers to advance 2D image tasks, the Google AI team has released the [Objectron dataset](https://github.com/google-research-datasets/Objectron/) for 3D object detection. This dataset aims to empower the research community to advance 3D object understanding.
 
 # About the Objectron dataset (how to download/use the datasets provided)
 
@@ -48,7 +48,7 @@ Currently, in Nov 2020, the dataset size is 1.9TB, including videos and annotati
 
 # How to perform 3D object detection (sample solutions provided)
 
-Along with the dataset, the team shared their solutions to predict 3D bounding boxes. They provided solutions for four categories of objects — shoes, chairs, mugs, and cameras. Here are some sample results of a 3D object detection solution running on a mobile device.
+Along with the dataset, the team shared their solutions to predict 3D bounding boxes. They provided solutions for four categories of objects — *shoes, chairs, mugs, and cameras*. Here are some sample results of a 3D object detection solution running on a mobile device.
 
 Sample results of 3D object detection from the sample solutions running on mobile. [[source](https://ai.googleblog.com/2020/11/announcing-objectron-dataset.html)]:
 
@@ -92,7 +92,7 @@ For 3D object detection tasks, the team proposes a three-part algorithm for comp
 
 Compute the 3D intersection over union using the polygon clipping algorithm. Left: Compute the intersection points of each face by clipping the polygon against the box. Right: Compute the volume of intersection by computing the convex hull of all intersection points (green). [[source](https://ai.googleblog.com/2020/11/announcing-objectron-dataset.html)]
 
-The team released this [3D IoU source code](https://github.com/google-research-datasets/Objectron/blob/master/notebooks/3D_IOU.ipynb) along with the dataset to enable the research community a standard evaluation metrics.
+The team released this [3D IoU source code](https://github.com/google-research-datasets/Objectron/blob/master/notebooks/3D_IOU.ipynb) along with the dataset to enable the research community to benchmark performance against a standard evaluation metric.
 
 Screenshots of the IoU between 2 objects, taken from the [notebook](https://github.com/google-research-datasets/Objectron/blob/master/notebooks/3D_IOU.ipynb):
 
