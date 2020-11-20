@@ -49,6 +49,14 @@ There are three objectives or challenges that these RL agents need to perform:
 2. **Cooperation:** RL agents should work together on the same sub-task when most efficient or necessary because some sub-tasks may require multiple chefs to work together. For example, if only one can use the knife and only the other can reach the tomatoes, they must cooperate in chopping the tomato.
 3. **Spatio-temporal movement:** In all cases, agents must coordinate their actions in space and time to avoid interfering with others and be mutually responsive.
 
+{% include figure.html
+  file1="/assets/img/posts/coordinating-multiple-rl-agents-overcooked-04.gif"
+  file2="/assets/img/posts/coordinating-multiple-rl-agents-overcooked-05.gif"
+  file3="/assets/img/posts/coordinating-multiple-rl-agents-overcooked-06.gif"
+  size="c3"
+  caption="Collaboration requires agents to coordinate their behavior on the fly, sometimes cooperating to solve a single task together and other times dividing it up into sub-tasks to work on in parallel. [https://github.com/rosewang2008/gym-cooking]"
+%}
+
 # **A new method to infer other’s intention**
 
 The team developed a method, _Bayesian Delegation_, a new algorithm for decentralized multi-agent coordination. It leverages Bayesian inference with inverse planning to rapidly infer the sub-tasks others are working on. Bayesian Delegation models the latent intentions of others to dynamically decide whether to divide-and-conquer sub-tasks or to cooperate on the same sub-task.
