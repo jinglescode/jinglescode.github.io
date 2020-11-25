@@ -11,13 +11,22 @@ permalink: playground/
   {% for project in site.data.projects %}
   <div class="col s12 m6 l4">
     <div class="card hoverable">
-      <div class="card-image waves-effect waves-block waves-light" style="">
-        <img class="activator" src="{{project.image}}" style="height:180px; object-fit: cover">
+      <div class="card-image waves-effect waves-block waves-light">
+        <a href="{{project.site}}" style="color:#000;">
+          <img src="{{project.image}}" style="height:180px; object-fit: cover">
+        </a>
       </div>
       <div class="card-content" style="height:160px; overflow:hidden;">
-        <span class="card-title activator grey-text text-darken-4" style="font-size:20px;">
+
+        <!-- <span class="card-title activator grey-text text-darken-4" style="font-size:20px;">
           <i class="material-icons right">more_vert</i>
           {{project.name}}
+        </span> -->
+
+        <span class="card-title grey-text text-darken-4" style="font-size:20px;">
+          <a href="{{project.site}}" style="color:#000;">
+            {{project.name}}
+          </a>
         </span>
 
         <div class="row">
