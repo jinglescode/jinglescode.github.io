@@ -7,6 +7,7 @@ image-caption: "Highlighting models for most common NLP tasks."
 description: Highlighting models for most common NLP tasks.
 tags:
 - natural language processing
+last_modified_at: 2020-12-18
 ---
 
 There are many tasks in Natural Language Processing (NLP), [Language modeling](https://nlpprogress.com/english/language_modeling.html), [Machine translation](https://nlpprogress.com/english/machine_translation.html), [Natural language inference](https://nlpprogress.com/english/natural_language_inference.html), [Question answering](https://nlpprogress.com/english/question_answering.html), [Sentiment analysis](https://nlpprogress.com/english/sentiment_analysis.html), [Text classification](https://nlpprogress.com/english/text_classification.html), and [many more](https://nlpprogress.com/)… As different models tend to focus and excel in different areas, this article will highlight the state-of-the-art models for the most common NLP tasks.
@@ -62,3 +63,7 @@ However, the proposed formulation results in two contradictory requirements in t
 In order to resolve the issue, two separate streams, namely content and query representation, are used. Computationally, the query stream is trainable, and the content stream is initialized with corresponding word embeddings.
 
 A large number of permutations cause slow training convergence of the model. Therefore, the author chose only to predict the last section of a factorization order. As such, speed and memory are saved as query representation need not be computed for the leading tokens.
+
+--- 
+
+So, can deep learning models like BERT ever understand language? This [article on Neptune blog](https://neptune.ai/blog/ai-limits-can-deep-learning-models-like-bert-ever-understand-language) describes the three aspects that we should look for to understand NLP.
