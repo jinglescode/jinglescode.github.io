@@ -6,8 +6,8 @@ image-thumb: /assets/img/posts/learning-by-doing-mini.jpg
 image-caption: "Image by Gyae Min from Pixabay"
 description: I hear and I forget. I see and I remember. I do and I understand.
 tags:
-- Experiences
-- Personal Growth
+- experiences
+- personal growth
 ---
 
 Courses can is a great way to learn but working on projects build up your skills. You'll be forced to think critically about the problem and produce a solution on your own. Getting hands-on builds knowledge and skills that can't be taught, as watching someone else doing it is much easier than learning how to do it yourself.
