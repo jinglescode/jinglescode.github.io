@@ -12,6 +12,10 @@ tags:
 
 Courses can is a great way to learn but working on projects build up your skills. You'll be forced to think critically about the problem and produce a solution on your own. Getting hands-on builds knowledge and skills that can't be taught, as watching someone else doing it is much easier than learning how to do it yourself.
 
+I like how Paul Graham described it in [his article](http://paulgraham.com/own.html):
+
+> It's a bit sad to think of all the high school kids turning their backs on building treehouses and sitting in class dutifully learning about Darwin or Newton to pass some exam, when the work that made Darwin and Newton famous was actually closer in spirit to building treehouses than studying for exams.
+
 Personal projects allow you to explore and apply what you have learned on a deeper level. Working on a project from start to finish will expose you to a wide range of problems. You'll know how to ask the right questions, specifically, how to search the right questions to find the solutions. We want to get more hands-on experience to hone our skills.
 
 # Effective data scientist
@@ -36,7 +40,7 @@ Having personal projects also enable you to build a portfolio and showcase it to
 
 **Soft skills** - writing your thought process and explaining the analysis and results shows your ability to communicate, which is essential for an effective data scientist. 
 
-**Traits** - Working on personal projects show self-learning beyond completing courses and collecting certificates. Having portfolios also demonstrate traits such as curiosity and passion. As you are spending your free time learning, it exhibits you are driven and more passionate than the rest who might be interviewing for the same job. 
+**Traits** - Working on personal projects show self-learning beyond completing courses and collecting certificates. Having portfolios also demonstrate traits such as curiosity and passion. As you are spending your free time learning, it exhibits you are driven and more passionate than the rest who might be interviewing for the same job. You show that you're doing it voluntarily (pulling), rather than merely because someone told you to (being pushed).
 
 The portfolio will help your resume to stand out among the sea of resumes and get a first-round interview. And the skills and traits that you acquired from these projects will lead you to perform in the role.
 
@@ -52,9 +56,7 @@ After sharing how easy it was to use and how it has benefited the users, his att
 
 One of the hardest things when deciding to work on a personal project is finding time to start. Because most of us have a full-time job (or studies), and whatever leftover free time there could be used to watch Netflix. But the learning and growth you get from working on a personal project is gold.
 
-Don't focus on building a portfolio; focus on the process of acquiring the skills by doing. A portfolio is an artifact of our skills and traits. It's the destination, and it'll take care of itself if we focus on the journey.
-
-While trying to build our portfolios, we should find intrinsically rewarding projects. They should be fun, personally meaningful, and stretch our abilities, this makes it more sustainable. Over time, brick by brick, a portfolio emerges. It'll take a while, so let's get to work.
+Don't focus on building a portfolio; focus on the process of acquiring the skills by doing. A portfolio is an outcome of our learnings, the skills that we develop, and the traits we possess. While trying to build our portfolios, we should find intrinsically rewarding projects. They should be fun, personally meaningful, and stretch our abilities; this makes them more sustainable. Over time, one project after another, you will have a portfolio.
 
 Need some inspiration? Want to see machine learning projects in action? Here is a [carefully curated list of awesome ML projects with demo](https://github.com/jinglescode/awesome-machine-learning-projects)!
 
