@@ -30,15 +30,15 @@ Here is a list of skills (neither mandatory nor exhaustive) on becoming an effec
 - building the product — whether it is applying machine learning to perform predictions or data analysis to extract answers
 - dev-ops — code structure, unit tests, automation tools, deployment
 
-For instance, let's build a [project](https://github.com/jinglescode/time-series-forecasting-tensorflowjs), which pulls historical stock data and uses a machine learning model to predict the next day's price (scope). We found that we could acquire financial market data from Alpha Vantage, so we build a script to pull stock data (data engineering). With the raw data, we prepare the data before training the model, normalizing the raw data, and splitting the data into training and validation datasets (data analysis + data engineering). Then, we develop and train a simple LSTM model to learn to predict next-day prices using the last 50 days' data (building the product). To determine if our model is doing a good job, we evaluate the model's performance by measuring it with mean square error (data analysis). We build a web interface and deploy it to showcase the work so anyone could try it (dev-ops). Lastly, writing about the building and thoughts process, so others could learn from it to build their own (communication). [Learn more](https://github.com/jinglescode/time-series-forecasting-pytorch) about this project.
+For instance, let's build a [project](https://github.com/jinglescode/time-series-forecasting-pytorch), which pulls historical stock data and uses a machine learning model to predict the next day's price (*scope*). We found that we could acquire financial market data from Alpha Vantage, so we build a script to pull stock data (*data engineering*). With the raw data, we prepare the data before training the model, normalizing the raw data, and splitting the data into training and validation datasets (*data analysis + data engineering*). Then, we develop and train a simple LSTM model to learn to predict next-day prices using the last 50 days' data (*building the product*). To determine if our model is doing a good job, we evaluate the model's performance by measuring it with mean square error (*data analysis*). We build a web interface and [deploy it](https://jinglescode.github.io/time-series-forecasting-tensorflowjs/) to showcase the work so anyone could try it (*dev-ops*). Lastly, [writing](https://github.com/jinglescode/time-series-forecasting-pytorch) about the building and thoughts process, so others could learn from it to build their own (*communication*).
 
 # Build your portfolio
 
 Having personal projects also enable you to build a portfolio and showcase it to potential employers. Online portfolios demonstrate both technical and soft skills to hiring managers. 
 
-**Technical skills** - how you structure your files and codes, how you acquire and prepare data, how you analyze and understand your data via visuals, how you train and evaluate your machine learning models. This shows that you can get things done.
+**Technical skills** - How you structure your files and codes, how you acquire and prepare data, how you analyze and understand your data via visuals, how you train and evaluate your machine learning models. This shows them that you can get things done.
 
-**Soft skills** - writing your thought process and explaining the analysis and results shows your ability to communicate, which is essential for an effective data scientist. 
+**Soft skills** - Writing your thought process and explaining the analysis and results shows your ability to communicate, which is essential for an effective data scientist. 
 
 **Traits** - Working on personal projects show self-learning beyond completing courses and collecting certificates. Having portfolios also demonstrate traits such as curiosity and passion. As you are spending your free time learning, it exhibits you are driven and more passionate than the rest who might be interviewing for the same job. You show that you're doing it voluntarily (pulling), rather than merely because someone told you to (being pushed).
 
@@ -50,7 +50,7 @@ In 2017, I had an interview at Alibaba Group for a data scientist role. Like mos
 
 Then, we moved on to describe what have I done before. I shared a natural language processing application that I have made, where users can upload an Excel file containing answers to survey questions. The application will extract the sentiment for each response, and dynamically group them by topics. I showed my hiring manager how the application looks and how it works from a user perspective. 
 
-After sharing how easy it was to use and how it has benefited the users, his attitude and the interview vibe has changed. It was no longer felt like an interview but more of sharing with a colleague what I have done and how I did it. It is so much easier to describe what has been done before than to recap what each data science and machine learning concepts is. The conversation became more lively and friendly; it was a pleasant interview experience. And yes, I got the job.
+After sharing how easy it was to use and how it has benefited the users, his attitude and the interview vibe has changed. It was no longer felt like an interview but more of sharing with a friend on what I have done, how I did it, and how it has tremendously help the users. It is so much easier to describe what has been done before than to recap what each data science and machine learning concepts is. The conversation became more lively and friendly; it was a pleasant interview experience. And yes, I got the job.
 
 # In closing...
 
@@ -60,4 +60,4 @@ Don't focus on building a portfolio; focus on the process of acquiring the skill
 
 Need some inspiration? Want to see machine learning projects in action? Here is a [carefully curated list of awesome ML projects with demo](https://github.com/jinglescode/awesome-machine-learning-projects)!
 
-> I hear and I forget. I see and I remember. I do and I understand. – Confucius
+> I hear and I forget. I see and I remember. I do and I understand.
