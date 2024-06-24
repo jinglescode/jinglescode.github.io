@@ -84,7 +84,7 @@ Updating the value function is how the agent learns from past experiences, by up
 
 State s’ is the next state of the current state s. We can update the value of the current state s by adding the differences in value between state s and s’. α is the learning rate.
 
-As multiple actions can be taken at any given state, so constantly picking only one action at a state that used to bring success might end up missing other better states to be in. In reinforcement learning, this is the [explore-exploit dilemma](https://jinglescode.github.io/datascience/2019/07/05/exploration-exploitation-dilemma/).
+Multiple actions can be taken at any given state, so constantly picking only one action at a state that used to bring success might end up missing other better states to be in. In reinforcement learning, this is the [explore-exploit dilemma](https://jinglescode.github.io/datascience/2019/07/05/exploration-exploitation-dilemma/).
 
 With explore strategy, the agent takes random actions to try unexplored states which may find other ways to win the game. With exploit strategy, the agent is able to increase the confidence of those actions that worked in the past to gain rewards. With a good balance between exploring and exploiting, and by playing infinitely many games, the value for every state will approach its true probability. This good balance between exploring and exploit is determined by the [epsilon greedy parameter](https://jinglescode.github.io/datascience/2019/07/05/exploration-exploitation-dilemma/).
 
